@@ -2,14 +2,14 @@
 layout: post
 title:  "고양침공"
 date:   2023-01-10 10:13:14 +0900
-image: https://github.com/kj1241/kj1241.github.io/assets/22047442/fa052cb4-d82f-490d-9e16-48cae9a32493
+image: https://github.com/kj1241/kj1241.github.io/assets/22047442/7f9b4306-2464-46b0-8e23-02c001e26a5c
 toc: true
 categories: [Game_Jam]
 tags: [C++,Unreal]
 ---
 
 <h1><yellow1_h1>프로젝트 이름: 고양침공 </yellow1_h1></h1>
-![고양침공](https://github.com/kj1241/kj1241.github.io/assets/22047442/fa052cb4-d82f-490d-9e16-48cae9a32493){: width="740" height="400"}
+![고양침공](https://github.com/kj1241/kj1241.github.io/assets/22047442/7f9b4306-2464-46b0-8e23-02c001e26a5c){: width="740" height="400"}
 
 
 <br>
@@ -27,7 +27,7 @@ tags: [C++,Unreal]
 
 
 <br>
-<h2><yellow1_h2> 팀 구성(4명): </yellow1_h2></h2><ul>
+<h2><yellow1_h2> 팀 구성: </yellow1_h2></h2><ul>
 <li><h5><yellow1_h5>Prgrammer(2명):</yellow1_h5><span>  게임 로직, 캐릭터 제어 인터페이스, 효과음, 배경음악 제작</span></h5></li>
 <li><h5><yellow1_h5>2DArtist(1명):</yellow1_h5><span>  포토샵을 이용한 캐릭터 및 배경 디자인</span></h5></li>
 <li><h5><yellow1_h5>Game Designe(1명):</yellow1_h5><span> 게임 기획 및 레벨 디자인</span></h5></li></ul>
@@ -54,7 +54,7 @@ tags: [C++,Unreal]
 
 
 <br>
-<h2><yellow1_h2> 결과(성과) 및 데모 </yellow1_h2></h2>
+<h2><yellow1_h2> 결과(성과) 및 데모: </yellow1_h2></h2>
 
 <ul>
 <li><h5><yellow1_h5>성과 :</yellow1_h5><span> 인기상 / 데모 프로젝트 제작 </span></h5></li>

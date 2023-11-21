@@ -1,10 +1,9 @@
-
 #line hr {
     background: rgb(152, 195, 236);
     height: 1px;
 }
 
-.post_content{
+.post_content {
     h1 {
         font-size: 38px;
         padding-top: 5px;
@@ -16,11 +15,62 @@
         padding-top: 8px;
         padding-bottom: 8px;
     }
+
     h5 {
         font-size: 16px;
         padding-top: 2px;
         padding-bottom: 2px;
         font-weight: normal;
     }
+    p {
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    ul {
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+
+    ol {
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+
+    li {
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    iframe {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    a {
+       color: #bcbcff;
+    }
+
+    a:hover {
+        color: #6b6bff;
+    }
+
+
+    yellow1_h1 {
+        color: #f3ffb8;
+      }
+      
+      yellow1_h2 {
+        color:#fff082;
+      }
+      
+      yellow1_h5{
+        color:#82ff86;
+        display: inline;
+      }
+      red1_error{
+        color: #fd510f;
+      }
+      
 
 }
