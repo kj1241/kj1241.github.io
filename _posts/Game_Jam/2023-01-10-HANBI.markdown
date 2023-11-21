@@ -1,0 +1,79 @@
+---
+layout: post
+title:  "HANBI_project(ver.Refactoring)"
+date:   2023-01-10 18:59:59 +0900
+image: https://github.com/kj1241/kj1241.github.io/assets/22047442/648e5a2c-c84f-47a1-a2cd-c6e2f63ec4da
+toc: true
+categories: [Game_Jam]
+tags: [C#,Unity,Rhythm_Game]
+---
+
+<h1><yellow1_h1>프로젝트 이름: HANBI_project(ver.Refactoring) </yellow1_h1></h1>
+![하나비프로젝트](https://github.com/kj1241/kj1241.github.io/assets/22047442/648e5a2c-c84f-47a1-a2cd-c6e2f63ec4da){: width="740" height="400"}
+
+
+<br>
+<h2><yellow1_h2> 게임 소개: </yellow1_h2></h2>
+캐릭터가 노드를 쏴서 부순다는 독특한 콘셉트의 리듬 게임입니다. 
+플레이어는 다양한 캐릭터들을 조작하여 화려하고 흥겨운 리듬에 맞춰 적들을 쓰러뜨리는 슈팅 액션을 즐길 수 있습니다. 
+강렬한 비주얼과 중독성 있는 게임플레이로 인해 플레이어들은 게임의 세계에 몰입할 것입니다.
+
+<br>
+<h2><yellow1_h2> 게임 개요: </yellow1_h2></h2><ul>
+<li><h5><yellow1_h5>프로젝트명:</yellow1_h5><span>  HANABI_project</span></h5></li>
+<li><h5><yellow1_h5>게임 장르:</yellow1_h5><span>  Rhythm Game</span></h5></li>
+<li><h5><yellow1_h5>기간:</yellow1_h5><span> 2020.12.04~2020.12.06(2020충남 게임잼)</span></h5></li>
+<li><h5><yellow1_h5>플랫폼:</yellow1_h5><span>  PC (Window)</span></h5></li></ul>
+
+
+<br>
+<h2><yellow1_h2> 팀 구성: </yellow1_h2></h2><ul>
+<li><h5><yellow1_h5>Prgrammer(3명):</yellow1_h5><span>  게임 로직,노드 제어 인터페이스 ,캐릭터 제어 인터페이스, 효과음, 배경음악 제작, 순위 시스템 제작 </span></h5></li>
+<li><h5><yellow1_h5>2DArtist(1명):</yellow1_h5><span>  스파인 툴을 이용한 캐릭터 제작, 파티클 이펙트 제작</span></h5></li>
+<li><h5><yellow1_h5>Game Designe(1명):</yellow1_h5><span> 게임 기획 및 레벨 디자인</span></h5></li></ul>
+
+<br>
+<h2><yellow1_h2> 기술 스택: </yellow1_h2></h2><ul>
+<li><h5><yellow1_h5>게임 엔진:</yellow1_h5><span> Unity 2019.4.19f1</span></h5></li>
+<li><h5><yellow1_h5>언어:</yellow1_h5><span> C# / Java</span></h5></li>
+<li><h5><yellow1_h5>그래픽 디자인:</yellow1_h5><span>Adobe Photoshop / Illustrator / Spine</span></h5></li>
+<li><h5><yellow1_h5>음향 효과:</yellow1_h5><span>Adobe Audiition </span></h5></li></ul>
+
+<br>
+<h2 ><yellow1_h2> 게임 특징: </yellow1_h2></h2>
+1. 강렬한 음악과 함께 플레이어는 정확한 타이밍에 맞춰 노드를 제거해 보세요.
+2. 점수를 산정하고 PC에 순위를 올려 점수를 뽑내 보세요.
+
+<br>
+<h2><yellow1_h2> 개발자의 역활 및 경험: </yellow1_h2></h2>
+- **데모 클라이언트 개발 및 참여** <span><red1_error>(전체 게임 제작 기여도: 40%)</red1_error></span>
+    1. 리듬 게임 메인 로직 구성:  리듬(노드) 맞추기 기능, 점수 로직등을 구현하여 게임 플레이의 원활한 진행을 보장했습니다.
+    2. 스파인 API 유니티 연동: 2D 캐릭터의 애니메이션을 표현하기 위해 스파인 API를 유니티에 연동하였습니다.
+    3. 버그 수정 및 유지보수: 게임을 실행하며, 게임 실행도중 발생한 에러등을 처리하였습니다.
+
+<br>
+<h3><yellow1_h3>게임 구성(작업 부분)</yellow1_h3></h3>
+![게임 구성](https://github.com/kj1241/kj1241.github.io/assets/22047442/48d11aba-50ac-4189-a859-92a6a182c1af){: width="740" height="400"}
+
+<br>
+<h3><yellow1_h3>게임잼 당시 게임 개발 설계 프로세스</yellow1_h3></h3>
+![게임 설계 프로세스](https://github.com/kj1241/kj1241.github.io/assets/22047442/34f0bb82-fbbc-438d-b162-a81de370b12d){: width="740" height="400"}
+
+
+<br>
+<h2><yellow1_h2> 결과(성과) 및 데모: </yellow1_h2></h2>
+<ul>
+<li><h5><yellow1_h5>성과 :</yellow1_h5><span> 명령없는 소통상 / 데모 프로젝트 제작 </span></h5></li>
+<li><h5><yellow1_h5>게임 다운로드 링크:</yellow1_h5><span>
+<a href="https://www.notion.so/1st-SHOWCASE-1f0d47b25de64485a35d0ed395fa9b78"><br>https://www.notion.so/1st-SHOWCASE-1f0d47b25de64485a35d0ed395fa9b78</a> </span></h5></li>
+<li><h5><yellow1_h5>깃허브(코드):</yellow1_h5><span> 
+<a href="https://github.com/kj1241/HANABIProject-refactoring">https://github.com/kj1241/HANABIProject-refactoring</a> </span></h5></li>
+<li><h5><yellow1_h5>유튜브 동영상:</yellow1_h5></h5> 
+<iframe width="700" height="400" src="https://www.youtube.com/embed/YMq3jkKQHYY" title="HANABI_Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</li></ul>
+<br>
+
+
+
+
+

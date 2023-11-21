@@ -6,14 +6,19 @@
 .post_content {
     h1 {
         font-size: 38px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-top: 8px;
+        padding-bottom: 8px;
     }
 
     h2 {
         font-size: 30px;
-        padding-top: 8px;
-        padding-bottom: 8px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    h3 {
+        font-size: 25px;
+        padding-top: 3px;
+        padding-bottom: 3px;
     }
 
     h5 {
@@ -63,7 +68,9 @@
       yellow1_h2 {
         color:#fff082;
       }
-      
+      yellow1_h3 {
+        color:#e9e284;
+      }
       yellow1_h5{
         color:#82ff86;
         display: inline;

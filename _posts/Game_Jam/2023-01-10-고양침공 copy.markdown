@@ -5,7 +5,7 @@ date:   2023-01-10 10:13:14 +0900
 image: https://github.com/kj1241/kj1241.github.io/assets/22047442/7f9b4306-2464-46b0-8e23-02c001e26a5c
 toc: true
 categories: [Game_Jam]
-tags: [C++,Unreal]
+tags: [C++,Unreal,2D_Running_Game]
 ---
 
 <h1><yellow1_h1>프로젝트 이름: 고양침공 </yellow1_h1></h1>
@@ -21,7 +21,7 @@ tags: [C++,Unreal]
 <br>
 <h2><yellow1_h2> 게임 개요: </yellow1_h2></h2><ul>
 <li><h5><yellow1_h5>프로젝트명:</yellow1_h5><span>  고양침공</span></h5></li>
-<li><h5><yellow1_h5>게임 장르:</yellow1_h5><span>  2D 러닝 게임</span></h5></li>
+<li><h5><yellow1_h5>게임 장르:</yellow1_h5><span>  2D Running Game</span></h5></li>
 <li><h5><yellow1_h5>기간:</yellow1_h5><span> 2017.08.25~2017.08.27(2017 대전 G존 캠프)</span></h5></li>
 <li><h5><yellow1_h5>플랫폼:</yellow1_h5><span>  PC (Window)</span></h5></li></ul>
 
@@ -36,7 +36,7 @@ tags: [C++,Unreal]
 <h2><yellow1_h2> 기술 스택: </yellow1_h2></h2><ul>
 <li><h5><yellow1_h5>게임 엔진:</yellow1_h5><span> Unreal 4.19.2 -> 4.26.2</span></h5></li>
 <li><h5><yellow1_h5>언어:</yellow1_h5><span> C++ / blueprint</span></h5></li>
-<li><h5><yellow1_h5>그래픽 디자인:</yellow1_h5><span>Adobe Photoshop 및 Illustrator</span></h5></li>
+<li><h5><yellow1_h5>그래픽 디자인:</yellow1_h5><span>Adobe Photoshop / Illustrator</span></h5></li>
 <li><h5><yellow1_h5>음향 효과:</yellow1_h5><span>Adobe Audiition </span></h5></li></ul>
 
 <br>
