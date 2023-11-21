@@ -74,6 +74,10 @@ tags: [C#,Unity,Rhythm_Game]
 <br>
 
 
+<h2><yellow1_h2> 비고 및 여담: </yellow1_h2></h2>
+- **출시하지 못한이유:** 당시 현업 떄문에 추가 컨텐츠 제작에 시간을 할애할 수 없었던 비운의 게임입니다.
+- **저작권:** Only code can be used for research (No use graphic assets available)
 
+<br>
 
 
