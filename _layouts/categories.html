@@ -1,0 +1,12 @@
+---
+layout: page
+---
+
+{%- if site.posts.size > 0 -%}
+<div id="post-list"> <!--for문돌리기 포스트-->
+{% for post-bookmark in site.categories[page.title] %}
+    {%- include post-bookmark.html -%}
+{% endfor %}
+</div>
+
+{%- endif -%}

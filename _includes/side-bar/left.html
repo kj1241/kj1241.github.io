@@ -1,0 +1,82 @@
+<div aria-label="left-Side-bar" id="left-side-bar">
+    <header class="profile-wrapper">
+        <!--주석 안되는 거 살작 열받네
+        if) profile_img 존재한다면
+        1. http:// 면 그대로 사용해라
+        2. 앞에 주소가 있으면 붙여서 사용해라 
+        3. 현재 디렉토리 주소를 사용해서 붙여라
+    -->
+        <dlv id="profile_img">
+            <a href="{{ '/' | relative_url }}">
+                {% if site.profile_img != empty and site.profile_img %}
+                {% capture profile_img_url %}
+                {% if site.profile_img contains '://' %}
+                {{ site.profile_img }}
+                {% elsif site.img_cdn != empty and site.img_cdn %}
+                {{ site.profile_img | prepend: site.img_cdn }}
+                {% else %}
+                {{ site.profile_img | relative_url }}
+                {% endif %}
+                {% endcapture %}
+                <img src="{{ profile_img_url | strip }}" width="112" height="112" alt="{{profile_img_url}}"
+                    onerror="this.style.display='none'">
+                {% endif %}
+            </a>
+        </dlv>
+
+        <p id="profile_title">
+            {{site.title}}
+        </p>
+
+        <p id="profile_desc">
+            <a href="{{ '/' | relative_url }}">
+                {{site.sub-title}}
+            </a>
+        </p>
+
+
+        <dlv id= "none">
+            
+        </dlv>
+       
+
+    
+        <dlv id="categories">
+            <ul>
+                <li>
+                    <a id="categories_title" href="{{ site.data._categories.url | relative_url }}">
+                        {{ site.data._categories.categories_title }} ({{site.posts | size}})
+                    </a>
+                    {% for item in site.data._categories.categories_list %}
+                    <dlv id="categories_list">
+                        <ul>
+                            <li>
+                                <a> <!--href="{{ item.url }}"-->
+                                    {{ item.title }} 
+                                </a>
+                            </li>
+                            <dlv id="categories_sub">
+                                <ul>
+                                    {% for subitem in item.categories_sub_list %}
+                                    <li>
+                                        <a href="{{ subitem.url }}">
+                                            {{ subitem.title }} ({{site.categories[subitem.title] | size}})
+                                        </a>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </dlv>
+                        </ul>
+                    </dlv>
+                    {% endfor %}
+                </li>
+            </ul>
+        </dlv>
+    </header>
+
+
+
+
+
+
+</div>

@@ -1,0 +1,104 @@
+#cover_top_sidebar{
+
+  position: fixed;
+  left:  $sidebar-width;
+  font-family: "Brush Script Std", cursive;
+  font-size: 30px;
+  margin-left: 50px;
+  margin-top: 50px;
+  z-index: 4;
+}
+
+#cover_top_sidebar a {
+  color: white;
+}
+
+
+.slideshow-container {
+  width: calc(100vw - #{$sidebar-width}*2);
+  height: calc(100vh - var(--vh-offset, 0px));
+  margin-left: $sidebar-width;
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+}
+
+.slides_list {
+  display: none;
+  width : 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  overflow: hidden;
+}
+
+.slides_list:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.54);
+  transition: background-color .3s ease-in-out;
+}
+
+
+.slides_list #slides_list_title {
+  position: relative;
+  display: flex;
+  -ms-display: flexbox;
+  /* IE 10 */
+  display: -webkit-flex;
+  /* Safari */
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.slides_list #slides_list_title strong {
+
+  display: block;
+  font-size: 36px;
+  color: rgb(253, 217, 207);
+  max-height: 130px;
+  max-width: 600px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.slides_list #slides_list_text {
+  //width: 700px;
+  max-height: 85px;
+  margin: 10px 0 20px 0;
+  font-size: 16px;
+  color: rgb(207, 232, 253);
+  line-height: 28px;
+  //word-break: keep-all;
+  // overflow: hidden;
+  //display: -webkit-box;
+  // -webkit-line-clamp: 2;
+  // -webkit-box-orient: vertical;
+}
+
+.slides_list #slides_list_link {
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  line-height: 35px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  border: 2px solid rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.slides_list #slides_list_link:hover {
+  color: rgb(207, 224, 144);
+  border-color: rgb(207, 224, 144);
+}

@@ -1,0 +1,58 @@
+categories_title: Portfolio & Study
+url: /All/
+categories_list:
+  - title: External Activities
+    categories_sub_list:
+      - title: Game_Jam
+        url: /Game_Jam/
+      - title: Hackaton
+        url: /Hackaton/
+ 
+  - title: Toy Porjects
+    categories_sub_list:
+      - title: DirectX
+        url: /DirectX/
+      - title: WinAPI
+        url: /WinAPI/
+      - title: Unity
+        url: /Unity/
+      - title: Uneral
+        url: /Unreal/
+      - title: AI
+        url: /AI/
+      - title: Server_IOCP
+        url: /Server_IOCP/
+      - title: Data Base
+        url: /Data_Base/
+      - title: 3Ds_Max
+        url: /3Ds_Max/
+      - title: Houdini
+        url: /Houdini/
+      - title: Tstory_Skin
+        url: /Tstory_Skin/
+      - title: Git_hub_blog
+        url: /Git_hub_blog/
+      
+  - title: Technical Article & Treble Shooting
+    categories_sub_list:
+      - title: CppCon
+        url: /CppCon/
+      - title: GDC
+        url: /GDC/
+      - title: Unity
+        url: /Unity/
+      - title: Unreal
+        url: /Unreal/
+      - title: Network
+        url: /Network/
+      - title: Web
+        url: /Web/
+      - title: Data_Analysis
+        url: /Data_Analysis/
+      - title: Programming_Interview
+        url: /Programming_Interview/
+
+  
+
+ 
+      

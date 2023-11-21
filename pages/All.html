@@ -1,0 +1,13 @@
+---
+layout: page
+permalink: /All/
+title: Portfolio & Study
+---
+
+{%- if site.posts.size > 0 -%}
+<div id="post-list"> <!--for문돌리기 포스트-->
+    {%- for post-bookmark in site.posts -%}
+        {%- include post-bookmark.html -%}
+    {%- endfor -%}
+</div>
+{%- endif -%}

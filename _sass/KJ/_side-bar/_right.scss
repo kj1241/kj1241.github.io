@@ -1,0 +1,108 @@
+#right-side-bar {
+    @include pl-pr(0);
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-height: 100%;
+    overflow-y: auto;
+    width: $sidebar-width;
+    z-index: 5;
+    background: var(--sidebar-bg);
+    background-color:rgb(20, 20, 20);
+ 
+    border-right: 1px solid var(--sidebar-border-color);
+
+    //스크롤바 안쓸꺼임
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    %sidebar-link-hover {
+        &:hover {
+          color: black; //다른스타일 지정할꺼면 var(--sidebar-active-color)
+        }
+    }
+}
+
+
+#toc_box{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 1px;
+    
+    font-size: 12px;
+  
+
+    line-height: 1.2;
+    z-index: 8;
+}
+
+#toc_container{
+    margin-left: -20px;
+}
+
+
+#toc_container dl{
+    color: rgb(240, 240, 240);
+    font-size: 18px;
+    font-family: "Brush Script Std", cursive;
+    transition: all 0.2s;
+    line-height: 1.3;
+    margin: 0;
+
+}
+
+#toc_container #tag_list_h2{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+
+#toc_container #tag_list_h2 a{
+    color: rgb(238, 184, 159);
+    font-size: 15px;
+    font-family: sans-serif;
+    transition: all 0.2s;
+    text-decoration: none;
+  }
+  
+  #toc_container #tag_list_h2 a:hover {
+    text-decoration: none;
+    //background-color: rgb(131, 131, 131, 0.2);
+    color: rgb(202, 70, 70);
+  }
+
+
+
+#toc_container #tag_list_h2::marker{
+    color: rgb(255, 145, 112);
+}
+
+
+#toc_container #tag_list_h3{
+    margin-left: 40px;
+    margin-top: -2px;
+
+}
+
+#toc_container #tag_list_h3 a{
+    color: rgb(158, 163, 223);
+    font-size: 12px;
+    font-family: "Arial";
+    transition: all 0.2s;
+    text-decoration: none;
+  }
+  
+  #toc_container #tag_list_h3 a:hover {
+    text-decoration: none;
+    //background-color: rgb(131, 131, 131, 0.2);
+    color: rgb(70, 84, 212);
+  }
+
+#toc_container #tag_list_h3::marker{
+    color: rgb(184, 191, 255);
+}

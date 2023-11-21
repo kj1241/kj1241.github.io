@@ -1,0 +1,31 @@
+
+#footer-wrapper{
+    position: fixed;
+    left: calc(50vw - #{$content-width}/2);
+    bottom: 0;
+    height: 5%;
+    z-index: 3;
+    width: $content-width;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    color: #333;
+}
+
+#footer-copyright{
+    color: rgb(228, 181, 247);
+   
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+}
+
+#footer-copyright a{
+    color: rgb(232, 214, 240);
+    text-decoration-line: none;
+} 
+
+#footer-copyright a:hover{
+    text-decoration: none;
+    color: rgb(215, 216, 165);
+}

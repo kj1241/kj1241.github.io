@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<article class="page">
+  <header class="page-header">
+    <h1 class="page-title">
+      {{ page.title | escape }}
+    </h1>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <p class="rss-subscribe">
+    subscribe 
+    <a href="{{ '/feed.xml' | relative_url }}">
+      via RSS
+    </a>
+  </p>
+
+</article>

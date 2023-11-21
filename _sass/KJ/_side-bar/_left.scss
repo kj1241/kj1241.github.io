@@ -1,0 +1,175 @@
+$sidebar-display: 'sidebar-display';
+$btn-border-width: 3px;
+$btn-mb: 0.5rem;
+
+#left-side-bar {
+    //@include pl-pr(0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    overflow-y: auto;
+    width: $sidebar-width;
+    z-index: 5;
+    background: var(--sidebar-bg);
+    background-color:rgb(20, 20, 20);
+ 
+    border-right: 1px solid var(--sidebar-border-color);
+
+    //스크롤바 안쓸꺼임
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    %sidebar-link-hover {
+        &:hover {
+          color: black; //다른스타일 지정할꺼면 var(--sidebar-active-color)
+        }
+    }
+}
+
+.profile-wrapper{
+    width: 100%;
+    margin-top: 30px;
+    
+}
+
+//이미지 박스
+#profile_img {
+    display: block;
+    margin: 5% auto;
+    width: 100px;
+    height: 100px;
+    box-shadow: 2px 2px 5px rgba(99, 25, 25, 0.8);
+    border-radius: 70%;
+    transform: translateZ(0);
+    overflow: hidden;
+}
+
+#profile_img img{
+    width: 100px;
+    height: 100px;
+    transition: transform 0.5s;
+}
+
+#profile_img img:hover{
+    transform: scale(1.2);
+}
+
+#profile_title{
+    text-align: center;
+    color: rgb(170, 34, 152);
+    font-size: 30px;
+    padding-top: 5px;
+    font-family: "Brush Script Std", cursive;
+    text-shadow: 2px 2px 4px rgba(235, 235, 235, 0.3);
+    line-height: 0.8;
+    font-weight: 100;
+}
+
+#profile_desc
+{
+    padding-top: 5px;
+    text-align: center;
+}
+#profile_desc a {
+    font-size: 20px;
+    color: rgb(93, 21, 175);
+    font-family: "Comic Sans MS", cursive;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(235, 235, 235, 0.2);
+    text-decoration: none;
+}
+
+//일단 빈칸 추후 검색엔진, 방문자수, 그래프등 추가가능
+#none{
+    height: 20px;
+    display: block;
+}
+
+//카테고리
+#categories {
+    width: 220px;
+    margin: auto;
+    margin-top: 10px;
+    box-sizing: border-box;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 12px;
+    display: block;
+    line-height: 1.2;
+}
+
+#categories #categories_title {
+    color: rgb(240, 240, 240);
+    font-size: 18px;
+    font-family: "Brush Script Std", cursive;
+    transition: all 0.2s;
+    line-height: 1.3;
+}
+
+#categories #categories_title:hover {
+    text-decoration: none;
+    //background-color: rgb(131, 131, 131, 0.2);
+    color: rgb(215, 216, 165);
+}
+
+#categories #categories_list a{
+    color: rgb(238, 184, 159);
+    font-size: 15px;
+    font-family: sans-serif;
+    transition: all 0.2s;
+  }
+  
+  #categories #categories_list a:hover {
+    text-decoration: none;
+    //background-color: rgb(131, 131, 131, 0.2);
+    color: rgb(202, 70, 70);
+  }
+  
+  #categories #categories_sub a{
+    color: rgb(158, 163, 223);
+    font-size: 12px;
+    font-family: "Arial";
+    transition: all 0.2s;
+  }
+  
+  #categories #categories_sub a:hover {
+    text-decoration: none;
+    //background-color: rgb(131, 131, 131, 0.2);
+    color: rgb(70, 84, 212);
+  }
+
+  #categories ul {
+    padding-left: 10px;
+    margin-top: 2px;
+    margin-bottom: 3px;
+  }
+  
+  #categories #categories_list ul {
+    margin-top: 2px;
+    margin-bottom: 5px;
+  }
+  
+  
+  #categories li::marker {
+    color: rgba(0, 0, 0, 0);
+  }
+  
+  #categories #categories_list li::marker {
+    color: rgb(255, 145, 112);
+  }
+  
+  #categories #categories_sub li::marker {
+    color: rgb(184, 191, 255);
+  }
+  
+  
+  
+  #categories a {
+    text-decoration: none;
+  }
+  

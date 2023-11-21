@@ -1,0 +1,63 @@
+---
+layout: default
+---
+<script src="{{ '/assets/js/toc.js' | relative_url }}"></script>
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <!--헤더-->
+  <header class="post-header">
+    <div id="area_article">
+      <div id="article_header"> <!--백그라운드 그림-->
+        <div class="inner_header" style="background-image:url( '{{ page.image| escape }}' )">
+
+          <div class="info_text">
+            <strong class="title_post"> <!--타이틀-->
+              {{ page.title | escape }}
+            </strong>
+
+            <p class="info"> <!--정보-->
+              <span class="info_category"> <!--카테고리-->
+                {{ page.categories[0] | escape }}
+              </span>
+              ㆍ
+              <span class="info_date"> <!--날짜-->
+                {%- assign date_format = site.minima.date_format | default: "%Y.%m.%d. %R" -%}
+                {{ page.date | date: date_format }}
+              </span>
+            </p>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div id= "line"> <hr  /> </div>
+    <br>
+
+  <div class="post_content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  {%- if page.tags -%}
+
+  <br>
+  <div id= "line"> <hr  /> </div>
+  <br>
+
+  <div id ="tag">   
+    <dt> tag:&nbsp 
+    {%- for tag in page.tags -%} 
+    <a>{{ tag }},</a>
+    {% endfor %}
+  </dt>
+  </div>
+  {% endif %}
+
+
+
+  {%- if site.disqus.shortname -%}
+    {%- include disqus_comments.html -%}
+  {%- endif -%}
+
+</article>

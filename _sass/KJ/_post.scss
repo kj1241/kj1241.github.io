@@ -1,0 +1,82 @@
+#article_header{
+
+}
+
+#article_header .inner_header{
+  position: relative;
+  translate: 0;
+  height: 300px;
+  background-size: cover;
+  background-position: 50% 50%;
+  text-align: center;
+}
+
+#article_header .inner_header:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.54);
+
+}
+
+#article_header .info_text {
+  position: relative;
+  /*드디어 찾음 z버퍼 순서 안되는 이유 */
+  //width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 40%;
+  z-index: 2;
+  //text-align: center;
+  color: rgb(243, 245, 222);
+  box-sizing: border-box;
+}
+
+
+#article_header .title_post {
+  font-family:"Nanum Brush Script";
+  font-size: 50px;
+  line-height: 38px;
+  text-shadow:2px 2px 4px black;
+}
+#article_header .info_text .info {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+#article_header .info_text .info .info_category {
+  color: #ff8181;
+}
+
+#article_header .info_text .info .info_date {
+  color: #d1cfb7
+}
+
+#tag{
+  font-size: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #ff8181;
+
+}
+
+
+#tag dt {
+  float: left;
+  margin-right: 5px;
+  color: rgb(238, 196, 157);
+  font-size: 15px;
+}
+
+#tag a {
+  text-decoration: none;
+  color: #ff8181;
+  font-size: 13px;
+}
+#tag a:hover {
+  text-decoration: none;
+  font-size: 13px;
+}

@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "Jekyll!를 이용해서 github blog 만들기 1"
+date:   2023-11-20 11:10:04 +0900
+categories: [Web]
+---
+
+# Section 1
+Some content for Section 1.
+
+## Subsection 1.1
+Some content for Subsection 1.1.
+
+## Subsection 1.2
+Some content for Subsection 1.2.
+
+# Section 2
+Some content for Section 2.
+
+## Subsection 2.1
+Some content for Subsection 2.1.
+
+---
+***
+
+참고자료:
+1. [Bill Raymond님의 유튜브](https://www.youtube.com/@bill-raymond/featured)
+2. [Jekyll 공식 사이트](https://jekyllrb.com/docs/collections/)
+3. [Git hub 문서](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll)
+
+***
+---

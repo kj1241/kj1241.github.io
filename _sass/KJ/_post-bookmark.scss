@@ -1,0 +1,72 @@
+.post_bookmark{
+    margin-bottom: 20px;
+    padding: 2px;
+    border: 2px solid rgb(189, 189, 189);
+    width: 99%;
+    text-overflow: ellipsis;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.post_bookmark a{
+    text-decoration: none;
+}
+
+
+.post_img{
+    float: right;
+}
+
+
+.post_img img {
+    width: 160px;
+    height: 130px;
+    object-fit: fill;
+}
+
+
+.post_tit {
+    font-size: 18px;
+    line-height: 19px;
+    color: rgb(140, 173, 179);
+    font-family: applesdgothicneo-light;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    margin-bottom: 10px;
+    padding-top: 3px;
+    
+}
+
+.post_txt{
+    width: 78%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  
+    font-size: 15px;
+    font-weight: 20;
+    line-height: 20px;
+    max-height: 80px;
+    font-family: applesdgothicneo-ultralight;
+  
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    /*어쩐지 제어 안된다 했다.*/
+    color: #c5c5c5;
+}
+
+.post_cate{
+    font-size: 14px;
+    margin: 0 2px;
+    color: #ff8181;
+}
+
+.post_date{
+    margin-left:2px;
+    font-size: 13px;
+    color: #d1cfb7
+}

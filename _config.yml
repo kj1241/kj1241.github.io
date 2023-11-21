@@ -1,0 +1,47 @@
+# {{site.}}
+title: Dev_Programming
+sub-title: Portfolio
+name: KyeoungJu
+email: kyeoung1241@gamil.com
+description: >- # this means to ignore newlines until "baseurl:"
+            tech blog: Your go-to source for cutting-edge insights on diverse technologies, industry trends, and innovation. 
+            Stay informed and inspired with our concise and informative content, exploring the latest advancements and best practices in the ever-evolving tech landscape. 
+            Join us in the pursuit of knowledge and discovery!
+baseurl: "" #  /blog
+url: "https://kj1241.github.io/" # http://example.com
+#twitter_username: jekyllrb
+github_username:  kj1241
+img_cdn: 
+profile_img: assets/img/profile_img.jpg
+#퍼머링크 설정
+permalink: /:categories/:title:output_ext
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
