@@ -20,6 +20,7 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
+
 # Build settings
 plugins:
   - jekyll-feed
