@@ -5,7 +5,7 @@ date:   2023-01-10 10:13:14 +0900
 image: https://github.com/kj1241/kj1241.github.io/assets/22047442/7f9b4306-2464-46b0-8e23-02c001e26a5c
 toc: true
 categories: [Game_Jam]
-tags: [C++,Unreal,2D_Running_Game]
+tags: [C++,Unreal,2D Running Game]
 ---
 
 <h1><yellow1_h1>프로젝트 이름: 고양침공 </yellow1_h1></h1>
@@ -21,25 +21,25 @@ tags: [C++,Unreal,2D_Running_Game]
 <br>
 <br>
 <h2><yellow1_h2> 게임 개요: </yellow1_h2></h2><ul>
-<li><h5><yellow1_h5>프로젝트명:</yellow1_h5><span>  고양침공</span></h5></li>
-<li><h5><yellow1_h5>게임 장르:</yellow1_h5><span>  2D Running Game</span></h5></li>
-<li><h5><yellow1_h5>기간:</yellow1_h5><span> 2017.08.25~2017.08.27(2017 대전 G존 캠프)</span></h5></li>
-<li><h5><yellow1_h5>플랫폼:</yellow1_h5><span>  PC (Window)</span></h5></li></ul>
+<li><h5><yellow1_h5>프로젝트명: </yellow1_h5><span> Goyangchimgong</span></h5></li>
+<li><h5><yellow1_h5>게임 장르: </yellow1_h5><span> 2D Running Game</span></h5></li>
+<li><h5><yellow1_h5>기간: </yellow1_h5><span> 2017.08.25~2017.08.27(2017 대전 G존 캠프)</span></h5></li>
+<li><h5><yellow1_h5>플랫폼: </yellow1_h5><span> PC (Window)</span></h5></li></ul>
 
 <br>
 <br>
 <h2><yellow1_h2> 팀 구성: </yellow1_h2></h2><ul>
-<li><h5><yellow1_h5>Prgrammer(2명):</yellow1_h5><span>  게임 로직, 캐릭터 제어 인터페이스, 효과음, 배경음악 제작</span></h5></li>
-<li><h5><yellow1_h5>2DArtist(1명):</yellow1_h5><span>  포토샵을 이용한 캐릭터 및 배경 디자인</span></h5></li>
-<li><h5><yellow1_h5>Game Designe(1명):</yellow1_h5><span> 게임 기획 및 레벨 디자인</span></h5></li></ul>
+<li><h5><yellow1_h5>Prgrammer(2명): </yellow1_h5><span> 게임 로직, 캐릭터 제어 인터페이스, 효과음, 배경음악 제작</span></h5></li>
+<li><h5><yellow1_h5>2D Artist(1명): </yellow1_h5><span> 포토샵을 이용한 캐릭터 및 배경 디자인</span></h5></li>
+<li><h5><yellow1_h5>Game Designe(1명): </yellow1_h5><span> 게임 기획 및 레벨 디자인</span></h5></li></ul>
 
 <br>
 <br>
 <h2><yellow1_h2> 기술 스택: </yellow1_h2></h2><ul>
-<li><h5><yellow1_h5>게임 엔진:</yellow1_h5><span> Unreal 4.19.2 -> 4.26.2</span></h5></li>
-<li><h5><yellow1_h5>언어:</yellow1_h5><span> C++ / blueprint</span></h5></li>
-<li><h5><yellow1_h5>그래픽 디자인:</yellow1_h5><span>Adobe Photoshop / Illustrator</span></h5></li>
-<li><h5><yellow1_h5>음향 효과:</yellow1_h5><span>Adobe Audiition </span></h5></li></ul>
+<li><h5><yellow1_h5>게임 엔진: </yellow1_h5><span> Unreal 4.19.2 -> 4.26.2</span></h5></li>
+<li><h5><yellow1_h5>언어: </yellow1_h5><span> C++ / blueprint</span></h5></li>
+<li><h5><yellow1_h5>그래픽 디자인: </yellow1_h5><span>Adobe Photoshop / Illustrator</span></h5></li>
+<li><h5><yellow1_h5>음향 효과: </yellow1_h5><span>Adobe Audiition </span></h5></li></ul>
 
 <br>
 <br>
@@ -60,10 +60,10 @@ tags: [C++,Unreal,2D_Running_Game]
 <br>
 <h2><yellow1_h2> 결과(성과) 및 데모: </yellow1_h2></h2>
 <ul>
-<li><h5><yellow1_h5>성과 :</yellow1_h5><span> 인기상 / 데모 프로젝트 제작 </span></h5></li>
-<li><h5><yellow1_h5>깃허브(코드):</yellow1_h5><span> 
+<li><h5><yellow1_h5>성과: </yellow1_h5><span> 인기상 / 데모 프로젝트 제작 </span></h5></li>
+<li><h5><yellow1_h5>깃허브(코드): </yellow1_h5><span> 
 <a href="https://github.com/kj1241/Goyangchimgong-refactoring">https://github.com/kj1241/Goyangchimgong-refactoring</a> </span></h5></li>
-<li><h5><yellow1_h5>유튜브 동영상:</yellow1_h5></h5> 
+<li><h5><yellow1_h5>유튜브 동영상: </yellow1_h5></h5> 
 <iframe width="700" height="400" src="https://www.youtube.com/embed/LY2KvlVKLng" title="고양침공(야근천재)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </li></ul>
 
