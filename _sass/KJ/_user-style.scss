@@ -59,17 +59,20 @@
     a:hover {
         color: #6b6bff;
     }
-
+    img + em {
+      display: block;
+      text-align: center;
+    }
 
     yellow1_h1 {
         color: #f3ffb8;
       }
       
       yellow1_h2 {
-        color:#fff082;
+        color:#ffe314;
       }
       yellow1_h3 {
-        color:#e9e284;
+        color:#fffab7;
       }
       yellow1_h5{
         color:#82ff86;
@@ -79,5 +82,13 @@
         color: #fd510f;
       }
       
-
+      green1_h2{
+        color: #14ffa0;
+      }
+      green1_h3{
+        color:#b6ffe1;
+      }
+      green1_h5{
+        color:#82c4ff;
+      }
 }
