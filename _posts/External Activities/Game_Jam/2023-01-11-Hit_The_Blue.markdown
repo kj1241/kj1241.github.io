@@ -13,7 +13,7 @@ tags: [C#, Unity, 3D Shooting Game]
 
 
 <br>
-<h2><yellow1_h2> 게임 소개: </yellow1_h2></h2>
+<h2><yellow1_h2> 게임 소개 </yellow1_h2></h2>
 그해 여름, 바다에서 무슨 일이?  
 평화로운 바닷가에 바다 몬스터 떼 출몰!  
 항상 곁에 있는 귀여운 강아지를 보호하며 몬스터를 향해 쏘세요!
