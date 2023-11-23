@@ -12,7 +12,6 @@ tags: [C#, Unity, 3D Shooting Game]
 ![날개를 찾아줘](https://github.com/kj1241/kj1241.github.io/assets/22047442/1fa204be-148a-42d4-9c5e-41aefd2b4a6c){: width="740" height="400"} -->
 
 
-<br>
 <h2><yellow1_h2> 게임 소개 </yellow1_h2></h2>
 그해 여름, 바다에서 무슨 일이?  
 평화로운 바닷가에 바다 몬스터 떼 출몰!  

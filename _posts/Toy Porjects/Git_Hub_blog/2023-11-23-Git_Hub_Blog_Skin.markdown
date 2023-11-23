@@ -8,16 +8,6 @@ categories: [Git_Hub_Blog]
 tags: [HTML, SCSS, Java script, Ruby, Jekyll, Git Hug Blog]
 ---
 
-![깃허브블로그 홈커버](https://github.com/kj1241/kj1241.github.io/assets/22047442/9c729fed-3bc7-4a75-bd86-c1d39469f82d){: width="740" height="400"}
-*홈커버*
-
-![깃허브블로그 페이지](https://github.com/kj1241/kj1241.github.io/assets/22047442/7baa4326-9434-4f52-b511-0d4f7e4256be){: width="740" height="400"}
-*카테고리 페이지*
-
-![깃허브 블로그 포스트](https://github.com/kj1241/kj1241.github.io/assets/22047442/86daf996-1ace-441e-ae40-7944e5255716){: width="740" height="400"}
-*포스트*
-
-<br>
 <h2><green1_h2> 토이 프로젝트 소개 </green1_h2></h2>
 우주적 감각을 담은 심플한 디자인으로 눈길을 사로잡는 우주 테마 스킨.  
 미니멀한 인터페이스와 고요한 색감으로 집중력을 높여줍니다.  
@@ -75,6 +65,17 @@ tags: [HTML, SCSS, Java script, Ruby, Jekyll, Git Hug Blog]
 - CSS: 화면 구성의 스타일을 담당하고 있습니다.
 - JS: 화면의 이벤트를 담당하고 있습니다.
 - Jekyll: 사이트 웹 툴입니다.
+
+
+<br>
+<h3><green1_h3> 중간 결과물 </green1_h3></h3>
+<p><h5><green1_h5>홈커버 </green1_h5></h5></p>
+![깃허브블로그 홈커버](https://github.com/kj1241/kj1241.github.io/assets/22047442/9c729fed-3bc7-4a75-bd86-c1d39469f82d){: width="740" height="400"}
+<p><h5><green1_h5>카테고리 페이지 </green1_h5></h5></p>
+![깃허브블로그 페이지](https://github.com/kj1241/kj1241.github.io/assets/22047442/7baa4326-9434-4f52-b511-0d4f7e4256be){: width="740" height="400"}
+<p><h5><green1_h5>포스트 </green1_h5></h5></p>
+![깃허브 블로그 포스트](https://github.com/kj1241/kj1241.github.io/assets/22047442/86daf996-1ace-441e-ae40-7944e5255716){: width="740" height="400"}
+
 
 <br>
 <br>

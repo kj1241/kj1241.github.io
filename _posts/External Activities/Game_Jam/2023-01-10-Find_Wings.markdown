@@ -12,7 +12,6 @@ tags: [C#, Unity, 2D Platformer Game]
 ![날개를 찾아줘](https://github.com/kj1241/kj1241.github.io/assets/22047442/c3ad8c4e-4d56-43b4-93e8-9cf0f657d28b){: width="740" height="400"} -->
 
 
-<br>
 <h2><yellow1_h2> 게임 소개 </yellow1_h2></h2>
 천사가 지상에 놀러 내려왔다 날개를 잃어버려 찾으로 가는 2D 플래포머 게임입니다.  
 맵에 존재하는 수집품과 날개를 찾기위해 역경에 도전해 보세요.  

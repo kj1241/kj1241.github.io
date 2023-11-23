@@ -12,7 +12,6 @@ tags: [Python, R, Big Data Analysis]
 ![빅데이터분석](https://github.com/kj1241/kj1241.github.io/assets/22047442/8a90d97f-67ed-4d41-a4fc-507653f69629){: width="740" height="400"} -->
 
 
-<br>
 <h2><yellow1_h2> 대회 소개 </yellow1_h2></h2>
 고령운전자 취약 지역을 예측하기 위해 빅데이터를 활용한 프로젝트를 소개합니다.  
 운전 데이터와 지리 정보를 통합하여 고령 운전자 사고 위험이 높은 지역을 정확히 예측하고, 안전 대책 마련에 기여합니다.  

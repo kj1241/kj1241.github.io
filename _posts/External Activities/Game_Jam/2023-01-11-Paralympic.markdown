@@ -12,7 +12,6 @@ tags: [C#,Unity,3D Simulation Game]
 ![페럴림픽](https://github.com/kj1241/kj1241.github.io/assets/22047442/50b0d39b-409c-4138-9d53-16859ae84fe5){: width="740" height="400"} -->
 
 
-<br>
 <h2><yellow1_h2> 게임 소개 </yellow1_h2></h2>
 평창 동계 패럴림픽 개최 기념.  
 선수들을 응원하는 취지의 마음으로 시작하였습니다.  
