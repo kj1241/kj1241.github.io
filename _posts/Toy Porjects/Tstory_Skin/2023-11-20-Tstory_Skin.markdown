@@ -5,7 +5,7 @@ date:   2023-11-20 11:30:00 +0900
 image: https://github.com/kj1241/kj1241.github.io/assets/22047442/0ce338dc-c5f4-496e-98c1-b3c3b06ed5d5
 toc: true
 categories: [Tstory_Skin]
-tags: [HTML, Css, Java script, Tstory Skin]
+tags: [HTML, CSS, Java script, Tstory Skin]
 ---
 
 ![티스토리스킨 v0.2](https://github.com/kj1241/kj1241.github.io/assets/22047442/0ce338dc-c5f4-496e-98c1-b3c3b06ed5d5){: width="740" height="400"} 
@@ -24,11 +24,12 @@ tags: [HTML, Css, Java script, Tstory Skin]
 <br>
 <br>
 <h2><green1_h2> 토이 프로젝트 개요 </green1_h2></h2><ul>
-<li><h5><green1_h5>프로젝트명: </green1_h5><span> Tstory_skin ver.2</span></h5></li>
-<li><h5><green1_h5>장르: </green1_h5><span> blog Theme</span></h5></li>
+<li><h5><green1_h5>프로젝트명: </green1_h5><span> Tstory_skin v0.2</span></h5></li>
+<li><h5><green1_h5>장르: </green1_h5><span> Blog Theme</span></h5></li>
 <li><h5><green1_h5>기간: </green1_h5><span> 2023.06.23~2023.06.26(ver.2) / 2023.01.11~2023.01.13(ver.1)</span></h5></li>
-<li><h5><green1_h5>플랫폼: </green1_h5><span> PC </span></h5></li></ul>
-캐
+<li><h5><green1_h5>플랫폼: </green1_h5><span> PC(Chorm / Microsoft Edge) </span></h5></li></ul>
+
+
 <br>
 <br>
 <h2><green1_h2> 팀 구성 </green1_h2></h2><ul> 
@@ -38,7 +39,7 @@ tags: [HTML, Css, Java script, Tstory Skin]
 <br>
 <h2><green1_h2> 기술 스택 </green1_h2></h2><ul>
 <li><h5><green1_h5>엔진: </green1_h5><span> visual code </span></h5></li>
-<li><h5><green1_h5>언어: </green1_h5><span> Java script(v0.1) / html / css  </span></h5></li>
+<li><h5><green1_h5>언어: </green1_h5><span> Java script(v0.1-바닐라/ v0.2-J Query) / HTML / CSS /   </span></h5></li>
 <li><h5><green1_h5>그래픽 디자인: </green1_h5><span>Adobe Photoshop</span></h5></li>
 </ul>
 
@@ -53,8 +54,8 @@ tags: [HTML, Css, Java script, Tstory Skin]
 <h2><green1_h2> 개발자의 역활 및 경험 </green1_h2></h2>
 - **커버형 스킨 제작 v0.2** <span><red1_error>(전체 게임 제작 기여도: 100%)</red1_error></span>
     1. 바닐라 자바 스크립트를 사용하여 홈 커버에 슬라이더 애니메이션을 만들어서 생동감을 불어넣었습니다.
-    2. 글의 가독성이 떨어지는 저번버전을 수정하여 가독성을 올렸습니다.
-    3. 최대한 상속구조로 개편하여 로직을 작성하였습니다.
+    2. 글의 가독성이 떨어지는 구조를 수정하였습니다.
+    3. 최대한 상속 구조로 개편하여 로직을 작성하였습니다.
     4. 티스토리 API를 연계해서 코드를 작성하였습니다.
 
 - **단순형 스킨 제작 v0.1** <span><red1_error>(전체 유지 보수 기여도: 100%)</red1_error></span>
@@ -64,10 +65,10 @@ tags: [HTML, Css, Java script, Tstory Skin]
 <h3><green1_h3>프로그래밍 파일 구조(작업 부분)</green1_h3></h3>
 HTML + CSS + JS +.. XML
 <p></p> <!--이미지 못침범하게-->
-![구조](https://github.com/kj1241/kj1241.github.io/assets/22047442/bdb35213-866b-48e8-8d17-00d5f7dc0ccf){: width="300"} 
+![티스토리 데이터 구조](https://github.com/kj1241/kj1241.github.io/assets/22047442/614e11a4-5bdb-4190-9157-c790f50e462a){: width="600"} 
 <br>
 - XML: 티스토리 스킨에서 내부 설정 인터페이스를 담당하고 있습니다.
-- HTML 화면 구성의 구조를 담당하고 있습니다.
+- HTML: 화면 구성의 구조를 담당하고 있습니다.
 - CSS: 화면 구성의 스타일을 담당하고 있습니다.
 - JS: 화면의 이벤트를 담당하고 있습니다.
 
