@@ -63,7 +63,7 @@ tags: [HTML, CSS, Java script, Tstory Skin]
 
 <br>
 <h3><green1_h3>프로그래밍 파일 구조(작업 부분)</green1_h3></h3>
-HTML + CSS + JS +.. XML
+- HTML + CSS + JS +.. XML
 <p></p> <!--이미지 못침범하게-->
 ![티스토리 데이터 구조](https://github.com/kj1241/kj1241.github.io/assets/22047442/614e11a4-5bdb-4190-9157-c790f50e462a){: width="600"} 
 <br>

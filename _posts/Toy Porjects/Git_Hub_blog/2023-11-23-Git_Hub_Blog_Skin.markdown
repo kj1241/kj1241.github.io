@@ -63,12 +63,12 @@ tags: [HTML, SCSS, Java script, Ruby, Jekyll, Git Hug Blog]
 
 <br>
 <h3><green1_h3>프로그래밍 파일 구조</green1_h3></h3>
-HTML + SCSS + JS + Ruby + Jekyll
-<p></p> <!--이미지 못침범하게-->
+- HTML + SCSS + JS + Ruby + Jekyll
+ <!--이미지 못침범하게-->
+<p><h5><green1_h5>데이터 구조 </green1_h5></h5></p>
 ![깃허브_블로그_데이터구조](https://github.com/kj1241/kj1241.github.io/assets/22047442/bd54f411-59d4-492e-9ab5-2ed557ba41d1){: width="400" }
-*데이터 구조*
+<p><h5><green1_h5>웹 페이지 구조</green1_h5></h5> </p>
 ![blog글 구조](https://github.com/kj1241/kj1241.github.io/assets/22047442/cc05c718-bf79-4f9e-aebc-ae47447213fb){: width="740" height="400"}
-*웹 페이지 구조*
 
 - YML: 데이터 구조를 담당하고 있습니다.
 - HTML: 화면 구성의 구조를 담당하고 있습니다.
@@ -88,14 +88,12 @@ HTML + SCSS + JS + Ruby + Jekyll
 
 <br>
 <h3><green1_h3> 비고 및 여담 </green1_h3></h3>
-- **깃 허브 블로그로 옮긴이유:**
-    - 티스토는 UI부터 초보자가 사용하기 좋은 사이트임에는 틀림없지만, 원하는데로 만들수 없는 사이트이기 때문에 저의 니즈를 충족시키지 못하여서 옮기게 되었습니다.
+- **깃 허브 블로그로 옮긴 이유:**
+    - 티스토는 UI부터 초보자가 사용하기 좋은 사이트임에는 틀림없지만, 원하는대로 만들수 없는 사이트이기 때문에 저의 니즈를 충족시키지 못하여서 옮기게 되었습니다.
 
 - **깃 허브 제작시 트러블 슈팅:**
-    - jekyll에서 _Page폴더를 만들고 내용을 읽어 올 수 없습니다.  
-    따라서 pages라는 폴더로 만들었습니다.
-    - Github renderer에서 color의 값으로 RGB를 사용해서 색을 지정하면 커밋에서 빌드에러를 일으킵니다.
-    따라서 color 값을 #으로 적어야합니다.( erorr 보고서도 없고 어디가 틀렸는지도 안나오고, 실험하느라 Repository 한개 날려먹음...)
+    - jekyll에서 _Page폴더를 만들고 내용을 읽어 올 수 없습니다. <highlight_orange>따라서 pages라는 폴더로 만들었습니다.</highlight_orange>
+    - Github renderer에서 color의 값으로 RGB를 사용해서 색을 지정하면 커밋에서 빌드에러를 일으킵니다. <highlight_orange>따라서 color 값을 "#" 형식인 16진수로 적어야 합니다.</highlight_orange>~~( erorr 보고서도 없고 어디가 틀렸는지도 안나오고, 실험하느라 Repository 한개 날려먹음...)~~
 
 <br>
 <h3><green1_h3> 배운 점 및 앞으로 수정할 점 </green1_h3></h3>

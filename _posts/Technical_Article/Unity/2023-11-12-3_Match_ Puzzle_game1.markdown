@@ -6,6 +6,7 @@ image: https://github.com/kj1241/kj1241.github.io/assets/22047442/fe45614d-056e-
 toc: true
 categories: [Unity]
 tags: [C#, Unity, Puzzle, 3 Match Game]
+addsence: true
 ---
 
 안녕하세요, 여러분. 오랜만에 게임 콘텐츠를 작성하게 되어 어떻게 시작해야 할지 고민이 많았습니다. 제 포트폴리오를 꾸미는 것이나 조리 있게 말하는 능력이 없어도, 여러분과 함께 나만의 사고 논리를 따라가며 3-Match Puzzle 게임을 만들어보려고 합니다. 개발에 2일이 걸렸다면, 글 쓰는 데는 며칠이 걸리는지 모르겠지만 사고 논리의 흐름에 맞춰서 함께 가봅시다.
