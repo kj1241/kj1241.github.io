@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 event.preventDefault(); // 링크의 기본 동작 방지
                 var targetId = heading.id;
                 var targetElement = document.getElementById(targetId);
-                window.scrollTo(0, heading.getBoundingClientRect().top); //어우 아이디 입력못받아서 드디어 만들었네
+                window.scrollTo(0, heading.getBoundingClientRect().top + window.scrollY); //어우 아이디 입력못받아서 드디어 만들었네
             });
         });
         tocContainer.appendChild(tocList);
