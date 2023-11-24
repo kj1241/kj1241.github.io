@@ -52,23 +52,30 @@ tags: [3Ds Max]
 
 
 <br>
-<h3><green1_h3> 중간 결과물 </green1_h3></h3>
-<p><h5><green1_h5>TurboSmooth을 이용한 꽃잎 제작 </green1_h5></h5></p>
+<h3><green1_h3> TurboSmooth을 이용한 꽃잎 제작 </green1_h3></h3>
 ![연꽃](https://github.com/kj1241/kj1241.github.io/assets/22047442/40200c06-e605-4bb2-b8dc-969e6c30aeb8){: width="740" height="400"}
-<p><h5><green1_h5>라인로프팅을 이용한 침대가드 제작 </green1_h5></h5></p>
-<iframe width="740" height="400" src="https://www.youtube.com/embed/9ocurrhGJAU" title="3ds_Max_surface_lofting" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<p><h5><green1_h5>cloth를 이용한 이불 및 커튼 주름 제작 </green1_h5></h5></p>
-<iframe width="740" height="400" src="https://www.youtube.com/embed/eHZQ6VbzELU" title="3ds_Max_comforter_cloth" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<iframe width="740" height="400" src="https://www.youtube.com/embed/tN32-MUAK-s" title="3ds_Max_curtain_cloth" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<p><h5><green1_h5>Vray를 이용한 레이트레이싱 제작과정 </green1_h5></h5></p>
-![레이트레이싱적용과정](https://github.com/kj1241/kj1241.github.io/assets/22047442/3f8e3312-9cfc-49cb-af1e-4437020a3489){: width="740" height="400"}
 
 <br>
-<p><h5><green1_h5>새벽의 방의 풍경</green1_h5></h5></p>
+<h3><green1_h3> 라인로프팅을 이용한 침대가드 제작 </green1_h3></h3>
+<iframe width="740" height="400" src="https://www.youtube.com/embed/9ocurrhGJAU" title="3ds_Max_surface_lofting" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<br>
+<h3><green1_h3> cloth를 이용한 주름 제작 </green1_h3></h3>
+<iframe width="740" height="400" src="https://www.youtube.com/embed/eHZQ6VbzELU" title="3ds_Max_comforter_cloth" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="740" height="400" src="https://www.youtube.com/embed/tN32-MUAK-s" title="3ds_Max_curtain_cloth" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<br>
+<h3><green1_h3> Vray (레이트레이싱) 제작과정</green1_h3></h3>
+![레이트레이싱적용과정](https://github.com/kj1241/kj1241.github.io/assets/22047442/3f8e3312-9cfc-49cb-af1e-4437020a3489){: width="740" height="400"}
+
+
+<br>
+<h3><green1_h3> 랜더링 결과 </green1_h3></h3>
+<p><green1_h5>새벽의 방의 풍경</green1_h5></p>
 ![아침](https://github.com/kj1241/kj1241.github.io/assets/22047442/221d1f51-1649-4834-ac06-e9cd9c00ff53){: width="740" height="400"}
-<p><h5><green1_h5>불켜진 방의 풍경 </green1_h5></h5></p>
+<p><green1_h5>불켜진 방의 풍경 </green1_h5></p>
 ![불켜진방](https://github.com/kj1241/kj1241.github.io/assets/22047442/53184148-f4d7-4a82-8da1-7c47007f32e1){: width="740" height="400"}
-<p><h5><green1_h5>한밤중의 방의 풍경</green1_h5></h5></p>
+<p><green1_h5>한밤중의 방의 풍경</green1_h5></p>
 ![야경](https://github.com/kj1241/kj1241.github.io/assets/22047442/32fb18d7-4862-489a-b6e1-1f1353e16fdf){: width="740" height="400"}
 
 

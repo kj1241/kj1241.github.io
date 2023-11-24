@@ -55,9 +55,9 @@ tags: [HTML, SCSS, Java script, Ruby, Jekyll, Git Hug Blog]
 <h3><green1_h3>프로그래밍 파일 구조</green1_h3></h3>
 - HTML + SCSS + JS + Ruby + Jekyll
  <!--이미지 못침범하게-->
-<p><h5><green1_h5>데이터 구조 </green1_h5></h5></p>
+<p><green1_h5>데이터 구조 </green1_h5></p>
 ![깃허브_블로그_데이터구조](https://github.com/kj1241/kj1241.github.io/assets/22047442/bd54f411-59d4-492e-9ab5-2ed557ba41d1){: width="400" }
-<p><h5><green1_h5>웹 페이지 구조</green1_h5></h5> </p>
+<p><green1_h5>웹 페이지 구조</green1_h5> </p>
 ![blog글 구조](https://github.com/kj1241/kj1241.github.io/assets/22047442/cc05c718-bf79-4f9e-aebc-ae47447213fb){: width="740" height="400"}
 
 - YML: 데이터 구조를 담당하고 있습니다.
@@ -68,12 +68,15 @@ tags: [HTML, SCSS, Java script, Ruby, Jekyll, Git Hug Blog]
 
 
 <br>
-<h3><green1_h3> 중간 결과물 </green1_h3></h3>
-<p><h5><green1_h5>홈커버 </green1_h5></h5></p>
+<h3><green1_h3> 홈커버 화면</green1_h3></h3>
 ![깃허브블로그 홈커버](https://github.com/kj1241/kj1241.github.io/assets/22047442/9c729fed-3bc7-4a75-bd86-c1d39469f82d){: width="740" height="400"}
-<p><h5><green1_h5>카테고리 페이지 </green1_h5></h5></p>
+
+<br>
+<h3><green1_h3> 카테고리 페이지 화면</green1_h3></h3>
 ![깃허브블로그 페이지](https://github.com/kj1241/kj1241.github.io/assets/22047442/7baa4326-9434-4f52-b511-0d4f7e4256be){: width="740" height="400"}
-<p><h5><green1_h5>포스트 </green1_h5></h5></p>
+
+<br>
+<h3><green1_h3> 포스트 화면</green1_h3></h3>
 ![깃허브 블로그 포스트](https://github.com/kj1241/kj1241.github.io/assets/22047442/86daf996-1ace-441e-ae40-7944e5255716){: width="740" height="400"}
 
 

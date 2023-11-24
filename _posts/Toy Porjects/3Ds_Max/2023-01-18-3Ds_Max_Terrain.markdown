@@ -51,10 +51,12 @@ tags: [3Ds Max]
 
 
 <br>
-<h3><green1_h3> 중간 결과물 </green1_h3></h3>
-<p><h5><green1_h5>3Ds Max에서 결과물 </green1_h5></h5></p>
+<h3><green1_h3> 3Ds Max에서 제작 과정 </green1_h3></h3>
 ![과정](https://github.com/kj1241/kj1241.github.io/assets/22047442/e75f59a6-a528-47b2-acae-54586d2e9087){: width="740" height="400"}
-<p><h5><green1_h5>렌더링 했을때 결과물 </green1_h5></h5></p>
+
+
+<br>
+<h3><green1_h3> 렌더링 결과물 </green1_h3></h3>
 ![결과](https://github.com/kj1241/kj1241.github.io/assets/22047442/98da967b-6ffe-43a8-9417-2b2161866655){: width="740" height="400"}
 
 

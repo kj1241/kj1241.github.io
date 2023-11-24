@@ -55,16 +55,23 @@ tags: [3Ds Max]
     3. 다중 애니메이션[0~2프레임 idle 상태, 2~28프레임 walk 상태, 28~50 magic attack (주문 상태)] 애니메이션 제작
 
 <br>
-<h3><green1_h3> 중간 결과물 </green1_h3></h3>
-<p><h5><green1_h5>3Ds Max에서 제작한 모델링 </green1_h5></h5></p>
+<h3><green1_h3> 3Ds Max에서 제작한 모델링 </green1_h3></h3>
 ![i용 모델링](https://github.com/kj1241/kj1241.github.io/assets/22047442/3750e97e-899e-43eb-b061-655a31f83436){: width="740" height="400"}
-<p><h5><green1_h5>Adobe Photoshop에서 제작한 텍스처 </green1_h5></h5></p>
+
+<br>
+<h3><green1_h3> 텍스처 </green1_h3></h3>
 ![용텍스처](https://github.com/kj1241/kj1241.github.io/assets/22047442/dbe516f5-69e7-4c99-89ed-d5e41f9688bf){: width="740" height="400"}
-<p><h5><green1_h5>제작한 노멀맵 </green1_h5></h5></p>
+
+<br>
+<h3><green1_h3> 노멀맵 </green1_h3></h3>
 ![용 노멀맵](https://github.com/kj1241/kj1241.github.io/assets/22047442/42ab59ab-eabd-4dba-bb2e-f022825d4ddc){: width="740" height="400"}
-<p><h5><green1_h5>프레임을 찍어 완성한 애니메이션 </green1_h5></h5></p>
+
+<br>
+<h3><green1_h3> 프레임 애니메이션 </green1_h3></h3>
 ![용애니메이션](https://github.com/kj1241/kj1241.github.io/assets/22047442/bc540880-8222-4f59-99a0-6b45cd504ee6){: width="740" height="400"}
-<p><h5><green1_h5>본 스켈레톤을 연결해서 완성한 애니메이션 </green1_h5></h5></p>
+
+<br>
+<h3><green1_h3> 본 스켈레톤 애니메이션 </green1_h3></h3>
 ![어세신 크리드 애니메이션](https://github.com/kj1241/kj1241.github.io/assets/22047442/cda90449-b89d-481a-b0fa-db58c07526a0){: width="740" height="400"}
 
 <br>

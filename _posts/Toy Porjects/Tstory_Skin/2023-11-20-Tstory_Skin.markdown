@@ -65,10 +65,11 @@ tags: [HTML, CSS, Java script, Tstory Skin]
 - JS: 화면의 이벤트를 담당하고 있습니다.
 
 <br>
-<h3><green1_h3> 중간 결과물 </green1_h3></h3>
-<p><h5><green1_h5>커버형 v.0.2 </green1_h5></h5></p>
+<h3><green1_h3> 커버형 v.0.2  </green1_h3></h3>
 ![티스토리스킨 v0.2](https://github.com/kj1241/kj1241.github.io/assets/22047442/0ce338dc-c5f4-496e-98c1-b3c3b06ed5d5){: width="740" height="400"} 
-<p><h5><green1_h5>단순형 v.0.1 </green1_h5></h5></p>
+
+<br>
+<h3><green1_h3>단순형 v.0.1  </green1_h3></h3>
 ![티스토리스킨 v0.1](https://github.com/kj1241/kj1241.github.io/assets/22047442/5592dbfd-ea69-4694-b640-c39b99dfcc22){: width="740" height="400"} 
 
 
