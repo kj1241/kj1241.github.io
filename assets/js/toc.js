@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (headings.length > 0 && pageTitle) {
         var tocList = document.createElement('ul');
-        var link = document.createElement('dl');
-        link.textContent = "TOC";
-        tocList.appendChild(link);
+        var tocTitle = document.createElement('dl');
+        tocTitle.textContent = "TOC";
+        tocList.appendChild(tocTitle);
 
 
         headings.forEach(function (heading) {
@@ -19,13 +19,22 @@ document.addEventListener("DOMContentLoaded", function () {
             listItem.appendChild(link);
             //에러가 어디있나했더니 대문자에서 망했네
             if (heading.tagName === 'H2') {
+                //listItem.classList.add("tag_list_h2");
                 listItem.setAttribute('id', "tag_list_h2");
             }
             else if (heading.tagName === 'H3') {
+                //listItem.classList.add("tag_list_h3");
                 listItem.setAttribute('id', "tag_list_h3");
             }
 
             tocList.appendChild(listItem);
+            // 섹션으로 스크롤하는 클릭 이벤트 리스너 추가
+            link.addEventListener('click', function (event) {
+                event.preventDefault(); // 링크의 기본 동작 방지
+                var targetId = heading.id;
+                var targetElement = document.getElementById(targetId);
+                window.scrollTo(0, heading.getBoundingClientRect().top); //어우 아이디 입력못받아서 드디어 만들었네
+            });
         });
         tocContainer.appendChild(tocList);
     }
