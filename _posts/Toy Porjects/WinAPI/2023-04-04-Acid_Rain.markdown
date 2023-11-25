@@ -67,7 +67,7 @@ tags: [C++,WinAPI]
 <li><h5><green1_h5>성과: </green1_h5><span> 2015년 1학기 윈도우 프로그래밍 실습 기말 과제 </span></h5></li>
 <li><h5><green1_h5>깃 허브(코드): </green1_h5><span> 
 <a href="https://github.com/kj1241/WinAPI_ToyProejct/tree/main/AcidRain">https://github.com/kj1241/WinAPI_ToyProejct/tree/main/AcidRain</a> </span></h5></li>
-<li><h5><yellow1_h5>유튜브 동영상: </yellow1_h5></h5> 
+<li><h5><green1_h5>유튜브 동영상: </green1_h5></h5> 
 <iframe width="700" height="400" src="https://www.youtube.com/embed/eYwX1WuaEYE" title="산성비(WinAPI)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </li>
 </ul>
