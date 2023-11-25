@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "IOCP TCP/IP 서버를 이용한 체스 판 이동 이벤트 제작"
-date: 2023-02-03 21:00:08 +0900
+date: 2023-02-04 16:14:05 +0900
 image: https://github.com/kj1241/kj1241.github.io/assets/22047442/52c3b183-ebc6-4aa8-a391-334b0b3d6154
 toc: true
 categories: [Server_TP]
@@ -15,7 +15,7 @@ IOCP를 이용하여 효율적인 네트워크 통신을 구현하여 다수의 
 <br>
 <br>
 <h2><green1_h2> 토이 프로젝트 개요 </green1_h2></h2><ul>
-<li><h5><green1_h5>프로젝트명: </green1_h5><span> IOCP TCP/IP 서버 클라이언 동기화 제작</span></h5></li>
+<li><h5><green1_h5>프로젝트명: </green1_h5><span> IOCP TCP/IP 서버 클라이언트 제작</span></h5></li>
 <li><h5><green1_h5>장르: </green1_h5><span> 2018년 2학기 고급웹서버프로그래밍 중간 과제</span></h5></li>
 <li><h5><green1_h5>기간: </green1_h5><span> 2018.09.14~2018.09.21</span></h5></li>
 <li><h5><green1_h5>플랫폼: </green1_h5><span> PC(consol) </span></h5></li></ul>
