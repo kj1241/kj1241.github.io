@@ -85,9 +85,7 @@ $sidebar-width: 260px !default;
   }
 }
 
-@mixin relative-font-size($ratio) {
-  font-size: $base-font-size * $ratio;
-}
+
 
 @mixin pl-pr($padding) {
   padding-left: $padding;
@@ -115,6 +113,7 @@ $sidebar-width: 260px !default;
   "KJ/_default.scss",
   "KJ/_side-bar/_left.scss",
   "KJ/_side-bar/_right.scss",
+  "KJ/_head/_header.scss",
   "KJ/_home.scss",
   "KJ/_page.scss",
   "KJ/_post.scss",
