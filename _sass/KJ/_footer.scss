@@ -1,7 +1,22 @@
 
+
+@media screen and (max-width: 1320px) {
+    #footer-wrapper {
+      left:  0px;
+    }
+  }
+  
+  @media screen and (min-width: 1320px) {
+    #footer-wrapper {
+        left: calc(50vw - #{$content-width}/2);
+  }
+}
+  
+
+
 #footer-wrapper{
     position: fixed;
-    left: calc(50vw - #{$content-width}/2);
+    //left: calc(50vw - #{$content-width}/2);
     bottom: 0;
     height: 5%;
     z-index: 3;

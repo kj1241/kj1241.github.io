@@ -105,6 +105,10 @@ $sidebar-width: 260px !default;
   transition: color 0.3s ease;
 }
 
+@media screen and (max-width: 1320px) {
+  $sidebar-width: 0 !default;
+}
+
 
 // Import partials.
 @import

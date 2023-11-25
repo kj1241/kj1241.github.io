@@ -1,7 +1,20 @@
+
+@media screen and (max-width: 1320px) {
+  #cover_top_sidebar {
+    left:  0px;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  #cover_top_sidebar {
+    left:  $sidebar-width;
+  }
+}
+
 #cover_top_sidebar{
 
   position: fixed;
-  left:  $sidebar-width;
+  //left:  $sidebar-width;
   font-family: "Brush Script Std", cursive;
   font-size: 30px;
   margin-left: 50px;
@@ -14,14 +27,31 @@
 }
 
 
+@media screen and (max-width: 1320px) {
+  .slideshow-container {
+    width: calc(100vw);
+    margin-left:0;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  .slideshow-container {
+    width: calc(100vw - #{$sidebar-width}*2);
+    margin-left: $sidebar-width;
+  }
+}
+
+
 .slideshow-container {
-  width: calc(100vw - #{$sidebar-width}*2);
+  //width: calc(100vw - #{$sidebar-width}*2);
   height: calc(100vh - var(--vh-offset, 0px));
-  margin-left: $sidebar-width;
+  //margin-left: $sidebar-width;
   position: absolute;
   left: 0;
   overflow: hidden;
 }
+
+
 
 .slides_list {
   display: none;
@@ -78,11 +108,11 @@
   font-size: 16px;
   color: rgb(207, 232, 253);
   line-height: 28px;
-  //word-break: keep-all;
-  // overflow: hidden;
-  //display: -webkit-box;
-  // -webkit-line-clamp: 2;
-  // -webkit-box-orient: vertical;
+  word-break: keep-all;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .slides_list #slides_list_link {
@@ -102,3 +132,5 @@
   color: rgb(207, 224, 144);
   border-color: rgb(207, 224, 144);
 }
+
+

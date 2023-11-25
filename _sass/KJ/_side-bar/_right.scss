@@ -26,6 +26,12 @@
     }
 }
 
+@media screen and (max-width: 1320px) {
+    #right-side-bar {
+        display: none;
+    }
+}
+
 
 #toc_box{
     width: 200px;

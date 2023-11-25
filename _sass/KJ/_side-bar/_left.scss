@@ -30,6 +30,14 @@ $btn-mb: 0.5rem;
     }
 }
 
+@media screen and (max-width: 1320px) {
+  #left-side-bar{
+    display: none;
+  }
+}
+
+
+
 .profile-wrapper{
     width: 100%;
     margin-top: 30px;
