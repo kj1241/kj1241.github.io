@@ -30,7 +30,7 @@ tags: [C++,WinAPI]
 
 <br>
 <h2><green1_h2> 기술 스택 </green1_h2></h2><ul>
-<li><h5><green1_h5>엔진: </green1_h5><span> visual Studio 2015(-> visual Studio 2022) </span></h5></li>
+<li><h5><green1_h5>엔진: </green1_h5><span> visual Studio 2015 → 2022 </span></h5></li>
 <li><h5><green1_h5>언어: </green1_h5><span> C++ / winAPI   </span></h5></li>
 </ul>
 

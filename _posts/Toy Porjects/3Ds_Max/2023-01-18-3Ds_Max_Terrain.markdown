@@ -29,7 +29,7 @@ tags: [3Ds Max]
 
 <br>
 <h2><green1_h2> 기술 스택 </green1_h2></h2><ul>
-<li><h5><green1_h5>엔진: </green1_h5><span> 3Ds Max </span></h5></li>
+<li><h5><green1_h5>엔진: </green1_h5><span> Toy Project(3Ds Max) </span></h5></li>
 <li><h5><green1_h5>언어: </green1_h5><span> (none) </span></h5></li>
 <li><h5><green1_h5>그래픽 디자인: </green1_h5><span>Adobe Photoshop / 3Ds Max</span></h5></li>
 </ul>

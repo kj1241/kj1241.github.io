@@ -16,7 +16,7 @@ tags: [3Ds Max]
 <br>
 <h2><green1_h2> 토이 프로젝트 개요 </green1_h2></h2><ul>
 <li><h5><green1_h5>프로젝트명: </green1_h5><span> 인터넷 이미지 모작하기</span></h5></li>
-<li><h5><green1_h5>장르: </green1_h5><span> Modeling</span></h5></li>
+<li><h5><green1_h5>장르: </green1_h5><span> Toy Project(Modeling)</span></h5></li>
 <li><h5><green1_h5>기간: </green1_h5><span> 2019.01.21~2019.01.27</span></h5></li>
 <li><h5><green1_h5>플랫폼: </green1_h5><span> PC </span></h5></li></ul>
 

@@ -17,7 +17,7 @@ tags: [3Ds Max]
 <br>
 <h2><green1_h2> 토이 프로젝트 개요 </green1_h2></h2><ul>
 <li><h5><green1_h5>프로젝트명: </green1_h5><span> 3D 모델링 실습 기말과제</span></h5></li>
-<li><h5><green1_h5>장르: </green1_h5><span> Modeling</span></h5></li>
+<li><h5><green1_h5>장르: </green1_h5><span> Toy Project(Modeling)</span></h5></li>
 <li><h5><green1_h5>기간: </green1_h5><span> 2016.10 ~ 2016.12</span></h5></li>
 <li><h5><green1_h5>플랫폼: </green1_h5><span> PC </span></h5></li></ul>
 

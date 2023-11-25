@@ -17,7 +17,7 @@ FSM은 NPC의 다양한 상태를 정의하고, 각 상태 전이에 대한 규�
 <br>
 <h2><green1_h2> 토이 프로젝트 개요 </green1_h2></h2><ul>
 <li><h5><green1_h5>프로젝트명: </green1_h5><span> FSM 구현 </span></h5></li>
-<li><h5><green1_h5>장르: </green1_h5><span> AI  </span></h5></li>
+<li><h5><green1_h5>장르: </green1_h5><span> Toy Project(AI)  </span></h5></li>
 <li><h5><green1_h5>기간: </green1_h5><span> 2018.04.08~2018.04.15</span></h5></li>
 <li><h5><green1_h5>플랫폼: </green1_h5><span> PC </span></h5></li></ul>
 
@@ -30,7 +30,7 @@ FSM은 NPC의 다양한 상태를 정의하고, 각 상태 전이에 대한 규�
 
 <br>
 <h2><green1_h2> 기술 스택 </green1_h2></h2><ul>
-<li><h5><green1_h5>엔진: </green1_h5><span> visual Studio 2015(-> visual Studio 2022) </span></h5></li>
+<li><h5><green1_h5>엔진: </green1_h5><span> visual Studio 2015 → 2022 </span></h5></li>
 <li><h5><green1_h5>언어: </green1_h5><span> C++ </span></h5></li>
 </ul>
 

@@ -35,7 +35,7 @@ tags: [C++, Unreal, 2D Running Game]
 <br>
 <br>
 <h2><yellow1_h2> 기술 스택 </yellow1_h2></h2><ul>
-<li><h5><yellow1_h5>게임 엔진: </yellow1_h5><span> Unreal 4.19.2 -> 4.26.2</span></h5></li>
+<li><h5><yellow1_h5>게임 엔진: </yellow1_h5><span> Unreal 4.19.2 → 4.26.2</span></h5></li>
 <li><h5><yellow1_h5>언어: </yellow1_h5><span> C++ / blueprint</span></h5></li>
 <li><h5><yellow1_h5>그래픽 디자인: </yellow1_h5><span>Adobe Photoshop / Illustrator</span></h5></li>
 <li><h5><yellow1_h5>음향 효과: </yellow1_h5><span>Adobe Audiition </span></h5></li></ul>

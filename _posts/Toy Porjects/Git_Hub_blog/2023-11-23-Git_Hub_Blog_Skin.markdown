@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "깃 허브 블로그 스킨 제작 v0.1"
-date:   2023-11-23 09:0:00 +0900
+date:   2023-11-23 09:00:00 +0900
 image: https://github.com/kj1241/kj1241.github.io/assets/22047442/9c729fed-3bc7-4a75-bd86-c1d39469f82d
 toc: true
 categories: [Git_Hub_Blog]
@@ -17,7 +17,7 @@ tags: [HTML, SCSS, Java script, Ruby, Jekyll, Git Hug Blog]
 <br>
 <h2><green1_h2> 토이 프로젝트 개요 </green1_h2></h2><ul>
 <li><h5><green1_h5>프로젝트명: </green1_h5><span> KJ_Skin v0.1</span></h5></li>
-<li><h5><green1_h5>장르: </green1_h5><span> Blog Theme</span></h5></li>
+<li><h5><green1_h5>장르: </green1_h5><span> Toy Project(Blog Theme)</span></h5></li>
 <li><h5><green1_h5>기간: </green1_h5><span> 2023.11.18~2023.11.20</span></h5></li>
 <li><h5><green1_h5>플랫폼: </green1_h5><span> PC(Chorm / Microsoft Edge / Firefox / Opera) </span></h5></li></ul>
 

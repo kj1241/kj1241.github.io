@@ -20,8 +20,8 @@ categories_list:
         url: /Unreal_TP/
       - title: AI
         url: /AI/
-      - title: Server_IOCP
-        url: /Server_IOCP/
+      - title: Server_TP
+        url: /Server_TP/
       - title: Data_Base
         url: /Data_Base/
       - title: 3Ds_Max
