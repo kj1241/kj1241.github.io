@@ -42,7 +42,7 @@
 }
 
 .post_txt{
-    width: 78%;
+    //width: 78%;
     overflow: hidden;
     text-overflow: ellipsis;
   
@@ -52,6 +52,9 @@
     max-height: 80px;
     font-family: applesdgothicneo-ultralight;
   
+
+    word-break: normal;
+    overflow: hidden;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     display: -webkit-box;
