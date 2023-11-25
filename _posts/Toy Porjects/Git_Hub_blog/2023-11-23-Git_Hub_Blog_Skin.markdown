@@ -58,7 +58,7 @@ tags: [HTML, SCSS, Java script, Ruby, Jekyll, Git Hug Blog]
 <p><green1_h5>데이터 구조 </green1_h5></p>
 ![깃허브_블로그_데이터구조](https://github.com/kj1241/kj1241.github.io/assets/22047442/bd54f411-59d4-492e-9ab5-2ed557ba41d1){: width="400" }
 <p><green1_h5>웹 페이지 구조</green1_h5> </p>
-![blog글 구조](https://github.com/kj1241/kj1241.github.io/assets/22047442/cc05c718-bf79-4f9e-aebc-ae47447213fb){: width="740" height="400"}
+![blog글 구조](https://github.com/kj1241/kj1241.github.io/assets/22047442/cc05c718-bf79-4f9e-aebc-ae47447213fb){: width="100%" height="100%"}
 
 - YML: 데이터 구조를 담당하고 있습니다.
 - HTML: 화면 구성의 구조를 담당하고 있습니다.
