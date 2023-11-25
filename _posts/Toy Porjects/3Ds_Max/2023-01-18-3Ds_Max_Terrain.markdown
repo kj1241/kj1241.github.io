@@ -16,8 +16,8 @@ tags: [3Ds Max]
 <br>
 <br>
 <h2><green1_h2> 토이 프로젝트 개요 </green1_h2></h2><ul>
-<li><h5><green1_h5>프로젝트명: </green1_h5><span> 3D 모델링 실습 중간과제</span></h5></li>
-<li><h5><green1_h5>장르: </green1_h5><span> Modeling</span></h5></li>
+<li><h5><green1_h5>프로젝트명: </green1_h5><span> 3Ds Max를 사용하여 지형 제작하기 </span></h5></li>
+<li><h5><green1_h5>장르: </green1_h5><span> 3D 모델링 실습 중간과제 제출</span></h5></li>
 <li><h5><green1_h5>기간: </green1_h5><span> 2016.09 ~ 2016.10</span></h5></li>
 <li><h5><green1_h5>플랫폼: </green1_h5><span> PC </span></h5></li></ul>
 

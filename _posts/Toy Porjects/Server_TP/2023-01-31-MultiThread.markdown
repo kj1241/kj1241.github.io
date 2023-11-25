@@ -17,9 +17,9 @@ Mutex나 원자적 연산 등을 활용하여 쓰레드 간의 동기화를 보�
 <br>
 <h2><green1_h2> 토이 프로젝트 개요 </green1_h2></h2><ul>
 <li><h5><green1_h5>프로젝트명: </green1_h5><span> 멀티 스레드를 이용한 덧셈 프로그램</span></h5></li>
-<li><h5><green1_h5>장르: </green1_h5><span> Toy Project(Server)</span></h5></li>
+<li><h5><green1_h5>장르: </green1_h5><span> 2015년 2학기 시스템 프로그래밍 실습 중간 과제</span></h5></li>
 <li><h5><green1_h5>기간: </green1_h5><span> 2015.11.05~2015.11.19</span></h5></li>
-<li><h5><green1_h5>플랫폼: </green1_h5><span> PC </span></h5></li></ul>
+<li><h5><green1_h5>플랫폼: </green1_h5><span> PC(consol) </span></h5></li></ul>
 
 <br>
 <br>

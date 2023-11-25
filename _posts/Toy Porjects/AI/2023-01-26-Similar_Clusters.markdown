@@ -16,7 +16,7 @@ tags: [C#, Unity, repulsive force]
 <br>
 <h2><green1_h2> 토이 프로젝트 개요 </green1_h2></h2><ul>
 <li><h5><green1_h5>프로젝트명: </green1_h5><span> Similar_Clusters 구현 </span></h5></li>
-<li><h5><green1_h5>장르: </green1_h5><span> Toy Project(AI)  </span></h5></li>
+<li><h5><green1_h5>장르: </green1_h5><span>2018년 1학기 게임 인공지능 기말 과제  </span></h5></li>
 <li><h5><green1_h5>기간: </green1_h5><span> 2018.06.09~ 018.06.14</span></h5></li>
 <li><h5><green1_h5>플랫폼: </green1_h5><span> PC </span></h5></li></ul>
 

@@ -17,7 +17,7 @@ tags: [C++,WinAPI]
 <br>
 <h2><green1_h2> 토이 프로젝트 개요 </green1_h2></h2><ul>
 <li><h5><green1_h5>프로젝트명: </green1_h5><span> Acid Rain 모작 </span></h5></li>
-<li><h5><green1_h5>장르: </green1_h5><span> Korean Typing Practice</span></h5></li>
+<li><h5><green1_h5>장르: </green1_h5><span> 2015년 1학기 윈도우 프로그래밍 실습 기말 과제</span></h5></li>
 <li><h5><green1_h5>기간: </green1_h5><span> 2015.06.09~2015.06.14</span></h5></li>
 <li><h5><green1_h5>플랫폼: </green1_h5><span> PC </span></h5></li></ul>
 

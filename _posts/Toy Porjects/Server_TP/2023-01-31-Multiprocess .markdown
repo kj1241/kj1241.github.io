@@ -16,9 +16,9 @@ C++을 사용한 멀티 프로세서 통신은 여러 프로세서 간의 효율
 <br>
 <h2><green1_h2> 토이 프로젝트 개요 </green1_h2></h2><ul>
 <li><h5><green1_h5>프로젝트명: </green1_h5><span> 멀티 프로세스 통신 구현하기</span></h5></li>
-<li><h5><green1_h5>장르: </green1_h5><span> Toy Project(Server)</span></h5></li>
+<li><h5><green1_h5>장르: </green1_h5><span> 2015년 2학기 시스템 프로그래밍 실습 중간 과제</span></h5></li>
 <li><h5><green1_h5>기간: </green1_h5><span> 2015.10.05~2015.10.15</span></h5></li>
-<li><h5><green1_h5>플랫폼: </green1_h5><span> PC </span></h5></li></ul>
+<li><h5><green1_h5>플랫폼: </green1_h5><span> PC(consol) </span></h5></li></ul>
 
 <br>
 <br>
