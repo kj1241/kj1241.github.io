@@ -5,7 +5,7 @@ date:   2023-01-31 15:08:46 +0900
 image: https://github.com/kj1241/kj1241.github.io/assets/22047442/5f0f34ae-4d67-471a-bd33-e119d44c41b6
 toc: true
 categories: [Server_TP]
-tags: [C++, Multiprocess Communication]
+tags: [C++, Multi Process Communication]
 ---
 
 <h2><green1_h2> 토이 프로젝트 소개 </green1_h2></h2>
@@ -17,7 +17,7 @@ C++을 사용한 멀티 프로세서 통신은 여러 프로세서 간의 효율
 <h2><green1_h2> 토이 프로젝트 개요 </green1_h2></h2><ul>
 <li><h5><green1_h5>프로젝트명: </green1_h5><span> 멀티 프로세스 통신 구현하기</span></h5></li>
 <li><h5><green1_h5>장르: </green1_h5><span> Toy Project(Server)</span></h5></li>
-<li><h5><green1_h5>기간: </green1_h5><span> 2015.12.05~2015.12.15</span></h5></li>
+<li><h5><green1_h5>기간: </green1_h5><span> 2015.10.05~2015.10.15</span></h5></li>
 <li><h5><green1_h5>플랫폼: </green1_h5><span> PC </span></h5></li></ul>
 
 <br>
@@ -52,14 +52,14 @@ C++을 사용한 멀티 프로세서 통신은 여러 프로세서 간의 효율
 
 <br>
 <h3><green1_h3> 시퀀스 다이어 그램 </green1_h3></h3>
-![img](https://github.com/kj1241/kj1241.github.io/assets/22047442/5f0f34ae-4d67-471a-bd33-e119d44c41b6){: width="740" height="400"}
+![시퀸스 다이어그램](https://github.com/kj1241/kj1241.github.io/assets/22047442/5f0f34ae-4d67-471a-bd33-e119d44c41b6){: width="740" height="400"}
 
 
 <br>
 <br>
 <h2><green1_h2> 결과(성과) 및 데모 </green1_h2></h2>
 <ul>
-<li><h5><green1_h5>성과: </green1_h5><span> 2015년 2학기 시스템 프로그래밍 실습 기말 과제 </span></h5></li>
+<li><h5><green1_h5>성과: </green1_h5><span> 2015년 2학기 시스템 프로그래밍 실습 중간 과제 </span></h5></li>
 <li><h5><green1_h5>깃 허브(코드): </green1_h5><span> 
 <a href="https://github.com/kj1241/Server_Assignment/tree/main/System%20Programming/MultiProcess/MultiProcess">https://github.com/kj1241/Server_Assignment/tree/main/System%20Programming/MultiProcess/MultiProcess</a> </span></h5></li>
 <li><h5><green1_h5>유튜브 동영상: </green1_h5></h5> 
