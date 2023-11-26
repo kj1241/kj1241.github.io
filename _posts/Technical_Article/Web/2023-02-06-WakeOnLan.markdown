@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "WakeOnLan 에러 해결하기 (w. System Network 관점으로)"
+title:  "WakeOnLan 에러 해결하기"
 date:   2023-02-06 15:45:29 +0900
 image: https://github.com/kj1241/kj1241.github.io/assets/22047442/41a3526d-5c48-4f12-be52-7b050e182a66
 toc: true
@@ -50,7 +50,7 @@ struct WOL_PACKET
 <h3><blue1_h3> 네트워크 5계층 </blue1_h3></h3>
 그럼 다시 본론으로 들어가서, 에러에 관한 네크워크 현성을 분석하기 위해서는 필요한 배경 지식이 있습니다.  
 
-![네트워크 5계층](https://github.com/kj1241/kj1241.github.io/assets/22047442/41a3526d-5c48-4f12-be52-7b050e182a66){: width="100%"}
+![네트워크 5계층](https://github.com/kj1241/kj1241.github.io/assets/22047442/41a3526d-5c48-4f12-be52-7b050e182a66){: width="100%" style="aspect-ratio:16/9"}
 
 바로 위의 그림과 같이 네트워크 계층을 이해하는 것입니다.  
 5계층의 응용 계층(applictation)을 좀더 새분화하여 세션(Session), 표현(presentation), 응용(applictation) 으로 나누어서 7계층으로 표현하시는 분들도 있습니다.  
@@ -88,12 +88,12 @@ struct WOL_PACKET
 <h3><blue1_h3> 네트워크 5계층과 WakeOnLan 문제 원인 추론 </blue1_h3></h3>
 위의 지식을 이해하셨으면, 네트워크 계층의 지식을 배경삼아서 WakeOnLan의 문제의 원인을 추론해 봅시다.  
 
-![내부망](https://github.com/kj1241/kj1241.github.io/assets/22047442/096910b8-5bf9-474a-a879-b15fbfed4076){: width="100%"}
+![내부망](https://github.com/kj1241/kj1241.github.io/assets/22047442/096910b8-5bf9-474a-a879-b15fbfed4076){: width="100%" style="aspect-ratio:16/9"}
 
 WakeOnLan의 매직 패킷을 보낼 메인 컴퓨터가 존재하고, 허브나 스위치를 통해서 받을 다수의 컴퓨터가 구성되어 있다고 합시다.  
 그럼 이를 논리적 흐름으로 바꿔봅시다.  
 
-![내부망논리적흐름](https://github.com/kj1241/kj1241.github.io/assets/22047442/d550ac62-4fec-4fe9-8a8a-116dfc13779b){: width="100%"}
+![내부망논리적흐름](https://github.com/kj1241/kj1241.github.io/assets/22047442/d550ac62-4fec-4fe9-8a8a-116dfc13779b){: width="100%" style="aspect-ratio:16/9"}
 
 WOL을 보내는 프로그램을 만들어서 매직 패킷을 PC에 뿌리게 되면, 위와 같이 전송계층에 도달하게 됩니다.  
 일단 여기서 WOL 받는 PC의 **"응용계층은 왜 존재하지 않는지?"** 궁금하실 분이 있을 것입니다.  
@@ -120,7 +120,7 @@ WOL 기술 아티클을 검색하게 되면, 코드나 아티클 글은 UDP 적�
 왜냐하면 이런 특성은 근본적인 차이점으로부터 출발되었기 때문입니다.  
 힌트를 드리자면 소켓 프로그래밍 코드 로직 속에 답이 존재합니다.  
 
-![TCP/UDP로직](https://github.com/kj1241/kj1241.github.io/assets/22047442/49a14003-27c0-482b-b457-301d6b14011c){: width="100%"}
+![TCP/UDP로직](https://github.com/kj1241/kj1241.github.io/assets/22047442/49a14003-27c0-482b-b457-301d6b14011c){: width="100%" style="aspect-ratio:16/9"}
 
 눈치채셨나요? 정답은 클라이언트 연결 유무입니다.  
 저희의 목적은 에러를 찾는 것이기 때문에 TCP/IP와 UDP 차이점은 다음에 추가적으로 정리를 하도록 합시다.  
@@ -157,7 +157,7 @@ IP는 네트워크 계층의 프로토 콜인데 데이터링크와 무슨 연�
 리는 IP와 컴퓨터의 Mac 주소에 관해서 연결시키는 방법에 대해서 이해를 해야합니다.  
 바로 ARP(Address Resolution Protocol)입니다.
 ARP는 컴퓨터의 IP와  Mac 주소에 관해서 연결시키는 주소 결정 프로토 콜입니다.
-![ARP구성](https://github.com/kj1241/kj1241.github.io/assets/22047442/ff1e3924-ec8f-4fae-afe6-bc17358b3458){: width="100%"}
+![ARP구성](https://github.com/kj1241/kj1241.github.io/assets/22047442/ff1e3924-ec8f-4fae-afe6-bc17358b3458){: width="100%" style="aspect-ratio:16/9"}
 IP 주소에 관한 Mac 주소를 찾기 위해서 브로드 캐스팅을 하게 되고 응답을 받으면 cmd창에서 Arp table을 확인해 봅시다.
 ```
 //cmd
@@ -177,14 +177,14 @@ C:\Users\>arp -a
 
 "그러면 어떻게 해야 할까?" 해결 방안은 IP와 Mac주소를  조사하여서 수동으로 입력하여 정적 유형으로 만들어 주면 됩니다.  
 netsh interface ip add neighbors "[망이름]" "111.111.111.111" "00-00-00-00-00-03" (관리자 권한으로 cmd를 실행시켜 주세요)로 작성하면 됩니다.
-![Cmd](https://github.com/kj1241/kj1241.github.io/assets/22047442/95a9cbad-0584-4748-b3a2-0cc4737e31a7){: width="100%"}
+![Cmd](https://github.com/kj1241/kj1241.github.io/assets/22047442/95a9cbad-0584-4748-b3a2-0cc4737e31a7){: width="100%" style="aspect-ratio:16/9"}
 이렇게 선언하시면 수동으로 IP와 Mac주소를 연결시켜서 특정 IP로 매직 패킷을 전송할 수 있습니다.  
 (arp를 정적으로 선언하면 스푸핑 공격을 방어할 수도 있습니다. )
 
 <br>
 <br>
 <h2><blue1_h2> 결론 </blue1_h2></h2>
-관리자 권한으로 cmd를 들어가신 후, ex) netsh interface ip add neighbors "[망이름]" "111.111.111.111" "00-00-00-00-00-03"을 사용해서 ARP Table을 정적으로 할당 시켜주면 됩니다.  ()"111.111.111.111" = IP와 "00-00-00-00-00-03"= Mac 주소)
+관리자 권한으로 cmd를 들어가신 후, ex) netsh interface ip add neighbors "[망이름]" "111.111.111.111" "00-00-00-00-00-03"을 사용해서 ARP Table을 정적으로 할당 시켜주면 됩니다.  ("111.111.111.111" = IP와 "00-00-00-00-00-03"= Mac 주소)
 
 <br>
 끝까지 읽으시느라 고생하셨습니다.  
