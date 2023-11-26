@@ -184,7 +184,7 @@ netsh interface ip add neighbors "[망이름]" "111.111.111.111" "00-00-00-00-00
 <br>
 <br>
 <h2><blue1_h2> 결론 </blue1_h2></h2>
-netsh interface ip add neighbors "[망이름]" "111.111.111.111" "00-00-00-00-00-03"을 사용해서 ARP Table을 정적으로 할당 시켜주면 됩니다.  
+관리자 권한으로 cmd를 들어가신 후, ex) netsh interface ip add neighbors "[망이름]" "111.111.111.111" "00-00-00-00-00-03"을 사용해서 ARP Table을 정적으로 할당 시켜주면 됩니다.  ()"111.111.111.111" = IP와 "00-00-00-00-00-03"= Mac 주소)
 
 <br>
 끝까지 읽으시느라 고생하셨습니다.  
