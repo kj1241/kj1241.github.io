@@ -60,10 +60,10 @@ WinAPI는 Windows 응용 프로그램을 개발하기 위한 API이며, 이를 �
 <br>
 <h3><green1_h3> 프로그래밍 로직 구조 </green1_h3></h3>
 <p><green1_h5>유체역학 Particl</green1_h5></p>
-![유체역학 Particl Tool](https://github.com/kj1241/kj1241.github.io/assets/22047442/a9e84e0f-ce4a-42ba-b2fe-a098fa72b410){: width="740" height="400"}
+![유체역학 Particl Tool](https://github.com/kj1241/kj1241.github.io/assets/22047442/a9e84e0f-ce4a-42ba-b2fe-a098fa72b410){: width="100%" style="aspect-ratio:16/9"}
 
 <p><green1_h5>폭발하는 Particl</green1_h5></p>
-![폭발하는 Particl Tool](https://github.com/kj1241/kj1241.github.io/assets/22047442/da5fe94a-7410-446b-9adc-f93af0e6420a){: width="740" height="400"}
+![폭발하는 Particl Tool](https://github.com/kj1241/kj1241.github.io/assets/22047442/da5fe94a-7410-446b-9adc-f93af0e6420a){: width="100%" style="aspect-ratio:16/9"}
 
 
 
@@ -78,14 +78,13 @@ WinAPI는 Windows 응용 프로그램을 개발하기 위한 API이며, 이를 �
 폭발하는 Particl Tool: <a href="https://github.com/kj1241/WinAPI_ToyProejct/tree/main/WinAPI_Particle">https://github.com/kj1241/WinAPI_ToyProejct/tree/main/WinAPI_Particle</a> </p></h5></li>
 <li><h5><green1_h5>유튜브 동영상: </green1_h5></h5> 
 유체역학 Particl Tool: 
-<iframe width="700" height="400" src="https://www.youtube.com/embed/WWH5v5rbWY0" title="ParticleToyProjcet2(WInAPI)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/WWH5v5rbWY0" title="ParticleToyProjcet2(WInAPI)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 폭발하는 Particl Tool: 
-<iframe width="700" height="480" src="https://www.youtube.com/embed/0KmnYV9FBWs" title="ParticleToyProjcet(WinAPI)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/0KmnYV9FBWs" title="ParticleToyProjcet(WinAPI)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </li>
 </ul>
-
 
 <br>
 <h3><green1_h3> 여담 </green1_h3></h3>

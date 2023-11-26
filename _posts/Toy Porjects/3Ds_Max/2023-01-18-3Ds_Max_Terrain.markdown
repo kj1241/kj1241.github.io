@@ -52,12 +52,12 @@ tags: [3Ds Max]
 
 <br>
 <h3><green1_h3> 3Ds Max에서 제작 과정 </green1_h3></h3>
-![과정](https://github.com/kj1241/kj1241.github.io/assets/22047442/e75f59a6-a528-47b2-acae-54586d2e9087){: width="740" height="400"}
+![과정](https://github.com/kj1241/kj1241.github.io/assets/22047442/e75f59a6-a528-47b2-acae-54586d2e9087){: width="100%" style="aspect-ratio:16/9"}
 
 
 <br>
 <h3><green1_h3> 렌더링 결과물 </green1_h3></h3>
-![결과](https://github.com/kj1241/kj1241.github.io/assets/22047442/98da967b-6ffe-43a8-9417-2b2161866655){: width="740" height="400"}
+![결과](https://github.com/kj1241/kj1241.github.io/assets/22047442/98da967b-6ffe-43a8-9417-2b2161866655){: width="100%" style="aspect-ratio:16/9"}
 
 
 <br>
@@ -68,7 +68,7 @@ tags: [3Ds Max]
 <li><h5><green1_h5>지드라이브(코드): </green1_h5><span> 
 <a href="https://drive.google.com/drive/folders/12uhO0kQFtfWmHDJYspvOVxcIzI4wkUrA?usp=sharing">https://drive.google.com/drive/folders/12uhO0kQFtfWmHDJYspvOVxcIzI4wkUrA?usp=sharing </a> </span></h5></li>
 <li><h5><yellow1_h5>유튜브 동영상: </yellow1_h5></h5> 
-<iframe width="700" height="400" src="https://www.youtube.com/embed/A9ERGLN2aQs" title="3ds_Max_midterm_assignment" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/A9ERGLN2aQs" title="3ds_Max_midterm_assignment" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </li></ul>
 
 
@@ -77,4 +77,4 @@ tags: [3Ds Max]
 - 캐릭터 모델링의 제작 프로세스를 이해하고 습득하였습니다.
 - 직접 UV 매핑을 통해 디퓨즈 맵과 노멀 맵을 제작하며 텍스처 입히기에 도전할 기회 얻었습니다.
 - 본 스켈레톤을 활용하여 모델링 애니메이션을 제작하는 방법을 학습하였습니다.
-<br>
+

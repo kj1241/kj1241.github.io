@@ -55,7 +55,7 @@ tags: [C#, Unity, repulsive force]
 
 <br>
 <h3><green1_h3> 대장 NPC가 가지고 있는 영역 </green1_h3></h3>
-![군집](https://github.com/kj1241/kj1241.github.io/assets/22047442/aaeb8f21-7161-4368-8a7d-a60afcda8a2e){: width="740" height="400"}
+![군집](https://github.com/kj1241/kj1241.github.io/assets/22047442/aaeb8f21-7161-4368-8a7d-a60afcda8a2e){: width="100%" style="aspect-ratio:16/9"}
 
 <br>
 <br>
@@ -65,11 +65,6 @@ tags: [C#, Unity, repulsive force]
 <li><h5><green1_h5>깃 허브(코드): </green1_h5><span> 
 <a href="https://github.com/kj1241/Other-Etc/tree/main/AI/Clustering">https://github.com/kj1241/Other-Etc/tree/main/AI/Clustering</a></span></h5></li>
 <li><h5><green1_h5>유튜브 동영상: </green1_h5></h5> 
-<iframe width="700" height="400" src="https://www.youtube.com/embed/Spt5XdKhHHE" title="유사 Clustering 군집 AI 제작" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/Spt5XdKhHHE" title="유사 Clustering 군집 AI 제작" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </li>
 </ul>
-
-
-
-
-

@@ -55,7 +55,7 @@ FSM은 NPC의 다양한 상태를 정의하고, 각 상태 전이에 대한 규�
 
 <br>
 <h3><green1_h3> 클래스 다이어 그램 </green1_h3></h3>
-![클래스 다이어 그램](https://github.com/kj1241/kj1241.github.io/assets/22047442/c68780c3-3255-47b1-b25d-8a5feba107c7){: width="740" height="400"}
+![클래스 다이어 그램](https://github.com/kj1241/kj1241.github.io/assets/22047442/c68780c3-3255-47b1-b25d-8a5feba107c7){: width="100%" style="aspect-ratio:16/9"}
 
 <br>
 <br>
@@ -65,7 +65,7 @@ FSM은 NPC의 다양한 상태를 정의하고, 각 상태 전이에 대한 규�
 <li><h5><green1_h5>깃 허브(코드): </green1_h5><span> 
 <a href="https://github.com/kj1241/Other-Etc/tree/main/AI/FSM">https://github.com/kj1241/Other-Etc/tree/main/AI/FSM</a></span></h5></li>
 <li><h5><green1_h5>유튜브 동영상: </green1_h5></h5> 
-<iframe width="700" height="400" src="https://www.youtube.com/embed/2FgzgUDakqI" title="FSM(C++ 콘솔)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+<iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/2FgzgUDakqI" title="FSM(C++ 콘솔)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
 </ul>
 
 

@@ -62,11 +62,11 @@ WinAPI를 이용하여 안정적이고 효율적인 서버 애플리케이션을
 
 <br>
 <h3><green1_h3> 다이어 그램 </green1_h3></h3>
-![다이어 그램](https://github.com/kj1241/kj1241.github.io/assets/22047442/f088365d-15da-42cf-8157-9a40f0a553cd){: width="740" height="400"}
+![다이어 그램](https://github.com/kj1241/kj1241.github.io/assets/22047442/f088365d-15da-42cf-8157-9a40f0a553cd){: width="100%" style="aspect-ratio:16/9"}
 
 <br>
 <h3><green1_h3> 패킷 구성 </green1_h3></h3>
-![패킷 구성](https://github.com/kj1241/kj1241.github.io/assets/22047442/6e04bc41-bdf2-4a44-81a2-a4d8d10dee2c)
+![패킷 구성](https://github.com/kj1241/kj1241.github.io/assets/22047442/6e04bc41-bdf2-4a44-81a2-a4d8d10dee2c){: width="60%" }
 
 
 
@@ -78,7 +78,7 @@ WinAPI를 이용하여 안정적이고 효율적인 서버 애플리케이션을
 <li><h5><green1_h5>깃 허브(코드): </green1_h5><span> 
 <a href="https://github.com/kj1241/Server_Assignment/tree/main/Advanced%20Web%20Server%20Programming/IOCPChattingServer/">https://github.com/kj1241/Server_Assignment/tree/main/Advanced%20Web%20Server%20Programming/IOCPChattingServer/</a> </span></h5></li>
 <li><h5><green1_h5>유튜브 동영상: </green1_h5></h5> 
-<iframe width="700" height="400" src="https://www.youtube.com/embed/THE9nnwgT3k" title="IOCP 채팅 서버 WinAPI 어플리케이션 개발" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/THE9nnwgT3k" title="IOCP 채팅 서버 WinAPI 어플리케이션 개발" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </li>
 </ul>
 

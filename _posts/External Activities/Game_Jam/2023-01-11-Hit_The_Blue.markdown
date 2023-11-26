@@ -76,10 +76,5 @@ tags: [C#, Unity, 3D Shooting Game]
 <li><h5><yellow1_h5>깃 허브(코드): </yellow1_h5><span> 
 <a href="https://github.com/kj1241/HitTheBlue-refactoring">https://github.com/kj1241/HitTheBlue-refactoring</a> </span></h5></li>
 <li><h5><yellow1_h5>유튜브 동영상: </yellow1_h5></h5> 
-<iframe width="700" height="400" src="https://www.youtube.com/embed/x0faMHFAaKI" title="Hit The Blue (힛 더 블루)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/x0faMHFAaKI" title="Hit The Blue (힛 더 블루)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </li></ul>
-
-
-<br>
-
-

@@ -53,30 +53,28 @@ tags: [3Ds Max]
 
 <br>
 <h3><green1_h3> TurboSmooth을 이용한 꽃잎 제작 </green1_h3></h3>
-![연꽃](https://github.com/kj1241/kj1241.github.io/assets/22047442/40200c06-e605-4bb2-b8dc-969e6c30aeb8){: width="740" height="400"}
-
+![연꽃](https://github.com/kj1241/kj1241.github.io/assets/22047442/40200c06-e605-4bb2-b8dc-969e6c30aeb8){: width="100%" style="aspect-ratio:16/9"}
 <br>
 <h3><green1_h3> 라인로프팅을 이용한 침대가드 제작 </green1_h3></h3>
-<iframe width="740" height="400" src="https://www.youtube.com/embed/9ocurrhGJAU" title="3ds_Max_surface_lofting" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/9ocurrhGJAU" title="3ds_Max_surface_lofting" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <br>
 <h3><green1_h3> cloth를 이용한 주름 제작 </green1_h3></h3>
-<iframe width="740" height="400" src="https://www.youtube.com/embed/eHZQ6VbzELU" title="3ds_Max_comforter_cloth" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<iframe width="740" height="400" src="https://www.youtube.com/embed/tN32-MUAK-s" title="3ds_Max_curtain_cloth" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe  width="100%" style="aspect-ratio:16/9"" src="https://www.youtube.com/embed/eHZQ6VbzELU" title="3ds_Max_comforter_cloth" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe  width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/tN32-MUAK-s" title="3ds_Max_curtain_cloth" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <br>
 <h3><green1_h3> Vray (레이트레이싱) 제작과정</green1_h3></h3>
-![레이트레이싱적용과정](https://github.com/kj1241/kj1241.github.io/assets/22047442/3f8e3312-9cfc-49cb-af1e-4437020a3489){: width="740" height="400"}
-
+![레이트레이싱적용과정](https://github.com/kj1241/kj1241.github.io/assets/22047442/3f8e3312-9cfc-49cb-af1e-4437020a3489){: width="100%" style="aspect-ratio:16/9"}
 
 <br>
 <h3><green1_h3> 랜더링 결과 </green1_h3></h3>
 <p><green1_h5>새벽의 방의 풍경</green1_h5></p>
-![아침](https://github.com/kj1241/kj1241.github.io/assets/22047442/221d1f51-1649-4834-ac06-e9cd9c00ff53){: width="740" height="400"}
+![아침](https://github.com/kj1241/kj1241.github.io/assets/22047442/221d1f51-1649-4834-ac06-e9cd9c00ff53){: width="100%" style="aspect-ratio:16/9"}
 <p><green1_h5>불켜진 방의 풍경 </green1_h5></p>
-![불켜진방](https://github.com/kj1241/kj1241.github.io/assets/22047442/53184148-f4d7-4a82-8da1-7c47007f32e1){: width="740" height="400"}
+![불켜진방](https://github.com/kj1241/kj1241.github.io/assets/22047442/53184148-f4d7-4a82-8da1-7c47007f32e1){: width="100%" style="aspect-ratio:16/9"}
 <p><green1_h5>한밤중의 방의 풍경</green1_h5></p>
-![야경](https://github.com/kj1241/kj1241.github.io/assets/22047442/32fb18d7-4862-489a-b6e1-1f1353e16fdf){: width="740" height="400"}
+![야경](https://github.com/kj1241/kj1241.github.io/assets/22047442/32fb18d7-4862-489a-b6e1-1f1353e16fdf){: width="100%" style="aspect-ratio:16/9"}
 
 
 <br>
@@ -94,4 +92,3 @@ tags: [3Ds Max]
 - 라인 로프팅 기법을 활용하여 틀을 제작하는 과정을 익히면서, 모델의 구조를 효과적으로 구현할 수 있었습니다.
 - Cloth 기능을 활용하여 침대와 커튼을 제작하는 데 성공하여, 현실적인 텍스처와 움직임을 구현할 수 있게 되었습니다.
 - Vray를 이용하여 레이트레이싱 이미지를 제작하는 과정을 익힘으로써, 더욱 고품질의 시각적 효과를 얻을 수 있는 기술을 습득하였습니다.
-<br>

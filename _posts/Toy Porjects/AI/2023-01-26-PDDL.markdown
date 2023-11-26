@@ -49,16 +49,13 @@ PDDL을 활용한 빨간 망토 동방박사의 선물 토끼와 거북이 스�
 
 <br>
 <h3><green1_h3> 과제1: 빨간망토 </green1_h3></h3>
-![빨간망토](https://github.com/kj1241/kj1241.github.io/assets/22047442/af552e08-8e3d-433b-81d0-cbaa803f5fa4){: width="740" height="400"}
-
+![빨간망토](https://github.com/kj1241/kj1241.github.io/assets/22047442/af552e08-8e3d-433b-81d0-cbaa803f5fa4){: width="100%" style="aspect-ratio:16/9"}
 <br>
 <h3><green1_h3> 과제2: 동방박사의 선물 </green1_h3></h3>
-![동방박사의 선물](https://github.com/kj1241/kj1241.github.io/assets/22047442/fb81caa9-fa33-44dd-9a38-dc5fb7b90451){: width="740" height="400"}
-
+![동방박사의 선물](https://github.com/kj1241/kj1241.github.io/assets/22047442/fb81caa9-fa33-44dd-9a38-dc5fb7b90451){: width="100%" style="aspect-ratio:16/9"}
 <br>
 <h3><green1_h3> 과제2: 토끼와 거북이 </green1_h3></h3>
-![토끼와 거북이](https://github.com/kj1241/kj1241.github.io/assets/22047442/62a2eed0-51ec-48fa-8139-0801f5678736){: width="740" height="400"}
-
+![토끼와 거북이](https://github.com/kj1241/kj1241.github.io/assets/22047442/62a2eed0-51ec-48fa-8139-0801f5678736){: width="100%" style="aspect-ratio:16/9"}
 
 <br>
 <br>
@@ -68,8 +65,3 @@ PDDL을 활용한 빨간 망토 동방박사의 선물 토끼와 거북이 스�
 <li><h5><green1_h5>깃 허브(코드): </green1_h5><span> 
 <a href="https://github.com/kj1241/Other-Etc/tree/main/AI/Planning(PDDL)">https://github.com/kj1241/Other-Etc/tree/main/AI/Planning(PDDL)</a></span></h5></li>
 </ul>
-
-
-
-
-

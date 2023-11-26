@@ -55,7 +55,7 @@ Mutex나 원자적 연산 등을 활용하여 쓰레드 간의 동기화를 보�
 
 <br>
 <h3><green1_h3> 시퀀스 다이어 그램 </green1_h3></h3>
-![시퀸스 다이어그램](https://github.com/kj1241/kj1241.github.io/assets/22047442/3986700c-f4de-4713-8e6a-e433602e70b5){: width="740" height="400"}
+![시퀸스 다이어그램](https://github.com/kj1241/kj1241.github.io/assets/22047442/3986700c-f4de-4713-8e6a-e433602e70b5){: width="100%" style="aspect-ratio:16/9"}
 
 
 <br>
@@ -66,7 +66,7 @@ Mutex나 원자적 연산 등을 활용하여 쓰레드 간의 동기화를 보�
 <li><h5><green1_h5>깃 허브(코드): </green1_h5><span> 
 <a href="https://github.com/kj1241/Server_Assignment/tree/main/System%20Programming/MultiThreadedSumProgram/FinalAssignment(ver.1) ">https://github.com/kj1241/Server_Assignment/tree/main/System%20Programming/MultiThreadedSumProgram/FinalAssignment(ver.1) </a> </span></h5></li>
 <li><h5><green1_h5>유튜브 동영상: </green1_h5></h5> 
-<iframe width="700" height="400" src="https://www.youtube.com/embed/apWhZFFAme8" title="멀티스레드 덧셈 프로그램 제작(화질 개선)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe  width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/apWhZFFAme8" title="멀티스레드 덧셈 프로그램 제작(화질 개선)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </li>
 </ul>
 

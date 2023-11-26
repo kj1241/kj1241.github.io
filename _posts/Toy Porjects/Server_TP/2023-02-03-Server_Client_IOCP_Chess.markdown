@@ -51,7 +51,7 @@ IOCP를 이용하여 효율적인 네트워크 통신을 구현하여 다수의 
 
 <br>
 <h3><green1_h3> 다이어 그램 </green1_h3></h3>
-![다이어그램](https://github.com/kj1241/kj1241.github.io/assets/22047442/52c3b183-ebc6-4aa8-a391-334b0b3d6154){: width="740" height="400"}
+![다이어그램](https://github.com/kj1241/kj1241.github.io/assets/22047442/52c3b183-ebc6-4aa8-a391-334b0b3d6154){: width="100%" style="aspect-ratio:16/9"}
 
 
 <br>
@@ -62,7 +62,6 @@ IOCP를 이용하여 효율적인 네트워크 통신을 구현하여 다수의 
 <li><h5><green1_h5>깃 허브(코드): </green1_h5><span> 
 <a href="https://github.com/kj1241/Server_Assignment/tree/main/Advanced%20Web%20Server%20Programming/IOCPServerAssignments/">https://github.com/kj1241/Server_Assignment/tree/main/Advanced%20Web%20Server%20Programming/IOCPServerAssignments/</a> </span></h5></li>
 <li><h5><green1_h5>유튜브 동영상: </green1_h5></h5> 
-<iframe width="700" height="400" src="https://www.youtube.com/embed/hA4AJzZA-Xk" title="IOCP 서버 제작 과제" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe  width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/hA4AJzZA-Xk" title="IOCP 서버 제작 과제" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </li>
 </ul>
-

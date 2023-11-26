@@ -61,7 +61,7 @@ tags: [HTML, CSS, Java script, Tstory Skin]
 <h3><green1_h3>프로그래밍 파일 구조(작업 부분)</green1_h3></h3>
 - HTML + CSS + JS +.. XML
 <p></p> <!--이미지 못침범하게-->
-![티스토리 데이터 구조](https://github.com/kj1241/kj1241.github.io/assets/22047442/614e11a4-5bdb-4190-9157-c790f50e462a){: width="600"} 
+![티스토리 데이터 구조](https://github.com/kj1241/kj1241.github.io/assets/22047442/614e11a4-5bdb-4190-9157-c790f50e462a){: width="80%" style="aspect-ratio:16/9"}
 <br>
 - XML: 티스토리 스킨에서 내부 설정 인터페이스를 담당하고 있습니다.
 - HTML: 화면 구성의 구조를 담당하고 있습니다.
@@ -70,18 +70,18 @@ tags: [HTML, CSS, Java script, Tstory Skin]
 
 <br>
 <h3><green1_h3> 커버형 v.0.2  </green1_h3></h3>
-![티스토리스킨 v0.2](https://github.com/kj1241/kj1241.github.io/assets/22047442/0ce338dc-c5f4-496e-98c1-b3c3b06ed5d5){: width="740" height="400"} 
+![티스토리스킨 v0.2](https://github.com/kj1241/kj1241.github.io/assets/22047442/0ce338dc-c5f4-496e-98c1-b3c3b06ed5d5){: width="100%" style="aspect-ratio:16/9"}
 
 <br>
 <h3><green1_h3>단순형 v.0.1  </green1_h3></h3>
-![티스토리스킨 v0.1](https://github.com/kj1241/kj1241.github.io/assets/22047442/5592dbfd-ea69-4694-b640-c39b99dfcc22){: width="740" height="400"} 
+![티스토리스킨 v0.1](https://github.com/kj1241/kj1241.github.io/assets/22047442/5592dbfd-ea69-4694-b640-c39b99dfcc22){: width="100%" style="aspect-ratio:16/9"}
 
 
 
 <br>
 <br>
 <h2><green1_h2> 결과(성과) 및 데모 </green1_h2></h2>
-![성과](https://github.com/kj1241/kj1241.github.io/assets/22047442/0eef9da3-b6dd-49d5-95c9-9d2bc4b92b54){: width="700"}
+![성과](https://github.com/kj1241/kj1241.github.io/assets/22047442/0eef9da3-b6dd-49d5-95c9-9d2bc4b92b54){: width="100%" style="aspect-ratio:16/9"}
 <ul>
 <li><h5><green1_h5>성과: </green1_h5><span> 단순형 스킨 제작 </span></h5></li>
 <li><h5><green1_h5>깃 허브(코드): </green1_h5><span> 
@@ -113,5 +113,3 @@ tags: [HTML, CSS, Java script, Tstory Skin]
 <br>
 <h3><green1_h3> 참조 </green1_h3></h3>
 -  <a herf="https://tistory.github.io/document-tistory-skin/common/index.xml.html">https://tistory.github.io/document-tistory-skin/common/index.xml.html</a>
-<br>
-

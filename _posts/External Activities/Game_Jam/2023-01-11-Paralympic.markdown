@@ -61,7 +61,7 @@ tags: [C#,Unity,3D Simulation Game]
 <li><h5><yellow1_h5>성과: </yellow1_h5><span> 데모 프로젝트 제작 </span></h5></li>
 <li><h5><yellow1_h5>게임 다운로드 링크: </yellow1_h5><span> <a href="https://indie.onstove.com/ko/games/318">https://indie.onstove.com/ko/games/318</a> </span></h5></li>
 <li><h5><yellow1_h5>깃 허브(코드): </yellow1_h5><span> 
-<a href="Paralympic-refactoring">Paralympic-refactoring(</a> </span></h5></li>
+<a href="Paralympic-refactoring">Paralympic-refactoring</a></span></h5></li>
 </ul>
 
 <br>
@@ -82,8 +82,4 @@ tags: [C#,Unity,3D Simulation Game]
 게임 제작은 소통의 부족, 한계를 극복하지 못한 개인적인 욕망 등 여러 문제로 실패하였습니다.  
 해당 게임으로 인해 불편함을 느끼신 분들에게 깊은 사죄의 말씀을 드립니다.  
 앞으로는 이러한 경험을 토대로 더 나은 결과물을 만들 수 있도록 노력하겠습니다.
-
-
-<br>
-
 

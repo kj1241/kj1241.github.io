@@ -230,7 +230,7 @@ int main()
 
 ```
 
-![Enum_Solution](https://github.com/kj1241/kj1241.github.io/assets/22047442/a8d5a1d6-fb19-4d08-9591-b935cfeec95f){: width="740" height="400"}
+![Enum_Solution](https://github.com/kj1241/kj1241.github.io/assets/22047442/a8d5a1d6-fb19-4d08-9591-b935cfeec95f){: width="100%" style="aspect-ratio:16/9"}
 
 책이나 흔히 오래된 코드에서 볼 수 있는 Enum Solution 코드입니다.  
 도형들을 그려주는 Draw() 함수에 도형의 타입을 규정해주는 열거형을 사용해서 동작을 수행하게 해 줍니다.  
@@ -242,7 +242,7 @@ int main()
 <br>
 <h3><blue1_h3> OO Solution </blue1_h3></h3>
 
-![oo_구조](https://github.com/kj1241/kj1241.github.io/assets/22047442/54885c5b-d00e-4a4b-a2ed-bc894317ecb1){: width="740"}
+![oo_구조](https://github.com/kj1241/kj1241.github.io/assets/22047442/54885c5b-d00e-4a4b-a2ed-bc894317ecb1){: width="100%" }
 
 ```c++
 #include <iostream>
@@ -418,7 +418,7 @@ int main()
 
 
 ```
-![OO Solution](https://github.com/kj1241/kj1241.github.io/assets/22047442/efcb875b-b5c6-47a0-80a5-8791035111c5){: width="740" height="400"}
+![OO Solution](https://github.com/kj1241/kj1241.github.io/assets/22047442/efcb875b-b5c6-47a0-80a5-8791035111c5){: width="100%" style="aspect-ratio:16/9"}
 객체 지향 솔루션은 다형성과 캡슐화를 활용하여 유연하고 확장 가능한 코드를 작성하는 방법입니다.  
 장점으로는자식 클래스가 많아저도 동일한 Draw 함수를 부르기 떄문에 코드가 길어질 필요가 없어서  <highlight_blue>가독성이 항상</highlight_blue>됩니다.  
 단점으로는 클래스안에 Draw함수를 작성해야 하기 떄문에 <highlight_orange>코드를 해석</highlight_orange>할때 어렵습니다.  
@@ -428,7 +428,7 @@ int main()
 
 <br>
 <h3><blue1_h3> Visit 패턴 </blue1_h3></h3>
-![방문자패턴_구조](https://github.com/kj1241/kj1241.github.io/assets/22047442/2cb95e13-7f35-4823-bc89-e63994e702ba){: width="740"}
+![방문자패턴_구조](https://github.com/kj1241/kj1241.github.io/assets/22047442/2cb95e13-7f35-4823-bc89-e63994e702ba){: width="100%" }
 
 ```c++
 
@@ -648,7 +648,7 @@ int main()
 
 ```
 
-![방문자패턴](https://github.com/kj1241/kj1241.github.io/assets/22047442/a98ab801-820f-4831-8b5e-e964d0bdd1b0){: width="740" height="400"}
+![방문자패턴](https://github.com/kj1241/kj1241.github.io/assets/22047442/a98ab801-820f-4831-8b5e-e964d0bdd1b0){: width="100%" style="aspect-ratio:16/9"}
 
 방문자 패턴은, 여러 유형의 객체가 동일한 인터페이스를 공유할수 있는 능력인, 다형성을 활용하여 객체 구조를 처리하는 방법입니다.  
 장점으로는 <highlight_blue>객체와 객체 상태를 분리함으로서 유지보수 코드</highlight_blue>를 짜기에 용의하게 만들었습니다.  
@@ -660,7 +660,7 @@ int main()
 <br>
 <h3><blue1_h3> std::variant를 이용한 코드(c++17)</blue1_h3></h3>
 
-![variant_구조](https://github.com/kj1241/kj1241.github.io/assets/22047442/f4faf3f8-6ecd-4724-bcf1-996a4caad84f){: width="740" }
+![variant_구조](https://github.com/kj1241/kj1241.github.io/assets/22047442/f4faf3f8-6ecd-4724-bcf1-996a4caad84f){: width="100%" }
 
 ```c++
 #include <iostream>
@@ -830,7 +830,7 @@ int main()
 	std::cout << "물리 메모리 사용량: " << pmc.WorkingSetSize << "\n";
 }
 ```
-![방문자패턴_결과](https://github.com/kj1241/kj1241.github.io/assets/22047442/287963ff-2cf2-412e-88bc-3232b4ff011b){: width="740" height="400"}
+![방문자패턴_결과](https://github.com/kj1241/kj1241.github.io/assets/22047442/287963ff-2cf2-412e-88bc-3232b4ff011b){: width="100%" style="aspect-ratio:16/9"}
 std::variant는 C++17에서 도입된 템플릿 기반의형적 타입을 표현하는 컨테이너 클래스입니다.  
 이 컨테이너는 여러 타입 중 하나를 포함하며, 런타임에 해당 타입을 안전하게 접근할 수 있게 해줍니다.  
 std::visit을 사용하여 다형성을 보다 <highlight_blue>간결하고 유연</highlight_blue>하게 코드를 작성할 수 있습니다.  
@@ -850,7 +850,7 @@ std::visit을 사용하여 다형성을 보다 <highlight_blue>간결하고 유�
 2022.03.12 그래서 이번에는 WinAPI를 사용하여 제대로 측정해 보려고 합니다.  
 단순히 Draw() 함수뿐만 아니라 Translate()이라는 도형을 대각선을 포함한 각 방향으로 이동시키는 동작함수 8종을 추가하여 실행파일로 테스트하기 위해 툴을 제작하였습니다.  
   
-![예시](https://github.com/kj1241/kj1241.github.io/assets/22047442/c125c1fd-a477-40ef-a2fc-dbca2ddd46a1){: width="740" height="400"}
+![예시](https://github.com/kj1241/kj1241.github.io/assets/22047442/c125c1fd-a477-40ef-a2fc-dbca2ddd46a1){: width="100%" style="aspect-ratio:16/9"}
 
 
 멀티 스레드를 이용한 WinAPI 툴의 로직은 다음과 같습니다.
@@ -874,28 +874,28 @@ std::visit을 사용하여 다형성을 보다 <highlight_blue>간결하고 유�
 
 <br>
 1) Enum solution 결과
-![Enum_solution](https://github.com/kj1241/kj1241.github.io/assets/22047442/e52b662a-8e41-442f-8ba5-402885ae6253){: width="740" height="400"}
+![Enum_solution](https://github.com/kj1241/kj1241.github.io/assets/22047442/e52b662a-8e41-442f-8ba5-402885ae6253){: width="100%" style="aspect-ratio:16/9"}
 로직 걸린 시간: 2689 ms  
 가상 메모리: 11173888 byte  
 물리 메모리: 23093248 byte  
 
 <br>
 2) Enum solution 결과
-![OO Solution](https://github.com/kj1241/kj1241.github.io/assets/22047442/db264d4e-f839-4cf4-a2ec-11c4eb906b51){: width="740" height="400"}
+![OO Solution](https://github.com/kj1241/kj1241.github.io/assets/22047442/db264d4e-f839-4cf4-a2ec-11c4eb906b51){: width="100%" style="aspect-ratio:16/9"}
 로직 걸린 시간: 2738 ms  
 가상 메모리: 11042816 byte  
 물리 메모리: 23015424 byte  
 
 <br>
 3) visit 패턴 결과
-![visit](https://github.com/kj1241/kj1241.github.io/assets/22047442/b7199238-fb7c-424b-9cec-456c3530d182){: width="740" height="400"}
+![visit](https://github.com/kj1241/kj1241.github.io/assets/22047442/b7199238-fb7c-424b-9cec-456c3530d182){: width="100%" style="aspect-ratio:16/9"}
 로직 걸린 시간: 2981 ms
 가상 메모리: 11034624 byte
 물리 메모리: 23138304 byte
 
 <br>
 4) std::variant를 이용한 코드(c++17) 결과
-![variant](https://github.com/kj1241/kj1241.github.io/assets/22047442/49500700-4966-48dd-92b2-1caffc264a7d){: width="740" height="400"}
+![variant](https://github.com/kj1241/kj1241.github.io/assets/22047442/49500700-4966-48dd-92b2-1caffc264a7d){: width="100%" style="aspect-ratio:16/9"}
 로직 걸린 시간: 2780 ms
 가상 메모리: 10899456 byte
 물리 메모리: 21016576 byte

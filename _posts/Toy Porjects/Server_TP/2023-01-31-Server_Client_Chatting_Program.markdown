@@ -61,12 +61,12 @@ Winsock 등의 라이브러리를 활용하여 소켓 통신을 구현하며, �
 
 <br>
 <h3><green1_h3> 다이어 그램 </green1_h3></h3>
-![다이어 그램](https://github.com/kj1241/kj1241.github.io/assets/22047442/811b8a3d-8cf9-4a91-9db8-f434c8b8c582){: width="740" height="450"}
+![다이어 그램](https://github.com/kj1241/kj1241.github.io/assets/22047442/811b8a3d-8cf9-4a91-9db8-f434c8b8c582){: width="100%" style="aspect-ratio:16/9"}
 
 
 <br>
 <h3><green1_h3> 패킷 디자인(v1.2) </green1_h3></h3>
-![패킷 디자인](https://github.com/kj1241/kj1241.github.io/assets/22047442/aa72d382-2c3f-4e46-887c-eb4ab9d7e785){: width="740" }
+![패킷 디자인](https://github.com/kj1241/kj1241.github.io/assets/22047442/aa72d382-2c3f-4e46-887c-eb4ab9d7e785){: width="80%" }
 
 
 <br>
@@ -79,10 +79,10 @@ Winsock 등의 라이브러리를 활용하여 소켓 통신을 구현하며, �
 v.1.2 패킷 디자인 추가: <a href="https://github.com/kj1241/Server_Assignment/tree/main/Game%20Server%20Practice%20(1)/ChattingServer(ver.1.2)/">https://github.com/kj1241/Server_Assignment/tree/main/Game%20Server%20Practice%20(1)/ChattingServer(ver.1.2)/ </a> </p></h5></li>
 <li><h5><green1_h5>유튜브 동영상: </green1_h5></h5> 
 v 1.0 채팅 프로그램 제작:  
-<iframe width="700" height="400" src="https://www.youtube.com/embed/jfzdyEIj1hU" title="채팅 서버 제작(화질 개선)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/jfzdyEIj1hU" title="채팅 서버 제작(화질 개선)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 v1.2 패킷 디자인 추가: 
-<iframe width="700" height="400" src="https://www.youtube.com/embed/y5QNQ_o9nDI" title="채팅 서버 제작(ver.1.2)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/y5QNQ_o9nDI" title="채팅 서버 제작(ver.1.2)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </li>
 </ul>
 

@@ -60,15 +60,8 @@ tags: [C++, Unreal, 2D Running Game]
 <h2><yellow1_h2> 결과(성과) 및 데모 </yellow1_h2></h2>
 <ul>
 <li><h5><yellow1_h5>성과: </yellow1_h5><span> 인기상 / 데모 프로젝트 제작 </span></h5></li>
-<li><h5><yellow1_h5>깃허브(코드): </yellow1_h5><span> 
+<li><h5><yellow1_h5>깃 허브(코드): </yellow1_h5><span> 
 <a href="https://github.com/kj1241/Goyangchimgong-refactoring">https://github.com/kj1241/Goyangchimgong-refactoring</a> </span></h5></li>
 <li><h5><yellow1_h5>유튜브 동영상: </yellow1_h5></h5> 
-<iframe width="700" height="400" src="https://www.youtube.com/embed/LY2KvlVKLng" title="고양침공(야근천재)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/LY2KvlVKLng" title="고양침공(야근천재)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </li></ul>
-
-<br>
-
-
-
-
-

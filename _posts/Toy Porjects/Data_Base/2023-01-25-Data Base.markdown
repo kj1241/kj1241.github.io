@@ -49,7 +49,7 @@ MySQL을 활용한 책 목록 데이터베이스는 책의 정보를 저장하�
 
 <br>
 <h3><green1_h3> 데이터 베이스 과정 화면 </green1_h3></h3>
-![과정 화면](https://github.com/kj1241/kj1241.github.io/assets/22047442/3b8ba998-092a-41d7-86f0-d6230e9d2a35){: width="740" height="400"}
+![과정 화면](https://github.com/kj1241/kj1241.github.io/assets/22047442/3b8ba998-092a-41d7-86f0-d6230e9d2a35){: width="100%" style="aspect-ratio:16/9"}
 
 
 <br>
@@ -60,6 +60,3 @@ MySQL을 활용한 책 목록 데이터베이스는 책의 정보를 저장하�
 <li><h5><green1_h5>깃 허브(코드): </green1_h5><span> 
 <a href="https://github.com/kj1241/Other-Etc/tree/main/DataBase/">https://github.com/kj1241/Other-Etc/tree/main/DataBase/</a></span></h5></li>
 </ul>
-
-
-

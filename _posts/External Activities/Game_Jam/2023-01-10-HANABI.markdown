@@ -55,30 +55,28 @@ tags: [C#, Unity, Rhythm Game]
 
 <br>
 <h3><yellow1_h3>게임 구성(작업 부분)</yellow1_h3></h3>
-![게임 구성](https://github.com/kj1241/kj1241.github.io/assets/22047442/48d11aba-50ac-4189-a859-92a6a182c1af){: width="740" height="400"}
+![게임 구성](https://github.com/kj1241/kj1241.github.io/assets/22047442/48d11aba-50ac-4189-a859-92a6a182c1af){: width="100%" style="aspect-ratio:16/9"}
 
 <br>
 <h3><yellow1_h3>게임잼 당시 게임 개발 설계 프로세스</yellow1_h3></h3>
-![게임 설계 프로세스](https://github.com/kj1241/kj1241.github.io/assets/22047442/34f0bb82-fbbc-438d-b162-a81de370b12d){: width="740" height="400"}
+![게임 설계 프로세스](https://github.com/kj1241/kj1241.github.io/assets/22047442/34f0bb82-fbbc-438d-b162-a81de370b12d){: width="100%" style="aspect-ratio:16/9"}
+
+
 
 <br>
 <br>
 <h2><yellow1_h2> 결과(성과) 및 데모 </yellow1_h2></h2>
 <ul>
 <li><h5><yellow1_h5>성과: </yellow1_h5><span> 명령없는 소통상 / 데모 프로젝트 제작 </span></h5></li>
-<li><h5><yellow1_h5>게임 다운로드 링크: </yellow1_h5><span>
-<a href="https://www.notion.so/1st-SHOWCASE-1f0d47b25de64485a35d0ed395fa9b78"> https://www.notion.so/1st-SHOWCASE-1f0d47b25de64485a35d0ed395fa9b78</a> </span></h5></li>
-<li><h5><yellow1_h5>깃허브(코드): </yellow1_h5><span> 
+<li><h5><yellow1_h5>게임 다운로드 링크: </yellow1_h5>
+<a href="https://www.notion.so/1st-SHOWCASE-1f0d47b25de64485a35d0ed395fa9b78"> https://www.notion.so/1st-SHOWCASE-1f0d47b25de64485a35d0ed395fa9b78</a></h5></li>
+<li><h5><yellow1_h5>깃 허브(코드): </yellow1_h5><span> 
 <a href="https://github.com/kj1241/HANABIProject-refactoring">https://github.com/kj1241/HANABIProject-refactoring</a> </span></h5></li>
 <li><h5><yellow1_h5>유튜브 동영상: </yellow1_h5></h5> 
-<iframe width="700" height="400" src="https://www.youtube.com/embed/YMq3jkKQHYY" title="HANABI_Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/YMq3jkKQHYY" title="HANABI_Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </li></ul>
 
 <br>
 <h3><yellow1_h3> 비고 및 여담 </yellow1_h3></h3>
 - **출시하지 못한이유:** 당시 현업 떄문에 추가 컨텐츠 제작에 시간을 할애할 수 없었던 비운의 게임입니다.
 - **저작권:** Only code can be used for research (No use graphic assets available)
-
-<br>
-
-

@@ -56,23 +56,23 @@ tags: [3Ds Max]
 
 <br>
 <h3><green1_h3> 3Ds Max에서 제작한 모델링 </green1_h3></h3>
-![i용 모델링](https://github.com/kj1241/kj1241.github.io/assets/22047442/3750e97e-899e-43eb-b061-655a31f83436){: width="740" height="400"}
+![i용 모델링](https://github.com/kj1241/kj1241.github.io/assets/22047442/3750e97e-899e-43eb-b061-655a31f83436){: width="100%" style="aspect-ratio:16/9"}
 
 <br>
 <h3><green1_h3> 텍스처 </green1_h3></h3>
-![용텍스처](https://github.com/kj1241/kj1241.github.io/assets/22047442/dbe516f5-69e7-4c99-89ed-d5e41f9688bf){: width="740" height="400"}
+![용텍스처](https://github.com/kj1241/kj1241.github.io/assets/22047442/dbe516f5-69e7-4c99-89ed-d5e41f9688bf){: width="100%" style="aspect-ratio:16/9"}
 
 <br>
 <h3><green1_h3> 노멀맵 </green1_h3></h3>
-![용 노멀맵](https://github.com/kj1241/kj1241.github.io/assets/22047442/42ab59ab-eabd-4dba-bb2e-f022825d4ddc){: width="740" height="400"}
+![용 노멀맵](https://github.com/kj1241/kj1241.github.io/assets/22047442/42ab59ab-eabd-4dba-bb2e-f022825d4ddc){: width="100%" style="aspect-ratio:16/9"}
 
 <br>
 <h3><green1_h3> 프레임 애니메이션 </green1_h3></h3>
-![용애니메이션](https://github.com/kj1241/kj1241.github.io/assets/22047442/bc540880-8222-4f59-99a0-6b45cd504ee6){: width="740" height="400"}
+![용애니메이션](https://github.com/kj1241/kj1241.github.io/assets/22047442/bc540880-8222-4f59-99a0-6b45cd504ee6){: width="100%" style="aspect-ratio:16/9"}
 
 <br>
 <h3><green1_h3> 본 스켈레톤 애니메이션 </green1_h3></h3>
-![어세신 크리드 애니메이션](https://github.com/kj1241/kj1241.github.io/assets/22047442/cda90449-b89d-481a-b0fa-db58c07526a0){: width="740" height="400"}
+![어세신 크리드 애니메이션](https://github.com/kj1241/kj1241.github.io/assets/22047442/cda90449-b89d-481a-b0fa-db58c07526a0){: width="100%" style="aspect-ratio:16/9"}
 
 <br>
 <br>
@@ -90,4 +90,4 @@ tags: [3Ds Max]
 - 다양한 라이트의 종류에 대한 이해와 등대 라이팅의 구성 능력 향상 시켰습니다.
 - 물의 표현에 대한 공부로 텍스쳐 전환과 노멀맵 이동 기술을 활용하여 현실적인 물 모델링 능력 획득 하였습니다.
 - 3D 모델링에 대한 깊은 이해로 다양한 오브젝트를 창조하고 수정하는 기술적 역량 획득 하였습니다.
-<br>
+
