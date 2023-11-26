@@ -181,9 +181,9 @@ netsh interface ip add neighbors "[망이름]" "111.111.111.111" "00-00-00-00-00
 이렇게 선언하시면 수동으로 IP와 Mac주소를 연결시켜서 특정 IP로 매직 패킷을 전송할 수 있습니다.  
 (arp를 정적으로 선언하면 스푸핑 공격을 방어할 수도 있습니다. )
 
-
 <br>
-<h3><blue1_h3> 결론 </blue1_h3></h3>
+<br>
+<h2><blue1_h2> 결론 </blue1_h2></h2>
 netsh interface ip add neighbors "[망이름]" "111.111.111.111" "00-00-00-00-00-03"을 사용해서 ARP Table을 정적으로 할당 시켜주면 됩니다.  
 
 <br>
