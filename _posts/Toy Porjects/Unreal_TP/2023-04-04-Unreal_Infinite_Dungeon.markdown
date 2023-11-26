@@ -44,7 +44,7 @@ tags: [C++,Unreal]
 <br>
 <br>
 <h2><green1_h2> 개발자의 역활 및 경험 </green1_h2></h2>
-- **산성비 데모 제작** <span><red1_error>(전체 게임 제작 기여도: 100%)</red1_error></span>
+- **무한 던전 토이 프로젝트 제작** <span><red1_error>(전체 게임 제작 기여도: 100%)</red1_error></span>
     1. GTA와 비슷한 3인칭 컨트롤 구현.
     2. 애니메이션 몽타주를 활용하여 애니메이션 콤보 공격을 구현.
     3. 콜리전을 이용하여 대미지 전달 방식을 구현.
@@ -89,7 +89,7 @@ tags: [C++,Unreal]
 
 <br>
 
-<green1_h5>참조: [이득우의 언리얼 C++ 게임 개발의 정석]</green1_h5>
+<h6><green1_h5>참조: [이득우의 언리얼 C++ 게임 개발의 정석]</green1_h5></h6>
 <p></p>
-![이득우 언리얼](https://github.com/kj1241/kj1241.github.io/assets/22047442/61fba4b5-46b8-45ed-b5a4-29b20eeca845)
+![이득우 언리얼](https://github.com/kj1241/kj1241.github.io/assets/22047442/61fba4b5-46b8-45ed-b5a4-29b20eeca845){: width="20%" }
 

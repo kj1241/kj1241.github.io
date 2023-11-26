@@ -44,7 +44,7 @@ tags: [3Ds Max]
 <br>
 <br>
 <h2><green1_h2> 개발자의 역활 및 경험 </green1_h2></h2>
-- **지형 오브젝트 제작** <span><red1_error>(전체 게임 제작 기여도: 100%)</red1_error></span>
+- **크로마키 배경 제작** <span><red1_error>(전체 게임 제작 기여도: 100%)</red1_error></span>
     1. TurboSmooth를 이용하여 꽃잎 제작.
     2. 라인로프팅 사용하여 침대 가드 제작.
     3. cloth기능을 이용한 이불 주름 제작.
@@ -81,7 +81,7 @@ tags: [3Ds Max]
 <br>
 <h2><green1_h2> 결과(성과) 및 데모 </green1_h2></h2>
 <ul>
-<li><h5><green1_h5>성과: </green1_h5><span> 3D 모델링, 색감, Vary 연습 </span></h5></li>
+<li><h5><green1_h5>성과: </green1_h5><span> 크로마키 배경 제작 </span></h5></li>
 </ul>
 
 
