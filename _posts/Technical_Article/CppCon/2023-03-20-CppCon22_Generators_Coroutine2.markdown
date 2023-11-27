@@ -7,6 +7,8 @@ toc: true
 categories: [CppCon]
 tags: [C++, Cppcon22, Generators Coroutine , Coroutine, C++20]
 addsence: true
+
+
 ---
 
 비동기 프로그래밍 방법 혹은 코루틴 개념을 알고 싶은 분들은 앞의 파트 1 내용만 보시면 됩니다.  
@@ -205,9 +207,10 @@ GetValue() = 값을 가져오는 코드입니다.
 
 ![코루틴 호출 예시](https://github.com/kj1241/kj1241.github.io/assets/22047442/44666fe4-e522-490d-8d4c-5c586ddacced){: width="80%"}
 
-<details>
+<!-- $ echo -e "<details><summary>Collapsed Block\n</summary>\n\n## Header\n</details>" | kramdown --parse-block-html -->
+<details markdown=1>
 <summary>코루틴 개조하다 망해버린 버전</summary>
-
+ 
 
 2023.02.20 cppcon 바탕으로 위에 일어나는 에러가 싫어서 로직을 try_catch으로 들어갈 수 있게 코드를 수정하였습니다.  
 하지만 이 또한 잘못된 버전 만들었다는 것을 깨달았습니다.  
@@ -371,6 +374,8 @@ int main()
 	(시간나면 추후 다시 생각해볼 예정)
 
 </details>
+
+
 
 
 <br>

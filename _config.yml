@@ -46,3 +46,7 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+# 마크다운 사용법
+# markdown: kramdown
+# kramdown:
+#   parse_block_html: true
