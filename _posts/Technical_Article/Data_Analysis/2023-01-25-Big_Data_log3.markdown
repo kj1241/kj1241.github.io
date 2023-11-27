@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "빅데이터 해커톤 로그2 자료 분석 & 결론 도출"
+title:  "빅데이터 해커톤 로그3 자료 분석 & 결론 도출"
 date:   2023-01-25 14:01:26 +0900
 image: https://github.com/kj1241/kj1241.github.io/assets/22047442/b92e156f-7515-4daf-991f-207a56835b93
 toc: true

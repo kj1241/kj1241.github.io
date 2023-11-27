@@ -60,7 +60,7 @@ tags: [C++,Unreal]
 <br>
 <h2><green1_h2> 결과(성과) 및 데모 </green1_h2></h2>
 <ul>
-<li><h5><green1_h5>성과: </green1_h5><span> 2015년 1학기 윈도우 프로그래밍 실습 기말 과제 </span></h5></li>
+<li><h5><green1_h5>성과: </green1_h5><span> 토이 프로젝트 데모 제작 </span></h5></li>
 <li><h5><green1_h5>깃 허브(코드): </green1_h5><span> 
 <a href="https://github.com/kj1241/Unreal_Toy_Project">https://github.com/kj1241/Unreal_Toy_Project</a> </span></h5></li>
 <li><h5><green1_h5>유튜브 동영상: </green1_h5></h5> 
