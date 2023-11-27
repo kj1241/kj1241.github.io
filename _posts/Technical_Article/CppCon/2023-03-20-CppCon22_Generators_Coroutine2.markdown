@@ -360,6 +360,9 @@ int main()
 ![불법개조](https://github.com/kj1241/kj1241.github.io/assets/22047442/e651237e-1ac6-42f3-a707-be9ed6bac6f9){: width="100%" style="aspect-ratio:16/9"}
 
 ![불법개조_결과물](https://github.com/kj1241/kj1241.github.io/assets/22047442/2ff645e2-ea25-4810-ad59-e0096c69e6b7){: width="100%" style="aspect-ratio:16/9"}
+
+![실행_코드](https://github.com/kj1241/kj1241.github.io/assets/22047442/b0466596-e6c2-4b55-a83f-220a32f9f3f1){: width="100%" style="aspect-ratio:16/9"}
+
 - 로직 자체을 생각한 이유:
 	- 코드를 잘못 사용해도 try_catch 문으로 코드의 에러를 잡기 위해서 작성했습니다.
 	- co_return에 의하여 코드를 반복 사용하게 될 경우 프로그램이 정지하는 상황을 막을 수 있도록 설계하였습니다.
