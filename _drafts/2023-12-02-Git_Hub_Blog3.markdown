@@ -186,6 +186,15 @@ text-stroke: 1px #e6e6e680; /* 표준 속성 */
 
 ```
 
+
+```java
+
+{% raw %}
+{%- include google/google-analytics.html -%}
+{% endraw %}
+
+```
+
 사용하지 않는 자바스크립트를 삭제 해줍니다.
 
 8. 차세대 형식을 사용해 이미지 제공하기
