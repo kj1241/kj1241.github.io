@@ -88,14 +88,14 @@
         }
 
 
-        #categories_list a {
+        #categories_list #categories_item {
             color: rgb(238, 184, 159);
             font-size: 28px;
             font-family: sans-serif;
             transition: all 0.2s;
         }
 
-        #categories_list a:hover {
+        #categories_list #categories_item:hover {
             text-decoration: none;
             //background-color: rgb(131, 131, 131, 0.2);
             color: rgb(202, 70, 70);

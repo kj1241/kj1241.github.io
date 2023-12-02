@@ -125,14 +125,14 @@ $btn-mb: 0.5rem;
     color: rgb(215, 216, 165);
 }
 
-#categories #categories_list a{
+#categories #categories_list #categories_item{
     color: rgb(238, 184, 159);
     font-size: 15px;
     font-family: sans-serif;
     transition: all 0.2s;
   }
   
-  #categories #categories_list a:hover {
+  #categories #categories_list #categories_item:hover {
     text-decoration: none;
     //background-color: rgb(131, 131, 131, 0.2);
     color: rgb(202, 70, 70);
