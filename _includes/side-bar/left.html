@@ -41,35 +41,33 @@
        
 
     
-        <dlv id="categories">
-            <ol>
+        <div id="categories">
+            <ul>
                 <li id="categories_li">
                     <a id="categories_title" href="{{ site.data._categories.url | relative_url }}">
-                        {{ site.data._categories.categories_title }} ({{site.posts | size}})
+                        {{ site.data._categories.categories_title }} ({{ site.posts | size }})
                     </a>
-                    {% for item in site.data._categories.categories_list %}
-                    <dlv id="categories_list">
-                        <ol>
-                            <li id="categories_list_li">
-                                <div id="categories_item"> <!--href="{{ item.url }}"-->
-                                    {{ item.title }} 
-                                </div>
-                            </li>
-                            <ol>
-                                {% for subitem in item.categories_sub_list %}
-                                    <li  id="categories_sub">
-                                        <a href="{{ subitem.url }}">
-                                            {{ subitem.title }} ({{site.categories[subitem.title] | size}})
-                                        </a>
-                                    </li>
-                                {% endfor %}
-                            </ol>
-                        </ol>
-                    </dlv>
-                    {% endfor %}
+                    <ul id="categories_list">
+                        {% for item in site.data._categories.categories_list %}
+                        <li id="categories_list_li">
+                            <div id="categories_item">
+                                {{ item.title }}
+                                <ul id="categories_sub">
+                                    {% for subitem in item.categories_sub_list %}
+                                        <li>
+                                            <a href="{{ subitem.url }}">
+                                                {{ subitem.title }} ({{ site.categories[subitem.title] | size }})
+                                            </a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
                 </li>
-            </ol>
-        </dlv>
+            </ul>
+        </div>
     </header>
 
 

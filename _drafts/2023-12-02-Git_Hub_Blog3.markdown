@@ -83,12 +83,20 @@ id 속성 대신 class로 바꿔줍니다.
 <br>
 4. [aria-*] 속성이 역할과 일치하지 않음
 
-<div aria-label="Navigation menu" id="right-side-bar"> 처럼 aria-label을 잘못 사용하고 있는 경우임으로 <div aria-label="Navigation menu" id="right-side-bar">로 변경합니다.  
+<div aria-label="right-Side-bar" id="right-side-bar"> 에서 aria-label="right-Side-bar" 삭제해 줍니다.  
 해당 aria 사용법은 [aria 공식문서](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/navigation_role)을 읽어 보시기 바랍니다.
 
 
 5. 백그라운드 및 포그라운드 색상의 대비율이 충분하지 않습니다
 
+```scss
+   
+-webkit-text-stroke: 1px #e6e6e680; /* 웹킷 브라우저 (Chrome, Safari 등)에서 사용 */
+text-stroke: 1px #e6e6e680; /* 표준 속성 */
+
+```
+
+위와 같이 외각선 효과를 줍니다.  
 
 
 6. 목록에 <li> 요소와 스크립트 지원 요소(<script> 및 <template>)만 포함되지 않음
@@ -130,6 +138,41 @@ id 속성 대신 class로 바꿔줍니다.
 ```
 
 
+```html
+
+{% raw %}
+<ul>
+   <li>
+        <a id="categories_title" href="{{ site.data._categories.url | relative_url }}">
+            {{ site.data._categories.categories_title }} ({{site.posts | size}})
+         </a>
+        {% for item in site.data._categories.categories_list %}
+            <dlv id="categories_list">
+                <ul>
+                    <li>
+                        <div id="categories_item"> <!--href="{{ item.url }}"-->
+                            {{ item.title }} 
+                        </div>
+                    </li>
+                    <dlv id="categories_sub">
+                        <ul>
+                            {% for subitem in item.categories_sub_list %}
+                                <li>
+                                    <a href="{{ subitem.url }}">
+                                        {{ subitem.title }} ({{site.categories[subitem.title] | size}})
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </dlv>
+                </ul>
+            </dlv>
+        {% endfor %}
+    </li>
+</ul>
+{% endraw %}
+
+```
 
 
 
