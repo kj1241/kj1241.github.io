@@ -18,28 +18,30 @@
         </label>
 
 
+
+    
+
+
         <div class="trigger">
           {% for item in site.data._categories.categories_list %}
           <dlv id="categories_list">
-              <ul>
-                  <li>
-                      <div id="categories_item"> <!--href="{{ item.url }}"-->
-                          {{ item.title }} 
-                      </div>
-                  </li>
-                  <dlv id="categories_sub">
-                      <ul>
-                          {% for subitem in item.categories_sub_list %}
-                          <li>
-                              <a href="{{ subitem.url }}">
-                                  {{ subitem.title }} ({{site.categories[subitem.title] | size}})
-                              </a>
-                          </li>
-                          {% endfor %}
-                      </ul>
-                  </dlv>
-              </ul>
-          </dlv>
+            <ul>
+                <li id="categories_list_li">
+                    <div id="categories_item"> <!--href="{{ item.url }}"-->
+                        {{ item.title }} 
+                    </div>
+                </li>
+                <ul>
+                    {% for subitem in item.categories_sub_list %}
+                        <li  id="categories_sub">
+                            <a href="{{ subitem.url }}">
+                                {{ subitem.title }} ({{site.categories[subitem.title] | size}})
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </ul>
+        </dlv>
           {% endfor %}
         </div>
 

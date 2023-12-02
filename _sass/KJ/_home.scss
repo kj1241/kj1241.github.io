@@ -115,7 +115,7 @@
   -webkit-box-orient: vertical;
 }
 
-.slides_list #slides_list_link {
+.slides_list .slides_list_link {
   display: inline-block;
   width: 220px;
   height: 40px;
@@ -128,7 +128,7 @@
   text-decoration: none;
 }
 
-.slides_list #slides_list_link:hover {
+.slides_list .slides_list_link:hover {
   color: rgb(207, 224, 144);
   border-color: rgb(207, 224, 144);
 }

@@ -35,8 +35,11 @@ PageSpeed Insights에 들어가서 문제되는 부분들을 수정하고 성능
 ![구글 PageSpeed Insights 수정 전](https://github.com/kj1241/kj1241.github.io/assets/22047442/edf188c1-7bce-41ba-9ec2-9706c99022f3){: width="100%" }
 *구글 PageSpeed Insights 수정 전*
   
-1. 링크에 설명 텍스트가 없음
-description이 존재하지 않아서 생기는 문제입니다.  
+1. 링크에 설명 텍스트가 없음  
+
+seo-tag에 관해서 두가지 문제가 있습니다.  
+첫번째는 description이 존재하지 않아서 생기는 문제입니다.  
+두번째는 <a herf ="uml"> 자세히 보기 </a> 이런 것 처럼 링크 alt 요소가 정확하지 않을 때 일어납니다.
 
 ```html
 
@@ -53,13 +56,78 @@ description이 존재하지 않아서 생기는 문제입니다.
 
 ```
 page마다 description을 추가해주거나, 존재하지 않으면 _config.yml에 있는 description을 참조하게 해줍니다.
+
+
+```html 
+
+    {% raw %}
+    <a herf ="uml"> {{ image.title | remove: ".png" }}  자세히 보기 </a> 
+    {% endraw %}
+
+```
+위의 처럼 중복되는 alt 요소를 중복되지 않게 바꿔줍니다.  
+
   
-  
+<br>
 2. 링크를 크롤링 할 수 없음
 
 <a herf ='uml'> 로 이루어져야 하지만, 링크는 없고 <a>만 존재하는 html을 전부 <div>로 수정해 줍니다.
 
 
+<br>
+3. 포커스할 수 있는 활성 요소에 중복되는 [id] 속성이 있음
+
+id 속성 대신 class로 바꿔줍니다.
+
+
+<br>
+4. [aria-*] 속성이 역할과 일치하지 않음
+
+<div aria-label="Navigation menu" id="right-side-bar"> 처럼 aria-label을 잘못 사용하고 있는 경우임으로 <div aria-label="Navigation menu" id="right-side-bar">로 변경합니다.  
+해당 aria 사용법은 [aria 공식문서](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/navigation_role)을 읽어 보시기 바랍니다.
+
+
+5. 백그라운드 및 포그라운드 색상의 대비율이 충분하지 않습니다
+
+
+
+6. 목록에 <li> 요소와 스크립트 지원 요소(<script> 및 <template>)만 포함되지 않음
+
+```html
+
+{% raw %}
+<ul>
+   <li>
+        <a id="categories_title" href="{{ site.data._categories.url | relative_url }}">
+            {{ site.data._categories.categories_title }} ({{site.posts | size}})
+         </a>
+        {% for item in site.data._categories.categories_list %}
+            <dlv id="categories_list">
+                <ul>
+                    <li>
+                        <div id="categories_item"> <!--href="{{ item.url }}"-->
+                            {{ item.title }} 
+                        </div>
+                    </li>
+                    <dlv id="categories_sub">
+                        <ul>
+                            {% for subitem in item.categories_sub_list %}
+                                <li>
+                                    <a href="{{ subitem.url }}">
+                                        {{ subitem.title }} ({{site.categories[subitem.title] | size}})
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </dlv>
+                </ul>
+            </dlv>
+        {% endfor %}
+    </li>
+</ul>
+{% endraw %}
+
+```
 
 
 

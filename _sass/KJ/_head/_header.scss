@@ -122,11 +122,11 @@
         }
 
 
-        #categories_list li::marker {
+        #categories_list_li::marker {
             color: rgb(255, 145, 112);
         }
 
-        #categories_sub li::marker {
+        #categories_sub::marker {
             color: rgb(184, 191, 255);
         }
     }
