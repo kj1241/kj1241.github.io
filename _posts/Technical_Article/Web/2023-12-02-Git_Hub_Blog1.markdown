@@ -65,6 +65,7 @@ description: 단순히 Git Hub Blog 제작을 위해서 만들어진 테마를 F
 ## <blue1_h2> 4. Jekyll 과 Bundler 설치 </blue1_h2>
 
 <br>
+
 ### <blue1_h3> 1) 로컬에 Jekyll 설치 </blue1_h3>
   
 ```bash
@@ -75,6 +76,7 @@ description: 단순히 Git Hub Blog 제작을 위해서 만들어진 테마를 F
 
 
 <br>
+
 ### <blue1_h3> 2) Jekyll 블로그 생성 </blue1_h3>
 
 ![Jekyll 생성](https://github.com/kj1241/kj1241.github.io/assets/22047442/bde6b996-69a1-46b5-b7f0-224105c1f1f6){: width="100%" }
@@ -109,10 +111,53 @@ Jekyll를 설치했지만 실행이 안되시는 분들이 있을 수도 있습�
 
 minima 테마를  (nickname).github.io 폴더에 옮기면 됩니다.
 
+
 <br>
 <br>
 
-## <blue1_h2> 5. 생성 확인 </blue1_h2>
+##  <blue1_h2> 6. Thema Minima 지우기 </blue1_h2>
+
+기본적으로 Jekyll을 생성하면 Minima 테마는 제공해 줍니다.  
+하지만 Minima 테마를 사용하지 않을 것이기 때문에 __config.yml과 Gemfile에 있는 Minima의 흔적을 제거해 줍니다.
+
+![_config minima 제거](https://github.com/kj1241/kj1241.github.io/assets/22047442/82c96f08-1d34-4455-8b7d-45c34f9a9575){: width="100%" }
+*_config minima 제거*
+
+  
+![Gemfile minima 제거](https://github.com/kj1241/kj1241.github.io/assets/22047442/a267dd1f-db88-495b-a013-52361ef6de24){: width="100%" }
+*Gemfile minima 제거*
+  
+
+### <blue1_h3> Minima 제거시 에러 처리 방법 </blue1_h3>
+
+위와 같이 minima를 주석처리하게 되면, 분명 에러가 발생 할 것입니다.  
+
+![minima 제거시 에러 발생 ](https://github.com/kj1241/kj1241.github.io/assets/22047442/c446a942-7bb3-45fb-a68e-82e16d7e40a4){: width="100%" }
+*minima 제거시 발생하는 에러*
+
+이 이유는 포스터에서 기본적으로 minima 테마에서 seo-tag를 사용하고 있기 때문입니다.
+
+![seo-tag 설치](https://github.com/kj1241/kj1241.github.io/assets/22047442/a107e024-aeb2-470f-8275-76c0ebd89f24){: width="100%" }
+*seo-teg 설치*
+
+```bash
+    gem install jekyll-seo-tag
+```
+
+따라서seo-tag를 설치해 줍니다.
+
+![_config seo-tag 추가](https://github.com/kj1241/kj1241.github.io/assets/22047442/4c4d8de3-664d-46c1-8739-54d482ac6e69){: width="100%" }
+*__config에 seo-teg 추가*
+  
+![Gemfile seo-tag 추가](https://github.com/kj1241/kj1241.github.io/assets/22047442/a4118ecb-8510-45b0-9f87-7960aca51857){: width="100%" }
+* Gemfile에 seo-teg 추가*
+
+그리고 나서 __config.yml과 Gemfile에 jekyll-seo-tag를 추기하면됩니다.
+
+<br>
+<br>
+
+## <blue1_h2> 7. 생성 확인 </blue1_h2>
 
 ![설치 생성 확인](https://github.com/kj1241/kj1241.github.io/assets/22047442/eaa0b052-ad49-452a-96b6-0cd61ccb1895){: width="100%" }
 *설치 생성 확인*
@@ -125,8 +170,8 @@ minima 테마를  (nickname).github.io 폴더에 옮기면 됩니다.
 
 ![결과](https://github.com/kj1241/kj1241.github.io/assets/22047442/663c3d09-02b2-4295-bd06-ed52b67e683a){: width="100%" }
 
-다음과 같이 결과물을 얻으실 수 있습니다.  
-
+다음과 같이 결과물을 얻으실 수 있습니다.
+저는 visual code를 사용하여 블로그를 작성하고 있습니다.
 
 
 <br>
