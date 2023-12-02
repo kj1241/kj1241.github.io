@@ -150,7 +150,7 @@ minima 테마를  (nickname).github.io 폴더에 옮기면 됩니다.
 *__config에 seo-teg 추가*
   
 ![Gemfile seo-tag 추가](https://github.com/kj1241/kj1241.github.io/assets/22047442/a4118ecb-8510-45b0-9f87-7960aca51857){: width="100%" }
-* Gemfile에 seo-teg 추가*
+*Gemfile에 seo-teg 추가*
 
 그리고 나서 __config.yml과 Gemfile에 jekyll-seo-tag를 추기하면됩니다.
 
@@ -162,9 +162,9 @@ minima 테마를  (nickname).github.io 폴더에 옮기면 됩니다.
 ![설치 생성 확인](https://github.com/kj1241/kj1241.github.io/assets/22047442/eaa0b052-ad49-452a-96b6-0cd61ccb1895){: width="100%" }
 *설치 생성 확인*
 
----bash
+```bash
    bundle exec jekyll serve
----
+```
 
 생성된 블로그를 확인하기 위해서 <blue1_h5>웹 브라우저에서 http://localhost:4000에 접속</blue1_h5> 해서 확인해 봅시다.   
 
