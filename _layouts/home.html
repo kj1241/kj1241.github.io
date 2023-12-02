@@ -12,13 +12,13 @@ layout: default
   <div class="slides_list"  style="background-image: url('/assets/img/{{ image.title }}');">
     <div id="slides_list_title">
       <strong> 
-        {{ image.title | remove: ".png" }} 
+        {{ image.title | remove: ".webp" }} 
       </strong>
       <p id="slides_list_text">
         {{ image.summary }} 
       </p>
       <a href="{{ image.link | relative_url }}" class="slides_list_link">
-        {{ image.title | remove: ".png"  }}  자세히 보기
+        {{ image.title | remove: ".webp"  }}  자세히 보기
       </a>
 
     </div>

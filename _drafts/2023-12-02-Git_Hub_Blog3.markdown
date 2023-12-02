@@ -61,7 +61,7 @@ page마다 description을 추가해주거나, 존재하지 않으면 _config.yml
 ```html 
 
     {% raw %}
-    <a herf ="uml"> {{ image.title | remove: ".png" }}  자세히 보기 </a> 
+    <a herf ="uml"> {{ image.title | remove: ".webp" }}  자세히 보기 </a> 
     {% endraw %}
 
 ```
@@ -174,6 +174,23 @@ text-stroke: 1px #e6e6e680; /* 표준 속성 */
 
 ```
 
+7. 사용하지 않는 자바스크립트 줄이기
+
+```java 
+
+{% raw %}
+<!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KWD8S2B"  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>  
+<!-- End Google Tag Manager (noscript) -->
+{% endraw %}
+
+```
+
+사용하지 않는 자바스크립트를 삭제 해줍니다.
+
+8. 차세대 형식을 사용해 이미지 제공하기
+
+PNG의 이미지를 webp로 변환
 
 
 
