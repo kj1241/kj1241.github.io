@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "c++ 20) 원자 스마트 포인터-효율적인 메모리 관리 1"
+title:  "원자 스마트 포인터-효율적인 메모리 관리 1"
 date:   2023-06-30 13:25:17 +0900
 image: https://github.com/kj1241/kj1241.github.io/assets/22047442/8d81001b-b298-4a81-8c0c-e0ef0552abd1
 toc: true
