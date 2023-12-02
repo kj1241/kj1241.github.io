@@ -42,20 +42,20 @@
 
     
         <dlv id="categories">
-            <ul>
+            <ol>
                 <li id="categories_li">
                     <a id="categories_title" href="{{ site.data._categories.url | relative_url }}">
                         {{ site.data._categories.categories_title }} ({{site.posts | size}})
                     </a>
                     {% for item in site.data._categories.categories_list %}
                     <dlv id="categories_list">
-                        <ul>
+                        <ol>
                             <li id="categories_list_li">
                                 <div id="categories_item"> <!--href="{{ item.url }}"-->
                                     {{ item.title }} 
                                 </div>
                             </li>
-                            <ul>
+                            <ol>
                                 {% for subitem in item.categories_sub_list %}
                                     <li  id="categories_sub">
                                         <a href="{{ subitem.url }}">
@@ -63,12 +63,12 @@
                                         </a>
                                     </li>
                                 {% endfor %}
-                            </ul>
-                        </ul>
+                            </ol>
+                        </ol>
                     </dlv>
                     {% endfor %}
                 </li>
-            </ul>
+            </ol>
         </dlv>
     </header>
 
