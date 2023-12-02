@@ -192,8 +192,15 @@ text-stroke: 1px #e6e6e680; /* 표준 속성 */
 
 PNG의 이미지를 webp로 변환
 
+9. 오프스크린 이미지 지연하기
 
+```html 
 
+{% raw %}
+<img src="image.jpg" alt="대체 텍스트" loading="lazy">
+{% endraw %}
+
+```
 
 <br>
 

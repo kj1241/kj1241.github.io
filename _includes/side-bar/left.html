@@ -18,8 +18,7 @@
                 {{ site.profile_img | relative_url }}
                 {% endif %}
                 {% endcapture %}
-                <img src="{{ profile_img_url | strip }}" width="112" height="112" alt="{{profile_img_url}}"
-                    onerror="this.style.display='none'">
+                <img src="{{ profile_img_url | strip }}" width="112" height="112" alt="{{profile_img_url}}"  onerror="this.style.display='none'" loading="lazy">
                 {% endif %}
             </a>
         </dlv>
