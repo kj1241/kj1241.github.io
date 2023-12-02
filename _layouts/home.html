@@ -2,9 +2,9 @@
 layout: default
 ---
 <div id="cover_top_sidebar">
-  <a ><!--href="https://www.notion.so/kyeoungju/KyeoungJu-Kim-268cb03b25e149a19deda8adbbc38bc7?pvs=4">-->
+  <div ><!--href="https://www.notion.so/kyeoungju/KyeoungJu-Kim-268cb03b25e149a19deda8adbbc38bc7?pvs=4">-->
     Summary_Portfolio
-  </a>
+  </div>
 </div>
 
 <div class="slideshow-container">
@@ -18,7 +18,7 @@ layout: default
         {{ image.summary }} 
       </p>
       <a href="{{ image.link | relative_url }}" id="slides_list_link">
-        자세히 보기
+        {{ image.title | remove: ".png"  }}  자세히 보기
       </a>
 
     </div>
