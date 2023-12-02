@@ -10,7 +10,7 @@ addsence: true
 ---
 
 
-<h2><blue1_h2> 주제: Breaking Dependencies - The Visitor Design Pattern in Cpp </blue1_h2></h2>
+<h2><blue1_h2> 1. 주제: Breaking Dependencies - The Visitor Design Pattern in Cpp </blue1_h2></h2>
 이번 분석은, CppCon에서 발표된 <a herf= "https://www.youtube.com/watch?v=lm10Cj-HNKQ&list=PLHTh1InhhwT6c2JNtUiJkaH8YRqzhU7Ag&index=97"> Understanding C++ Coroutines by Example: Generators</a>으로 가저왔습니다. (2부가 있는데 본 결과 코루틴과 살짝 결이 달라 보여서 다음에 추가 분석하도록 하겠습니다.)  
 
 C#, Python 유니티를 사용하시는 분들은 코루틴에 관해서 익숙하시겠지만, C++은 C++20부터 코루틴을 사용할 수 있습니다. 
@@ -21,7 +21,7 @@ C#, Python 유니티를 사용하시는 분들은 코루틴에 관해서 익숙�
 
 <br>
 <br>
-<h2><blue1_h2> 코루틴 이론 </blue1_h2></h2>
+<h2><blue1_h2> 2. 코루틴 이론 </blue1_h2></h2>
 C++20 코루틴을 살펴보기전에 기본적인 코루틴 이론에 관해서 이야기하고 넘어 가겠습니다.
 
 <br>

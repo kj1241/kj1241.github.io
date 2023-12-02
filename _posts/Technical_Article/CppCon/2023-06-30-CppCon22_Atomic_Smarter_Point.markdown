@@ -12,7 +12,7 @@ addsence: true
 ---
 
 
-<h2><blue1_h2> 주제 : Smarter Cpp Atomic Smart Points -Effecient Concurrent Memory Management  </blue1_h2></h2>
+<h2><blue1_h2> 1. 주제 : Smarter Cpp Atomic Smart Points -Effecient Concurrent Memory Management  </blue1_h2></h2>
 이번에 분석할 주제는 원자 스마트 포인터의 자료구조 스택에 관해서입니다.
 CppCon22에서 발표된, <a herf ="https://www.youtube.com/watch?v=OS7Asaa6zmY&list=PLHTh1InhhwT6c2JNtUiJkaH8YRqzhU7Ag&index=27">Smarter Cpp Atomic Smart Pointers - Effcient Concurrent Memory Management에 관한 내용으로 들고 왔습니다.  
 

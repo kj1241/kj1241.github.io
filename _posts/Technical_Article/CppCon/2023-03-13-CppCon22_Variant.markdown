@@ -10,7 +10,7 @@ addsence: true
 ---
 
 
-<h2><blue1_h2> 주제: Breaking Dependencies - The Visitor Design Pattern in Cpp </blue1_h2></h2>
+<h2><blue1_h2> 1. 주제: Breaking Dependencies - The Visitor Design Pattern in Cpp </blue1_h2></h2>
 이번 분석은, CppCon에서 발표된 <a herf= "https://www.youtube.com/watch?v=PEcy1vYHb8A"> Breaking Dependencies - The Visitor Design Pattern in Cpp</a>으로 가저왔습니다.  
 
 블로그를 이주하면서 Cppcon과 관련된 내용을 다시 작성하는 주제인데, 블로그를 이주하기 전에는 코드가 모든 것을 표현 해준다고 생각 했습니다.  
@@ -21,7 +21,7 @@ addsence: true
  
 <br>
 <br>
-<h2><blue1_h2> 코드 분석 </blue1_h2></h2>
+<h2><blue1_h2> 2. 코드 분석 </blue1_h2></h2>
 영상에서 이야기하는 **Enum Solution, OO Solution, 방문자 패턴,variant를 이용한 코드 작성 이 4가지 코드**는 다형성이라는 소재로 묶여있습니다.    
   
 이 주제를 풀어쓰기 힘들었던 점은, 단순히 디자인 패턴을 맹목적으로 옳다고 생각하고 디자인 패턴대로 작성해야 된다는 사람들과 논쟁하기 싫었기 때문입니다.  
@@ -31,7 +31,7 @@ addsence: true
 
 
 <br>
-<h3><blue1_h3> Enum Solution </blue1_h3></h3>
+<h3><blue1_h3> 1) Enum Solution </blue1_h3></h3>
 
 ```c++
 
@@ -240,7 +240,7 @@ int main()
 
 
 <br>
-<h3><blue1_h3> OO Solution </blue1_h3></h3>
+<h3><blue1_h3> 2) OO Solution </blue1_h3></h3>
 
 ![oo_구조](https://github.com/kj1241/kj1241.github.io/assets/22047442/54885c5b-d00e-4a4b-a2ed-bc894317ecb1){: width="100%" }
 
@@ -427,7 +427,7 @@ int main()
 
 
 <br>
-<h3><blue1_h3> Visit 패턴 </blue1_h3></h3>
+<h3><blue1_h3> 3) Visit 패턴 </blue1_h3></h3>
 ![방문자패턴_구조](https://github.com/kj1241/kj1241.github.io/assets/22047442/2cb95e13-7f35-4823-bc89-e63994e702ba){: width="100%" }
 
 ```c++
@@ -658,7 +658,7 @@ int main()
 
 
 <br>
-<h3><blue1_h3> std::variant를 이용한 코드(c++17)</blue1_h3></h3>
+<h3><blue1_h3> 4) std::variant를 이용한 코드(c++17)</blue1_h3></h3>
 
 ![variant_구조](https://github.com/kj1241/kj1241.github.io/assets/22047442/f4faf3f8-6ecd-4724-bcf1-996a4caad84f){: width="100%" }
 
@@ -841,7 +841,7 @@ std::visit을 사용하여 다형성을 보다 <highlight_blue>간결하고 유�
 
 <br>
 <br>
-<h2><blue1_h2> 성능 분석 검증 </blue1_h2></h2>
+<h2><blue1_h2> 3. 성능 분석 검증 </blue1_h2></h2>
 그럼 정말로 이 코드 형식들의 성능이 어떻게 나오지는 확인해 봅시다.  
   
 2023.03.10에는 동작 코드인 Draw()  한 개 가지고 데이터 개수를 늘려가면서 코드를 비교하였습니다.  
@@ -901,7 +901,7 @@ std::visit을 사용하여 다형성을 보다 <highlight_blue>간결하고 유�
 물리 메모리: 21016576 byte
 
 <br>
-<h3><blue1_h3> 성능분석 결론 </blue1_h3></h3>
+<h3><blue1_h3> 4. 성능분석 결론 </blue1_h3></h3>
 퍼포먼스: Enum Solution >> OO Solution >= Variant Solution >> 방문자 패턴  
 추가 사항: Variant 실험 도중 성능이 크게 불안정하였지만, 방문자 패턴보다 퍼포먼스가 좋았습니다.  
 

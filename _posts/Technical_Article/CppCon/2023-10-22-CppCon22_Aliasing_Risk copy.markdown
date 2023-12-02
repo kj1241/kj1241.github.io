@@ -12,7 +12,7 @@ addsence: true
 ---
 
 
-<h2><blue1_h2> 주제 : Aliasing in C++ -Risks, Opportunities and Techniques </blue1_h2></h2>
+<h2><blue1_h2> 1. 주제 : Aliasing in C++ -Risks, Opportunities and Techniques </blue1_h2></h2>
 이번 포스팅할 주제는 C++ 앨리어싱에 관해서입니다.  
 그래픽스 디지털 샘플링 앨리어싱 왜곡 현상에 관해서 찾아들어오신 분들은 살포시 뒤로 가기를 눌러주세요.  
 CppCon22에서 발표된, <a herf ="https://www.youtube.com/watch?v=zHkmk1Y-gqM&list=PLHTh1InhhwT6c2JNtUiJkaH8YRqzhU7Ag&index=112">Aliasing in C++ -Risks, Opportunities and Techniques에 관한 내용으로 들고 왔습니다.  

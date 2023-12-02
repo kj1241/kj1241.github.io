@@ -5,14 +5,14 @@ date:   2023-03-06 11:11:56 +0900
 image: https://github.com/kj1241/kj1241.github.io/assets/22047442/8d81001b-b298-4a81-8c0c-e0ef0552abd1
 toc: true
 categories: [CppCon]
-tags: [C++, Cppcon22, Aliasing Risks]
+tags: [C++, RTTI, Reverse Engineering ]
 addsence: true
 
 
 ---
 
 
-<h2><blue1_h2> 주제 :RTTI  </blue1_h2></h2>
+<h2><blue1_h2> 1. 주제 :RTTI  </blue1_h2></h2>
 이번에 분석할 주제는 RTTI에 관해서입니다.
 이 주제를 선택한 이유는 면접에서 물어본 주제인데요.  
 면접 당시에는 정확하게 몰랐기 때문에 인지하고자 공부하게 되었습니다.
