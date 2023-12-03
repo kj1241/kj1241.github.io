@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Jekyll를 이용해서 github blog 만들기 3 트러블 슈팅과 마크다운 팁"
-date:   2023-12-03 11:38:04 +0900
+title:  "Jekyll를 이용해서 github blog 만들기 4 트러블 슈팅과 마크다운 팁"
+date:   2023-12-03 21:05:04 +0900
 image: https://github.com/kj1241/kj1241.github.io/assets/22047442/ea08108f-a358-441c-9c9b-6a18572f2fe7
 toc: true
 categories: [Web]
