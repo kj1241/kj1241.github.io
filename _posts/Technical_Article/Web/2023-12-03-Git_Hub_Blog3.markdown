@@ -1,17 +1,17 @@
 ---
 layout: post
-title:  "Jekyll를 이용해서 github blog 만들기 3 블로그 품질 올리기"
+title:  "Jekyll를 이용해서 github blog 만들기 3 트러블 슈팅과 마크다운 팁"
 date:   2023-12-03 11:38:04 +0900
-image: 
+image: https://github.com/kj1241/kj1241.github.io/assets/22047442/ea08108f-a358-441c-9c9b-6a18572f2fe7
 toc: true
 categories: [Web]
 tags: [Jkeyll, Ruby, HTML, SCSS, Java Script, Git Hub Blog ]
 addsence: true
-excerpt: 단순히 Git Hub Blog 제작을 위해서 만들어진 테마를 Fork를 이용하여 제작하는 것이 아닌 Jekyll + Ruby + HTML + SCSS + Java Script를 사용하여 제작하는 방법을 설명하고 있습니다. 해당 과정은 블로그의 품질을 올리기위해 PageSpeed Insights와 Seo-tag 최적화하는 방법에 대해 설명하고 있습니다.
+excerpt: 단순히 Git Hub Blog 제작을 위해서 만들어진 테마를 Fork를 이용하여 제작하는 것이 아닌 Jekyll + Ruby + HTML + SCSS + Java Script를 사용하여 제작하는 방법을 설명하고 있습니다. 해당 과정은 블로그를 제작함으로 인해 발생했던 트러블 슈팅과 마크다운의 팁에 대해서 이야기하고 있습니다. 
 ---
 
-앞서서는 Git Hub Blog에 제작된 언어별로 어떻게 역활을 맡고 있는지 확인 했습니다.  
-그럼 이제 구글 검색엔진에 올리기 위해서 본격적으로, 구글 서치 콘솔의 PageSpeed Insights와 Seo-tag 최적화를 하기위해 했던 예제를 작성해 보겠습니다.
+앞서서는 구글 검색엔진에 올리기 위해서 변경하거나 필요했던 코드들을 이야기했습니다.   
+그럼 이제 블로그를 작성하면서 발생했던 트러블 슈팅과 마크다운 팁에 관해서 적어보겠습니다.  
 
 
 <br>
@@ -20,450 +20,268 @@ excerpt: 단순히 Git Hub Blog 제작을 위해서 만들어진 테마를 Fork�
 
 <br>
 
-## <blue1_h2> 1. 깃 허브 블로그 완성하면 체크해야 될 일들 </blue1_h2>
-블로그 완성하면 여간 손이 가는게 아닙니다.  
-티스토리에서는 내부적으로 지원해주던 것들을 깃 허브 블로그는 전부 유저가 채크해야 합니다.  
-그럼 한번 살펴 봅시다.
+## <blue1_h2> 1. 트러블 슈팅 </blue1_h2>
+
+Git Hub Blog를 제작하면서 난감했던 트러블 슈팅을 적어보겠습니다.
+
 
 <br>
-<br>
+### <blue1_h3> 1) _page 폴더 제작시 내용을 읽을 수 없는 에러 </blue1_h3>
 
-## <blue1_h2> 2. 구글 PageSpeed Insights 성능 체크하기 </blue1_h2>
+_page 폴더 안에 카테고리 항목을 보여주는 페이지를 저장해 놨지만, 해당 디렉토리를 jekyll를 사용하여 불러 올 수 없었습니다.  
+따라서 pages라는 폴더를 만들고 읽어오는 방식으로 코드를 수정하였습니다.  
 
-블로그 품질을 객관적으로 채크해주는 사이트가 있습니다.  
-PageSpeed Insights에 들어가서 문제되는 부분들을 수정하고 성능을 끌어올리시면 됩니다.
-
-![구글 PageSpeed Insights 수정 전](https://github.com/kj1241/kj1241.github.io/assets/22047442/edf188c1-7bce-41ba-9ec2-9706c99022f3){: width="100%" }
-*구글 PageSpeed Insights 모바일 수정 전*
-
-
-![구글 PageSpeed Insights 수정 전](https://github.com/kj1241/kj1241.github.io/assets/22047442/9d3318de-c79f-4dbb-ac16-86cd68236423){: width="100%"}
-*구글 PageSpeed Insights 데스크톱 수정 전*
 
 <br>
+### <blue1_h3> 2) 알수없는 Git Hub rendering 에러 </blue1_h3>
 
-### <blue1_h3> 1) 링크에 설명 텍스트가 없음  </blue1_h3>
+해당 트러블 슈팅 내용은 오랫동안 기억에 남을 것 같습니다.  
+visual code를 사용하여 블로그의 형태를 html과 scss로 제작하였습니다.  
+visual code를 사용했을 당시에는 아무 문제가 발생하지 않아서 Git Hub에 올리게 되었습니다.  
 
-위의 링크가 설명에 텍스트 없음은 seo-tag에 관해서 두가지 문제가 발생할때 경고가 나타납니다.
-1. description이 존재하지 않기 떄문입니다.
-2. alt 요소가 정확하지 않을 때 일어납니다. 
-  
-<br>
+3분후에 깃 허브를 통해서 이메일로 알림을 받게 됩니다.  
+![문제의 에러 메일](https://github.com/kj1241/kj1241.github.io/assets/22047442/826be0b2-ce48-4de5-a02b-89b71dadd725){: width="50%" }
 
-```html
-
-    {% raw %}
-    <!--head-->
-    ...
-    {%- if page.description -%}
-        <meta name="description" content="여기에 페이지의 간략한 설명을 입력합니다.">
-    {%- else -%}
-        <meta name="description" content= "{{ site.description }}">
-    {%- endif -%}
-    ...
-    {% endraw %}
-
-```
-  
-page마다 description을 추가 해주거나, 존재하지 않으면 _config.yml에 있는 description을 참조하게 설정 해줍니다.
-
+깃 허브에 저장은 되고 빌드는 되었지만 페이지를 구축하지 못했다는 알림을 받게 되었습니다.  
   
 
+![에러 당시 깃 허브 워크플로](https://github.com/kj1241/kj1241.github.io/assets/22047442/ea08108f-a358-441c-9c9b-6a18572f2fe7){: width="100%" }
+![깃 허브 워크플로 빌드 에러 세부 사항](https://github.com/kj1241/kj1241.github.io/assets/22047442/1bfd90d6-94ac-4f9a-9fef-dad60be63b46){: width="100%" }
 
-```html 
 
-    {% raw %}
-    <a herf ="uml"> {{ image.title | remove: ".webp" }}  자세히 보기 </a> 
-    {% endraw %}
+워크플로를 보는 당시 아무리 에러내용을 찾아보는 찾을 수가 없었습니다.  
+깃 허브로 올리는 시간은 40초 밖에 안되었기 때문에 타임에러일 확률은 존재하지 않았습니다.  
+어디서 에러가 났는지 제시해 주지 않아서 황당했습니다.   
 
-```
+에러에 대한 힌트도 없었음으로 무언가 검색 해서 도움을 받을 수도 없었습니다.  
+제가 할 수 있는 유일한 방법은 탐색적 방법으로 하나 하나씩 제거해가면서 에러를 일으키는 원인을 찾는 것이였습니다. 
   
-위의 처럼 중복되는 alt 요소를 중복되지 않게 바꿔줍니다.  
-
-
+해당 방법으로 원인을 찾아서, color의 값으로 RGBA를 사용한거에 무언가 문제가 있다는 것을 확인한후 RGBA함수를 이용하는 것보다 16진수를 이용하여 사용하는 방식으로 바꾸어서 해결 하였습니다.  
   
-<br>
-
-### <blue1_h3> 2) 링크를 크롤링 할 수 없음  </blue1_h3>
-
-```html
-
-    {% raw %}
-    <!--수정 전-->
-    <a>  text </a>
-
-    <!--수정 후-->
-    <div>  text </div>
-    {% endraw %}
-
-```
-
-
-위의 문제는 링크가 존재하지 않고 설명만 있어서 그렇습니다.  
-따라서 하이퍼링크를 사용할 경우, herf ='uml' 로 이루어져야 하지만, 링크는 없고 만 존재하는 html을 전부 a → div로 수정해 줍니다.
+물론 이런 실험으로 에러를 찾는 것은 재미있었으나, 브런치를 파서 실험해야된다는 생각을 하지 못해서 main으로 실험해서 히스토리 오염시켰기 때문에 새로 레파지토리를 만들게 되었습니다.  
 
 
 <br>
+<br>
 
-### <blue1_h3> 3) 포커스할 수 있는 활성 요소에 중복되는 [id] 속성이 있음  </blue1_h3>
+## <blue1_h2> 2. 마크다운 글 작성할 때 팁 </blue1_h2>
 
-중복되서 나타나는 id 속성을 찾고 <blue1_h5> id 대신 class로 변경</blue1_h5>해 주면 해결됩니다.
-
-
-
+일단, 미리 말씀드리면 웹 프론트에 전공하지 않았기 때문에 그냥 저의 마음대로 마크다운 작성하는 비법입니다.  
+전부 공식적으로 적혀있는 방법은 아니기 때문에 그냥 이렇게 적었구나 하고 넘어가시면 됩니다.  
 
 <br>
 
-### <blue1_h3> 4) [aria-*] 속성이 역할과 일치하지 않음  </blue1_h3>
+### <blue1_h3> 1) 색상 지정 </blue1_h3>
 
-aria-label의 역활이 불분명하다면 삭제해도 무방합니다.  
-따라서 <div aria-label="right-Side-bar" id="right-side-bar"> 에서 <blue1_h5>aria-label="right-Side-bar" 삭제</blue1_h5>해 줍니다.  
-해당 aria 사용법은 [aria 공식문서](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/navigation_role)을 읽어 보시는 것을 추천드립니다.
-
-
-<br>
-
-### <blue1_h3> 5) 백그라운드 및 포그라운드 색상의 대비율이 충분하지 않습니다  </blue1_h3>
-
+저도 특정한 색을 많이 사용하는데, 마크다운 사용하시는 분이나 html 사용하시는 분들 뭔가 고정적으로 많이 사용하는 색이 존재하실 겁니다.  
+그러면 SCSS에 이상한 헤더 속성을 등록시키는 겁니다.
 
 ```scss
-   
--webkit-text-stroke: 1px #e6e6e680; /* 웹킷 브라우저 (Chrome, Safari 등)에서 사용 */
-text-stroke: 1px #e6e6e680; /* 표준 속성 */
+
+{% raw %}
+yellow1_h2 {
+    color: #ffe314;
+}
+
+yellow1_h3 {
+    color: #fffab7;
+}
+{% endraw %}
 
 ```
-색은 그대로 유지하고 싶다고 생각하시면 배경과 대비되는 외각선 효과를 주면 해결됩니다.
+
+요런 방식으로 본인이 인식하고 있는 단어에 특정 색을 배합해 놓는 것입니다.  
+
+{% raw %}
+Input: &lt;yellow1_h2&gt;요런식으로 &lt;/yellow1_h2&gt; &lt;yellow1_h3&gt;작성해 봅시다.&lt;/yellow1_h3&gt;
+{% endraw %}
+Output: <yellow1_h2>요런식으로 </yellow1_h2> <yellow1_h3>작성해 봅시다.</yellow1_h3>
+  
+
+일단 위의 방법은 <red1_error>공식문서</red1_error>에 없습니다.  
+html 방식을 넣어서 문서를 자주 작성하는게 피곤해서 다양하게 실험해보다 알아내었습니다.  
+평소에 자주쓰는 색들을 지정해서 편히 글자에 색을 입히세요.
 
 
 <br>
 
-### <blue1_h3> 6) 목록에 <li> 요소와 스크립트 지원 요소(<script> 및 <template>)만 포함되지 않음  </blue1_h3>
+### <blue1_h3> 2) 이미지 크기 조절 </blue1_h3>
 
+
+```markdown
+
+{% raw %}
+![예시 이미지](https://example.com/image.jpg)
+{% endraw %}
+
+```
+
+[CommonMark 표준 마크다운 공식문서](https://commonmark.org/)에 보면 단순히 이미지 표현은 위와 같습니다.  
+이미지 크기를 조절하려면 html문법을 이용해야합니다. 
 
 ```html
 
-<!--수정 전-->
 {% raw %}
-<ul>
-   <li>
-        <a id="categories_title" href="{{ site.data._categories.url | relative_url }}">
-            {{ site.data._categories.categories_title }} ({{site.posts | size}})
-         </a>
-        {% for item in site.data._categories.categories_list %}
-            <dlv id="categories_list">
-                <ul>
-                    <li>
-                        <div id="categories_item"> <!--href="{{ item.url }}"-->
-                            {{ item.title }} 
-                        </div>
-                    </li>
-                    <dlv id="categories_sub">
-                        <ul>
-                            {% for subitem in item.categories_sub_list %}
-                                <li>
-                                    <a href="{{ subitem.url }}">
-                                        {{ subitem.title }} ({{site.categories[subitem.title] | size}})
-                                    </a>
-                                </li>
-                            {% endfor %}
-                        </ul>
-                    </dlv>
-                </ul>
-            </dlv>
-        {% endfor %}
-    </li>
-</ul>
+<img src="https://example.com/image.jpg" alt="예시 이미지" style="width:300px;"/>
 {% endraw %}
 
 ```
 
+물론 이렇게 사용해도됩니다.  
+어짜피 마크다운 문서는 html로 이루어저서 html 문법을 사용해서 작성해도됩니다.  
+하지만 글을 작성하다보면 불편합니다.  
 
-```html
+그렇기 때문에 마크다운 확장형식을 이용하여 코드를 작성할 수도 있습니다.  
 
-<!--수정 후-->
+
+```markdown
+
 {% raw %}
-<div id="categories">
-    <ul>
-        <li id="categories_li">
-            <a id="categories_title" href="{{ site.data._categories.url | relative_url }}">
-                {{ site.data._categories.categories_title }} ({{ site.posts | size }})
-            </a>
-             <ul id="categories_list">
-                {% for item in site.data._categories.categories_list %}
-                    <li id="categories_list_li">
-                        <div id="categories_item">
-                            {{ item.title }}
-                            <ul id="categories_sub">
-                                {% for subitem in item.categories_sub_list %}
-                                    <li>
-                                        <a href="{{ subitem.url }}">
-                                            {{ subitem.title }} ({{ site.categories[subitem.title] | size }})
-                                        </a>
-                                    </li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                    </li>
-                {% endfor %}
-            </ul>
-        </li>
-    </ul>
-</div>
+![예시 이미지](https://example.com/image.jpg){: width="300px"  height="200px" }
 {% endraw %}
 
 ```
 
-위의 내용처럼 ul 또는 ol 안에 div 혹은 dlv가 존재하면 안됩니다.  
-따라서 구조를 아래와 같이 전부 바꿔줍니다.  
+이런 형식으로 작성하면됩니다.  
+저희는 모바일의 시대에 살고 있습니다.  
+위와 같은 형식은 이미지 크기를 고정시키기 때문에 반응형으로 포스트를 사용 할 수 없습니다.  
+그렇기 때문에 포스트를 반응형으로 작성하시고 싶은 신 분들은 다음과 같이 사용하면 됩니다. 
 
 
-<br>
-
-### <blue1_h3> 7) 사용하지 않는 자바스크립트 줄이기  </blue1_h3>
-
-```java 
+```markdown
 
 {% raw %}
-<!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KWD8S2B"  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>  
-<!-- End Google Tag Manager (noscript) -->
+![예시 이미지](https://example.com/image.jpg){: width="100%" }
 {% endraw %}
 
 ```
 
+위와 같이 코드를 작성하게 되면 가로의 크기는 정할 수 있지만 세로의 크기를 정할 수 없습니다.  
+따라서 가로 세로를 원하는 비율로 만들고 싶으신분들은 다음과 같이 사용하시면 됩니다.  
 
-```java
+```markdown
 
 {% raw %}
-{%- include google/google-analytics.html -%}
+![예시 이미지](https://example.com/image.jpg){: width="100%" style="aspect-ratio:16/9"}
 {% endraw %}
 
 ```
 
-해당 사용되지 않는 자바 스크립트를 전부 삭제 해줍니다.  
-
-<br>
-
-### <blue1_h3> 8) 차세대 형식을 사용해 이미지 제공하기  </blue1_h3>
-
-이미지확장자 형식인 png를 webp로 형식으로 변환 해주면 해결 됩니다.
+위와 같이 사용하면 가로는 상위 부모 객체의 크기에 100%가 되고 세로는 가로 크기에 9/16으로 만들어질 것입니다.  
+확장된 문법을 사용하면 좀더 편히 블로그를 작성 하실수 있습니다.  
 
 
 
 <br>
 
-### <blue1_h3> 9) 오프스크린 이미지 지연하기  </blue1_h3>
+### <blue1_h3> 3) 접는 글 사용하기 </blue1_h3>
 
+깃허브 블로그에 접는 글을 필요한 경우가 있습니다.  
+글의 가독성이 나빠지고 접는 글로 숨겨야하는 글이 필요할 때가 있습니다.  
+마크다운은 오래된 문법이라 공식적으로는 접는 글이 존재하지 않습니다.  
+
+따라서 html5에 존재하는 접는글을 가져올 필요성이 있습니다.  
 
 ```html 
 
-{% raw %}
-<img src="image.jpg" alt="대체 텍스트" loading="lazy">
-{% endraw %}
+<!--Input:-->
+
+<details>
+<summary> 접는 글 </summary>
+
+이것은 접는 글입니다.  
+
+</details>
 
 ```
 
-위와 같이 만약 페이지가 노출되지 않는 이미지를 로딩시키려고 한다면 lazy 속성을 주어서 지연시키면 됩니다.  
+위와 같이 코드를 작성하면 아래와 같이 결과를 얻을 수 있습니다.  
+
+<blue1_h5> OutPut: </blue1_h5>
+
+<details>
+<summary> 접는 글 </summary>
+
+이것은 접는 글입니다.  
+
+</details>
+
+
+이렇게 접는 글을 쉽게 만들 수 있습니다. 
 
 
 <br>
 
-### <blue1_h3> 10) 결과물  </blue1_h3>
+```html 
 
-![구글 PageSpeed Insights  데스크톱 수정 후](https://github.com/kj1241/kj1241.github.io/assets/22047442/7702b0b5-db1c-4878-b7d8-c7f97711e53c){: width="100%"}
-*구글 PageSpeed Insights  데스크톱 수정 후*
-  
-![구글 PageSpeed Insights  모바일 수정 후](https://github.com/kj1241/kj1241.github.io/assets/22047442/5671456a-1f9f-4efe-9ed1-d446e592ca0e){: width="100%"}
-*구글 PageSpeed Insights  모바일 수정 후*
-  
+<!--Input-->
 
-<br>
-<br>
+<details>
+<summary> 접는 글 </summary>
 
-## <blue1_h2> 3. Seo-tag 최적화 하기 </blue1_h2>
+#### 이것은 h4 입니다.
 
-구글 검색에 올릴려면 Seo-tag를 최적화 할 필요가 있습니다.  
-그럼 Seo-tag를 최적화 하는 방법에 대해서 알아보도록 합시다.
-
-
-<br>
-
-### <blue1_h3> 1) 제목과 설명 </blue1_h3>
-
-```html
-
-{% raw %}
-    <title>
-        {{ page.title | default: site.title | escape }}
-    </title>
-{% endraw %}
+</details>
 
 ```
 
-위와 같이 포스트의 제목을 설정해 주었습니다.
 
-```html
-
-    {% raw %}
-        <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | escape }}">
-    {% endraw %}
-
-```
-
-또한 해당 설명을 메타 테그로 설정해 두었습니다.  
-
-```html
-
-  {% raw %}
-  {% if page.tags %}
-    <meta name="keywords" content="{{ page.tags | join: ', ' }}">
-  {% endif %}
-  {% endraw %}
-
-```
-
-해당 키워드도 메타 태그로 설정해 두었습니다.
+<blue1_h5> OutPut: </blue1_h5>
 
 
-<br>
+<details>
+<summary> 접는 글 </summary>
 
-### <blue1_h3> 2) sitemap </blue1_h3>
+#### 이것은 h4 입니다.
 
-웹사이트 전체 구조를 담고있습니다.  
+</details>
 
-```xml
+하지만 위 처럼 접는 글 안에 이미지, 코드 하이라이트등을 사용하려면 위와 같이 에러가 발생합니다.  
+마크다운 코드 자체가 안에서 작동 하지 않습니다. 
 
-{% raw %}
----
-layout: null
----
+![깃 허브 gist 사용 접는 글](https://github.com/kj1241/kj1241.github.io/assets/22047442/d420ca90-042b-4f20-8016-40ba52ee3fdf){: width="100%" }
 
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
-        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    {% for post in site.posts %}
-    <url>
-        <loc>{{ site.url | remove: '/'}}{{ post.url | remove: '.html' }}</loc>
-        {% if post.lastmod == null %}
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-        {% else %}
-        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
-        {% endif %}
-
-        {% if post.sitemap.changefreq == null %}
-        <changefreq>weekly</changefreq>
-        {% else %}
-        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
-        {% endif %}
-
-        {% if post.sitemap.priority == null %}
-        <priority>0.5</priority>
-        {% else %}
-        <priority>{{ post.sitemap.priority }}</priority>
-        {% endif %}
-
-    </url>
-    {% endfor %}
-</urlset>
-{% endraw %}
+그러나 깃 허브 gist에서 빠르게 접는 글을 살펴본 결과 details 안에 마크다운이 사용 되었습니다.  
+깃 허브, 루비 공식문서, 구글 전부 뒤저본 결과 마크다운에도 다양한 확장자와 버전들이 있다는 것을 알았습니다.  
+따라서 여러분이 위의 Git hub gist처럼 접는 글 안에 이미지, 마크다운, 코드하이라트 등을 넣고 싶다면 이것을 지원하는 확장자를 선언해야합니다.
 
 ```
 
-사이트맵을 jekyll-sitemap 플러그 인으로 설정해도 되지만 xml파일을 만들어서 설정하였습니다.  
-원하는 도메인이 전부 다름으로 처음하시는 분은 xml파일 만들기 보다는 플러그인 받으시는 것을 추천 드립니다.   
-
-<br>
-
-### <blue1_h3> 3) robots.txt </blue1_h3>
-
-```txt
-
-User-agent: Googlebot
-Disallow: /Game_Jam/
-Disallow: /Hackaton/
-Disallow: /DirectX/
-Disallow: /WinAPI/
-Disallow: /Unity_TP/
-Disallow: /Unreal_TP/
-Disallow: /Server_TP/
-Disallow: /AI/
-Disallow: /Data_Base/
-Disallow: /3Ds_Max/
-Disallow: /Hackaton/
-Disallow: /Houdini/
-Disallow: /Tstory_Skin/
-Disallow: /Git_Hub_Blog/
-
-User-agent: Bingbot
-Disallow: /Game_Jam/
-Disallow: /Hackaton/
-Disallow: /DirectX/
-Disallow: /WinAPI/
-Disallow: /Unity_TP/
-Disallow: /Unreal_TP/
-Disallow: /Server_TP/
-Disallow: /AI/
-Disallow: /Data_Base/
-Disallow: /3Ds_Max/
-Disallow: /Hackaton/
-Disallow: /Houdini/
-Disallow: /Tstory_Skin/
-Disallow: /Git_Hub_Blog/
-
-User-agent: *
-Disallow: / 
-
-Sitemap: https://kj1241.github.io/sitemap.xml
+//_config.yml
+kramdown:
+  parse_block_html: true
 
 ```
 
-구글 봇과 빙봇의 접근만 허용하고 너머지 로봇의 접근을 허용하지 않기 위해 설정하였습니다.  
-그리고 특정 포트폴리오용 사이트는 로봇이 접근하지 못하도록 설정하였습니다.  
+_config.yml 파일 안에 위처럼 parse_block_html 버전으로 마크다운 사용하겠다고 선언하면 해결됩니다.  
+하지만 버전이 여러개라는 말은 분명 마크다운 용법이 충돌 나는 경우의 수도 생긴다고 볼 수 있습니다.  
+그럼 수십개 혹은 수백의 글을 고쳐야되는 상황이 올 수도 있습니다.  
 
+따라서 _config.yml 사용하지 않고도 안에 적용하는 방법을 알아냈습니다.  
 
-<br>
+```html 
 
-### <blue1_h3> 3) Open Graph Tags </blue1_h3>
+<details markdown=1>
+<summary> 접는 글 </summary>
 
-포스트가 소셜 사이트에 링크 되었을때 표시되는 내용에 대해 작업을 해야합니다.  
-Open Graph Tags 프로토콜에 대해서 작업해줘야 할 필요성이 있습니다.  
+#### 이것은 h4 입니다.
 
-위의 방법도 두가지가 있습니다.  
-1. jekyll-seo-tag 플러그 인을 사용하여 관리하는 방법이 있습니다.
-2. 직접 코드를 작성하는 방법이 있습니다.
+</details>
 
-```html
-
-{% raw %}
-    {%- seo -%} 
-{% endraw %}
 
 ```
 
-위의 방식 처럼 플러그인을 통하여 작성하셔도 됩니다.  
+<blue1_h5> OutPut: </blue1_h5>
+
+<details markdown=1>
+<summary> 접는 글 </summary>
+
+#### 이것은 h4 입니다.
+
+</details>
 
 
-```html
-
-{% raw %}
-<meta name="og:site_name" content="{{ site.title }}" />
-<meta name="og:title" content="{{ page.title | default: site.title | escape }}" />
-<meta
-  name="og:description"
-  content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | escape }}"
-/>
-<meta name="og:type" content="website" />
-<meta name="og:url" content="{{ page.url | absolute_url }}" />
-<meta
-  name="og:image"
-  content="{{ page.img }}"
-/>
-{% endraw %}
-
-```
-이처럼 [Open Graph 공식 사이트](https://ogp.me/)를 확인하시고 직접 작성하셔도 됩니다.  
-
+위처럼 코드를 작성하면 _config.yml를 작성하지 않고도 쉽게 마크다운 용법이 적용되는 details을 제작 할 수 있습니다.  
 
 <br>
 
@@ -471,6 +289,6 @@ Open Graph Tags 프로토콜에 대해서 작업해줘야 할 필요성이 있�
 
 <br>
 
-위의 정도만 하시면 기본적으로 검색엔진에 올려 놓을 준비는 완료되었습니다.  
-다음 편에서는 블로그를 작성하면서 일어났던 트러블 슈팅과 마크다운 작성 팁으로 돌아오겠습니다.  
-읽어주셔서 감사합니다.
+더 많은 트러블 슈팅과 팁이 있는 것 같았지만, 지금 당장 생각나는 팁은 이정도 인거 같습니다.  
+혹시라도 더 좋은 팁이 생긴다면 추가로 적겠습니다.  
+읽어주셔서 감사합니다.  

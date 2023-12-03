@@ -17,7 +17,6 @@
           </span>
         </label>
       <div class="trigger">
-        {% for item in site.data._categories.categories_list %}
         <ul id="categories_list">
           {% for item in site.data._categories.categories_list %}
           <li id="categories_list_li">
@@ -36,7 +35,6 @@
           </li>
           {% endfor %}
         </ul>
-        {% endfor %}
       </div>
     </nav>
     {%- endif -%}
