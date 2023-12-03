@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Jekyll를 이용해서 github blog 만들기 2 세부 설정 팁"
+title:  "Jekyll를 이용해서 github blog 만들기 2 언어별 용도"
 date:   2023-12-02 17:45:04 +0900
 image: https://github.com/kj1241/kj1241.github.io/assets/22047442/70e7a792-5510-4ff2-9f43-78775645a30e
 toc: true
 categories: [Web]
 tags: [Jkeyll, Ruby, HTML, SCSS, Java Script, Git Hub Blog ]
 addsence: true
-description: 단순히 Git Hub Blog 제작을 위해서 만들어진 테마를 Fork를 이용하여 제작하는 것이 아닌 Jekyll + Ruby + HTML + SCSS + Java Script를 사용하여 제작하는 방법을 설명하고 있습니다. 세부 설정하는 방법에 대해서 고민하고 있습니다.
+excerpt: 단순히 Git Hub Blog 제작을 위해서 만들어진 테마를 Fork를 이용하여 제작하는 것이 아닌 Jekyll + Ruby + HTML + SCSS + Java Script를 사용하여 제작하는 방법을 설명하고 있습니다. 세부 설정하는 방법과 언어에 따른 블로그 용도에 대해서 고민하고 있습니다.
 ---
 
 
@@ -406,4 +406,5 @@ function plusSlides(n) {
 <br>
 
 이 처럼 본인이 변경하고 싶은 영역을 생각하고 해당하는 언어를 만지면 쉽게 블로그를 개조 할 수 있을 것입니다.  
-다음 편에는 블로그를 제작하면서 황당했던 에러와 블로그 글을 작성하면서 나름 소소한 팁(?)으로 가져오겠습니다.  
+다음 편에는 구글 검색엔진에 올려 놓기 위해 수정해야되는 사항과 Seo 최적화로 돌아오겠습니다.  
+읽어주셔서 감사합니다. 

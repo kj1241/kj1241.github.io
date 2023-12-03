@@ -2,15 +2,20 @@
   <meta charset="utf-8"> <!--문자의 인코딩-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--최신 랜더링 엔진 사용-->
   <meta name="viewport" content="width=device-width, initial-scale=1"> <!--모바일기기 올바른 뷰포트사용 반응형디자인 지원-->
-  {%- if page.description -%}
-    <meta name="description" content="여기에 페이지의 간략한 설명을 입력합니다.">
-  {%- else -%}
-    <meta name="description" content= "{{ site.description }}">
-  {%- endif -%}
+  
+  <!--타이틀-->
+  <title>
+    {{ page.title | default: site.title | escape }}
+  </title>
 
+  <!--설명-->
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | escape }}">
+
+  <!--테그-->
   {% if page.tags %}
     <meta name="keywords" content="{{ page.tags | join: ', ' }}">
   {% endif %}
+
 
 
   <meta name="google-site-verification" content="5LgST4VxF-eF3gBMgf1DAEfTnAT9DvQO9iUYa1hGSIw" /> <!--구글 서치콘솔등록-->

@@ -1,17 +1,17 @@
 ---
 layout: post
-title:  "Jekyll를 이용해서 github blog 만들기 3 트러블 슈팅과 마크다운 작성 팁"
+title:  "Jekyll를 이용해서 github blog 만들기 3 블로그 품질 올리기"
 date:   2023-12-03 11:38:04 +0900
 image: 
 toc: true
 categories: [Web]
 tags: [Jkeyll, Ruby, HTML, SCSS, Java Script, Git Hub Blog ]
 addsence: true
-description: 단순히 Git Hub Blog 제작을 위해서 만들어진 테마를 Fork를 이용하여 제작하는 것이 아닌 Jekyll + Ruby + HTML + SCSS + Java Script를 사용하여 제작하는 방법을 설명하고 있습니다. 제작하는 과정에서 발생한 트러블 슈팅과 마크다운 제작 팁음 담았습니다.
+excerpt: 단순히 Git Hub Blog 제작을 위해서 만들어진 테마를 Fork를 이용하여 제작하는 것이 아닌 Jekyll + Ruby + HTML + SCSS + Java Script를 사용하여 제작하는 방법을 설명하고 있습니다. 해당 과정은 블로그의 품질을 올리기위해 PageSpeed Insights와 Seo-tag 최적화하는 방법에 대해 설명하고 있습니다.
 ---
 
 앞서서는 Git Hub Blog에 제작된 언어별로 어떻게 역활을 맡고 있는지 확인 했습니다.  
-그럼 이제 구글 서치 콘솔에 필요한 팁과 제작하면서 발생한 트러블 슈팅, 마크다운 작성할 때 개인적인 팁에 대해서 작성해 보겠습니다.
+그럼 이제 구글 검색엔진에 올리기 위해서 본격적으로, 구글 서치 콘솔의 PageSpeed Insights와 Seo-tag 최적화를 하기위해 했던 예제를 작성해 보겠습니다.
 
 
 <br>
@@ -293,11 +293,9 @@ text-stroke: 1px #e6e6e680; /* 표준 속성 */
 ```html
 
 {% raw %}
-<title>
-    <h1 class="title_post"> <!--타이틀-->
-        {{ page.title | escape }}
-    </h1>
-</title>
+    <title>
+        {{ page.title | default: site.title | escape }}
+    </title>
 {% endraw %}
 
 ```
@@ -307,11 +305,7 @@ text-stroke: 1px #e6e6e680; /* 표준 속성 */
 ```html
 
     {% raw %}
-    {%- if page.description -%}
-        <meta name="description" content="여기에 페이지의 간략한 설명을 입력합니다.">
-    {%- else -%}
-        <meta name="description" content= "{{ site.description }}">
-    {%- endif -%}
+        <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | escape }}">
     {% endraw %}
 
 ```
@@ -428,21 +422,47 @@ Sitemap: https://kj1241.github.io/sitemap.xml
 그리고 특정 포트폴리오용 사이트는 로봇이 접근하지 못하도록 설정하였습니다.  
 
 
+<br>
+
+### <blue1_h3> 3) Open Graph Tags </blue1_h3>
+
+포스트가 소셜 사이트에 링크 되었을때 표시되는 내용에 대해 작업을 해야합니다.  
+Open Graph Tags 프로토콜에 대해서 작업해줘야 할 필요성이 있습니다.  
+
+위의 방법도 두가지가 있습니다.  
+1. jekyll-seo-tag 플러그 인을 사용하여 관리하는 방법이 있습니다.
+2. 직접 코드를 작성하는 방법이 있습니다.
+
+```html
+
+{% raw %}
+    {%- seo -%} 
+{% endraw %}
+
+```
+
+위의 방식 처럼 플러그인을 통하여 작성하셔도 됩니다.  
 
 
+```html
 
+{% raw %}
+<meta name="og:site_name" content="{{ site.title }}" />
+<meta name="og:title" content="{{ page.title | default: site.title | escape }}" />
+<meta
+  name="og:description"
+  content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | escape }}"
+/>
+<meta name="og:type" content="website" />
+<meta name="og:url" content="{{ page.url | absolute_url }}" />
+<meta
+  name="og:image"
+  content="{{ page.img }}"
+/>
+{% endraw %}
 
-
-
-
-
-
-
-
-
-
-
-
+```
+이처럼 [Open Graph 공식 사이트](https://ogp.me/)를 확인하시고 직접 작성하셔도 됩니다.  
 
 
 <br>
@@ -451,4 +471,6 @@ Sitemap: https://kj1241.github.io/sitemap.xml
 
 <br>
 
-
+위의 정도만 하시면 기본적으로 검색엔진에 올려 놓을 준비는 완료되었습니다.  
+다음 편에서는 블로그를 작성하면서 일어났던 트러블 슈팅과 마크다운 작성 팁으로 돌아오겠습니다.  
+읽어주셔서 감사합니다.
