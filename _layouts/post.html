@@ -11,9 +11,11 @@ layout: default
         <div class="inner_header" style="background-image:url( '{{ page.image| escape }}' )">
 
           <div class="info_text">
-            <h1 class="title_post"> <!--타이틀-->
-              {{ page.title | escape }}
-            </h1>
+            <title>
+              <h1 class="title_post"> <!--타이틀-->
+                {{ page.title | escape }}
+              </h1>
+            </title>
 
             <p class="info"> <!--정보-->
               <span class="info_category"> <!--카테고리-->
@@ -26,42 +28,44 @@ layout: default
               </span>
             </p>
           </div>
-        
+
         </div>
       </div>
     </div>
 
     {%- if page.addsence -%}
-      {%- include google/_top_add_sence.html -%}
-    {%- endif -%}  
+    {%- include google/_top_add_sence.html -%}
+    {%- endif -%}
 
     <br>
-    <div id= "line"> <hr  /> </div>
+    <div id="line">
+      <hr />
+    </div>
     <br>
 
-  <div class="post_content" itemprop="articleBody">
-    {{ content }}
-  </div>
+    <div class="post_content" itemprop="articleBody">
+      {{ content }}
+    </div>
 
-  {%- if page.tags -%}
+    {%- if page.tags -%}
 
-  <br>
-  <div id= "line"> <hr  /> </div>
-  <br>
+    <br>
+    <div id="line">
+      <hr />
+    </div>
+    <br>
 
-  <div id ="tag">   
-    <dt> tag:&nbsp 
-    {%- for tag in page.tags -%} 
-    <a>{{ tag }},</a>
-    {% endfor %}
-  </dt>
-  </div>
-  {% endif %}
+    <div id="tag">
+      <dt> tag:&nbsp
+        {%- for tag in page.tags -%}
+        <a>{{ tag }},</a>
+        {% endfor %}
+      </dt>
+    </div>
+    {% endif %}
 
-
-
-  {%- if site.disqus.shortname -%}
+    {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
-  {%- endif -%}
+    {%- endif -%}
 
 </article>

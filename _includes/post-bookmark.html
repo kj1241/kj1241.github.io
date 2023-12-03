@@ -6,7 +6,7 @@
     </div>
     {% endif %}
   
-    <a href="{{ post-bookmark.url | relative_url }}" class="post_link">
+    <a href="{{ post-bookmark.url | relative_url |  remove: '.html'}}" class="post_link">
       <strong class="post_tit "> <!--제목-->
         {{ post-bookmark.title | escape }}
       </strong>
@@ -15,7 +15,7 @@
       </p>
     </a>
     <div class="detail_info">
-      <a href="{{ post-bookmark.url | relative_url }}" class="post_cate"> <!--카테고리-->
+      <a href="{{ post-bookmark.url | relative_url | remove: '.html'}}" class="post_cate"> <!--카테고리-->
         {% for category in post-bookmark.categories %}
         <!--{{ post.categories | escape }}-->
         {{category}}

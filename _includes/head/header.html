@@ -16,44 +16,29 @@
             </svg>
           </span>
         </label>
-
-
-
-        <div class="trigger">
+      <div class="trigger">
+        {% for item in site.data._categories.categories_list %}
+        <ul id="categories_list">
           {% for item in site.data._categories.categories_list %}
-          <ul id="categories_list">
-            {% for item in site.data._categories.categories_list %}
-            <li id="categories_list_li">
-                <div id="categories_item">
-                    {{ item.title }}
-                    <ul id="categories_sub">
-                        {% for subitem in item.categories_sub_list %}
-                            <li>
-                                <a href="{{ subitem.url }}">
-                                    {{ subitem.title }} ({{ site.categories[subitem.title] | size }})
-                                </a>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </li>
-            {% endfor %}
-          </ul>
+          <li id="categories_list_li">
+             <div id="categories_item">
+                  {{ item.title }}
+                  <ul id="categories_sub">
+                      {% for subitem in item.categories_sub_list %}
+                          <li>
+                              <a href="{{ subitem.url }}">
+                                  {{ subitem.title }} ({{ site.categories[subitem.title] | size }})
+                              </a>
+                          </li>
+                      {% endfor %}
+                  </ul>
+              </div>
+          </li>
           {% endfor %}
-        </div>
-
-
-
-
+        </ul>
+        {% endfor %}
+      </div>
     </nav>
     {%- endif -%}
-
-
-
-
-
-
-
-
   </div>
 </header>

@@ -8,6 +8,11 @@
     <meta name="description" content= "{{ site.description }}">
   {%- endif -%}
 
+  {% if page.tags %}
+    <meta name="keywords" content="{{ page.tags | join: ', ' }}">
+  {% endif %}
+
+
   <meta name="google-site-verification" content="5LgST4VxF-eF3gBMgf1DAEfTnAT9DvQO9iUYa1hGSIw" /> <!--구글 서치콘솔등록-->
   <meta name="google-adsense-account" content="ca-pub-3712073515065828"> <!--구글 에드센스-->
 

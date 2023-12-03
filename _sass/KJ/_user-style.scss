@@ -1,130 +1,157 @@
 #line hr {
-    background: rgb(152, 195, 236);
-    height: 1px;
+  background: rgb(152, 195, 236);
+  height: 1px;
 }
 
+
 .post_content {
-    h1 {
-        font-size: 38px;
-        padding-top: 8px;
-        padding-bottom: 8px;
-    }
-
-    h2 {
-        font-size: 30px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        margin-bottom: 5px;
-        line-height: 1.4;
-    }
-    h3 {
-        font-size: 25px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        margin-bottom: 5px;
-        line-height: 1.4;
-    }
-
-    h5 {
-        font-size: 16px;
-        padding-top: 2px;
-        padding-bottom: 2px;
-        margin-bottom: 5px;
-        line-height:26px;
-        font-weight: normal;
-    }
-    h6 {
-      font-size: 13px;
-      padding-top: 1px;
-      padding-bottom: 1px;
-      margin-bottom: 3px;
-      line-height:20px;
-      font-weight: normal;
+  h1 {
+    font-size: 38px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: 1.4;
   }
 
-    p {
-        padding-top: 3px;
-        padding-bottom: 3px;
-        margin-bottom: 5px;
-        line-height:26px;
-    }
+  h2 {
+    font-size: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    line-height: 1.4;
+  }
 
-    ul {
-        margin-top: 1px;
-        margin-bottom: 1px;
-    }
+  h3 {
+    font-size: 25px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+    line-height: 1.4;
+  }
 
-    ol {
-        margin-top: 1px;
-        margin-bottom: 1px;
-    }
+  h4 {
+    font-size: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+    line-height: 1.2;
+  }
 
-    li {
-        padding-top: 3px;
-        margin-top: 3px;
-        margin-bottom: 3px;
-    }
 
-    iframe {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
+  h5 {
+    font-size: 16px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 5px;
+    line-height: 26px;
+    font-weight: normal;
+  }
 
-    a {
-       color: #bcbcff;
-    }
+  h6 {
+    font-size: 13px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-bottom: 3px;
+    line-height: 20px;
+    font-weight: normal;
+  }
 
-    a:hover {
-        color: #6b6bff;
-    }
-    img + em {
-      display: block;
-      text-align: center;
-      padding-bottom: 5px;
-    }
+  p {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+    line-height: 26px;
+  }
 
- 
-    yellow1_h1 {
-        color: #f3ffb8;
-      }
-      
-      yellow1_h2 {
-        color:#ffe314;
-      }
-      yellow1_h3 {
-        color:#fffab7;
-      }
-      yellow1_h5{
-        color:#82ff86;
-        display: inline;
-      }
-      red1_error{
-        color: #fd510f;
-      }
-      
-      green1_h2{
-        color: #0deb14;
-      }
-      green1_h3{
-        color:#a4eba4;
-      }
-      green1_h5{
-        color:#74a8d7;
-      }
+  ul {
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
 
-      blue1_h2{
-        color: #9c14ff;
-      }
-      blue1_h3{
-        color:#e7b6ff;
-      }
-      blue1_h5{
-        color:#ffb282;
-      }
-      highlight_orange{
-        color:#ffc399
-      }
-      highlight_blue{
-        color:#99e2ff
-      }
+  ol {
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+
+  li {
+    padding-top: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+
+  iframe {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  a {
+    color: #bcbcff;
+  }
+
+  a:hover {
+    color: #6b6bff;
+  }
+
+  img+em {
+    display: block;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+
+
+  yellow1_h1 {
+    color: #f3ffb8;
+  }
+
+  yellow1_h2 {
+    color: #ffe314;
+  }
+
+  yellow1_h3 {
+    color: #fffab7;
+  }
+
+  yellow1_h5 {
+    color: #82ff86;
+    display: inline;
+  }
+
+  red1_error {
+    color: #fd510f;
+  }
+
+  green1_h2 {
+    color: #0deb14;
+  }
+
+  green1_h3 {
+    color: #a4eba4;
+  }
+
+  green1_h5 {
+    color: #74a8d7;
+  }
+
+  blue1_h2 {
+    color: #9c14ff;
+  }
+
+  blue1_h3 {
+    color: #e7b6ff;
+  }
+
+  blue1_h4 {
+    color: #ffb6ef;
+  }
+
+  blue1_h5 {
+    color: #ffb282;
+  }
+
+  highlight_orange {
+    color: #ffc399
+  }
+
+  highlight_blue {
+    color: #99e2ff
+  }
 }
