@@ -52,28 +52,25 @@
   color: #d1cfb7
 }
 
-#tag{
-  font-size: 15px;
+#tag {
   margin-top: 5px;
   margin-bottom: 5px;
-  color: #ff8181;
 
 }
-
-
-#tag dt {
-  float: left;
-  margin-right: 5px;
-  color: rgb(238, 196, 157);
+#tag .tag_title{
   font-size: 15px;
+  color: #eec49d;
+  float:left;
 }
 
-#tag a {
+#tag .tag_item {
+  margin-top: 4px;
   text-decoration: none;
   color: #ff8181;
   font-size: 13px;
+  float:left;
 }
-#tag a:hover {
+#tag .tag_item:hover {
   text-decoration: none;
   font-size: 13px;
 }

@@ -8,14 +8,13 @@ layout: default
   <header class="post-header">
     <div id="area_article">
       <div id="article_header"> <!--백그라운드 그림-->
+        <link rel="preload" href="{{ page.image| escape }}" as="image"> <!--미리로드-->
         <div class="inner_header" style="background-image:url( '{{ page.image| escape }}' )">
 
           <div class="info_text">
-            <title>
               <h1 class="title_post"> <!--타이틀-->
                 {{ page.title | escape }}
               </h1>
-            </title>
 
             <p class="info"> <!--정보-->
               <span class="info_category"> <!--카테고리-->
@@ -56,11 +55,11 @@ layout: default
     <br>
 
     <div id="tag">
-      <dt> tag:&nbsp
-        {%- for tag in page.tags -%}
-        <a>{{ tag }},</a>
-        {% endfor %}
-      </dt>
+      <div class="tag_title"> tag:&nbsp </div>
+      {%- for tag in page.tags -%}
+       <div class="tag_item">{{ tag }}, </div>  
+      {% endfor %}
+
     </div>
     {% endif %}
 

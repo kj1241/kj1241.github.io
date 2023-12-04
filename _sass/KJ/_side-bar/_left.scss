@@ -69,7 +69,6 @@ $btn-mb: 0.5rem;
 #profile_title{
     text-align: center;
     -webkit-text-stroke: 1px #e6e6e680; /* 웹킷 브라우저 (Chrome, Safari 등)에서 사용 */
-    text-stroke: 1px #e6e6e680; /* 표준 속성 */
     color: rgb(170, 34, 152);
     font-size: 30px;
     padding-top: 5px;
@@ -87,7 +86,6 @@ $btn-mb: 0.5rem;
 #profile_desc a {
     font-size: 20px;
     -webkit-text-stroke: 1px #e6e6e680; /* 웹킷 브라우저 (Chrome, Safari 등)에서 사용 */
-    text-stroke: 1px #e6e6e680; /* 표준 속성 */
     color: rgb(93, 21, 175);
     font-family: "Comic Sans MS", cursive;
     font-style: italic;

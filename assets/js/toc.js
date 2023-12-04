@@ -4,11 +4,14 @@ document.addEventListener("DOMContentLoaded", function () {
     var headings = document.querySelectorAll('h2, h3');
 
     if (headings.length > 0 && pageTitle) {
-        var tocList = document.createElement('ul');
-        var tocTitle = document.createElement('dl');
-        tocTitle.textContent = "TOC";
-        tocList.appendChild(tocTitle);
 
+        var tocTitle = document.createElement('div');
+        tocTitle.textContent = "TOC";
+        tocTitle.setAttribute('id',"TOC_tilte" )
+        tocContainer.appendChild(tocTitle);
+
+
+        var tocList = document.createElement('ul');
 
         headings.forEach(function (heading) {
 
@@ -20,11 +23,11 @@ document.addEventListener("DOMContentLoaded", function () {
             //에러가 어디있나했더니 대문자에서 망했네
             if (heading.tagName === 'H2') {
                 //listItem.classList.add("tag_list_h2");
-                listItem.setAttribute('id', "tag_list_h2");
+                listItem.setAttribute('class', "TOC_list_h2");
             }
             else if (heading.tagName === 'H3') {
                 //listItem.classList.add("tag_list_h3");
-                listItem.setAttribute('id', "tag_list_h3");
+                listItem.setAttribute('class', "TOC_list_h3");
             }
 
             tocList.appendChild(listItem);

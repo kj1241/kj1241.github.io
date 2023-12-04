@@ -2,11 +2,12 @@
 layout: post
 title:  "깃 허브 블로그 스킨 제작 v0.3"
 date:   2023-11-23 09:00:00 +0900
-image: https://github.com/kj1241/kj1241.github.io/assets/22047442/9c729fed-3bc7-4a75-bd86-c1d39469f82d
+image: https://drive.google.com/uc?id=1Q-Dt-nV182c12d9Yt_55m-2QJnlttXJs
 toc: true
 categories: [Git_Hub_Blog]
 tags: [HTML, SCSS, Java script, Ruby, Jekyll, Git Hug Blog]
 ---
+
 
 ##  <green1_h2> 토이 프로젝트 소개 </green1_h2>
 
@@ -83,9 +84,9 @@ tags: [HTML, SCSS, Java script, Ruby, Jekyll, Git Hug Blog]
 - HTML + SCSS + JS + Ruby + Jekyll
  <!--이미지 못침범하게-->
 <p><green1_h5>데이터 구조 </green1_h5></p>
-![깃허브_블로그_데이터구조](https://github.com/kj1241/kj1241.github.io/assets/22047442/bd54f411-59d4-492e-9ab5-2ed557ba41d1){: width="50%" }
+![깃허브_블로그_데이터구조](https://drive.google.com/uc?export=view&id=1PwrHSlIjMBSov3P-5bvGQYbyI4wsmnmB){:width="100%" height="auto" loading="lazy"}
 <p><green1_h5>웹 페이지 구조</green1_h5> </p>
-![blog글 구조](https://github.com/kj1241/kj1241.github.io/assets/22047442/cc05c718-bf79-4f9e-aebc-ae47447213fb){: width="100%" }
+![blog글 구조](https://drive.google.com/uc?export=view&id=Pyo_Q9YbDYhq5oWG4EdRVgiZc9opj095){:width="100%" height="auto" loading="lazy"}
 
 - YML: 데이터 구조를 담당하고 있습니다.
 - HTML: 화면 구성의 구조를 담당하고 있습니다.
@@ -99,26 +100,26 @@ tags: [HTML, SCSS, Java script, Ruby, Jekyll, Git Hug Blog]
 
 ### <green1_h3> 홈커버 화면</green1_h3>
 
-![깃허브블로그 홈커버](https://github.com/kj1241/kj1241.github.io/assets/22047442/9c729fed-3bc7-4a75-bd86-c1d39469f82d){: width="100%" }
+![깃허브블로그 홈커버](https://drive.google.com/uc?export=view&id=1Q-Dt-nV182c12d9Yt_55m-2QJnlttXJs){:width="100%" height="auto" loading="lazy"}
 
 <br>
 
 ### <green1_h3> 카테고리 페이지 화면</green1_h3>
 
-![깃허브블로그 페이지](https://github.com/kj1241/kj1241.github.io/assets/22047442/7baa4326-9434-4f52-b511-0d4f7e4256be){: width="100%" }
+![깃허브블로그 페이지](https://drive.google.com/uc?export=view&id=1Q9YyrCUtPyOfZSDsuwRZeajwHBsGD3_q){:width="100%" height="auto" loading="lazy"}
 
 <br>
 
 ### <green1_h3> 포스트 화면</green1_h3>
 
-![깃허브 블로그 포스트](https://github.com/kj1241/kj1241.github.io/assets/22047442/86daf996-1ace-441e-ae40-7944e5255716){: width="100%" }
+![깃허브 블로그 포스트](https://drive.google.com/uc?export=view&id=1QAh73nYwJTAb3UOWDCYgyBkK9tYn1Z0Y){:width="100%" height="auto" loading="lazy"}
 
 <br>
 <br>
 
 ## <green1_h2> 결과(성과) 및 데모 </green1_h2>
 
-![깃허브블로그 평가](https://github.com/kj1241/kj1241.github.io/assets/22047442/5671456a-1f9f-4efe-9ed1-d446e592ca0e){: width="100%" }
+![깃허브블로그 평가](https://drive.google.com/uc?export=view&id=1QJ617PH-_g2y71uz4FUDYXht1VbCtEKX){:width="100%" height="auto" loading="lazy"}
 
 - <span><green1_h5>성과: </green1_h5>pc버전 단순형 스킨 제작 </span>
 - <span><green1_h5>깃 허브(코드): </green1_h5> [https://github.com/kj1241/kj1241.github.io](https://github.com/kj1241/kj1241.github.io) </span>

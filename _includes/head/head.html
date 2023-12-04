@@ -3,6 +3,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--최신 랜더링 엔진 사용-->
   <meta name="viewport" content="width=device-width, initial-scale=1"> <!--모바일기기 올바른 뷰포트사용 반응형디자인 지원-->
   
+  <!--브라우저 캐쉬사용-->
+  <!--  <meta http-equiv="cache-control" content="public, max-age=3600">-->
+
+
   <!--타이틀-->
   <title>
     {{ page.title | default: site.title | escape }}
@@ -18,6 +22,9 @@
 
   <!--파비콘-->
   <link rel="icon" href="{{ '/assets/img/profile_img256px.ico' | relative_url }}">
+
+  <!--테마색상-->
+  <meta name="theme-color" content="#540c59"/>
 
 
 
