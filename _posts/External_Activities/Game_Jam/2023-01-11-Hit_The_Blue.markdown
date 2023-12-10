@@ -6,6 +6,7 @@ image: https://github.com/kj1241/kj1241.github.io/assets/22047442/1fa204be-148a-
 toc: true
 categories: [Game_Jam]
 tags: [C#, Unity, 3D Shooting Game]
+excerpt: 그해 여름, 바다에서 무슨 일이? 평화로운 바닷가에 바다 몬스터 떼 출몰! 항상 곁에 있는 귀여운 강아지를 보호하며 몬스터를 향해 쏘세요!
 ---
 
 <!-- <h1><yellow1_h1>프로젝트 이름: 날개를 찾아줘 (Finds Wings) </yellow1_h1></h1>
@@ -83,7 +84,7 @@ tags: [C#, Unity, 3D Shooting Game]
 
 - <span><yellow1_h5>성과: </yellow1_h5> 데모 프로젝트 제작 / 인디게임 출시 </span>
 - <yellow1_h5>게임 다운로드 링크: </yellow1_h5>
-스토브 인디게임: [https://indie.onstove.com/ko/games/504](https://indie.onstove.com/ko/games/504)  
+    스토브 인디게임: [https://indie.onstove.com/ko/games/504](https://indie.onstove.com/ko/games/504)  
 - <span> <yellow1_h5>깃 허브(코드): </yellow1_h5> [https://github.com/kj1241/HitTheBlue-refactoring](https://github.com/kj1241/HitTheBlue-refactoring) </span>
 - <yellow1_h5>유튜브 동영상: </yellow1_h5> 
-<iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/x0faMHFAaKI" title="Hit The Blue (힛 더 블루)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/x0faMHFAaKI" title="Hit The Blue (힛 더 블루)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

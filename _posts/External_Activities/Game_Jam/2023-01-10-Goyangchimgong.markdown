@@ -6,6 +6,7 @@ image: https://github.com/kj1241/kj1241.github.io/assets/22047442/7f9b4306-2464-
 toc: true
 categories: [Game_Jam]
 tags: [C++, Unreal, 2D Running Game]
+excerpt: 고양이 히어로가 다양한 우주를 뛰어다니며 악당 보스를 처리하는 흥미진진한 게임입니다. 이 게임에서 플레이어는 고양이 히어로로 변신하여 우주의 다양한 행성을 탐험하고, 각 행성에서 펼쳐지는 도전적인 레벨을 클리어하며 보스를 물리치는 것이 목표입니다. 보스를 물리치어 우주의 평화를 지켜보세요!
 ---
 
 <!-- <h1><yellow1_h1>프로젝트 이름: 고양침공 </yellow1_h1></h1>
@@ -74,4 +75,4 @@ tags: [C++, Unreal, 2D Running Game]
 - <span><yellow1_h5>성과: </yellow1_h5> 인기상 / 데모 프로젝트 제작 </span>
 - <span> <yellow1_h5>깃 허브(코드): </yellow1_h5> [https://github.com/kj1241/Goyangchimgong-refactoring](https://github.com/kj1241/Goyangchimgong-refactoring) </span>
 - <yellow1_h5>유튜브 동영상: </yellow1_h5> 
-<iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/LY2KvlVKLng" title="고양침공(야근천재)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/LY2KvlVKLng" title="고양침공(야근천재)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

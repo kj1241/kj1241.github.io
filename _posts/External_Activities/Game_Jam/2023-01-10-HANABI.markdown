@@ -6,6 +6,7 @@ image: https://github.com/kj1241/kj1241.github.io/assets/22047442/648e5a2c-c84f-
 toc: true
 categories: [Game_Jam]
 tags: [C#, Unity, Rhythm Game]
+excerpt: 캐릭터가 노드를 쏴서 부순다는 독특한 콘셉트의 리듬 게임입니다. 플레이어는 다양한 캐릭터들을 조작하여 화려하고 흥겨운 리듬에 맞춰 적들을 쓰러뜨리는 슈팅 액션을 즐길 수 있습니다. 강렬한 비주얼과 중독성 있는 게임플레이로 인해 플레이어들은 게임의 세계에 몰입할 것입니다.
 ---
 
 <!-- <h1><yellow1_h1>프로젝트 이름: HANBI Project - ver.Refactoring </yellow1_h1></h1>
@@ -85,10 +86,10 @@ tags: [C#, Unity, Rhythm Game]
 
 - <span><yellow1_h5>성과: </yellow1_h5> 명령없는 소통상 / 데모 프로젝트 제작 </span>
 - <yellow1_h5>게임 다운로드 링크: </yellow1_h5>
-스토브 인디게임: [https://www.notion.so/1st-SHOWCASE-1f0d47b25de64485a35d0ed395fa9b78](https://www.notion.so/1st-SHOWCASE-1f0d47b25de64485a35d0ed395fa9b78)  
+    스토브 인디게임: [https://www.notion.so/1st-SHOWCASE-1f0d47b25de64485a35d0ed395fa9b78](https://www.notion.so/1st-SHOWCASE-1f0d47b25de64485a35d0ed395fa9b78)  
 - <span> <yellow1_h5>깃 허브(코드): </yellow1_h5> [https://github.com/kj1241/HANABIProject-refactoring](https://github.com/kj1241/HANABIProject-refactoring) </span>
 - <yellow1_h5>유튜브 동영상: </yellow1_h5> 
-<iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/YMq3jkKQHYY" title="HANABI_Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/YMq3jkKQHYY" title="HANABI_Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <br>
 

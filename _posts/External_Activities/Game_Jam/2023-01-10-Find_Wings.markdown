@@ -6,6 +6,7 @@ image: https://github.com/kj1241/kj1241.github.io/assets/22047442/c3ad8c4e-4d56-
 toc: true
 categories: [Game_Jam]
 tags: [C#, Unity, 2D Platformer Game]
+excerpt: 천사가 지상에 놀러 내려왔다 날개를 잃어버려 찾으로 가는 2D 플래포머 게임입니다. 맵에 존재하는 수집품과 날개를 찾기위해 역경에 도전해 보세요. 여러분의 용기 있는 도전을 기다리고 있습니다.
 ---
 
 ## <yellow1_h2> 게임 소개 </yellow1_h2>
@@ -68,8 +69,8 @@ tags: [C#, Unity, 2D Platformer Game]
 
 - <span><yellow1_h5>성과: </yellow1_h5> 데모 프로젝트 제작 / 인디게임 출시 </span>
 - <yellow1_h5>게임 다운로드 링크: </yellow1_h5>
-스토브 인디게임: [https://indie.onstove.com/ko/games/204](https://indie.onstove.com/ko/games/204)  
-YXX: [https://yxx.itch.io/f](https://yxx.itch.io/f)  
+    스토브 인디게임: [https://indie.onstove.com/ko/games/204](https://indie.onstove.com/ko/games/204)  
+    YXX: [https://yxx.itch.io/f](https://yxx.itch.io/f)  
 - <span> <yellow1_h5>깃 허브(코드): </yellow1_h5> [https://github.com/kj1241/FindWings-refactoring](https://github.com/kj1241/FindWings-refactoring) </span>
 - <yellow1_h5>유튜브 동영상: </yellow1_h5> 
-<iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/1x_Vr8Gaox0" title="Find Wings" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/1x_Vr8Gaox0" title="Find Wings" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
