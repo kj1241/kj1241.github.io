@@ -4,7 +4,7 @@ title:  "WakeOnLan 에러 해결하기"
 date:   2023-02-06 15:45:29 +0900
 image: https://github.com/kj1241/kj1241.github.io/assets/22047442/41a3526d-5c48-4f12-be52-7b050e182a66
 toc: true
-categories: [Web]
+categories: [Network]
 tags: [WakeOnLan,  ARP table]
 addsence: true
 ---
