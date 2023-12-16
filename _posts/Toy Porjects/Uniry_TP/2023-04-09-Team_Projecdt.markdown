@@ -8,7 +8,7 @@ categories: [Unity_TP]
 tags: [C#, Unity, Shader]
 ---
 
-## <green1_h2> 토이 프로젝트 소개 </green1_h2>
+## <green1_h2> 팀 프로젝트 소개 </green1_h2>
 
 첫 팀프로젝트로 개발한 유니티 C# 게임은 간단한 버튼 클릭 기반의 게임입니다.  
 플레이어는 다양한 버튼을 활용하여 게임 내 도전과 퍼즐을 해결하며, 간단하면서도 재미있는 게임 경험을 제공합니다.  
@@ -17,7 +17,7 @@ tags: [C#, Unity, Shader]
 <br>
 <br>
 
-## <green1_h2> 토이 프로젝트 개요 </green1_h2>
+## <green1_h2> 팀 프로젝트 개요 </green1_h2>
 
 - <span><green1_h5>프로젝트명: </green1_h5> the Untitled Kingdom</span>
 - <span><green1_h5>장르: </green1_h5> 2016년 1학기 팀 프로젝트 최종 과제</span>
@@ -28,7 +28,7 @@ tags: [C#, Unity, Shader]
 <br>
 <br>
 
-## <green1_h2> 팀 구성 </green1_h2>
+## <green1_h2> 팀 프로젝트 팀 구성 </green1_h2>
 
 - <span><yellow1_h5>Prgrammer(1명): </yellow1_h5> 게임 로직 설계, 게임 구성, 연출 구성, 파티클 보조, 쉐이더제작, UI 제작</span>
 - <span><yellow1_h5>Artist(3명): </yellow1_h5> World Creator를 통한 지형제작, UI 디자인, 폰트디자인, 원화, 에프트이펙트를 통한 이펙트디자인</span>
@@ -37,7 +37,7 @@ tags: [C#, Unity, Shader]
 <br>
 <br>
 
-## <green1_h2> 기술 스택 </green1_h2>
+## <green1_h2> 팀 프로젝트 기술 스택 </green1_h2>
 
 - <span><green1_h5>엔진: </green1_h5> Unity 5.3.6.f1 → 2019.4.22f1  </span>
 - <span><green1_h5>언어: </green1_h5> C# / mono </span>
@@ -47,7 +47,7 @@ tags: [C#, Unity, Shader]
 <br>
 <br>
 
-## <green1_h2> 토이 프로젝트 특징 </green1_h2>
+## <green1_h2> 팀 프로젝트 특징 </green1_h2>
 
 1. 그래픽 학과 아티스트와 협업하여 프로젝트를 제작하였습니다.
 2. 버튼형 게임으로 포켓몬스터에서 영감을 받았습니다.
@@ -55,7 +55,7 @@ tags: [C#, Unity, Shader]
 <br>
 <br>
 
-## <green1_h2> 개발자의 역활 및 경험 </green1_h2>
+## <green1_h2> 팀 프로젝트의 개발자의 역활 및 경험 </green1_h2>
 
 - **팀 프로젝트 버튼형 게임 제작** <span><red1_error>(전체 게임 제작 기여도: 35%)</red1_error></span>
     1. 영화적 효과 연출을 위한 필름 효과 쉐이더 제작 (인트로 화면).
@@ -84,7 +84,7 @@ tags: [C#, Unity, Shader]
 <br>
 <br>
 
-## <green1_h2> 결과(성과) 및 데모 </green1_h2>
+## <green1_h2> 팀 프로젝트 결과(성과) 및 데모 </green1_h2>
 
 - <span><green1_h5>성과: </green1_h5> 2016년 1학기 팀 프로젝트 최종 과제 </span>
 - <span><green1_h5>지드라이브(코드): </green1_h5> [https://drive.google.com/drive/folders/1i84Sc-GpJ3PSuZGPUxoNb8lWFGAFlICW?usp=share_link](https://drive.google.com/drive/folders/1i84Sc-GpJ3PSuZGPUxoNb8lWFGAFlICW?usp=share_link)</span> 
@@ -110,10 +110,11 @@ tags: [C#, Unity, Shader]
 <br>
 
 ---
+---
 
 <br>
 
-## <green1_h2> 토이 프로젝트 소개 </green1_h2>
+## <green1_h2> 팀 프로젝트 과제 소개 </green1_h2>
 
 대학교 시절 팀 프로젝트 학과 과제 모음입니다.  
 당시, 처음 유니티를 접했기 때문에 프로젝트를 완성하기 위해서 필요한 부분을 자율적으로 공부 및 코드를 작성하여 발표했던 내용입니다.  
@@ -122,7 +123,7 @@ tags: [C#, Unity, Shader]
 <br>
 <br>
 
-## <green1_h2> 토이 프로젝트 개요 </green1_h2>
+## <green1_h2> 팀 프로젝트 과제 개요 </green1_h2>
 
 - <span><green1_h5>프로젝트명: </green1_h5> 팀프로젝트 과제</span>
 - <span><green1_h5>장르: </green1_h5> 2016년 1학기 팀 프로젝트 과제</span>
@@ -132,14 +133,14 @@ tags: [C#, Unity, Shader]
 <br>
 <br>
 
-## <green1_h2> 팀 구성 </green1_h2>
+## <green1_h2> 팀 프로젝트 과제 팀 구성 </green1_h2>
 
 - <span><yellow1_h5>Prgrammer(1명): </yellow1_h5>각종 유니티 프로그래밍 코드 연습 </span>
 
 <br>
 <br>
 
-## <green1_h2> 기술 스택 </green1_h2>
+## <green1_h2> 팀 프로젝트 과제 기술 스택 </green1_h2>
 
 - <span><green1_h5>엔진: </green1_h5> Unity 5.3.6.f1 → 2019.4.22f1  </span>
 - <span><green1_h5>언어: </green1_h5> C# / mono </span>
@@ -148,7 +149,7 @@ tags: [C#, Unity, Shader]
 <br>
 <br>
 
-## <green1_h2> 개발자의 역활 및 경험 </green1_h2>
+## <green1_h2> 팀 프로젝트 과제 개발자의 역활 및 경험 </green1_h2>
 
 - **프로젝트를 위한 게임 실습 과제** <span><red1_error>(전체 게임 제작 기여도: 100%)
 
@@ -1217,13 +1218,13 @@ tags: [C#, Unity, Shader]
 
 ### <green1_h3> 유니티 로그인 화면 UI 제작 및 데이터 베이스 조회 </green1_h3>
 
-- 유니티 + PHP + MySql 쿼리문으로 데이터베이스 조회 [https://youtu.be/q3 Xq106 qzb4](https://youtu.be/q3 Xq106 qzb4)
+- 유니티 로그인 + PHP + MySql 쿼리문으로 데이터베이스 조회: [https://youtu.be/q3 Xq106 qzb4](https://youtu.be/q3 Xq106 qzb4)
     <iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/q3Xq106qzb4" title="팀프로젝트 과제 - 네트워크" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <br>
 <br>
 
-## <green1_h2> 결과 </green1_h2>
+## <green1_h2> 팀 프로젝트 과제 결과 </green1_h2>
 
 - <span><green1_h5>성과: </green1_h5> 게임 과제 제작 </span>
 
