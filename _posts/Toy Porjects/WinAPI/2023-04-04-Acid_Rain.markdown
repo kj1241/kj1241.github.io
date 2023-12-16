@@ -1,83 +1,94 @@
 ---
 layout: post
-title:  "산성비 게임 제작"
+title:  "윈도우 프로그래밍 기말과제 산성비 게임 제작"
 date:   2023-04-04 11:50:19 +0900
-image: https://github.com/kj1241/kj1241.github.io/assets/22047442/5d190887-f64e-4a1e-9f42-faee330a7db5
+image: https://drive.google.com/uc?export=view&id=1LyM9BeqxNITFOcE1ZrbtedVnbDM9a84p
 toc: true
 categories: [WinAPI]
 tags: [C++,WinAPI]
 ---
 
-<h2><green1_h2> 토이 프로젝트 소개 </green1_h2></h2>
+## <green1_h2> 산성비 게임 소개 </green1_h2>
+
 하늘에서 떨어지는 글자를 신속하게 지우는 게임, '글자 소멸' 산성비의 모작  
 플레이어는 떨어지는 알파벳이나 단어를 터치하여 소멸시키고, 높은 난이도에 도전하면서 빠른 반응과 어휘력을 향상하세요.  
 시간 경쟁이 주된 요소인 이 게임은 속도와 정확성을 겸비한 플레이어에게 적합한 놀이터입니다.  
 
 <br>
 <br>
-<h2><green1_h2> 토이 프로젝트 개요 </green1_h2></h2><ul>
-<li><h5><green1_h5>프로젝트명: </green1_h5><span> Acid Rain 모작 </span></h5></li>
-<li><h5><green1_h5>장르: </green1_h5><span> 2015년 1학기 윈도우 프로그래밍 실습 기말 과제</span></h5></li>
-<li><h5><green1_h5>기간: </green1_h5><span> 2015.06.09~2015.06.14</span></h5></li>
-<li><h5><green1_h5>플랫폼: </green1_h5><span> PC </span></h5></li></ul>
 
+## <green1_h2> 산성비 게임 개요 </green1_h2>
 
-<br>
-<br>
-<h2><green1_h2> 팀 구성 </green1_h2></h2><ul> 
-<li><h5><green1_h5>Developer(1명): </green1_h5><span> 화면 전환 구성, 게임 로직 구성 </span></h5></li>
-</ul>
-
-<br>
-<h2><green1_h2> 기술 스택 </green1_h2></h2><ul>
-<li><h5><green1_h5>엔진: </green1_h5><span> visual Studio 2015 → 2022 </span></h5></li>
-<li><h5><green1_h5>언어: </green1_h5><span> C++ / winAPI   </span></h5></li>
-</ul>
+- <span><green1_h5>프로젝트명: </green1_h5> Acid Rain 모작 </span>
+- <span><green1_h5>장르: </green1_h5> 2015년 1학기 윈도우 프로그래밍 실습 기말 과제 </span>
+- <span><green1_h5>기간: </green1_h5> 2015.06.09~2015.06.14 </span>
+- <span><green1_h5>플랫폼: </green1_h5> PC </span>
 
 <br>
 <br>
-<h2 ><green1_h2> 토이 프로젝트 특징 </green1_h2></h2>
+
+## <green1_h2> 산성비 게임 팀 구성 </green1_h2>
+
+- <span><green1_h5>Developer(1명): </green1_h5> 화면 전환 구성, 게임 로직 구성 </span>
+
+<br>
+<br>
+
+## <green1_h2> 산성비 게임 기술 스택 </green1_h2>
+
+- <span><green1_h5>엔진: </green1_h5> visual Studio 2015 → 2022 </span>
+- <span><green1_h5>언어: </green1_h5> C++ / winAPI </span>
+
+<br>
+<br>
+
+## <green1_h2> 산성비 게임 특징 </green1_h2>
+
 1. 게임 화면을 시작- 메인 - 끝으로 구성하였습니다.
 2. 하늘에서 떨어지는 단어를 올바르게 치시면 점수를 얻는 방식으로 구성하였습니다.
 
 <br>
 <br>
-<h2><green1_h2> 개발자의 역활 및 경험 </green1_h2></h2>
+
+## <green1_h2> 산성비 게임 개발자의 역활 및 경험 </green1_h2>
+
 - **산성비 데모 제작** <span><red1_error>(전체 게임 제작 기여도: 100%)</red1_error></span>
     1. 스테이지 구성 및 스테이지 전환 (Start - Main - End)을 구성.
     2. WInAPI를 이용하여 문자열 입출력 UI 코드 작성.
     3. WinAPI를 이용하여 문자열 뒤의 캐럿 UI 구현. 
     4. 단어 작성 성공 시 점수 및 UI 구현.
 
+<br>
+
+### <green1_h3> 게임 스테이지 구성 </green1_h3>
+
+![화면 구성](https://drive.google.com/uc?export=view&id=1zKEYUwqaFaXoUhlxfduV6Fda4wNwjjZD){: width="50%" }
 
 <br>
-<h3><green1_h3> 게임 스테이지 구성 </green1_h3></h3>
-![화면 구성](https://github.com/kj1241/kj1241.github.io/assets/22047442/c871c7f6-4c4d-4703-99af-3aac7a6d9a15){: width="50%" style="aspect-ratio:16/9"}
 
-<br>
-<h3><green1_h3> Main 화면 동작 다이어 그램 </green1_h3></h3>
-![다이어그램](https://github.com/kj1241/kj1241.github.io/assets/22047442/5d190887-f64e-4a1e-9f42-faee330a7db5){: width="100%" style="aspect-ratio:16/9"}
+### <green1_h3> Main 화면 동작 다이어 그램 </green1_h3>
 
-
-<br>
-<br>
-<h2><green1_h2> 결과(성과) 및 데모 </green1_h2></h2>
-<ul>
-<li><h5><green1_h5>성과: </green1_h5><span> 2015년 1학기 윈도우 프로그래밍 실습 기말 과제 </span></h5></li>
-<li><h5><green1_h5>깃 허브(코드): </green1_h5><span> 
-<a href="https://github.com/kj1241/WinAPI_ToyProejct/tree/main/AcidRain">https://github.com/kj1241/WinAPI_ToyProejct/tree/main/AcidRain</a> </span></h5></li>
-<li><h5><green1_h5>유튜브 동영상: </green1_h5></h5> 
-<iframe  width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/eYwX1WuaEYE" title="산성비(WinAPI)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</li>
-</ul>
+![다이어그램](https://drive.google.com/uc?export=view&id=1LyM9BeqxNITFOcE1ZrbtedVnbDM9a84p){: width="100%"}
 
 
 <br>
-<h3><green1_h3> 배운 점 및 앞으로 수정할 점 </green1_h3></h3>
+<br>
+
+## <green1_h2> 산성비 게임 결과(성과) 및 데모 </green1_h2>
+
+- <span><green1_h5>성과: </green1_h5> 2015년 1학기 윈도우 프로그래밍 실습 기말 과제 </span>
+- <span><green1_h5>깃 허브(코드): </green1_h5> [https://github.com/kj1241/WinAPI_ToyProejct/tree/main/AcidRain](https://github.com/kj1241/WinAPI_ToyProejct/tree/main/AcidRain) </span>
+- <green1_h5>유튜브 동영상: </green1_h5> 
+    <iframe  width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/eYwX1WuaEYE" title="산성비(WinAPI)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<br>
+
+### <green1_h3> 배운 점 및 앞으로 수정할 점 </green1_h3>
+
 - 배운점
     - WinAPI를 사용하여 간단한 게임 동작 로직을 디자인 설계를 할 수 있게 되었고 툴 프로그램의 UI 코드를 작성할 수 있게되었습니다.
     - WinAPI를 사용하여 게임을 제작할 수 있게 되었습니다.
-<br>
+
 - 보안해야될 사항
     - UI를 좀 더 디자인해서 보완 할 필요성이 있습니다.
     - 아이템을 추가 및 글자를 가리거나 화면을 다시 그리는 위치를 좀 더 크게 하여 속도가 빨라 보이도록 제작 할 필요성이 있습니다.
