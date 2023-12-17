@@ -2,31 +2,35 @@
 layout: post
 title:  "빅데이터 해커톤 로그3 자료 분석 & 결론 도출"
 date:   2023-01-25 14:01:26 +0900
-image: https://github.com/kj1241/kj1241.github.io/assets/22047442/b92e156f-7515-4daf-991f-207a56835b93
+image: https://drive.google.com/uc?export=view&id=1Krqaf09yZFMAm-khMIMo-QujJoD7-pgP
 toc: true
 categories: [Data_Analysis]
 tags: [R, Python, Virtual , Data Analysis, Big Data, Regression Analysis]
 addsence: true
+excerpt:  R 과 Python을 이용하여 빅데이터 해커톤 프로젝트의 로그 입니다. 빅데이터 해커톤 동안의 자료 분석과 결론 도출의 경험과 과정을 공유하고 있습니다.
 ---
 
 
 자료 분석은 탐색적이고 통계적인 방법을 사용하여 데이터의 패턴과 관계를 이해하는 과정이며, 이를 통해 가설을 검증하거나 새로운 통찰력을 얻습니다.  결론 도출 단계에서는 분석 결과를 종합하여 프로젝트 목표에 따른 중요한 결론을 도출하고, 의사 결정에 도움을 주는 인사이트를 제공합니다.   
 이로써 데이터로부터 유의미한 정보를 추출하고 비즈니스나 연구 목적을 달성할 수 있습니다.  
 
-![단계](https://github.com/kj1241/kj1241.github.io/assets/22047442/b92e156f-7515-4daf-991f-207a56835b93){: width="50%" }
-
+![단계](https://drive.google.com/uc?export=view&id=1Krqaf09yZFMAm-khMIMo-QujJoD7-pgP){: width="50%" }
 
 <br>
 <br>
-<h2><blue1_h2> 5. 자료 분석  </blue1_h2></h2>
+
+## <blue1_h2> 5. 자료 분석  </blue1_h2>
+
 앞서 자료 수집 단계에서 수집된 32개 독립변수를 이용하여 주제 선정에서 선정된 GLM 회귀 분석을 이용하여 분석을 시작합니다.  
 프로세스는 다음과 같습니다.  
 
-![분석과정](https://github.com/kj1241/kj1241.github.io/assets/22047442/57f3ffae-70bc-4537-91c6-2e0b89dfdbcf){: width="50%" }
+![분석과정](https://drive.google.com/uc?export=view&id=1IZluOaE6bGvJs-rnJN_EACU1QPSHQ4bZ){: width="50%" }
 
 
 <br>
-<h3><blue1_h3> 1) 상관관계 분석(상관분석)  </blue1_h3></h3>
+
+### <blue1_h3> 1) 상관관계 분석(상관분석)  </blue1_h3>
+
 상관관계 분석이란 두 변수에 사이에 어떠한 상관관계가 있는지 분석하는 기법으로 상관 계수를 측정합니다.  
 (0 <=상관 계수(r) <=1)
 
@@ -52,10 +56,10 @@ corrplot(cor_test1, method="circle",tl.cex = 0.1, cl.cex = 0.1,number.cex=0.5)
 corrplot(cor_test1,method="number",tl.cex = 0.1, cl.cex = 0.1,number.cex=0.5)
 
 ```
+
 다음과 같이 측정하면 밑의 그래프를 도출할 수 있습니다.
 
-
-![상관관계표](https://github.com/kj1241/kj1241.github.io/assets/22047442/95e90747-401f-4e71-886b-2c224bf94650){: width="100%" }
+![상관관계표](https://drive.google.com/uc?export=view&id=1vcc1KKkGaIDON3xp-lOa5bwH09Ftl728){: width="100%" }
 
 그래프가 파랑으로 갈수록 두  변수 사이에 연관관계가 존재하며 빨강으로 갈수록 연관관계가 없다는 이야기입니다.  
 이때 저희가 주목해야 하는 점은 두 변수 사이의 값이 r>=0.7이 넘는 변수들입니다.  
@@ -71,15 +75,16 @@ corrplot(cor_test1,method="number",tl.cex = 0.1, cl.cex = 0.1,number.cex=0.5)
 이렇게 연구자가 직접 r>=0.7인 연관 있는 두 독립변수를 기록하고 둘 중 하나를 지웁니다.  
 
 
-<h6>추가)
-r >0.7 기준에 관해서 한대 논란이 있었던 적이 있습니다.<br>
-논문을 보면 다양한 기준값이 나오는데 보통은 0.5, 0.7, 0.9 특이한 논문은 0.83 이런 기준점도 있습니다.<br>
-모델에 따라서 기준점이 바뀔 수 있습니다. 독립변수들이 너무 많으면 0.5로 낮게 잡아서 개수를 줄이고 독립변수들이 너무 적으면 0.9로 높게 잡을 수 있습니다.<br>
-저희는 통계학 책에 나오는 기준 0.7로 잡았습니다. </h6>
+#### 추가)
 
+r >0.7 기준에 관해서 한대 논란이 있었던 적이 있습니다.  
+논문을 보면 다양한 기준값이 나오는데 보통은 0.5, 0.7, 0.9 특이한 논문은 0.83 이런 기준점도 있습니다.  
+모델에 따라서 기준점이 바뀔 수 있습니다. 독립변수들이 너무 많으면 0.5로 낮게 잡아서 개수를 줄이고 독립변수들이 너무 적으면 0.9로 높게 잡을 수 있습니다.  
+저희는 통계학 책에 나오는 기준 0.7로 잡았습니다.  
 
 <br>
-<h3><blue1_h3> 2) GLM 회귀 분석(포아송 회귀분석)  </blue1_h3></h3>
+
+### <blue1_h3> 2) GLM 회귀 분석(포아송 회귀분석)</blue1_h3>
 
 GLM 분석에는 대표적으로 3가지 분석이 있습니다.  
 바이너리 회귀 분석, 포아송 분석, 음이항분석 이 중 바이너리 회귀분석은 독립변수들이 0 or 1로 이루어져 있어야 하기 때문에 제외하겠습니다.  
@@ -95,8 +100,8 @@ cor(fit) #상관관계 분석
 
 fit2= glm(노인운전자.교통사고.수~.,family=poisson(link = "log"),data = test) #포아송 회귀 분석
 ```
-위와 같은 분석을 시도하면 아래의 결과가 나옵니다.  
 
+위와 같은 분석을 시도하면 아래의 결과가 나옵니다.  
 
 ```
 glm(formula = 노인운전자.교통사고.수 ~ ., family = poisson(link = "log"), 
@@ -143,10 +148,10 @@ AIC: 265.99
 
 Number of Fisher Scoring iterations: 4
 ```
+
 위의 <blue1_h3>포아송 모델식은 매우 안 좋은 모델</blue1_h3>입니다.  
 모델의 독립변수 z-value 값이 유의 수준의 값 0.05 이상을 만족하는 독립 변수가 별로 존재하지 않습니다.  
   
-
 포아송 회귀 분석에 또 다른 유의할 점은 과대산포 문제입니다.  
 포아송 회귀 분석의 가정은 분산이 평균과 같다는 논리에서부터 시작합니다.  
 하지만 종속변수의 분산이 크다면 과대산포가 발생하게 됩니다.  
@@ -158,6 +163,7 @@ library(qcc)
 # table/종속변수로 과대산포 진단
 qcc.overdispersion.test(test$노인운전자.교통사고.수, type="poisson")
 ```
+
 이렇게 과대산포를 진단하게 되면 아래의 결과가 나옵니다.  
 
 ```
@@ -169,7 +175,9 @@ p-value가 0.05보다 작음으로 <blue1_h3>과대산포가 존재</blue1_h3>�
 따라서 포아송 회귀 분석을 사용하지 못합니다.  
 
 <br>
-<h3><blue1_h3> 3) GLM 회귀 분석(음이항 회귀분석)  </blue1_h3></h3>
+
+### <blue1_h3> 3) GLM 회귀 분석(음이항 회귀분석)</blue1_h3>
+
 회귀분석에서 과대산포를 확인했으므로 음이항 회귀분석을 이용해야 합니다. 음이항 회귀 분석은 다음과 같습니다.  
 
 ```R
@@ -184,7 +192,7 @@ fit=glm.nb(노인운전자.교통사고.수~.,data = test,link="sqrt") #음이�
 
 ```
 
-음이항 분석을 시도하면 아래와 같은 결과 나옵니다.
+음이항 분석을 시도하면 아래와 같은 결과 나옵니다.  
 
 ```
 Call:
@@ -246,9 +254,9 @@ Number of Fisher Scoring iterations: 1
 - 모델의 독립변수  z-value 값이 유의 수준의 값 0.05 이상을 만족하는 독립 변수가 별로 존재하지 않습니다.
 - 모델의 성능 값이 AIC 값이 커져서 모델 적합도가 약해졌습니다.
 
-
 <br>
-<h3><blue1_h3> 4) 다중공산성을 검사  </blue1_h3></h3>
+
+### <blue1_h3> 4) 다중공산성을 검사 </blue1_h3>
 
 음이항 회귀 모델 이후 변수들이 가지고 있는 복합적 다중공산성을 검사하기 위해 VIF을 실행하여 줍니다.  
 VIF(분산 팽창 지수)로서 독립변수들의 상관관계가 존재한다면 분산이 커지게 됩니다.  
@@ -266,6 +274,7 @@ fit=glm.nb(노인운전자.교통사고.수~.,data = test,link="sqrt") #음이�
 vif(fit) #VIF 다중공산성 확인
 
 ```
+
 이렇게 VIF를 확인하면 다음과 같아집니다.  
 
 ```
@@ -282,13 +291,16 @@ vif(fit) #VIF 다중공산성 확인
              X2019누적강우량 
                    20.272542 
 ```
+
 VIF >10보다 크면 <blue1_h5>다중공산성 문제</blue1_h5>가 있음으로 하나씩 제거하면 확인해 줍니다.  
   
 <br>
-<h3><blue1_h3> 5) AIC 모델을 최적화  </blue1_h3></h3>
+
+### <blue1_h3> 5) AIC 모델을 최적화</blue1_h3>
 
 이렇게 다중공산성 문제를 해결하면  그다음으로는 AIC 모델을 최적화해줘야 합니다.   
 AIC란 모데들이 성능을 평하는 지표로서 변수들이 복합적으로 많을 경우 AIC의 크기가 작을수록 성능이 좋은 모델입니다.  
+
 ```R
 test = read.table("넘기기/서울_구별_상관계수변수제거(기온변경).csv" ,sep = ",",stringsAsFactors = FALSE, header = TRUE,na.strings = "",fileEncoding = "euc-kr")
 test=test[-c(1,2,3)]
@@ -299,7 +311,9 @@ fit=glm.nb(노인운전자.교통사고.수~.,data = test,link="sqrt") #음이�
 
 step(fit) #변수 선택 방법으로 모델 최적화
 ```
+
 이렇게 변수 선택 방법으로 모델 최적화를 적용해 주면 아래와 같습니다.  
+
 ```
 Start:  AIC=268.26
 노인운전자.교통사고.수 ~ 고령운전자.음주운전.사고 + 
@@ -361,21 +375,25 @@ Step:  AIC=254.02
 - 보도육교                      1   36.579 263.95
 - 무임지하철승하차인원_2019_08  1   37.932 265.30
 ```
-<blue1_h5>알고리즘에 의해서 AIC 값을 268.26에서 254.02로 최적화</blue1_h5>할 수 있습니다.
 
-이렇게 회귀 분석 한 사이클을 완성하였습니다.
-이제부터 이런 방법으로 <red1_error>상관관계 분석에서 직접 제거하였던 변수들을 바꿔가면서 최적화된 모델을 도출</red1_error>하면 됩니다. 
+<blue1_h5>알고리즘에 의해서 AIC 값을 268.26에서 254.02로 최적화</blue1_h5>할 수 있습니다.  
 
+이렇게 회귀 분석 한 사이클을 완성하였습니다.  
+이제부터 이런 방법으로 <red1_error>상관관계 분석에서 직접 제거하였던 변수들을 바꿔가면서 최적화된 모델을 도출</red1_error>하면 됩니다.  
 
 <br>
 <br>
-<h2><blue1_h2> 6. 결론 도출  </blue1_h2></h2>
+
+## <blue1_h2> 6. 결론 도출  </blue1_h2>
+
 이렇게 최적화된 모델을 찾아서 결론을 도출하시면 됩니다.  
 
-
 <br>
-<h3><blue1_h3> 1) 최적화된 변수  </blue1_h3></h3>
+
+### <blue1_h3> 1) 최적화된 변수  </blue1_h3>
+
 모델에서 최적화된 변수는 다음과 같습니다.
+
 ```
 Coefficients:
                                Estimate Std. Error z value Pr(>|z|)    
@@ -398,36 +416,44 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 Residual deviance:  25.332  on 14  degrees of freedom
 AIC: 230.42
 ```
-등록차량수, 지하보도, 가로등, 총 치매환자 수, 병원 수, 온도, 무임지하철승하차인원, 교통카드미수혜자, 전통시장, 통행속도가 고령운전자 교통안전에 영향을 미쳤습니다.
+
+등록차량수, 지하보도, 가로등, 총 치매환자 수, 병원 수, 온도, 무임지하철승하차인원, 교통카드미수혜자, 전통시장, 통행속도가 고령운전자 교통안전에 영향을 미쳤습니다.  
 
 <br>
-<h3><blue1_h3> 2) 회귀 모형 모델 그래프 및 모델  </blue1_h3></h3>
-변수들의 상관관계를 산포도로 표현하였습니다.  
-![상관관계](https://github.com/kj1241/kj1241.github.io/assets/22047442/306564f8-499b-4faa-b5c0-c2558fc29441){: width="100%" style="aspect-ratio:16/9"}
+
+### <blue1_h3> 2) 회귀 모형 모델 그래프 및 모델 </blue1_h3>
+
+변수들의 상관관계를 산포도로 표현하였습니다.
+
+![상관관계](https://drive.google.com/uc?export=view&id=1zRb06jgiGqTvXhzRsUMmZq2QkvuquunR){: width="100%" style="aspect-ratio:16/9"}
 
 회귀 모델을 새우고 정규분 포화 후 분포를 보면, 다음과 같은 식으로 모델을 표현할 수 있습니다.
-![모델식](https://github.com/kj1241/kj1241.github.io/assets/22047442/12da7e17-1c21-48cd-bd96-53547e04fcc6){: width="100%" style="aspect-ratio:16/9"}
 
-Y = -1.161e-03 +(-4.109e-06*등록차량수) + (4.739e-02*지하보도) + (9.847e-05*가로등) +(1.210e-04*총치매환자수) + (1.434e-02*병원수) + (7.309e-02*온도) +(-1.029e-07*무임지하철승하차인원) + (1.020e-03*교통카드미수혜자)  +(1.607e-02*전통시장) + (5.197e-02*통행속도전일)
+![모델식](https://drive.google.com/uc?export=view&id=1omIQGLlIa2Y2s_lzcaOvg4Rb4pw_KsaC){: width="100%" style="aspect-ratio:16/9"}
 
+Y = -1.161e-03 +(-4.109e-06*등록차량수) + (4.739e-02*지하보도) + (9.847e-05*가로등) +(1.210e-04*총치매환자수) + (1.434e-02*병원수) + (7.309e-02*온도) +(-1.029e-07*무임지하철승하차인원) + (1.020e-03*교통카드미수혜자)  +(1.607e-02*전통시장) + (5.197e-02*통행속도전일)  
 
 <br>
-<h3><blue1_h3> 3) 공간 표현을 위한 Q-gis 사용  </blue1_h3></h3>
+
+### <blue1_h3> 3) 공간 표현을 위한 Q-gis 사용  </blue1_h3>
+
 위의 식을 이용하여 가장 교통사고가 많이 발생한 강남구 지역에 동 단위로 에측 모델을 사용하여 Q-gis로 시각화를 표현하였습니다.  
 
-![Qgis식](https://github.com/kj1241/kj1241.github.io/assets/22047442/7e8fdfff-8a07-441c-9dde-62cc6e9bc704){: width="100%" style="aspect-ratio:16/9"}
-![결과](https://github.com/kj1241/kj1241.github.io/assets/22047442/42b2d787-1927-484d-9ab8-30b40262ff7b){: width="100%" style="aspect-ratio:16/9"}
-![결과2](https://github.com/kj1241/kj1241.github.io/assets/22047442/690094e0-22a3-457f-a57b-6a7fd1428e21){: width="100%" style="aspect-ratio:16/9"}
+![Qgis식](https://drive.google.com/uc?export=view&id=1lP7sYvwXfQmZErUeAooMCj3LkTy7_B3j){: width="100%" style="aspect-ratio:16/9"}
 
+![결과](https://drive.google.com/uc?export=view&id=10181zXh57fw7RBWANM2ycUgUQ80g8XB5){: width="100%" style="aspect-ratio:16/9"}
+
+![결과2](https://drive.google.com/uc?export=view&id=18qk-bFNlo3-3hckj63TmgpHrDR0EZpuw){: width="100%" style="aspect-ratio:16/9"}
 
 <br>
 <br>
-<h2><blue1_h2> 7. 배운 점 및 부족한 점  </blue1_h2></h2>
+
+## <blue1_h2> 7. 배운 점 및 부족한 점  </blue1_h2>
+
 - <blue1_h5>배운 점</blue1_h5>
     1. 논문을 통해서 문제해결 하는 방식을 배웠습니다.
     2. 회귀분석을 통해 예측을 도출하는 방법을 배웠습니다.
   
-<br>
 - <blue1_h5>부족한 점  </blue1_h5>
     전문가에게 조언을 받는 시간이 있었는데, 약점으로는 변수의 개수가 지적 받았습니다.  
     다양한 변수를 적용시키지 못해서 아쉽다고 생각합니다.  
@@ -437,6 +463,7 @@ Y = -1.161e-03 +(-4.109e-06*등록차량수) + (4.739e-02*지하보도) + (9.847
 ---
 
 <br>
+
 <h6> 좀 더 자세한 보고서를 보고 싶다면 <a href="https://drive.google.com/file/d/1WaSbyeZJ2JY7FfH4bLWFgW-zWpqRsnMA/view?usp=share_link8">https://drive.google.com/file/d/1WaSbyeZJ2JY7FfH4bLWFgW-zWpqRsnMA/view?usp=share_link8</a> 에서 확인하실 수 있습니다.</h6>
 
 
