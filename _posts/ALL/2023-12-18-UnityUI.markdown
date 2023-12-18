@@ -1,0 +1,199 @@
+---
+layout: post
+title: "유니티 UI 공고 분석하기"
+date: 2023-12-18 15:59:59 +0900
+image: 
+toc: true
+categories: [all]
+tags: [C#, Unity, 2D Platformer Game]
+---
+
+## 포지션 분석
+
+**포지션**
+
+- 직무: 마비노기 모바일 UI
+- 회사: 데브켓 스튜디오
+  
+면접가서 얼어 붙어 있을 확률이 높지만, 포지션 제안해주신 분의 고마움이 있기 떄문에 해당 공고에 관해서 분석을 해봅시다.  
+그러면 홈페이지에서 제공하는 공고 중심으로 데브켓 스튜디오에서는 어떤 방식으로 코드를 작성하고 있는지 생각해봅시다. 
+
+<br>
+
+### 공고 분석
+
+**개발환경**
+
+> 마비노기 모바일에서는 UI 개발에 Unity UI(UGUI)를 사용하는데, Unity UI를 있는 그대로 쓰고 있지는 않고, 여러모로 튜닝해서 사용하고 있습니다.
+    Angular, React, Vue, Svelte 등 모던 웹 프레임워크의 발전을 따라잡아, 데이터가 변경되는 데 맞추어 오브젝트 하이어아키(웹브라우저의 DOM에 해당)를 변경하는 작업을 자동으로 처리하고 컴퍼넌트 단위의 재사용을 용이하게 하는 시스템을 직접 구현하고 사용하고 있습니다.
+    따라서 모던 웹 프레임워크를 사용해본 경험이 있으시면 실제 작업의 전체적인 얼개를 상상할 수 있으실 것입니다.
+  
+위의 핵심적 키워드인 '모던 웹 프레임 워크'가 나왔음으로 모던 웹 프레임 워크에 관해서 생각해보고 유니티 UI와 함께 연관지어 생각해 봅시다. 
+  
+- 모던 웹 프레임 워크의 정의:
+    현재의 웹 개발 표준과 동향을 반영하면서, 효율적이고 강력한 도구 및 구조를 제공하는 웹 개발 프레임워크를 나타냅니다.  
+    1. **컴포넌트 기반 아키텍처:** 컴포넌트 기반의 아키텍처는 UI를 독립적인 구성 요소로 나누어 관리함으로써 모듈성과 재사용성을 높이는데 도움을 줍니다.  
+    2. **가상 DOM 및 성능 최적화:** UI 업데이트를 가능하게 하고, 성능 최적화를 위한 다양한 기술을 도입하고 렌더링속도를 향상
+
+
+<br>
+<br>
+
+## 모던 웹 프레임워크의 특성을 유니티 UI에 적용을 고민
+
+기본적으로 코드를 작성할 경우, 완성으로 목적으로 두고 코드를 Divide and Conquer를 사용하여 작성함으로 크게 코드스타일에 대해서 고민해본적은 없습니다.  
+하지만 좀 더 좋은 확장성이나 생산성을 목적으로 코드를 작성해 보겠습니다.  
+
+
+### 1. **컴포넌트 기반 아키텍처:**
+
+→ 유니티 UI는 기본적으로 컴포넌트 기반의 아키텍처를 기반으로 사용합니다.  
+주로 RectTransform, Canvas, Text, Image, Button등을 사용하기 떄문에 재사용성을 높일 수 있습니다.  
+또한 동적으로 UI를 제어하고 상호 작용할 수 있습니다.  
+  
+모던 웹 프레임 워크의 가장 큰 목표는 생산성을 확장시키는 것인데, UI코드에 적어 보겠습니다.  
+UI 컴포넌트와 UIManager를 효과적으로 구조화 시키는 방법입니다.  
+
+```c#
+//ITextDisplay 인터페이스
+public interface ITextDisplay
+{
+    void SetText(string text);
+}
+
+```
+
+```c#
+
+//TextDisplay 컴포넌트 구현
+using UnityEngine;
+using UnityEngine.UI;
+
+public class TextDisplay : MonoBehaviour, ITextDisplay
+{
+    public Text textField;
+
+    public void SetText(string text)
+    {
+        textField.text = text;
+    }
+}
+
+```
+
+```c#
+
+//UIManager 스크립트
+using System.Collections.Generic;
+using UnityEngine;
+
+public class UIManager : MonoBehaviour
+{
+    [SerializeField] private GameObject textDisplayPrefab;
+    private List<ITextDisplay> textDisplays = new List<ITextDisplay>();
+
+    public void CreateText(string content)
+    {
+        GameObject textObject = Instantiate(textDisplayPrefab, transform);
+        ITextDisplay textDisplay = textObject.GetComponent<ITextDisplay>();
+
+        if (textDisplay != null)
+        {
+            textDisplay.SetText(content);
+            textDisplays.Add(textDisplay);
+        }
+        else
+        {
+            Debug.LogError("TextDisplay component not found!");
+        }
+    }
+
+    public void ClearAllText()
+    {
+        foreach (var textDisplay in textDisplays)
+        {
+            Destroy(textDisplay as MonoBehaviour);
+        }
+        textDisplays.Clear();
+    }
+}
+
+```
+위의 구조를 사용하면 UIManager를 통해 UI를 간결하게 제어를 보다 효과적으로 생성하고 관리 할 수 있습니다.  
+실질적 코드를 작성하면 다음과 같습니다.  
+
+```c#
+
+//실질 연습코드
+public class ExampleUsage : MonoBehaviour
+{
+    public UIManager uiManager;
+
+    void Start()
+    {
+        uiManager.CreateText("Hello, Unity UI!");
+        uiManager.CreateText("This is a structured example.");
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            uiManager.ClearAllText();
+        }
+    }
+}
+
+```
+
+<br>
+
+### 2. **가상 DOM 및 성능 최적화:**
+
+이 파트 부분은 해석하는데 고민이 많았습니다.  
+가상 메모리 DOM 방식이라는 것은 실제 DOM 요소를 메모리에 저장하고 필요할 때만 렌더링하는 기술입니다.  
+변경사항이 없으면 구지 업데이트를 안해도 되는 그런 방식입니다.  
+  
+가령 예를 들면, WinAPI에서 구현한다고 생각합시다.  
+렌더링 애니메이션을 만들어주기 위해서 2중 버퍼를 사용해서 장면을 교체합니다.  
+백버퍼에 랜더링을 그리고 버퍼를 교체하는 방식으로 장면을 갱신하여 보여줍니다.  
+이런 방식을 1초에 30번 보여주게 되면 30프레임 됩니다.  
+  
+그러면 "유니티에서 게임 동작과 상관없이 UI만 프레임 업데이트 시간을 동적으로 조절할 수 있다?"  
+물론 불가능하지 않을 것 같습니다.  
+  
+그럴려면 저의 생각은 엔진 단계에서 커스텀을 해서 따로 작성해야 되지 않을까 생각합니다.  
+
+```c#
+
+public class UIManager : MonoBehaviour
+{
+    private float uiUpdateInterval = 1f / 30f; // 30 프레임으로 업데이트하려면 간격을 계산합니다.
+    private float uiUpdateTimer = 0f;
+
+    void Update()
+    {
+        // 게임 로직 업데이트
+
+        // UI 업데이트 타이머
+        uiUpdateTimer += Time.deltaTime;
+
+        // 일정 간격마다 UI 업데이트
+        if (uiUpdateTimer >= uiUpdateInterval)
+        {
+            UpdateUI();
+            uiUpdateTimer = 0f; // 타이머 초기화
+        }
+    }
+
+    void UpdateUI()
+    {
+        // 여기에서 UI를 업데이트하는 로직을 작성합니다.
+    }
+}
+
+```
+
+이런 방식을 통하면 성능을 위해서 게임과 별개로 동적으로 프레임을 잡아서 업데이트 할 수 있다고 생각합니다.  
+물론 이런 성능을 조절하려면 유니티 프로파일링을 통해서 성능조사가 우선시 되야 된다고 생각합니다.   
+UGUI 대신 unity UI toolkit은 최근 영상을 봐서 테스트해보고 Technical_Article 제작하려고합니다.  

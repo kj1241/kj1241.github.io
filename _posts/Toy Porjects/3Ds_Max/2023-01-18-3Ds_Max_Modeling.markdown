@@ -8,7 +8,7 @@ categories: [3Ds_Max]
 tags: [3Ds Max]
 ---
 
-## <green1_h2> 토이 프로젝트 소개 </green1_h2>
+## <green1_h2> 3D 모델링 실습 기말과제 프로젝트 소개 </green1_h2>
 
 이 프로젝트는 부족함을 인정하면서도 열정적인 노력으로 만들어진 아기자기한 용 모델링과 애니메이션을 소개합니다.  
 전통적인 용의 이미지를 따르지 않고, 친근하고 따뜻한 감성으로 표현된 모델은 작은 디테일들을 만들기 위해 노력했습니다. 
@@ -16,7 +16,7 @@ tags: [3Ds Max]
 <br>
 <br>
 
-## <green1_h2> 토이 프로젝트 개요 </green1_h2>
+## <green1_h2> 3D 모델링 실습 기말과제 프로젝트 개요 </green1_h2>
 
 - <span><green1_h5>프로젝트명: </green1_h5> 3Ds Max를 사용해서 모델링 및 애니메이션 제작하기</span>
 - <span><green1_h5>게임 장르: </green1_h5> 3D 모델링 실습 기말과제 제출 </span>
@@ -42,7 +42,7 @@ tags: [3Ds Max]
 <br>
 <br>
 
-## <green1_h2> 토이 프로젝트 특징 </green1_h2>
+## <green1_h2> 3D 모델링 실습 기말과제 프로젝트 특징 </green1_h2>
 
 1. 모델의 구조를 배우고 상상속에 용을 표현하기 위해 모델링을 제작하였습니다.
 2. 비늘의 효과를 부여하기 위해 텍스쳐와 노멀맵을 제작하였습니다.
@@ -96,7 +96,7 @@ tags: [3Ds Max]
 <br>
 <br>
 
-## <green1_h2> 결과(성과) 및 데모 </green1_h2>
+## <green1_h2> 3D 모델링 실습 기말과제 결과(성과) 및 데모 </green1_h2>
 
 - <span><green1_h5>성과: </green1_h5> 3D 모델링 실습 기말과제 제출 </span>
 - <span><green1_h5>지드라이브(코드): </green1_h5> [https://drive.google.com/drive/folders/1x99lGePjKCvnHu4Y311ybhlrHAa3iIcI?usp=share_linkg](https://drive.google.com/drive/folders/1x99lGePjKCvnHu4Y311ybhlrHAa3iIcI?usp=share_link) </span>

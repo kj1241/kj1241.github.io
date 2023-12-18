@@ -8,7 +8,7 @@ categories: [3Ds_Max]
 tags: [3Ds Max]
 ---
 
-## <green1_h2> 토이 프로젝트 소개 </green1_h2>
+## <green1_h2> 3D 모델링 실습 중간과제 프로젝트 소개 </green1_h2>
 
 이 프로젝트는 3ds Max를 사용하여 물결치는 바다와 우뚝 솟아나는 산의 아름다움을 현실적으로 표현합니다.  
 프로젝트는 바다의 향기와 함께 다양한 물결의 움직임을 시뮬레이션하고, 산은 세밀한 디테일과 조형으로 웅장함을 강조합니다.  
@@ -17,7 +17,7 @@ tags: [3Ds Max]
 <br>
 <br>
 
-## <green1_h2> 토이 프로젝트 개요 </green1_h2>
+## <green1_h2> 3D 모델링 실습 중간과제 프로젝트 개요 </green1_h2>
 
 - <span><green1_h5>프로젝트명: </green1_h5> 3Ds Max를 사용하여 지형 제작하기</span>
 - <span><green1_h5>게임 장르: </green1_h5> 3D 모델링 실습 중간과제 제출 </span>
@@ -43,7 +43,7 @@ tags: [3Ds Max]
 <br>
 <br>
 
-## <green1_h2> 토이 프로젝트 특징 </green1_h2>
+## <green1_h2> 3D 모델링 실습 중간과제 프로젝트 특징 </green1_h2>
 
 1. 물결치는 물을 만들기 위해 노멀맵을 제작하고 바다를 표현하였습니다.
 2. 하이트 맵에 대해 공부하고 하이트 맵을 제작하여 터레인을 완성하엿습니다.
@@ -74,7 +74,7 @@ tags: [3Ds Max]
 <br>
 <br>
 
-## green1_h2> 결과(성과) 및 데모 </green1_h2>
+## green1_h2> 3D 모델링 실습 중간과제 결과(성과) 및 데모 </green1_h2>
 
 - <span><green1_h5>성과: </green1_h5> 3D 모델링 실습 중간과제 제출 </span>
 - <span><green1_h5>지드라이브(코드): </green1_h5> [https://drive.google.com/drive/folders/12uhO0kQFtfWmHDJYspvOVxcIzI4wkUrA?usp=sharing](https://drive.google.com/drive/folders/12uhO0kQFtfWmHDJYspvOVxcIzI4wkUrA?usp=sharing) </span>
