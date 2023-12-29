@@ -57,3 +57,10 @@
 12월 9일
 1. 그래픽스 DirectX 애니메이션 툴 연습
     - 여전히 재미있다...
+
+12월 29일 - 우선순위 순 
+1. SIMD 병렬 명령어 처리 cppcon23 분석
+2. Unity UI Toolkit 분석
+3. 블로그 정리
+4. 3ds max - XML - DirectX 제작
+
