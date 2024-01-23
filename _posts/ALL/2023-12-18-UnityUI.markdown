@@ -197,3 +197,11 @@ public class UIManager : MonoBehaviour
 이런 방식을 통하면 성능을 위해서 게임과 별개로 동적으로 프레임을 잡아서 업데이트 할 수 있다고 생각합니다.  
 물론 이런 성능을 조절하려면 유니티 프로파일링을 통해서 성능조사가 우선시 되야 된다고 생각합니다.   
 UGUI 대신 unity UI toolkit은 최근 영상을 봐서 테스트해보고 Technical_Article 제작하려고합니다.  
+
+
+테스트 
+
+  
+$$
+\sum_{n=1}^\infty \frac{1}{n^2} = \frac{\pi^2}{6}
+$$

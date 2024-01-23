@@ -20,6 +20,9 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
+  
+katex:
+  enable: true
 
 # Build settings
 plugins:
