@@ -205,3 +205,28 @@ UGUI 대신 unity UI toolkit은 최근 영상을 봐서 테스트해보고 Techn
 $$
 \sum_{n=1}^\infty \frac{1}{n^2} = \frac{\pi^2}{6}
 $$
+
+--------------
+
+
+## Server_Portfolio
+- This is a server for university assignment submission.  
+- The Toy Project was created for learning.
+
+
+### Related subjects 
+
+|제목|내용|년도|설명|
+|------|---|---|--------------------------|
+|System Programming Practice| |2015 Fall Semester|운영체제의 상호관리 및 메모리 관리하는 방법을 학습합니다.|
+|Game Server Practice (1) ||2016 Fall Semester|소켓 프로그래밍에서 이벤트, 크리티컬 섹션, 뮤텍스등 다양한 동기화 방식에 대해 학습합니다.|
+|Advanced Web Server Programming(=> Game Server Practice (2))||2018 Fall Semester|IOCP 서버 제작 및 학습합니다.|
+
+  
+  
+  
+  
+
+
+,   
+,    

@@ -588,6 +588,7 @@ int main()
 - 매개변수에 this 인수를 사용하여 명시적으로 만들 수 있습니다.
 - [ ] mutable { }; 더 이상 코드 레어가 아닙니다.([]() mutable {})
 - 비어있는 디폴트 람다를 static을 사용하여 정적으로 변경할 수 있습니다
+  
 ```c++
 //재귀 함수
 auto fact = [](this auto self, int n) -> int {
