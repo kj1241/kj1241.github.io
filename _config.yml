@@ -30,6 +30,9 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
 
+google_drive: https://drive.google.com/thumbnail?id=
+
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

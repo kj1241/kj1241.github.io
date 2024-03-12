@@ -37,8 +37,8 @@ categories_list:
     categories_sub_list:
       - title: CppCon
         url: /CppCon/
-      - title: GDC
-        url: /GDC/
+      - title: Graphics_Development
+        url: /Graphics_Development/
       - title: Unity
         url: /Unity/
       - title: Unreal
