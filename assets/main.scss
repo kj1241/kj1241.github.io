@@ -3,3 +3,28 @@
 ---
 
 @import "KJ";
+
+@font-face {
+    font-family: "NanumBujangnim";
+    src: url('/assets/fonts/NanumBujangnim.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Bazzi";
+    src: url('/assets/fonts/Bazzi OTF.woff') format('woff');
+}
+
+@font-face {
+    font-family: "WindSong";
+    src: url('/assets/fonts/WindSong-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Whisper";
+    src: url('/assets/fonts/Whisper-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Bombanghak";
+    src: url('/assets/fonts/HakgyoansimBombanghakR.ttf') format('truetype');
+}

@@ -5,27 +5,33 @@
 
 
 .post_content {
+ 
+  
   h1 {
     font-size: 38px;
     padding-top: 8px;
     padding-bottom: 8px;
     line-height: 1.4;
+    font-family: "Bazzi", sans-serif;
+    
   }
 
   h2 {
-    font-size: 30px;
+    font-size: 35px;
     padding-top: 5px;
     padding-bottom: 5px;
     margin-bottom: 5px;
     line-height: 1.4;
+    font-family: "Bazzi", sans-serif;
   }
 
   h3 {
-    font-size: 25px;
+    font-size: 30px;
     padding-top: 3px;
     padding-bottom: 3px;
     margin-bottom: 5px;
     line-height: 1.4;
+    font-family: "Bombanghak", sans-serif;
   }
 
   h4 {
@@ -60,6 +66,10 @@
     padding-bottom: 3px;
     margin-bottom: 5px;
     line-height: 26px;
+    font-family: "NanumBujangnim", sans-serif;
+    //font-family: "Nanum Pen Script", cursive;
+    // font-weight: 400;
+    // font-style: normal;
   }
 
   ul {

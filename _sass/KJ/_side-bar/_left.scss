@@ -70,9 +70,11 @@ $btn-mb: 0.5rem;
     text-align: center;
     -webkit-text-stroke: 1px #e6e6e680; /* 웹킷 브라우저 (Chrome, Safari 등)에서 사용 */
     color: rgb(170, 34, 152);
-    font-size: 30px;
+    font-size: 40px;
     padding-top: 5px;
-    font-family: "Brush Script Std", cursive;
+    font-family: "Whisper", cursive;
+    //font-family: "Nanum Pen Script", cursive;
+    
     text-shadow: 2px 2px 4px rgba(235, 235, 235, 0.3);
     line-height: 0.8;
     font-weight: 100;
@@ -84,12 +86,14 @@ $btn-mb: 0.5rem;
     text-align: center;
 }
 #profile_desc a {
-    font-size: 20px;
+    font-size: 30px;
     -webkit-text-stroke: 1px #e6e6e680; /* 웹킷 브라우저 (Chrome, Safari 등)에서 사용 */
-    color: rgb(93, 21, 175);
-    font-family: "Comic Sans MS", cursive;
+    color: #5d15af;
+    font-family: "WindSong", cursive;
     font-style: italic;
-    text-shadow: 2px 2px 4px #ebebeb33;
+    font-weight: 500;
+
+    text-shadow: 2px 2px 4px #9cc73278;
     text-decoration: none;
 }
 
@@ -129,8 +133,8 @@ $btn-mb: 0.5rem;
 
 #categories #categories_list #categories_item{
     color: rgb(238, 184, 159);
-    font-size: 15px;
-    font-family: sans-serif;
+    font-size: 18px;
+    font-family: "Bazzi",sans-serif;
     transition: all 0.2s;
   }
   
@@ -142,8 +146,8 @@ $btn-mb: 0.5rem;
   
   #categories #categories_sub a{
     color: rgb(158, 163, 223);
-    font-size: 12px;
-    font-family: "Arial";
+    font-size: 15px;
+    font-family: "Bombanghak",sans-serif;
     transition: all 0.2s;
   }
   
