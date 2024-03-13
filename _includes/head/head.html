@@ -6,7 +6,6 @@
   <!--브라우저 캐쉬사용-->
   <!--  <meta http-equiv="cache-control" content="public, max-age=3600">-->
 
-
   <!--타이틀-->
   <title>
     {{ page.title | default: site.title | escape }}
@@ -29,14 +28,9 @@
   <!--google addsence-->
   <meta name="google-adsense-account" content="ca-pub-3712073515065828">
   <meta name="google-site-verification" content="5LgST4VxF-eF3gBMgf1DAEfTnAT9DvQO9iUYa1hGSIw" /> <!--구글 서치콘솔등록-->
-
-
-
   
   <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}"> <!--css 지원-->
   <link href="/assets/css/syntax.css" rel="stylesheet" />
-
-
 
   <!--katex-->
   {% if site.katex.enable == true %}
@@ -56,5 +50,7 @@
         });
       });
   </script>
+  <script src="/assets/js/mouse.js"></script>
+  
   {% endif %}
 </head>

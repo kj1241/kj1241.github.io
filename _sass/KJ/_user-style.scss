@@ -35,21 +35,20 @@
   }
 
   h4 {
-    font-size: 20px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    font-size: 28px;
     margin-bottom: 5px;
-    line-height: 1.2;
+    line-height: 25px;
+    font-family: "Bombanghak", sans-serif;
   }
 
 
   h5 {
-    font-size: 16px;
+    line-height: 26px;
     padding-top: 2px;
     padding-bottom: 2px;
     margin-bottom: 5px;
     line-height: 26px;
-    font-weight: normal;
+    font-family: "NanumBujangnim", sans-serif;
   }
 
   h6 {
@@ -62,14 +61,10 @@
   }
 
   p {
-    padding-top: 3px;
-    padding-bottom: 3px;
-    margin-bottom: 5px;
     line-height: 26px;
     font-family: "NanumBujangnim", sans-serif;
-    //font-family: "Nanum Pen Script", cursive;
-    // font-weight: 400;
-    // font-style: normal;
+    font-size: 25px;
+    line-height: 30px;
   }
 
   ul {
@@ -86,6 +81,8 @@
     padding-top: 3px;
     margin-top: 3px;
     margin-bottom: 3px;
+    font-family: "NanumBujangnim", sans-serif;
+    font-size: 20px;
   }
 
   iframe {
@@ -176,4 +173,25 @@
   highlight_blue {
     color: #99e2ff
   }
+
+
+  web_h2 {
+    color: #99DDC8;
+  }
+
+  web_h3 {
+    color: #95BF74;
+  }
+  web_h4 {
+    color: #659B5E;
+  }
+  web_h5 {
+    color: #b4d99c;
+  }
+  web_h6{
+    color: #283F3B;
+  }
+
+
+
 }

@@ -26,10 +26,10 @@
 
 
 .post_tit {
-    font-size: 18px;
-    line-height: 19px;
+    font-size: 28px;
+    line-height: 25px;
     color: rgb(140, 173, 179);
-    font-family: applesdgothicneo-light;
+    font-family: "Bazzi",applesdgothicneo-light;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     overflow: hidden;
@@ -46,15 +46,15 @@
     overflow: hidden;
     text-overflow: ellipsis;
   
-    font-size: 15px;
+    font-size: 25px;
     font-weight: 20;
-    line-height: 20px;
+    line-height: 25px;
     max-height: 80px;
-    font-family: applesdgothicneo-ultralight;
+    font-family: "NanumBujangnim" ,applesdgothicneo-ultralight;
   
 
     word-break: normal;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     display: -webkit-box;
     /*어쩐지 제어 안된다 했다.*/

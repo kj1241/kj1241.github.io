@@ -18,6 +18,9 @@
 
 }
 
+//모바일
+@media screen and (max-width: 800px) {
+
 #article_header .info_text {
   position: relative;
   /*드디어 찾음 z버퍼 순서 안되는 이유 */
@@ -36,11 +39,45 @@
 #article_header .title_post {
   //font-family:"Nanum Brush Script";
   font-family: "Bazzi", sans-serif;
-  font-size: 50px;
+  font-size: calc(10px + 5vw);
   line-height: 50px;
   color:#fff690;
   text-shadow:2px 2px 4px #8eb8b9;
 }
+
+}
+
+//전체
+@media screen and (min-width: 800px) {
+
+  #article_header .info_text {
+    position: relative;
+    /*드디어 찾음 z버퍼 순서 안되는 이유 */
+    //width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    //top: 40%;
+    transform: translate(0, 50%);
+    z-index: 2;
+    //text-align: center;
+    color: #f3f5de;
+    box-sizing: border-box;
+  }
+  
+  
+  #article_header .title_post {
+    //font-family:"Nanum Brush Script";
+    font-family: "Bazzi", sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    color:#fff690;
+    text-shadow:2px 2px 4px #8eb8b9;
+  }
+ 
+
+
+}
+
 #article_header .info_text .info {
   margin-top: 10px;
   font-size: 12px;

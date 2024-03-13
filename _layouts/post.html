@@ -36,23 +36,28 @@ layout: default
     {%- include google/_top_add_sence.html -%}
     {%- endif -%}
 
-    <br>
-    <div id="line">
-      <hr />
-    </div>
-    <br>
+  
 
-    <div class="post_content" itemprop="articleBody">
+    <div class="post_content" itemprop="articleBody">   
+      <div id="line">
+        <hr />
+      </div>
+      <p>
+        <br>
+      </p>
+      
       {{ content }}
+      <p>
+        <br>
+      </p>
+      <div id="line">
+        <hr />
+      </div>
+        <br>
     </div>
 
     {%- if page.tags -%}
 
-    <br>
-    <div id="line">
-      <hr />
-    </div>
-    <br>
 
     <div id="tag">
       <div class="tag_title"> tag:&nbsp </div>
