@@ -31,6 +31,7 @@ plugins:
   - jekyll-paginate
 
 google_drive: https://drive.google.com/thumbnail?id=
+google_drive_end: "&sz=w1000"
 
 
 # Exclude from processing.

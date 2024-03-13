@@ -91,7 +91,8 @@
 .slides_list #slides_list_title strong {
 
   display: block;
-  font-size: 36px;
+  font-family:"Bazzi" ,sans-serif;
+  font-size: 40px;
   color: rgb(253, 217, 207);
   max-height: 130px;
   max-width: 600px;
@@ -105,7 +106,9 @@
   //width: 700px;
   max-height: 85px;
   margin: 10px 0 20px 0;
-  font-size: 16px;
+  font-family:"NanumBujangnim" ,sans-serif;
+  font-size: 25px;
+  line-height: 25px;
   color: rgb(207, 232, 253);
   line-height: 28px;
   word-break: keep-all;
@@ -121,6 +124,7 @@
   height: 40px;
   line-height: 35px;
   box-sizing: border-box;
+  font-family:"NanumBujangnim" ,sans-serif;
   font-size: 16px;
   color: #fff;
   text-align: center;
