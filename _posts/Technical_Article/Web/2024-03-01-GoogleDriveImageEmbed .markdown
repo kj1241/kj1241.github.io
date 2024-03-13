@@ -2,7 +2,7 @@
 layout: post
 title:  "구글 드라이브를 사용하여 이미지 호스팅하기 - 깃허브 블로그에 적용"
 date:   2024-03-01 10:00:00 +0900
-image: https://github.com/kj1241/kj1241.github.io/assets/22047442/ea08108f-a358-441c-9c9b-6a18572f2fe7
+image: https://github.com/kj1241/kj1241.github.io/assets/22047442/d347b333-c52d-4d15-920d-726ad97194d1
 toc: true
 categories: [Web]
 tags: [Goole Drive, Image Hosting, embed, Git Hub Blog]
@@ -212,7 +212,7 @@ _config.yml 파일안에 <web_h5>변수</web_h5> = value 이런 형식으로 입
 
 <img src= "{{ site.google_drive }}1aQQOxVbmCAj0e0wJ5j6UdKijAWzBWXL6&sz=w1000" alt="이미지"  width="800px" height="aspect-ratio:16/9">
 
-1. 예전에는 링크 주소가 나왔지만 바로 컴퓨터 클립보드로 복사되기 때문에 메모장으로 확인해 봅시다.
+1. 예전에는 링크 주소를 바로 확인 할 수 있었지만, 최근에는 컴퓨터 클립보드로 복사되기 때문에 메모장으로 확인해 봅시다.
 2. 메모장에서 드레그로 선택한 영역이 바로 ID값입니다.
 
 <p><br></p>
