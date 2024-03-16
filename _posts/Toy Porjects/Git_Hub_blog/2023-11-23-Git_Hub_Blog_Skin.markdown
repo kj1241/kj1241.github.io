@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "깃 허브 블로그 스킨 제작 v0.4"
+title: "깃 허브 블로그 스킨 제작 ver.4"
 date: 2023-11-23 09:00:00 +0900
-image: https://github.com/kj1241/kj1241.github.io/assets/22047442/bd645704-5970-41e8-a8c7-52f0784b2cba
+image: https://drive.google.com/thumbnail?id=1OzqLMBVTtXSBCgmB8SjPgV9n9eaGn61Q
 toc: true
 categories: [Git_Hub_Blog]
-tags: [HTML, SCSS, Java script, Ruby, Jekyll, Git Hug Blog]
+tags: [ Git Hug Blog, JavaScript, HTML, SCSS, Jekyll, Markdown, Ruby]
 ---
 
 ##  <web_h2> 프로젝트 소개 </web_h2>
@@ -15,28 +15,27 @@ tags: [HTML, SCSS, Java script, Ruby, Jekyll, Git Hug Blog]
 단순함 속에 심장을 뛰게 하는 우주적 아름다움을 느껴보세요.
 
 <br>
+<br>
 
 ## <web_h2> 프로젝트 개요 </web_h2>
 
-- <p><web_h5>프로젝트명:</web_h5> KJ_Skin v0.4</p>
-- <p><web_h5>장르:</web_h5> Toy Project(Blog Theme)</p>
-- <p><web_h5>기간:</web_h5> 운영중</p>
-    - v0.1: 2023.11.18~2023.11.20 
-    - v0.2: 2023.11.25  
-    - v0.3: 2023.12.02~2023.12.03 
-    - v0.4: 2024.03.11~2024.03.13 
-- <p><web_h5>개발인원:</web_h5> Developer(1명)</p>
-- <p><web_h5>플랫폼:</web_h5> PC(Chorm / Microsoft Edge / Firefox / Opera)</p>
-
+- <span><web_h5>프로젝트명:</web_h5> KJ_Skin v0.4</span>
+- <span><web_h5>장르:</web_h5> Toy Project(Blog Theme)</span>
+- <span><web_h5>기간:</web_h5> 운영중</span>
+    - ver.1: 2023.11.18~2023.11.20 
+    - ver.2: 2023.11.25  
+    - ver.3: 2023.12.02~2023.12.03 
+    - ver.4: 2024.03.11~2024.03.13 
+- <span><web_h5>개발인원:</web_h5> Developer(1명)</span>
+- <span><web_h5>플랫폼:</web_h5> PC(Chorm / Microsoft Edge / Firefox / Opera)</span>
 
 <br>
 
 ### <web_h3> 기술 스택 </web_h3>
 
-- <p><web_h5>개발 도구:</web_h5> visual code / Git hub</p>
-- <p><web_h5>개발 언어:</web_h5> HTML / SCSS / JavaScript / Jekyll / Markdown / Ruby</p>
-- <p><web_h5>그래픽 디자인:</web_h5> Adobe Photoshop</p>
-
+- <span><web_h5>개발 도구:</web_h5> visual code / Git hub</span>
+- <span><web_h5>개발 언어:</web_h5> HTML / SCSS / JavaScript / Jekyll / Markdown / Ruby</span>
+- <span><web_h5>그래픽 디자인:</web_h5> Adobe Photoshop</span>
 
 <br>
 <br>
@@ -45,7 +44,9 @@ tags: [HTML, SCSS, Java script, Ruby, Jekyll, Git Hug Blog]
 
 업데이트 별 프로젝트 특징과 기능 구현 내용입니다.
 
-### <web_h3>단순형 스킨 제작 v0.1</web_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
+<br>
+
+### <web_h3>단순형 스킨 제작 ver.1</web_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
 
 1. 라이브러리 없이 테마를 처음부터 제작하였습니다.
 2. 홈 커버에 슬라이더 애니메이션을 제작하여 추가하였습니다.
@@ -83,7 +84,7 @@ tags: [HTML, SCSS, Java script, Ruby, Jekyll, Git Hug Blog]
 
 <br>
 
-### <web_h3>모바일 스킨 제작 v0.2</web_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
+### <web_h3>모바일 스킨 제작 ver.2</web_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
 
 1. 모바일 버전을 제작하기 위해서 반응형, 적응형 디자인 둘을 섞어서 만들었습니다.
     + 메인 콘텐츠의 박스는 웹페이지 크기로 반응형입니다.
@@ -111,7 +112,7 @@ tags: [HTML, SCSS, Java script, Ruby, Jekyll, Git Hug Blog]
 
 <br>
 
-### <web_h3>최적화 설정 v0.3</web_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
+### <web_h3>최적화 설정 ver.3</web_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
 
 1. tilte, description, keywords를 설정 및 구현하였습니다.
 2. seo-tag 설정하여 보다 검색에 친숙하게 구현하였습니다.
@@ -122,10 +123,10 @@ tags: [HTML, SCSS, Java script, Ruby, Jekyll, Git Hug Blog]
 
 <br>
 
-### <web_h3>에러해결 및 리뉴얼 v0.3</web_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
+### <web_h3>에러해결 및 리뉴얼 ver.4</web_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
 
 1. 웹의 분위기를 환기하고자 폰트를 바꾸었습니다.
-2. 구글 정책 변경에 따라서 [이미지 호스팅](/_posts/Technical_Article/Web/2024-03-01-GoogleDriveImageEmbed%20.markdown)을 바꾸고 매크로를 작성하였습니다.
+2. 구글 정책 변경에 따라서 [이미지 호스팅](/web/GoogleDriveImageEmbed)을 바꾸고 매크로를 작성하였습니다.
 
 <br>
 
@@ -180,19 +181,18 @@ tags: [HTML, SCSS, Java script, Ruby, Jekyll, Git Hug Blog]
 
 ![깃허브블로그 평가]({{ site.google_drive }}1QJ617PH-_g2y71uz4FUDYXht1VbCtEKX{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 
-- <p><web_h5>성과:</web_h5> 웹 페이지 PC 버전 및 모바일 버전 제작 </p>
-- <p><web_h5>깃 허브(코드):</web_h5> [https://github.com/kj1241/kj1241.github.io](https://github.com/kj1241/kj1241.github.io)</p>
-
+- <span><web_h5>성과:</web_h5> 웹 페이지 PC 버전 및 모바일 버전 제작 </span>
+- <span><web_h5>깃 허브(코드):</web_h5> [https://github.com/kj1241/kj1241.github.io](https://github.com/kj1241/kj1241.github.io)</span>
 
 <br>
 <br>
 
 ## <web_h2> 비고 및 여담 </web_h2>
 
-- <p><web_h5>깃 허브 블로그로 옮긴 이유:</web_h5></p>
+- <span><web_h5>깃 허브 블로그로 옮긴 이유:</web_h5></span>
     - 티스토는 UI부터 초보자가 사용하기 좋은 사이트임에는 틀림없지만, 원하는대로 만들수 없는 사이트이기 때문에 저의 니즈를 충족시키지 못하여서 옮기게 되었습니다.
 
-- <p><web_h5>깃 허브 제작시 트러블 슈팅:</web_h5></p>
+- <span><web_h5>깃 허브 제작시 트러블 슈팅:</web_h5></span>
     - jekyll에서 _Page폴더를 만들고 내용을 읽어 올 수 없습니다. 따라서 pages라는 폴더로 만들었습니다.
     - 구글 이미지 호스팅 주소가 변경됨에 따라 주소를 변경하고 매크로를 제작하였습니다.
 

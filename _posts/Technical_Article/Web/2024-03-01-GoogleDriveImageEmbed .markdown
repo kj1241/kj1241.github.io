@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "구글 드라이브를 사용하여 이미지 호스팅하기 - 깃허브 블로그에 적용"
-date:   2024-03-01 10:00:00 +0900
-image: https://github.com/kj1241/kj1241.github.io/assets/22047442/d347b333-c52d-4d15-920d-726ad97194d1
+title: "구글 드라이브를 사용하여 이미지 호스팅하기 - 깃허브 블로그에 적용"
+date: 2024-03-01 10:00:00 +0900
+image: https://drive.google.com/thumbnail?id=1aQQOxVbmCAj0e0wJ5j6UdKijAWzBWXL6
 toc: true
 categories: [Web]
 tags: [Goole Drive, Image Hosting, embed, Git Hub Blog]
@@ -20,7 +20,7 @@ excerpt: 최근에 업데이트된 구글 드라이브 이미지 호스팅 방�
 
 <br>
 
-## <web_h2> 1. 2024년 1월 업데이트 이후 바뀐 코드</web_h2>
+## <web_h2>1. 2024년 1월 업데이트 이후 바뀐 코드</web_h2>
 
 2023년 10월 쯤에 구글은 사용자 개인정보 보호를 강화하기 위해서 제 3자 쿠키를 제거하겠다고 발표했습니다.  
 그에 따라 더 이상 과거에 이미지 호스팅하는 주소가 작동하지 않습니다. ~~(왜 기존에 코드는 작동 안되는 거냐고 구글...)~~  
@@ -123,7 +123,7 @@ html 말고 마크다운을 사용하여 코드를 작성 할수도 있습니다
 
 ```
 
-![이미지](https://drive.google.com/thumbnail?id=1taUeDcvRNHHmjZgkQOMWQ6O-KQ47_AFa){: :height="200px" width="aspect-ratio:1" }
+![이미지](https://drive.google.com/thumbnail?id=1taUeDcvRNHHmjZgkQOMWQ6O-KQ47_AFa){:height="200px" width="aspect-ratio:1" }
 
 html보다 markdown을 사용해서 작성하는 경우가 더 많음으로 참고해서 활용하시면 됩니다.  
 
@@ -230,7 +230,9 @@ _config.yml 파일안에 <web_h5>변수</web_h5> = value 이런 형식으로 입
 <img src="https://drive.google.com/thumbnail?id=1taUeDcvRNHHmjZgkQOMWQ6O-KQ47_AFa" alt="이미지"  height="200px" width="aspect-ratio:1">
 
 위의 코드를 사용하면 손쉽게 다음과 같이 블로그 혹은 쇼핑몰 홈페이지등 구글드라이브에서 이미지 호스팅을 사용하실수 있습니다.  
-
+  
+원래는 directx 12 튜토리얼 작성하려고했는데 블로그 리뉴얼부터 해야겠네요. (비공개 포스터까지... 할일이 쌓인다...)
+저 같이 이미지 주소를 모두 찾아서 바꾸시는 분들 화이팅 입니다.
 
 <br>
 
@@ -238,7 +240,4 @@ _config.yml 파일안에 <web_h5>변수</web_h5> = value 이런 형식으로 입
 
 <br>
 
-원래는 directx 12 튜토리얼 작성하려고했는데 블로그 리뉴얼부터 해야겠네요. (비공개 포스터까지... 할일이 쌓인다...)
-저 같이 이미지 주소를 모두 찾아서 바꾸시는 분들 화이팅 입니다.
-
-참조: [https://issuetracker.google.com/issues/319531488?pli=1](https://issuetracker.google.com/issues/319531488?pli=1)
+###### <web_h6>참조:</web_h6> [https://issuetracker.google.com/issues/319531488?pli=1](https://issuetracker.google.com/issues/319531488?pli=1)

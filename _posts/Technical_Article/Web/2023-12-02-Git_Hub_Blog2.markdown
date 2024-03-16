@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Jekyll를 이용해서 github blog 만들기 2 언어별 용도"
-date:   2023-12-02 17:45:04 +0900
-image: https://github.com/kj1241/kj1241.github.io/assets/22047442/70e7a792-5510-4ff2-9f43-78775645a30e
+title: "Jekyll를 이용해서 github blog 만들기-2 언어별 용도"
+date: 2023-12-02 17:45:04 +0900
+image: https://drive.google.com/thumbnail?id=1cgQdmRjbkLnICVlV7E0FZx8Q7_icG0VC
 toc: true
 categories: [Web]
 tags: [Jkeyll, Ruby, HTML, SCSS, Java Script, Git Hub Blog ]
@@ -10,10 +10,8 @@ addsence: true
 excerpt: 단순히 Git Hub Blog 제작을 위해서 만들어진 테마를 Fork를 이용하여 제작하는 것이 아닌 Jekyll + Ruby + HTML + SCSS + Java Script를 사용하여 제작하는 방법을 설명하고 있습니다. 세부 설정하는 방법과 언어에 따른 블로그 용도에 대해서 고민하고 있습니다.
 ---
 
-
-앞서서는 기본적으로 Jekyll를 설치하고 초기 블로그를 화면을 구성하는 방법을 설명하였습니다.  
-그럼 이제 블로그를 어떻게 만드는지 고민해 봅시다.  
-이론을 모르기 때문에 제 경험으로 설명해 보겠습니다.
+앞서서는 기본적으로 Jekyll를 설치하고 초기 블로그 화면까지 구성하는 방법을 설명하였습니다. 셍각보다 제가 이론에 정통한 사람이 아니라서 딱히 이론적으로는 어떻게 만드는지는 도움드릴 수는 없을꺼 같습니다. 저 같은 경우에는 머리속으로 이미지를 상상하고 코딩을 작성합니다. 대신 에러나 궁금한 점이 있다면 같이 해결해 줄 수는 있습니다.  
+따라서 챕터에서는 경험을 적어 보도록 하겠습니다.
 
 <br>
 
@@ -21,33 +19,63 @@ excerpt: 단순히 Git Hub Blog 제작을 위해서 만들어진 테마를 Fork�
 
 <br>
 
-## <blue1_h2> 1. 프로그래밍 언어 용도 </blue1_h2>
+## <web_h2>1. 프로그래밍 언어 용도 </web_h2>
 
-Jekyll, Ruby, HTML, SCSS, Java Script 의도치 않게 5개의 언어를 사용하게 되었습니다.  
-프로그래밍이란 정말 다양한 방법이 있기 때문에 생각보다 더욱 폭넓게 코드를 작성 할 수 있습니다.  
-그렇기 때문에 개개인마다 코드를 작성하는 방법이 틀립니다.  
-저의 경우를 이야기 해보겠습니다.  
+Jkeyll를 사용하여 정적 깃허브 블로그 템플릿을 제작하게 되면 의도치 않게 5개의 언어를 사용하게 됩니다. 프로그래밍이란 정말 다양한 방법이 있기 때문에 생각보다 더욱 여러방향으로 코드를 작성할 수 있습니다. 그렇기 때문에 개개인마다 코드를 작성하는 방법이 다릅니다.  
+저는 기본만 알면 무엇이든지 만들 수 있다고 생각합니다. 저의 블로그를 보면서 대략적으로 이야기 해보겠습니다.  
+
+<br>
+
+![레파지토리 생성]({{ site.google_drive }}1cgQdmRjbkLnICVlV7E0FZx8Q7_icG0VC{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+
+실제로 깃허브 블로그 테마를 작성하면서 머리속으로 담았던 구조입니다. 제가 깃허브 블로그를 만들었을때 머리속에 담았던 파일 구조입니다. 그럼 이 구조를 보고 하나씩 살펴보도록 합시다.
 
 <br>
 <br>
 
-## <blue1_h2> 2. Jekyll </blue1_h2>
-Jekyll은 정적 웹사이트를 생성하는데 사용되는 오픈 소스 프로그램입니다.  
-Ruby 언어로 작성되었으며, Markdown이나 HTML과 같은 마크업 언어를 사용하여 콘텐츠를 작성하면 Jekyll이 해당 콘텐츠를 정적 웹사이트로 변환해 줍니다. 
+## <web_h2>2. Jekyll </web_h2>
+
+Jekyll은 정적 사이트 생성기(Static Site Generator)로, Ruby 언어로 작성된 오픈 소스 프레임 워크 입니다. Jekyll은 마크다운(Markdown)과 Liquid 템플릿 엔진을 사용하여 웹사이트를 생성합니다.  
+Jekyll을 사용하면 마크다운 파일을 작성하고, 이를 HTML 파일로 변환하여 웹사이트를 만들 수 있습니다. 이는 동적인 서버가 아닌 정적인 파일로 웹 사이트를 생성하기 때문에 빠르고 안정적입니다.  
 
 <br>
 
-### <blue1_h3> 1) Jekyll 특성 </blue1_h3>
+### <web_h3>1) Jekyll 특성 </web_h3>
 
-- yml을 이용하여 정적 변수를 만들 수 있습니다. 
-- Front은 jekyll 페이지나 포스트의 상단에 위치한 YAML 형식의 메타데이터 블록입니다.
+- 다양한 플러그인을 지원하여 기능을 확장할 수 있습니다. 이를 통해 이미지 압축, 자동화, SEO 최적화 등의 작업을 자동화하고 개선할 수 있습니다.
+- yml을 이용하여 정적 변수들을 만들고 렌더링 할 수 있습니다. (Front Matter은 jekyll 페이지나 포스트의 상단에 위치한 YAML 형식의 메타데이터 블록입니다.)
 
-
+위의 Front Matter는 대략적으로 설명해서 와 닿지 못할 수도 있습니다. jekyll 위에 YAML형식의 메타데이터가 있습니다. 이 메타데이터 블록은 해당 페이지나 포스터에 대한 정보를 정의합니다. 그리고 jekyll은 이를 처리하고 랜더링합니다.
 
 <br>
 
-### <blue1_h3> 2) Jekyll 디렉토리 구조 </blue1_h3>
+#### **<web_h4>Front Matter:</web_h4>**
 
+
+```
+
+---
+layout: post
+title: "첫 번째 포스트"
+date: 2024-03-16 10:00:00 +0900
+categories: [Jekyll, Tutorial]
+tags: [static site generator, YAML, Front Matter]
+permalink: /:title/
+---
+
+```
+
+위의 예제들을 Font Matter라고 부릅니다. Jekyll을 사용하기 때문에 정의 할 수 있는 파트입니다. 
+
+<br>
+
+### <web_h3>2) Jekyll 디렉토리 구조 </web_h3>
+
+Jekyll에서 필수적으로 필요한 디렉토리는 맨앞에 언더바(_)로 이름이 정의되어 있고, 제가 직접만든 디렉토리는 언더바를 사용하지 않았습니다. 그럼 저의 블로그의 Jekyll 디렉토리 구조를 한번 보도록 합시다.
+
+<br>
+
+#### **<web_h4>Jekyll 디렉토리:</web_h4>**
 
 ```
 .
@@ -90,78 +118,102 @@ Ruby 언어로 작성되었으며, Markdown이나 HTML과 같은 마크업 언�
 - index.html (또는 index.md): 기본 홈페이지 사이트의 첫페이지 입니다.
 - about.md: 깃허브 소개 페이지 입니다.
 
-
 <br>
 <br>
 
-## <blue1_h2> 3. Ruby </blue1_h2>
+## <web_h2> 3. Ruby </web_h2>
 
-- Jekyll를 사용하기 위한 언어입니다.
+Ruby는 동적 프로그래밍 언어로, 객체지향 프로그래밍 언어입니다. Jekyll은 이 루비 언어를 기반으로 작성된 정적 사이트 생성기(Static Site Generator)입니다.  정적 사이트 생성기는 웹사이트를 생성할 때 서버에 동적으로 처리되는 것이 아니라, 미리 웹페이지를 생성하여 그것을 제공하는 방식을 사용합니다.
 
+이는 보다 안정적이고 빠른 웹사이트를 만들 수 있게 해주며, 특히 개인 블로그나 간단한 프로젝트용 웹사이트를 운영할 때 적합합니다.
 
 <br>
 
-### <blue1_h3> 1) Liquid </blue1_h3>
-- 루비 기반 템플릿 언어로 Jekyll의 동적콘텐츠를 생성하기 위해 사용됩니다.
-- 기능 은 다음과 같습니다.
+### <web_h3>1) Liquid </web_h3>
 
-    - 변수 출력 
-    page, site, content, data와 같은 객체들을 불러올 수 있습니다.
+Liquid는 루비 기반의 템플릿 언어로, 주로 웹 템플릿을 동적으로 생성하기 위해 사용됩니다. 주로 Jekyll과 같은 정적 사이트 생성기에서 템플릿을 작성하는 데 사용됩니다. Liquid는 간단하고 읽기 쉽게 설계되어 있으며, 다양한 템플릿 엔진에서 사용될 수 있습니다.  
+기능은 다음과 같습니다.
 
-    ```liquid
-        {% raw %}
-        {{ page.tag }}
-        {% endraw %}
-    ```
+<br>
+ 
+#### **<web_h4>liquid 변수:</web_h4>**
+  
+```liquid
+    {% raw %}
+    {{ page.tag }}
+    {% endraw %}
+```
 
-    - if 문 
+변수 출력: page, site, content, data와 같은 객체들을 불러올 수 있습니다.
     
-    ```liquid
-        {% raw %}
-        {% if page.title == "tag" %}
-            Welcome, Admin!
-        {% endif %}
-        {% endraw %}
-    ```
+<br>
 
-    - for문
+#### **<web_h4>liquid if:</web_h4>**
 
-    ```liquid
-        {% raw %}
-        {% for post in site.posts %}
-            {{ post.title }}
-        {% endfor %}
-        {% endraw %}
-    ```
+```liquid
+    {% raw %}
+    {% if page.title == "tag" %}
+        Welcome, Admin!
+    {% endif %}
+    {% endraw %}
+```
 
-    - 필터
+if 문으로 프로그램 분기를 줄 수 있습니다.
 
-    ```liquid
-        {% raw %}
-        {{ "Hello World" | downcase }}
-        {% endraw %}
-    ```
+<br>
 
-    - 다른 html 포함
+#### **<web_h4>liquid for:</web_h4>**
+  
+```liquid
+    {% raw %}
+    {% for post in site.posts %}
+        {{ post.title }}
+    {% endfor %}
+    {% endraw %}
+```
 
-    ```liquid
-        {% raw %}
-        {%- include header.html -%}
-        {% endraw %}
-    ```
+for문 비슷한 동작을 여러번 돌릴 수 있습니다.
 
+<br>
 
+#### **<web_h4>liquid 필터:</web_h4>**
 
+```liquid
+    {% raw %}
+    {{ "Hello World" | downcase }}
+    {% endraw %}
+```
+
+필터로서 문자열을 소문자로 만들 수 있습니다.
+
+<br>
+
+#### **<web_h4>liquid html 포함:</web_h4>**
+
+```liquid
+    {% raw %}
+    {%- include header.html -%}
+    {% endraw %}
+```
+
+header 디렉토리에 있는 html 파일을 자신의 html 파일안에 포함시킬수 있습니다. 따라서 html 파일로 일종에 템플릿을 만들 수 있습니다.  
+
+<br>
+
+위와 같이 이러한 Liquid의 특징들은 Jekyll을 비롯한 많은 웹사이트 및 웹 애플리케이션에서 사용되며, 간편한 문법과 다양한 기능으로 유용하게 활용됩니다.
    
 <br>
 
-### <blue1_h3> 2) 플러그인 제작 </blue1_h3>
+### <web_h3>2) 플러그인 제작</web_h3>
 
-_plugins 폴더에다 루비로 제작한 커스텀 플러그인을 넣으면 됩니다.
+Ruby Jekyll 플러그인은 Jekyll 정적 사이트 생성기를 확장하고 추가 기능을 제공하기 위해 개발된 Ruby 코드의 모음입니다. Jekyll은 유연한 플러그인 아키텍처를 갖추고 있어, 사용자가 필요에 따라 플러그인을 작성하여 Jekyll의 기능을 확장할 수 있습니다.  
+_plugins 폴더에다 루비로 제작한 커스텀 플러그인을 넣으면 됩니다.  
 
+<br>
+
+#### **<web_h4>ruby:</web_h4>**
 
 ```ruby
-
 {% raw %}
 module Jekyll
   class CustomTag < Liquid::Tag
@@ -178,14 +230,14 @@ end
 
 Liquid::Template.register_tag("custom_tag", Jekyll::CustomTag)
 {% endraw %}
-
 ```
+루비는 다음과 같이 작성할 수 있습니다. 그럼 jekyll에서는 어떻게 사용해야 하는지 예제를 보여드리겠습니다.
 
 <br>
 
+#### **<web_h4>liquid:</web_h4>**
 
 ```liquid
-
 {% raw %}
 ---
 layout: default
@@ -194,69 +246,93 @@ title: Plugin Test
 
 {%- custom_tag "hello, world!" -%}
 {% endraw %}
-
 ```
 
-이 예시는 custom_tag라는 Liquid 태그를 정의하고 해당 테그가 사용되면 대문자로 바꿔줍니다.
+이 예시는 custom_tag라는 Liquid 태그를 정의하고 해당 테그가 사용되면 대문자로 바꾸는 예제입니다.  
 
 <br>
 <br>
 
-## <blue1_h2> 4. HTML (HyperText Markup Language) </blue1_h2>
+## <web_h2>4. HTML (HyperText Markup Language)</web_h2>
+
+Jekyll의 HTML이란 Jekyll이 생성하는 웹 페이지의 HTML 코드를 가리킵니다. Jekyll은 마크다운(Markdown)과 같은 간단한 마크업 언어를 사용하여 콘텐츠를 작성하고, 이를 HTML로 변환하여 최종적으로 웹 페이지를 생성합니다.
 
 - HTML은 웹페이지의 구조를 정의하기 위해 사용되는 마크업 언어입니다.
 - 웹 페이지를 렌더링하고 표현하는데 사용됩니다. 
 
-
 <br>
 
-### <blue1_h3> 1) 모바일 구조를 생각하지 말자 </blue1_h3>
+### <web_h3>팁: 모바일 구조를 생각하지 말자 </web_h3>
 
-네이버 페이지도 모바일 친화적인 웹디자인 바뀌는 시기에 이상한 이야기를 한다고 생각하시는 분들이 있을 것입니다.  
-물론 저도, 깃허브 블로그를 제작할 당시에는, 처음부터 모바일 디자인 생각해서 한번에 코드를 작성하긴 했습니다.  
-하지만 저는 예전에 티스토리 스킨을 작성할때 이미 연습해보기도 했습니다.  
-처음 웹 페이지를 제작하시는 분들은 깊게 들어가지 마시고 웹 페이지를 제작하시고, 어떻게 바꿀 것인지 고민한다면 더 좋은 프론트 엔드 디자이너가 될 수 있다고 생각합니다.  
-
-
-
-<br>
-
-### <blue1_h3> 2) HTML 구조 </blue1_h3>
-![HTML 구조](https://github.com/kj1241/kj1241.github.io/assets/22047442/70e7a792-5510-4ff2-9f43-78775645a30e){: width="100%" }
-*HTML 구조*
-
-html 구조를 분리하는 이유는 중복된 코드를 템플릿으로 제작해서 한번에 관리하기 위함입니다.  
-
-
+위의 주제는 처음 블로그를 작성하시는 분들을 위해 특별히 작성하였습니다.  
+네이버 홈페이지 모바일 친화적으로 UI 디자인으로 바뀌었습니다. 최신 트렌드는 모바일 친화적인 웹디자인 입니다만 처음 웹 페이지를 제작하시는 분들은 모바일 구조를 생각하지 않는게 좋습니다. 
+저도 깃허브 블로그를 제작할 당시에는, 처음부터 모바일 디자인을 생각해서 코드를 작성하지는 않았습니다. 여러번 PC버전을 통해서 디버깅하고 바꾸고 했습니다. 
+깊게 생각하지 마시고 머리속 구조대로 차근차근 제작하시다보면 어느세 여러분만의 블로그를 제작 할 수 있을 것입니다.
 
 <br>
 <br>
 
-## <blue1_h2> 5. SCSS (Sassy CSS) </blue1_h2>
+## <web_h2> 5. SCSS (Sassy CSS) </web_h2>
+
+Jekyll의 SCSS는 Jekyll 프로젝트에서 Sass(Syntactically Awesome Style Sheets)를 사용하는 것을 의미합니다. SCSS는 Sass의 확장된 문법으로, CSS를 더욱 간결하고 유연하게 작성할 수 있도록 돕는 스타일 시트 언어입니다.
+Jekyll은 기본적으로 SCSS를 지원하며, 이를 사용하여 웹사이트의 스타일을 정의할 수 있습니다. SCSS를 사용하면 다음과 같은 이점이 있습니다.
 
 - SCSS는 CSS의 확장된 형태로, 변수, 중첩 규칙, import 등과 같은 기능과 편의성을 제공합니다.
 - SCSS 파일은 컴파일러를 통해 일반적인 CSS 파일로 변환됩니다.
 
+<br>
+
+### <web_h3>1) SCSS 구조 분리 </web_h3>
+
+SCSS를 사용하여 스타일 시트를 구조적으로 분리하는 것은 유지 보수성과 코드의 가독성을 향상시키는 데 도움이 됩니다. 일반적으로 큰 프로젝트에서는 스타일 시트를 여러 파일로 분리하여 각 요소 및 모듈을 별도로 관리하는 것이 좋습니다. 이를 위해 주로 다음과 같은 방법을 사용합니다.
+가장 최하위 파일은 assets 폴더에있는 main.scss 파일입니다.
 
 <br>
 
-### <blue1_h3> 1) SCSS 구조 분리 </blue1_h3>
+#### **<web_h4>SCSS 구조:</web_h4>**
 
-가장 최하위 파일은 assets 폴더에있는 main.scss 파일입니다.
+```
 
+|-- KJ/
+|   |-- _head.scss
+|   |   |-- _header.scss
+|-- |   _side-bar/
+|   |   |-- _left.scss
+|   |   |-- _right.scss
+|   |-- _default.scss
+|   |-- _footer.scss
+|   |-- _home.scss
+|   |-- _page.scss
+|   |-- _post_bookmark.scss
+|   |-- _post.scss
+|   |-- _syntax-highlighting.scss
+|-- KJ.scss
+|-- main.scss
+
+```
+
+저의 블로그 같은 경우에는 위의 구조로 SCSS 파일들이 구조화되어 있습니다.
+
+<br>
+
+#### **<web_h4>html:</web_h4>**
 
 ```html
 
-{% raw %}
-<!--head--> 
-<link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
-{% endraw %}
+  {% raw %}
+  <!--head--> 
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  {% endraw %}
 
 ```
+이 코드는 HTML 문서에서 외부 스타일 시트를 불러오는 링크를 설정하는데 사용됩니다. HTML 문서에서 main.css라는 스타일 시트를 불러오는 링크를 설정합니다. Jekyll과 같은 정적 사이트 생성기에서 사용되며, 상대 경로를 사용하여 파일을 참조합니다.
+
 <br>
 
-```scss
+#### **<web_h4>scss:</web_h4>**
 
+
+```scss
 {% raw %}
 // main.css
 ---
@@ -265,12 +341,13 @@ html 구조를 분리하는 이유는 중복된 코드를 템플릿으로 제작
 
 @import "KJ";
 {% endraw %}
-
 ```
 
-head.hmtl에서 가장 기본이되는 /assets/main.css 정의되 있음을 알려줍니다.  
-그 다음 연결되있는 파일은 KJ(테마 이름).scss 파일입니다.   
-KJ 파일에는 모든 html 템플릿에서 사용될 수 있는 변수들을 모아놨습니다.  
+head.hmtl에서 가장 기본이되는 /assets/main.css 정의되 있음을 알려줍니다. 그 다음 연결되있는 파일은 KJ(테마 이름).scss 파일입니다. KJ 파일에는 모든 html 템플릿에서 사용될 수 있는 변수들을 모아놨습니다.  
+
+<br>
+
+#### **<web_h4>scss:</web_h4>**
 
 ```scss
 {% raw %}
@@ -290,17 +367,14 @@ KJ 파일에는 모든 html 템플릿에서 사용될 수 있는 변수들을 �
 
 ```
 
-그 후 각자 html 파일과 css 파일이 매칭 될 수 있도록 제작하였습니다.  
-특별한 건 존제하지 않습니다. 여러분이 생각하는데로 파일 구조를 제작하시면 됩니다.  
-
+그 후 각자 html 파일과 css 파일이 매칭 될 수 있도록 제작하였습니다. 특별한 건 존제하지 않습니다. 여러분이 생각하는데로 파일 구조를 제작하시면 됩니다.  
 
 <br>
 <br>
 
 ## <blue1_h2> 6. Java Script </blue1_h2>
 
-- JavaScript는 웹 페이지를 이벤트를 동작시키는데 사용됩니다. 
-- 다양한 브라우저에 지원됨으로 범용적으로 사용됩니다. 
+JavaScript는 웹 페이지를 이벤트를 동작시키는데 사용됩니다. 이 말은 JavaScript를 사용하여 웹사이트의 동적인 요소를 구현하거나 사용자와의 상호 작용을 향상시킬 수 있습니다. 다양한 브라우저에 지원됨으로 범용적으로 사용할 수 있습니다.
   
 <br>
 
@@ -308,8 +382,11 @@ KJ 파일에는 모든 html 템플릿에서 사용될 수 있는 변수들을 �
 
 이벤트를 만들어야 함으로 자바 스크릅트를 이용하여 목차를 제작하였습니다.
 
-```java
+<br>
 
+#### **<web_h4>javascript:</web_h4>**
+
+```javascript
 {% raw %}
 document.addEventListener("DOMContentLoaded", function () {
     var pageTitle = "{{ page.toc }}";
@@ -353,11 +430,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 {% endraw %}
-
 ```
 
-markdown 포스트의 h2, ##  혹은  h3, ### 인식하면 li리스트로 넣는 코드를 작성하였습니다.  
-그 후 그 글을 누르게 되면 해당되는 스크롤 위치로 이동하게 만들었습니다.  
+markdown 포스트의 h2, ##  혹은  h3, ### 인식하면 li리스트로 넣는 코드를 작성하였습니다. 그 후 그 글을 누르게 되면 해당되는 스크롤 위치로 이동하게 만들었습니다.  
 
 
 <br>
@@ -366,8 +441,11 @@ markdown 포스트의 h2, ##  혹은  h3, ### 인식하면 li리스트로 넣는
 
 홈 화면의 슬라이더 애니메이션 제작하여 화면이 움직 일 수 있게 제작하였습니다.
 
-```java
+<br>
 
+#### **<web_h4>javascript:</web_h4>**
+
+```javascript
 {% raw %}
 var slideIndex = 0;
 showSlides();
@@ -396,8 +474,11 @@ function plusSlides(n) {
     showSlides(slideIndex = n);
   }
 {% endraw %}
-
 ```
+
+이 처럼 본인이 변경하고 싶은 영역을 생각하고 해당하는 언어를 만지면 쉽게 블로그를 개조 할 수 있을 것입니다. 다음 편에는 구글 검색엔진에 올려 놓기 위해 수정해야되는 사항과 Seo 최적화로 돌아오겠습니다.  
+읽어주셔서 감사합니다. 
+
 
 <br>
 
@@ -405,6 +486,4 @@ function plusSlides(n) {
 
 <br>
 
-이 처럼 본인이 변경하고 싶은 영역을 생각하고 해당하는 언어를 만지면 쉽게 블로그를 개조 할 수 있을 것입니다.  
-다음 편에는 구글 검색엔진에 올려 놓기 위해 수정해야되는 사항과 Seo 최적화로 돌아오겠습니다.  
-읽어주셔서 감사합니다. 
+

@@ -146,9 +146,10 @@ $btn-mb: 0.5rem;
   
   #categories #categories_sub a{
     color: rgb(158, 163, 223);
-    font-size: 15px;
+    font-size: 24px;
     font-family: "Bombanghak",sans-serif;
     transition: all 0.2s;
+    line-height: 10px;
   }
   
   #categories #categories_sub a:hover {
