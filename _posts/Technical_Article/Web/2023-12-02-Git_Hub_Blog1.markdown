@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Jekyll를 이용해서 github blog 만들기 - 1 기본 설치"
+title: "Jekyll를 이용해서 github blog 만들기 1 - 기본 설치"
 date: 2023-12-02 13:45:04 +0900
 image: https://drive.google.com/thumbnail?id=161gUg11aSRhUYWbw-QZtPiKdd30S9_yI
 toc: true

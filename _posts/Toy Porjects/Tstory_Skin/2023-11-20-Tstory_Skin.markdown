@@ -10,9 +10,7 @@ tags: [HTML, CSS, Java script, Tstory Skin]
 
 ##  <web_h2> 프로젝트 소개 </web_h2>
 
-우주적 감각을 담은 심플한 디자인으로 눈길을 사로잡는 우주 테마 스킨입니다.  
-미니멀한 인터페이스와 고요한 색감으로 집중력을 높여줍니다.  
-단순함 속에 심장을 뛰게 하는 우주적 아름다움을 느껴보세요.
+우주적 감각을 담은 심플한 디자인으로 눈길을 사로잡는 우주 테마 스킨입니다. 미니멀한 인터페이스와 고요한 색감으로 집중력을 높여줍니다. 단순함 속에 심장을 뛰게 하는 우주적 아름다움을 느껴보세요.
 
 <br>
 <br>
@@ -113,7 +111,7 @@ tags: [HTML, CSS, Java script, Tstory Skin]
 
 <br>
 
-### <green1_h3> 배운 점 및 앞으로 수정할 점 </green1_h3>
+### <web_h3> 배운 점 및 앞으로 수정할 점 </web_h3>
 
 - <span><web_h5>커버형 제작(ver.2)</web_h5></span>
     - 티스토리에서 제공하는 샘플을 살펴보면 j-Query와 slick 라이브러리를 사용하여 커버를 제작하였으나, 바닐라 자바 스크립트를 사용하여 제작하였습니다.
@@ -121,7 +119,7 @@ tags: [HTML, CSS, Java script, Tstory Skin]
     - CSS의 Class에서 Postion을 설정하지 않으면 글을 줄일 수 없다는 것을 파악하였습니다.
     - 모바일 버전을 제작하지 못했으나, 여유가 된다면 모바일 버전도 제작할 예정입니다. (폐기)
 
-- <span><web_h5>단순형 제작(ver.2)</web_h5></span>
+- <span><web_h5>단순형 제작(ver.1)</web_h5></span>
     - HTML + CSS + j-Query를 사용하여 웹 디자인 하는 방식에 대해서 학습하였습니다.
 
 <br>
@@ -133,4 +131,3 @@ tags: [HTML, CSS, Java script, Tstory Skin]
 ###### <web_h6>참조</web_h6>
 
 - ###### [https://tistory.github.io/document-tistory-skin/](https://tistory.github.io/document-tistory-skin/)
-

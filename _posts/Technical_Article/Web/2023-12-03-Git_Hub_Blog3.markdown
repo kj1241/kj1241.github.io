@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Jekyll를 이용해서 github blog 만들기-3 블로그 품질 올리기"
+title: "Jekyll를 이용해서 github blog 만들기 3 - 블로그 품질 올리기"
 date: 2023-12-03 11:38:04 +0900
 image: https://drive.google.com/thumbnail?id=1PAg7qqGcq268lTcFRqwgpXv6FQpvT5oF
 toc: true

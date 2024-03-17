@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "베지어 곡선을 이용한 스킬 제작"
-date:   2023-02-11 00:24:51 +0900
+title: "베지어 곡선을 이용한 스킬 제작 ver.2"
+date: 2023-02-11 00:24:51 +0900
 image: https://github.com/kj1241/kj1241.github.io/assets/22047442/b43b529f-6c88-4852-a8bd-ddaafb78216e
 toc: true
 categories: [Unity_TP]
