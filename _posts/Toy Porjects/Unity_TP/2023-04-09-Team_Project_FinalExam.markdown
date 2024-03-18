@@ -52,6 +52,8 @@ tags: [C#, Unity, Shader]
 
 프로젝트 특징과 기능 구현 내용입니다.
 
+<br>
+
 ### <unity_h3>버튼형 게임 제작 ver.1</unity_h3><red1_error> (전체 제작 기여도: 35%)</red1_error>
 
 1. 그래픽 학과 아티스트와 협업하여 프로젝트를 제작하였습니다.
