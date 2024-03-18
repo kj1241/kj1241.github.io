@@ -58,19 +58,16 @@ layout: default
     </div>
 
     {%- if page.tags -%}
-
-
     <div id="tag">
       <div class="tag_title"> tag:&nbsp </div>
       {%- for tag in page.tags -%}
        <div class="tag_item">{{ tag }}, </div>  
       {% endfor %}
-
     </div>
     {% endif %}
 
     {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
-    {%- endif -%}
+    {%- endif -%} 
   </header>
 </article>

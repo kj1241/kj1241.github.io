@@ -1,39 +1,41 @@
 ---
 layout: post
-title:  "방문자 패턴 의존성 깨기"
-date:   2023-03-13 13:08:33 +0900
-image: https://github.com/kj1241/kj1241.github.io/assets/22047442/c125c1fd-a477-40ef-a2fc-dbca2ddd46a1
+title: "방문자 패턴 의존성 깨기"
+date: 2023-03-13 13:08:33 +0900
+image: https://drive.google.com/thumbnail?id=10KWTPUjOShEUyDOAsLC3MK7mgTKvnVvc
 toc: true
 categories: [CppCon]
 tags: [C++, Cppcon22, Virtual , Visit, std::variant, 다형성]
 addsence: true
 ---
 
+## <cpp_h2>1. 주제: Breaking Dependencies - The Visitor Design Pattern in Cpp</cpp_h2>
 
-<h2><blue1_h2> 1. 주제: Breaking Dependencies - The Visitor Design Pattern in Cpp </blue1_h2></h2>
 이번 분석은, CppCon에서 발표된 <a herf= "https://www.youtube.com/watch?v=PEcy1vYHb8A"> Breaking Dependencies - The Visitor Design Pattern in Cpp</a>으로 가저왔습니다.  
 
-블로그를 이주하면서 Cppcon과 관련된 내용을 다시 작성하는 주제인데, 블로그를 이주하기 전에는 코드가 모든 것을 표현 해준다고 생각 했습니다.  
-따라서 단순하게  Enum Solution, OO Solution, 방문자 패턴,variant를 이용한 코드 작성 이렇게 4가지의 성능 비교표와 코드만 실험해서 올렸습니다.  
-단순한 성능 측정을 넘어 코드의 전반적인 측면을 강조하는, 좀 더 고차원적인 주제로 위의 내용을 다뤄보고자 합니다. 방문자 패턴 리포터를 찾으로 오신 분은 뒤로가기를 눌러주세요.  
+블로그를 이주하면서 Cppcon과 관련된 내용을 다시 작성하는 주제인데, 블로그를 이주하기 전에는 코드가 모든 것을 표현 해준다고 생각 했습니다. 따라서 단순하게  Enum Solution, OO Solution, 방문자 패턴, variant를 이용한 코드 작성 이렇게 4가지의 성능 비교표와 코드만 실험해서 올렸습니다. 단순한 성능 측정을 넘어 코드의 전반적인 측면을 강조하는, 좀 더 고차원적인 주제로 위의 내용을 다뤄보고자 합니다. 방문자 패턴 리포터를 찾으로 오신 분은 뒤로가기를 눌러주세요.  
 
-
- 
 <br>
 <br>
-<h2><blue1_h2> 2. 코드 분석 </blue1_h2></h2>
-영상에서 이야기하는 **Enum Solution, OO Solution, 방문자 패턴,variant를 이용한 코드 작성 이 4가지 코드**는 다형성이라는 소재로 묶여있습니다.    
+
+## <cpp_h2> 2. 코드 분석 </cpp_h2>
+
+영상에서 이야기하는 <cpp_h5>Enum Solution, OO Solution, 방문자 패턴,variant를 이용한 코드 작성 이 4가지 코드</cpp_h5>는 다형성이라는 소재로 묶여있습니다.    
   
-이 주제를 풀어쓰기 힘들었던 점은, 단순히 디자인 패턴을 맹목적으로 옳다고 생각하고 디자인 패턴대로 작성해야 된다는 사람들과 논쟁하기 싫었기 때문입니다.  
-코드의 형태에는 코드를 작성하는 사람의 목적이 들어있고, 상황에 따라 코드의 형태는 언제든지 바뀔 수 있기 때문이라고 생각합니다.  
+이 주제를 풀어쓰기 힘들었던 점은, 단순히 디자인 패턴을 맹목적으로 옳다고 생각하고 디자인 패턴대로 작성해야 된다는 사람들과 논쟁하기 싫었기 때문입니다. 코드의 형태에는 코드를 작성하는 사람의 목적이 들어있고, 상황에 따라 코드의 형태는 언제든지 바뀔 수 있기 때문이라고 생각합니다.  
 따라서  효율적으로 코드 형태를 작성하기 위해서는 코드 형태의 장단점 파악이 가장 중요하다고 생각기 때문에 함께 알아보도록 합시다.   
 
+<br>
 
+### <cpp_h3>1) Enum Solution </cpp_h3>
+
+c에서 사용했던 정통적 방식의 상태변화 입니다.
 
 <br>
-<h3><blue1_h3> 1) Enum Solution </blue1_h3></h3>
 
-```c++
+#### **<cpp_h4>cpp:</cpp_h4>**
+
+```cpp
 
 #include <iostream>
 #include <vector>
@@ -227,24 +229,26 @@ int main()
 	std::cout << "물리 메모리 사용량: " << pmc.WorkingSetSize << "\n";
 }
 
-
 ```
 
-![Enum_Solution](https://github.com/kj1241/kj1241.github.io/assets/22047442/a8d5a1d6-fb19-4d08-9591-b935cfeec95f){: width="100%" style="aspect-ratio:16/9"}
+![Enum_Solution]({{ site.google_drive }}1WuBZVYyjidqETLX87_jEddqhABTr2kTm{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<cpp_h6>Enum_Solution 코드 결과</cpp_h6>*  
 
-책이나 흔히 오래된 코드에서 볼 수 있는 Enum Solution 코드입니다.  
-도형들을 그려주는 Draw() 함수에 도형의 타입을 규정해주는 열거형을 사용해서 동작을 수행하게 해 줍니다.  
-장점으로는 Enum을 활용함으로서 코드의 <highlight_blue>가독성이 향상</highlight_blue>되고, 도형의 유형을 명확하게 표현할 수 있습니다.  
-하지만 문제점은 복잡한 구조를 사용하거나 다양한 동작을 수행하는 경우 코드 switch 문과 if-esle으로 작성되어 있기 대문에 <highlight_orange>코드길이가 길어</highlight_orange>지게 됩니다.  
-또한 c에서 c++과도기에 나온 코드이기 떄문에 <highlight_orange>객체지향적인 다형성을 사용하기 어려운 점</highlight_orange>이 있습니다.
-
+책이나 흔히 오래된 코드에서 볼 수 있는 Enum Solution 코드입니다. 도형들을 그려주는 Draw() 함수에 도형의 타입을 규정해주는 열거형을 사용해서 동작을 수행하게 해 줍니다. 장점으로는 Enum을 활용함으로서 코드의 <highlight_blue>가독성이 향상</highlight_blue>되고, 도형의 유형을 명확하게 표현할 수 있습니다. 하지만 문제점은 복잡한 구조를 사용하거나 다양한 동작을 수행하는 경우 코드 switch 문과 if-esle으로 작성되어 있기 대문에 <highlight_orange>코드길이가 길어</highlight_orange>지게 됩니다. 또한 c에서 c++과도기에 나온 코드이기 떄문에 <highlight_orange>객체지향적인 다형성을 사용하기 어려운 점</highlight_orange>이 있습니다.  
 
 <br>
-<h3><blue1_h3> 2) OO Solution </blue1_h3></h3>
 
-![oo_구조](https://github.com/kj1241/kj1241.github.io/assets/22047442/54885c5b-d00e-4a4b-a2ed-bc894317ecb1){: width="100%" }
+### <cpp_h3>2) OO Solution</cpp_h3>
 
-```c++
+![oo_구조]({{ site.google_drive }}1CGSHSmTRhfQDlXVN-qX3LmXBnaImpr2F{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<cpp_h6>oo 코드 결과</cpp_h6>*  
+
+<br>
+
+#### **<cpp_h4>cpp:</cpp_h4>**
+
+```cpp
+
 #include <iostream>
 #include <vector>
 #include <memory>
@@ -416,21 +420,25 @@ int main()
 	std::cout << "물리 메모리 사용량: " << pmc.WorkingSetSize << "\n";
 }
 
-
 ```
-![OO Solution](https://github.com/kj1241/kj1241.github.io/assets/22047442/efcb875b-b5c6-47a0-80a5-8791035111c5){: width="100%" style="aspect-ratio:16/9"}
-객체 지향 솔루션은 다형성과 캡슐화를 활용하여 유연하고 확장 가능한 코드를 작성하는 방법입니다.  
-장점으로는자식 클래스가 많아저도 동일한 Draw 함수를 부르기 떄문에 코드가 길어질 필요가 없어서  <highlight_blue>가독성이 항상</highlight_blue>됩니다.  
-단점으로는 클래스안에 Draw함수를 작성해야 하기 떄문에 <highlight_orange>코드를 해석</highlight_orange>할때 어렵습니다.  
-또한 코드의 수정사항이 발생할 경우 모든 코드를 수정해야함으로 <highlight_orange>유지보수</highlight_orange>가 어렵습니다.  
+![OO Solution]({{ site.google_drive }}1Aaqh3eJLLXLY5CQVGhhYk7iHi3iKur1I{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<cpp_h6>OO Solution 코드 결과</cpp_h6>*  
 
-
+객체 지향 솔루션은 다형성과 캡슐화를 활용하여 유연하고 확장 가능한 코드를 작성하는 방법입니다. 장점으로는자식 클래스가 많아저도 동일한 Draw 함수를 부르기 떄문에 코드가 길어질 필요가 없어서  <highlight_blue>가독성이 항상</highlight_blue>됩니다. 단점으로는 클래스안에 Draw함수를 작성해야 하기 떄문에 <highlight_orange>코드를 해석</highlight_orange>할때 어렵습니다. 또한 코드의 수정사항이 발생할 경우 모든 코드를 수정해야함으로 <highlight_orange>유지보수</highlight_orange>가 어렵습니다.  
 
 <br>
-<h3><blue1_h3> 3) Visit 패턴 </blue1_h3></h3>
-![방문자패턴_구조](https://github.com/kj1241/kj1241.github.io/assets/22047442/2cb95e13-7f35-4823-bc89-e63994e702ba){: width="100%" }
 
-```c++
+### <cpp_h3>3) Visit 패턴</cpp_h3>
+
+
+![Visit]({{ site.google_drive }}1Y0ntUtQRj6zUF3HP5wvlu5JRMR0S1HmG{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<cpp_h6>Visit 패턴 코드 구조</cpp_h6>*  
+
+<br>
+
+#### **<cpp_h4>cpp:</cpp_h4>**
+
+```cpp
 
 #include <iostream>
 #include <vector>
@@ -644,25 +652,30 @@ int main()
 	std::cout << "물리 메모리 사용량: " << pmc.WorkingSetSize << "\n";
 }
 
-
-
 ```
 
-![방문자패턴](https://github.com/kj1241/kj1241.github.io/assets/22047442/a98ab801-820f-4831-8b5e-e964d0bdd1b0){: width="100%" style="aspect-ratio:16/9"}
-
-방문자 패턴은, 여러 유형의 객체가 동일한 인터페이스를 공유할수 있는 능력인, 다형성을 활용하여 객체 구조를 처리하는 방법입니다.  
-장점으로는 <highlight_blue>객체와 객체 상태를 분리함으로서 유지보수 코드</highlight_blue>를 짜기에 용의하게 만들었습니다.  
-하지만 단점으로는 처음 구조를 설계할때 복잡하고, 다향성을 작성하는 코드 중 가장 <highlight_orange>느리다는</highlight_orange> 단점이 있습니다.  
 
 
+![Visit]({{ site.google_drive }}1KAAeBlGEJ0HS1VKR1AYvAdjAzItmU0UT{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<cpp_h6>Visit 패턴 코드 결과</cpp_h6>* 
 
+
+방문자 패턴은, 여러 유형의 객체가 동일한 인터페이스를 공유할수 있는 능력인, 다형성을 활용하여 객체 구조를 처리하는 방법입니다. 장점으로는 <highlight_blue>객체와 객체 상태를 분리함으로서 유지보수 코드</highlight_blue>를 짜기에 용의하게 만들었습니다. 하지만 단점으로는 처음 구조를 설계할때 복잡하고, 다향성을 작성하는 코드 중 가장 <highlight_orange>느리다는</highlight_orange> 단점이 있습니다.  
 
 <br>
-<h3><blue1_h3> 4) std::variant를 이용한 코드(c++17)</blue1_h3></h3>
 
-![variant_구조](https://github.com/kj1241/kj1241.github.io/assets/22047442/f4faf3f8-6ecd-4724-bcf1-996a4caad84f){: width="100%" }
+### <cpp_h3>4) std::variant를 이용한 코드(c++17)</cpp_h3>
 
-```c++
+![variant_구조]({{ site.google_drive }}1hAxgYyuNPW_FJw9_vYMRWgNqRpMex4e5{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<cpp_h6>std::variant 패턴 코드 구조</cpp_h6>* 
+
+<br>
+
+#### **<cpp_h4>cpp:</cpp_h4>**
+
+
+```cpp
+
 #include <iostream>
 #include <vector>
 #include <memory>
@@ -829,29 +842,29 @@ int main()
 	std::cout << "가상 메모리 사용량: " << pmc.PrivateUsage << "\n";
 	std::cout << "물리 메모리 사용량: " << pmc.WorkingSetSize << "\n";
 }
+
 ```
-![방문자패턴_결과](https://github.com/kj1241/kj1241.github.io/assets/22047442/287963ff-2cf2-412e-88bc-3232b4ff011b){: width="100%" style="aspect-ratio:16/9"}
-std::variant는 C++17에서 도입된 템플릿 기반의형적 타입을 표현하는 컨테이너 클래스입니다.  
-이 컨테이너는 여러 타입 중 하나를 포함하며, 런타임에 해당 타입을 안전하게 접근할 수 있게 해줍니다.  
-std::visit을 사용하여 다형성을 보다 <highlight_blue>간결하고 유연</highlight_blue>하게 코드를 작성할 수 있습니다.  
-하지만 런타임시간에 동적으로 타입을 추가하거나, <highlight_orange>코드가 분산</highlight_orange>되어 이해하기 살짝 어렵게 만들 수 있습니다.  
 
+![방문자패턴_결과]({{ site.google_drive }}1ICQa7O0lDa7asgP2eShwN3cPyAEQH6QW{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<cpp_h6>std::variant 패턴 코드 결과</cpp_h6>* 
 
-
+std::variant는 C++17에서 도입된 템플릿 기반의형적 타입을 표현하는 컨테이너 클래스입니다. 이 컨테이너는 여러 타입 중 하나를 포함하며, 런타임에 해당 타입을 안전하게 접근할 수 있게 해줍니다. std::visit을 사용하여 다형성을 보다 <highlight_blue>간결하고 유연</highlight_blue>하게 코드를 작성할 수 있습니다. 하지만 런타임시간에 동적으로 타입을 추가하거나, <highlight_orange>코드가 분산</highlight_orange>되어 이해하기 살짝 어렵게 만들 수 있습니다.  
 
 <br>
 <br>
-<h2><blue1_h2> 3. 성능 분석 검증 </blue1_h2></h2>
+
+## <cpp_h2>3. 성능 분석 검증</cpp_h2>
+
 그럼 정말로 이 코드 형식들의 성능이 어떻게 나오지는 확인해 봅시다.  
   
-2023.03.10에는 동작 코드인 Draw()  한 개 가지고 데이터 개수를 늘려가면서 코드를 비교하였습니다.  
-하지만 크게 차이가 없다는 것을 깨닫고 실험자체가 실패했다는 것을 깨달았습니다.  
+2023.03.10에는 동작 코드인 Draw()  한 개 가지고 데이터 개수를 늘려가면서 코드를 비교하였습니다. 하지만 크게 차이가 없다는 것을 깨닫고 실험자체가 실패했다는 것을 깨달았습니다.  
   
-2022.03.12 그래서 이번에는 WinAPI를 사용하여 제대로 측정해 보려고 합니다.  
-단순히 Draw() 함수뿐만 아니라 Translate()이라는 도형을 대각선을 포함한 각 방향으로 이동시키는 동작함수 8종을 추가하여 실행파일로 테스트하기 위해 툴을 제작하였습니다.  
+2022.03.12 그래서 이번에는 WinAPI를 사용하여 제대로 측정해 보려고 합니다. 단순히 Draw() 함수뿐만 아니라 Translate()이라는 도형을 대각선을 포함한 각 방향으로 이동시키는 동작함수 8종을 추가하여 실행파일로 테스트하기 위해 툴을 제작하였습니다.  
   
-![예시](https://github.com/kj1241/kj1241.github.io/assets/22047442/c125c1fd-a477-40ef-a2fc-dbca2ddd46a1){: width="100%" style="aspect-ratio:16/9"}
+<br>
 
+![예시]({{ site.google_drive }}10KWTPUjOShEUyDOAsLC3MK7mgTKvnVvc{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<cpp_h6>예시</cpp_h6>* 
 
 멀티 스레드를 이용한 WinAPI 툴의 로직은 다음과 같습니다.
 
@@ -859,13 +872,15 @@ std::visit을 사용하여 다형성을 보다 <highlight_blue>간결하고 유�
     1. 로직을 처리하는 FixedUpdate()와 화면에 뿌려주는 Rending() 함수로 Update() 함수 구현하였습니다.  
     2. 간단한 측정을 위해서 이중버퍼링, 화면 찢김 방지하는 수직랜더링은 사용하지 않았습니다.  
     3. 서브 스레드로 데이터를 넘기기 위해서 큐를 동적할당하여 사용하였습니다.  
-  
+
 - 서브 스레드(자식 윈도우)  
     1. 메인 윈도의 데이터를 받아서 UI로 처리해 주는 역할을 합니다.  
     2. 라인 차트는 적당한 라이브러리를 찾지 못해서 직접 구현하였습니다.  
 
 <br>
+
 실험 조건은 다음과 같습니다.  
+
 1. Shpae를 상속받는 클래스 Circle, Square, _Ellipse, _Rectangle 총 4종  
 2. 도형 오브젝트 랜덤으로 100000개 생성  
 3. 오브젝트당 동작시키는 로직 랜덤 8종을 25회 동작 (총 25000000번)  
@@ -873,50 +888,69 @@ std::visit을 사용하여 다형성을 보다 <highlight_blue>간결하고 유�
 
 
 <br>
-1) Enum solution 결과
-![Enum_solution](https://github.com/kj1241/kj1241.github.io/assets/22047442/e52b662a-8e41-442f-8ba5-402885ae6253){: width="100%" style="aspect-ratio:16/9"}
+
+### <cpp_h3>1) Enum solution 결과</cpp_h3>
+
+![Enum_solution]({{ site.google_drive }}1FS5G3b01QIP_0Y_keeCFKHW7ykOhIVgb{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<cpp_h6>Enum_solution</cpp_h6>* 
+
 로직 걸린 시간: 2689 ms  
 가상 메모리: 11173888 byte  
 물리 메모리: 23093248 byte  
 
 <br>
-2) Enum solution 결과
-![OO Solution](https://github.com/kj1241/kj1241.github.io/assets/22047442/db264d4e-f839-4cf4-a2ec-11c4eb906b51){: width="100%" style="aspect-ratio:16/9"}
+
+### <cpp_h3>2) OO solution 결과</cpp_h3>
+
+![OO_solution]({{ site.google_drive }}1wSBy89CPw80bh1GprgN_XymJ48BGWfeP{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<cpp_h6>OO_solution</cpp_h6>* 
+
 로직 걸린 시간: 2738 ms  
 가상 메모리: 11042816 byte  
 물리 메모리: 23015424 byte  
 
 <br>
-3) visit 패턴 결과
-![visit](https://github.com/kj1241/kj1241.github.io/assets/22047442/b7199238-fb7c-424b-9cec-456c3530d182){: width="100%" style="aspect-ratio:16/9"}
+
+### <cpp_h3>3) visit 패턴 결과</cpp_h3>
+
+![visit]({{ site.google_drive }}1aRWc74Xtcu8q8RLZcOHj7QISzYWM-xUl{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<cpp_h6>visit 패턴</cpp_h6>* 
+
 로직 걸린 시간: 2981 ms
 가상 메모리: 11034624 byte
 물리 메모리: 23138304 byte
 
 <br>
-4) std::variant를 이용한 코드(c++17) 결과
-![variant](https://github.com/kj1241/kj1241.github.io/assets/22047442/49500700-4966-48dd-92b2-1caffc264a7d){: width="100%" style="aspect-ratio:16/9"}
+
+### <cpp_h3>4) std::variant를 이용한 코드(c++17) 결과</cpp_h3>
+
+![variant]({{ site.google_drive }}1vXLP3YIxg68GBLrXXqnMpUebPWcXfUcj{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<cpp_h6>std::variant</cpp_h6>* 
+
 로직 걸린 시간: 2780 ms
 가상 메모리: 10899456 byte
 물리 메모리: 21016576 byte
 
 <br>
-<h3><blue1_h3> 4. 성능분석 결론 </blue1_h3></h3>
+
+## <cpp_h3> 4. 성능분석 결론 </cpp_h3>
+
 퍼포먼스: Enum Solution >> OO Solution >= Variant Solution >> 방문자 패턴  
 추가 사항: Variant 실험 도중 성능이 크게 불안정하였지만, 방문자 패턴보다 퍼포먼스가 좋았습니다.  
 
-<br>
-결론:
 1. 동적 바인딩 이용하는 방문자 패턴은 코드작성에 따라서 성능 최하위에 위치할 수밖에 없습니다.
 2. 코드의 목적에 맞는 형태를 골라서 작성하시면 됩니다.
+
+<br>
+  
+<p><cpp_h5>추가사항 2023.03.14</cpp_h5></p>
+  
+원래 포트폴리오 정도로 생각하지 않은 코드들은 버리지만, 코드를 요청하신 분이 계셔서 코드를 올립니다. Draw 부분만 바꿔서 사용하시면 다른 variant 헤더 뿐만아니라 다른 버전도 들어있습니다. 연결해주시고 Draw 부분만 바꿔주시면 다른 버전들도 확인 하실 수 있습니다. 
 
 <br>
 
 ---
 
 <br>
-<h6>추가사항 2023.03.14  <br>
-원래 포트폴리오 정도로 생각하지 않은 코드들은 버리지만, 코드를 요청하신 분이 계셔서 코드를 올립니다.   <br>
-Draw 부분만 바꿔서 사용하시면 다른 variant 헤더 뿐만아니라 다른 버전도 들어있습니다. 연결해주시고 Draw 부분만 바꿔주시면 다른 버전들도 확인 하실 수 있습니다. <br> <h6>
 
-깃 허브 코드: <a herf="https://github.com/kj1241/WinAPI_ToyProejct/tree/main/Variant_Visitor"> https://github.com/kj1241/WinAPI_ToyProejct/tree/main/Variant_Visitor
+###### <cpp_h6>깃 허브 코드:</cpp_h6> [https://github.com/kj1241/WinAPI_ToyProejct/tree/main/Variant_Visitor](https://github.com/kj1241/WinAPI_ToyProejct/tree/main/Variant_Visitor)
