@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "유니티 팀 프로젝트 - 일반 과제"
-date: 2023-04-09 09:00:00 +09800
+date: 2023-04-09 09:00:00 +0900
 image: https://drive.google.com/thumbnail?id=16DtnUKQaymL0m38oQwHf2yjGV4f5zONB
 toc: true
 categories: [Unity_TP] 

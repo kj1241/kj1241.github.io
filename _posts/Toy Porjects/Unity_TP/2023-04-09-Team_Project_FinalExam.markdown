@@ -171,7 +171,7 @@ tags: [C#, Unity, Shader]
 <br>
 <br>
 
-## <web_h2> 비고 및 여담 </web_h2>
+## <unity_h2> 비고 및 여담 </unity_h2>
 
 - 배운점
     - UI로직을 구현하고 HP, 쿨타임을 구현할 수 있게 되었습니다.
