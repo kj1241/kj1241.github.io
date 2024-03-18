@@ -4,7 +4,7 @@ title: "T스토리 스킨 제작 ver.2"
 date: 2023-11-20 11:30:00 +0900
 image: https://drive.google.com/thumbnail?id=1Zchpt1qWBzMGafRWsjdVLTy4vlbBte_2
 toc: true
-categories: [Tstory_Skin]
+categories: [Web_TP]
 tags: [HTML, CSS, Java script, Tstory Skin]
 ---
 

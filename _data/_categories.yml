@@ -28,10 +28,10 @@ categories_list:
         url: /3Ds_Max/
       - title: Houdini
         url: /Houdini/
-      - title: Tstory_Skin
-        url: /Tstory_Skin/
-      - title: Git_Hub_Blog
-        url: /Git_Hub_Blog/
+      - title: Web_TP
+        url: /Web_TP/
+      - title: Computer_Vision_TP
+        url: /Computer_Vision_TP/
       
   - title: Technical Article & Treble Shooting
     categories_sub_list:

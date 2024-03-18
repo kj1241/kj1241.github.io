@@ -4,7 +4,7 @@ title: "깃 허브 블로그 스킨 제작 ver.4"
 date: 2023-11-23 09:00:00 +0900
 image: https://drive.google.com/thumbnail?id=1OzqLMBVTtXSBCgmB8SjPgV9n9eaGn61Q
 toc: true
-categories: [Git_Hub_Blog]
+categories: [Web_TP]
 tags: [ Git Hug Blog, JavaScript, HTML, SCSS, Jekyll, Markdown, Ruby]
 ---
 
