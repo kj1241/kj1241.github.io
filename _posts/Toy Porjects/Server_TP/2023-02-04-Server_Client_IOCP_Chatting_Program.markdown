@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "고급웹서버프로그래밍 - 중간 과제(IOCP TCP/IP 채팅 서버)"
+title: "고급웹서버프로그래밍 - 중간 과제(IOCP TCP/IP 채팅 서버 ver.2)"
 date: 2023-02-04 16:14:05 +0900
 image: https://drive.google.com/thumbnail?id=1vAi9hX6LY-VBoD8p8S2bMKLSmtXt1i8w
 toc: true
@@ -57,7 +57,7 @@ C++으로 제작한 WinAPI 기반의 IOCP TCP/IP 채팅 서버 어플리케이�
 1. 로그인 ID 패킷 제작했습니다.
 2. 메시지 페킷 제작했습니다.
 
-
+<br>
 <br>
 
 ## <server_h2>시퀸스 다이어그램</server_h2>

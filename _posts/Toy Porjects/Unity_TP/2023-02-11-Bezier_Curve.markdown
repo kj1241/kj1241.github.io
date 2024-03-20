@@ -100,7 +100,7 @@ Unity와 C#을 이용하여 개발된 토이프로젝트입니다. 이 프로젝
 
 <br>
 
-### <unity_h3>스킬 비쥬얼 다듬기 ver.3</unity_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
+### <unity_h3>스킬 비주얼 다듬기 ver.3</unity_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
 
 1. 쿨타임 버튼을 제작하였습니다.
 2. 유니티의 Trail Render를 다듬어서 좀 더 날아가는 느낌을 주었습니다.

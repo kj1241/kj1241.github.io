@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "게임서버실습(1) - 기말 과제(Echo TCP/IP 채팅 서버)"
+title: "게임서버실습(1) - 기말 과제(Echo TCP/IP 채팅 서버 ver.2)"
 date: 2023-01-31 23:50:31 +0900
 image: https://drive.google.com/thumbnail?id=1tdtL0ira98kAtleTr07iy-NLtYEgE5Og
 toc: true
@@ -55,7 +55,7 @@ C++으로 제작한 Echo TCP/IP 채팅 프로그램은 서버와 클라이언트
 1. 패킷 디자인 PacketType  구조체 추가 및 헤더에 따른 로직 처리하였습니다.
 2. 서버 편의성을 위한 시간 로그 추가하였습니다. (서버)
 
-
+<br>
 <br>
 
 ## <server_h2>시퀸스 다이어그램</server_h2>

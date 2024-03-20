@@ -46,7 +46,7 @@ C++로 작성한 멀티쓰레드 덧셈 프로그램은 여러 쓰레드를 사�
 1. CrateThread를 사용하여 스레드 생성하였습니다.
 2. CreateSemaphore를 사용해서 동기화 및 구현하였습니다.
 
-
+<br>
 <br>
 
 ## <server_h2>시퀸스 다이어그램</server_h2>

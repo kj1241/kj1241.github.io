@@ -30,8 +30,8 @@ categories_list:
         url: /Houdini/
       - title: Web_TP
         url: /Web_TP/
-      - title: Computer_Vision_TP
-        url: /Computer_Vision_TP/
+      - title: ComputerVision_TP
+        url: /ComputerVision_TP/
       
   - title: Technical Article & Treble Shooting
     categories_sub_list:

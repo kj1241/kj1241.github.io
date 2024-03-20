@@ -27,7 +27,6 @@ MySQL을 활용한 책 목록 데이터베이스는 책의 정보를 저장하�
 - <span><data_h5>플랫폼:</data_h5> PC (Window)</span>
 
 <br>
-<br>
 
 ### <data_h3> 기술 스택 </data_h3>
 
