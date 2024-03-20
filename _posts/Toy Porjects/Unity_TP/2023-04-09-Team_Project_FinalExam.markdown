@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "유니티 팀 프로젝트 - 기말 과제"
+title: "유니티 팀 프로젝트 - 기말 과제(팀 프로젝트)"
 date: 2023-04-09 17:36:45 +0900
 image: https://drive.google.com/thumbnail?id=1u11qy4bDtE6Weceoq52p_byLXVQ_sGAG
 toc: true

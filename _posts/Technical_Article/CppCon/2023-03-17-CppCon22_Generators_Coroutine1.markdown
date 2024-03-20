@@ -10,22 +10,24 @@ addsence: true
 ---
 
 
-<h2><blue1_h2> 1. 주제: Breaking Dependencies - The Visitor Design Pattern in Cpp </blue1_h2></h2>
+## <cpp_h2>1. 주제: Breaking Dependencies - The Visitor Design Pattern in Cpp</cpp_h2>
+
+
 이번 분석은, CppCon에서 발표된 <a herf= "https://www.youtube.com/watch?v=lm10Cj-HNKQ&list=PLHTh1InhhwT6c2JNtUiJkaH8YRqzhU7Ag&index=97"> Understanding C++ Coroutines by Example: Generators</a>으로 가저왔습니다. (2부가 있는데 본 결과 코루틴과 살짝 결이 달라 보여서 다음에 추가 분석하도록 하겠습니다.)  
 
-C#, Python 유니티를 사용하시는 분들은 코루틴에 관해서 익숙하시겠지만, C++은 C++20부터 코루틴을 사용할 수 있습니다. 
-(언리얼에서 코루틴을 가능한지는 사용해 보고 알려드리도록 하겠습니다.)  
-코루틴의 예제와 함께, 제가 가지고 있는 지식을 녹여 보도록 하겠습니다.  
-
-
+C#, Python 유니티를 사용하시는 분들은 코루틴에 관해서 익숙하시겠지만, C++은 C++20부터 코루틴을 사용할 수 있습니다. (언리얼에서 코루틴을 가능한지는 사용해 보고 알려드리도록 하겠습니다.) 코루틴의 예제와 함께, 제가 가지고 있는 지식을 녹여 보도록 하겠습니다.  
 
 <br>
 <br>
-<h2><blue1_h2> 2. 코루틴 이론 </blue1_h2></h2>
+
+## <cpp_h2>2. 코루틴 이론</cpp_h2>
+
 C++20 코루틴을 살펴보기전에 기본적인 코루틴 이론에 관해서 이야기하고 넘어 가겠습니다.
 
 <br>
+
 <h3><blue1_h3> 1) 코루틴의 정의 </blue1_h3></h3>
+
 Coroutine 어원은 co + routine으로 co는 협동이라는 의미를 가지고 있습니다. 즉, 협동 루틴(패턴)입니다.  
 코루틴(coroutine)은 동시성 프로그래밍에서 사용되는 개념 중 하나로, 여러 실행 흐름을 갖는 함수입니다.  
 코루틴은 일반적인 함수와 다르게 실행을 일시 중지하고 재개할 수 있습니다.  

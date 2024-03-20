@@ -17,7 +17,7 @@ tags: [HTML, CSS, Java script, Tstory Skin]
 
 ## <web_h2> 프로젝트 개요 </web_h2>
 
-- <span><web_h5>프로젝트명:</web_h5> Tstory_skin v0.2</span>
+- <span><web_h5>프로젝트명:</web_h5> Tstory_skin ver.2</span>
 - <span><web_h5>장르:</web_h5> Toy Project(Blog Theme)</span>
 - <span><web_h5>기간:</web_h5> 제작완료</span>
     - ver.1: 2023.01.11~2023.01.13 
