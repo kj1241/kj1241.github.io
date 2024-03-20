@@ -1,17 +1,18 @@
 ---
 layout: post
-title: "방문자 패턴 의존성 깨기"
+title: "C++) 방문자 패턴 의존성 깨기"
 date: 2023-03-13 13:08:33 +0900
 image: https://drive.google.com/thumbnail?id=10KWTPUjOShEUyDOAsLC3MK7mgTKvnVvc
 toc: true
 categories: [CppCon]
 tags: [C++, Cppcon22, Virtual , Visit, std::variant, 다형성]
 addsence: true
+excerpt:  Enum Solution, OO Solution, 방문자 패턴, variant를 이용한 코드 작성 이렇게 4가지의 성능 비교표와 코드만 실험해서 작성하였습니다. 단순한 성능 측정을 넘어 코드의 전반적인 측면을 강조하는, 좀 더 고차원적인 주제로 위의 내용을 다뤄보고자 합니다.
 ---
 
-## <cpp_h2>1. 주제: Breaking Dependencies - The Visitor Design Pattern in Cpp</cpp_h2>
+## <cpp_h2>1. 주제: Breaking Dependencies</cpp_h2>
 
-이번 분석은, CppCon에서 발표된 <a herf= "https://www.youtube.com/watch?v=PEcy1vYHb8A"> Breaking Dependencies - The Visitor Design Pattern in Cpp</a>으로 가저왔습니다.  
+이번 분석은, CppCon에서 발표된 [Breaking Dependencies - The Visitor Design Pattern in Cpp](https://www.youtube.com/watch?v=PEcy1vYHb8A)으로 가져왔습니다. 해당 내용을 참조하여 분석해 보겠습니다.  
 
 블로그를 이주하면서 Cppcon과 관련된 내용을 다시 작성하는 주제인데, 블로그를 이주하기 전에는 코드가 모든 것을 표현 해준다고 생각 했습니다. 따라서 단순하게  Enum Solution, OO Solution, 방문자 패턴, variant를 이용한 코드 작성 이렇게 4가지의 성능 비교표와 코드만 실험해서 올렸습니다. 단순한 성능 측정을 넘어 코드의 전반적인 측면을 강조하는, 좀 더 고차원적인 주제로 위의 내용을 다뤄보고자 합니다. 방문자 패턴 리포터를 찾으로 오신 분은 뒤로가기를 눌러주세요.  
 
@@ -932,8 +933,9 @@ std::variant는 C++17에서 도입된 템플릿 기반의형적 타입을 표현
 물리 메모리: 21016576 byte
 
 <br>
+<br>
 
-## <cpp_h3> 4. 성능분석 결론 </cpp_h3>
+## <cpp_h2>4. 성능분석 결론 </cpp_h2>
 
 퍼포먼스: Enum Solution >> OO Solution >= Variant Solution >> 방문자 패턴  
 추가 사항: Variant 실험 도중 성능이 크게 불안정하였지만, 방문자 패턴보다 퍼포먼스가 좋았습니다.  
