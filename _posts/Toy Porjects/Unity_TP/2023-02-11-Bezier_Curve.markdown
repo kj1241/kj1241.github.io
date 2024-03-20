@@ -114,8 +114,8 @@ Unity와 C#을 이용하여 개발된 토이프로젝트입니다. 이 프로젝
 
 <iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/D5vNHpiF63I" title="Skill imitation bezier curve (기능 추가)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-- <span><web_h5>성과:</web_h5> 토이 프로젝트 데모 프로그램 제작 </span>
-- <span><web_h5>지드라이브(코드):</web_h5> [https://github.com/kj1241/Unity_practice/tree/main/Bezier_Curves_test](https://github.com/kj1241/Unity_practice/tree/main/Bezier_Curves_test)</span>
+- <span><unity_h5>성과:</unity_h5> 토이 프로젝트 데모 프로그램 제작 </span>
+- <span><unity_h5>지드라이브(코드):</unity_h5> [https://github.com/kj1241/Unity_practice/tree/main/Bezier_Curves_test](https://github.com/kj1241/Unity_practice/tree/main/Bezier_Curves_test)</span>
 
 
 <br>

@@ -60,7 +60,7 @@ C++으로 제작한 Echo TCP/IP 채팅 프로그램은 서버와 클라이언트
 
 ## <server_h2>시퀸스 다이어그램</server_h2>
 
-#### **<server_h3>Echo 서버,클라이언트 채팅 프로그램 제작 ver.1</server_h3>**
+#### **<server_h4>Echo 서버,클라이언트 채팅 프로그램 제작 ver.1</server_h4>**
 
 ![시퀸스]({{ site.google_drive }}1nE_cbaLZZMKboa-tYxLOm9g3emT2_BPw{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 
@@ -69,7 +69,7 @@ C++으로 제작한 Echo TCP/IP 채팅 프로그램은 서버와 클라이언트
 3. 오류처리를 try-catch 문으로 작성해야 합니다.
 
 
-#### **<server_h3>패킷 디자인 추가 ver.2</server_h3>**
+#### **<server_h4>패킷 디자인 추가 ver.2</server_h4>**
 
 ![시퀸스]({{ site.google_drive }}1tdtL0ira98kAtleTr07iy-NLtYEgE5Og{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 

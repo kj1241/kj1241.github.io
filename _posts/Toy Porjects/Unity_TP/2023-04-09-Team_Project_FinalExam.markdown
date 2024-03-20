@@ -167,8 +167,8 @@ tags: [C#, Unity, Shader]
 
 <iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/OY4DGZKvkF8" title="팀 프로젝트(the_Untitled_Kingdom)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-- <span><web_h5>성과:</web_h5> 2016년 1학기 팀 프로젝트 최종 과제 </span>
-- <span><web_h5>깃허브(코드):</web_h5> [https://github.com/kj1241/Unity_Portfolio/tree/main/Subject_Assignment/TeamProject/TeamProject_FinalExam](https://github.com/kj1241/Unity_Portfolio/tree/main/Subject_Assignment/TeamProject/TeamProject_FinalExam)</span>
+- <span><unity_h5>성과:</unity_h5> 2016년 1학기 팀 프로젝트 최종 과제 </span>
+- <span><unity_h5>깃허브(코드):</unity_h5> [https://github.com/kj1241/Unity_Portfolio/tree/main/Subject_Assignment/TeamProject/TeamProject_FinalExam](https://github.com/kj1241/Unity_Portfolio/tree/main/Subject_Assignment/TeamProject/TeamProject_FinalExam)</span>
 
 <br>
 <br>

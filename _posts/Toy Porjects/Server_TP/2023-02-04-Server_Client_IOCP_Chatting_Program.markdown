@@ -69,7 +69,7 @@ C++으로 제작한 WinAPI 기반의 IOCP TCP/IP 채팅 서버 어플리케이�
 - IOCP 서버와 클라이언트가 통신하여 클라이언트 간에 채팅을 주고 받는 방식을 알 수 있습니다.
 - 서버 통신 패킷 제작 방식에 대해 알 수 있습니다.
 
-#### **<server_h3>패킷 제작 ver.1</server_h3>** 
+#### **<server_h4>패킷 제작 ver.1</server_h4>** 
 
 ![시퀸스]({{ site.google_drive }}1H10wVWRfnG5FMa39x1YcdFJ4eea8l0-q{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 
