@@ -10,6 +10,7 @@ keywords: Jkeyll, Ruby, HTML, SCSS, Java Script, Git Hub Blog
 addsence: true
 excerpt: 단순히 Git Hub Blog 제작을 위해서 만들어진 테마를 Fork를 이용하여 제작하는 것이 아닌 Jekyll + Ruby + HTML + SCSS + Java Script를 사용하여 제작하는 방법을 설명하고 있습니다. 해당 과정은 블로그를 제작함으로 인해 발생했던 트러블 슈팅과 마크다운의 팁에 대해서 이야기하고 있습니다. 
 related_links:
+    - url: /web_tp/Git_Hub_Blog_Skin.html
     - url: /web/Git_Hub_Blog1.html
     - url: /web/Git_Hub_Blog2.html
     - url: /web/Git_Hub_Blog3.html

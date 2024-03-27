@@ -1,12 +1,17 @@
 ---
 layout: post
-title: "깃 허브 블로그 스킨 제작 ver.4"
+title: "깃 허브 블로그 스킨 제작 ver.5"
 date: 2023-11-23 09:00:00 +0900
 image: https://drive.google.com/thumbnail?id=1OzqLMBVTtXSBCgmB8SjPgV9n9eaGn61Q
 toc: true
 categories: [Web_TP]
 tags: [ Git Hug Blog, JavaScript, HTML, SCSS, Jekyll, Markdown, Ruby]
 keywords: Git Hug Blog, JavaScript, HTML, SCSS, Jekyll, Markdown, Ruby
+related_links:
+    - url: /web/Git_Hub_Blog1.html
+    - url: /web/Git_Hub_Blog2.html
+    - url: /web/Git_Hub_Blog3.html
+    - url: /web/Git_Hub_Blog4.html
 ---
 
 ##  <web_h2> 프로젝트 소개 </web_h2>
@@ -18,13 +23,14 @@ keywords: Git Hug Blog, JavaScript, HTML, SCSS, Jekyll, Markdown, Ruby
 
 ## <web_h2> 프로젝트 개요 </web_h2>
 
-- <span><web_h5>프로젝트명:</web_h5> KJ_Skin v0.4</span>
+- <span><web_h5>프로젝트명:</web_h5> KJ_Skin ver.5</span>
 - <span><web_h5>장르:</web_h5> Toy Project(Blog Theme)</span>
 - <span><web_h5>기간:</web_h5> 운영중</span>
     - ver.1: 2023.11.18~2023.11.20 
     - ver.2: 2023.11.25  
     - ver.3: 2023.12.02~2023.12.03 
     - ver.4: 2024.03.11~2024.03.13 
+    - ver.5: 2024.03.28
 - <span><web_h5>개발인원:</web_h5> Developer(1명)</span>
 - <span><web_h5>플랫폼:</web_h5> PC(Chorm / Microsoft Edge / Firefox / Opera)</span>
 
@@ -92,7 +98,7 @@ keywords: Git Hug Blog, JavaScript, HTML, SCSS, Jekyll, Markdown, Ruby
 
 <br>
 
-#### <web_h4>4) 반응형& 적응형 디자인</web_h4>
+#### <web_h4>1) 반응형& 적응형 디자인</web_h4>
 
 ![반응형&적응형 디자인]({{ site.google_drive }}1bdHRggPHlKQLcHW0L_2eIwwy12idXyJI{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 
@@ -101,7 +107,7 @@ keywords: Git Hug Blog, JavaScript, HTML, SCSS, Jekyll, Markdown, Ruby
 
 <br>
 
-#### <web_h4>5) 모바일용 카테고리 헤더 제작</web_h4>
+#### <web_h4>2) 모바일용 카테고리 헤더 제작</web_h4>
 
 ![모바일용 카테고리 헤더]({{ site.google_drive }}1vQRTrNEeIzGEkuvmKGb15Uq4sr9VDw8d{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 
@@ -129,7 +135,7 @@ keywords: Git Hug Blog, JavaScript, HTML, SCSS, Jekyll, Markdown, Ruby
 
 <br>
 
-#### <web_h4>6) 웹 폰트 변경</web_h4>
+#### <web_h4>1) 웹 폰트 변경</web_h4>
 
 ![웹 폰트 변경]({{ site.google_drive }}1wJPMRBKT77DCekpcagAlxd5Ahy4YmtJu{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 
@@ -148,7 +154,7 @@ keywords: Git Hug Blog, JavaScript, HTML, SCSS, Jekyll, Markdown, Ruby
 
 <br>
 
-#### <web_h4>7) 백그라운드 유성 효과</web_h4>
+#### <web_h4>1) 백그라운드 유성 효과</web_h4>
 
 ![유성 효과]({{ site.google_drive }}1nJaErEEOcZOi2bR5ZdwA7QyiiHLi-kCF{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 
@@ -157,11 +163,29 @@ keywords: Git Hug Blog, JavaScript, HTML, SCSS, Jekyll, Markdown, Ruby
 
 <br>
 
-#### <web_h4>8) 마우스를 따라 다니는 시계 효과</web_h4>
+#### <web_h4>2) 마우스를 따라 다니는 시계 효과</web_h4>
 
 ![마우스를 따라 다니는 시계 효과]({{ site.google_drive }}1fPY3vhUusIWtjalKpuLCnZomHraqlYbM{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 
 - JavaScript를 사용하여 마우스 위치찾아서 시계가 따라다니는 효과를 제작하였습니다.
+
+
+<br>
+
+### <web_h3>연관 포스트 링크 만들기 ver.4</web_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
+
+1. 연관 포스를 명시적인 방법으로 구현하였습니다.
+2. seo 검색엔진 키워드를 tag 에서 keywords로 바꿨습니다.
+
+<br>
+
+#### <web_h4>1) 백그라운드 유성 효과</web_h4>
+
+![마우스를 따라 다니는 시계 효과]({{ site.google_drive }}1DvINzDPXxLFcphIJND2jXFcDaygzbEq2{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+
+1. YAML Front Matter 사용하여 'related_links' 섹션을 추가하였습니다.
+2. jekyll를 사용하여 해당 링크를 연결하고 html과 css를 사용하여 스타일을 조정하였습니다.
+
 
 
 <br>
@@ -202,4 +226,4 @@ keywords: Git Hug Blog, JavaScript, HTML, SCSS, Jekyll, Markdown, Ruby
 - Ruby와 jekyll를 사용해서 어떻게 테마를 제작는지 학습하는 시간이 되었습니다.
 - 나중에 여유가 된다면 반응형 디자인으로 모바일도 지원할 계획이 있습니다. (완료)
 - 백그라운드 애니메이션과 마우스 이펙트 효과를 주고 싶습니다. (폐기)
-
+- 연관 포스트를 만들때 태그 방식과 명시적 방식을 사용하는 것을 고민했으나, 정확성을 위해서 명시적 방식으로 구현하였습니다.

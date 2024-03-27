@@ -7,6 +7,8 @@ toc: true
 categories: [Web_TP]
 tags: [HTML, CSS, Java script, Tstory Skin]
 keywords: HTML, CSS, Java script, Tstory Skin
+related_links:
+    - url: /web/Web_Developer_Tools.html
 ---
 
 ##  <web_h2> 프로젝트 소개 </web_h2>
