@@ -7,6 +7,8 @@ toc: true
 categories: [3Ds_Max]
 tags: [3Ds_Max, animation, modelling, bone skeleton, key frame]
 keywords: 3Ds_Max, animation, modelling, bone skeleton, key frame
+related_links:
+    - url: /3ds_max/3Ds_Max_Terrain.html
 ---
 
 ## <art_h2>프로젝트 소개</art_h2>

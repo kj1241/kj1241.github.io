@@ -1,11 +1,14 @@
 ---
 layout: post
-title: "유니티 기능성 프로그래밍 - 중간1 과제(PlasticRunner)"
+title: "유니티 기능성 프로그래밍 - 중간1 과제(PlasticRunner ver.2)"
 date: 2024-03-01 11:36:45 +0900
 image: https://drive.google.com/thumbnail?id=1GV6oHSbCIfWhWORAsLgvB5k2pn8esqGA
 toc: true
 categories: [Unity_TP] 
 tags: [C#, Unity, Shader]
+related_links:
+    - url: /unity_tp/FunctionalProgramming.html
+    - url: /unity_tp/FunctionalProgramming_FinalExam.html
 ---
 
 ## <unity_h2> 프로젝트 소개 </unity_h2>
@@ -20,13 +23,12 @@ tags: [C#, Unity, Shader]
 
 ## <unity_h2> 프로젝트 개요 </unity_h2>
 
-- <span><unity_h5>프로젝트명:</unity_h5> PlasticRunner ver.3</span>
+- <span><unity_h5>프로젝트명:</unity_h5> PlasticRunner ver.2</span>
 - <span><unity_h5>과제:</unity_h5> 2018년 1학기 팀 기능성 프로그래밍 중간1 과제</span>
-- <span><unity_h5>게임 장르:</unity_h5> 2D 러닝게임 → 3D 러닝게임</span>
+- <span><unity_h5>게임 장르:</unity_h5> 2D 러닝게임 </span>
 - <span><unity_h5>기간:</unity_h5> 제작 완료</span>
     - ver.1: 2018.03.30~2018.04.10(제작)
     - ver.2: 2018.04.10~2018.04.20(제작)
-    - ver.3: 2023.08.10~2023.08.20(제작)
 - <span><unity_h5>개발인원:</unity_h5> Developer(1명)</span>
 - <span><unity_h5>플랫폼:</unity_h5> PC (Window)</span>
 
@@ -73,17 +75,6 @@ tags: [C#, Unity, Shader]
 
 
 <br>
-
-### <unity_h3>장르 변경 ver.3</unity_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
-
-![장르 변경]({{ site.google_drive }}10IGPUgjv8K9Nf-xrZ3liFlCYiTAibnCb{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-*<unity_h6>장르 변경</unity_h6>*
-
-
-
-
-
-<br>
 <br>
 
 ## <unity_h2> 수정된 규칙의 기획안 </unity_h2>
@@ -121,18 +112,11 @@ tags: [C#, Unity, Shader]
 
 ## <unity_h2> 비고 및 여담 </unity_h2>
 
-- 게임 장르가 변경된 이유: 
-    - 당시 기존의 프로젝트로 3개를 수정하는 것은 재미없었기 때문에 3D 플랫폼 게임을 3D 디펜스 게임으로 변환했습니다.
-
 - 배운점:
-    - 3D 캐릭터들의 애니메이션을 다루는 방법에 대해서 학습하였습니다.
+    - 2D 점핑 게임이지만 실제로 제작할때는 3D 캐릭터 오브젝트 기반으로 제작하였습니다.
     - 충돌처리 로직에 관하여 학습하게 되었습니다.
-    - 카메라를 부드럽게 만드는 방법에 대해서 고민하였습니다.
-    - 프로젝트 내용을 응용하여 다른 장르로 바꿔버리는 방법에 대해서 고민하였습니다.
+    - 2중 점프에 관해서 구현하였습니다.
+    - 당시에는 비주얼보다 만들어진 프로젝트에 작성자가 생각하는 기능적 방법의 로직을 삽입해서 동작시키는데 중점을 두었습니다.
 
 - 수정할 점:
-    - 유저를 괴롭히기 위한 게임을 제작 했기 때문에 캐릭터 조작 난이도가 최상위 입니다. (상하키: 이동 , 좌우키 회전) 따라서 유저에게 편하게 바꿔야 합니다.
-    - 책에 c를 누르면 모든 몬스터가 죽도록 만들어 졌으나 패널티가 없어서 패널티를 만들어야 합니다.
-    - 많은 수의 에셋과 무료모델링들을 사용 했기 때문에 에셋을 정리할 필요가 있습니다.
-    - 카메라 로직을 생각해서 구현하였지만 실제로 적용해 봤을때 생각보다 딱딱한 느낌이 있어서 로직 수정이 필요합니다.
-    - 당시에는 디렉토리 위치, 클래스 네임등 완성을 위해서 주먹구구식으로 완성을 했기 때문에 좀 더 리팩토링해서 코드를 공개할 예정입니다.
+    - 아직 공개하지 못한 3D 러닝게임을 ver.3로 추가할 예정입니다.

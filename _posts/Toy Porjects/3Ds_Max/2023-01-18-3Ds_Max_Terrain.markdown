@@ -7,6 +7,8 @@ toc: true
 categories: [3Ds_Max]
 tags: [3Ds_Max, heightmap, terrain, object]
 keywords: 3Ds_Max, heightmap, terrain, object
+related_links:
+    - url: /3ds_max/3Ds_Max_Modeling.html
 ---
 
 ## <art_h2>프로젝트 소개</art_h2>

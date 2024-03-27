@@ -7,6 +7,9 @@ toc: true
 categories: [Unity_TP] 
 tags: [C#, Unity, 3D Platformer Game, 2D Running Game, 2D Puzzle Game]
 keywords: C#, Unity, 3D Platformer Game, 2D Running Game, 2D Puzzle Game
+related_links:
+    - url: /unity_tp/FunctionalProgramming_Middle1Exam.html
+    - url: /unity_tp/FunctionalProgramming_FinalExam.html
 ---
 
 ## <unity_h2> 프로젝트 소개 </unity_h2>

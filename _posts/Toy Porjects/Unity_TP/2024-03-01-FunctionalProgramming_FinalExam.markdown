@@ -7,6 +7,9 @@ toc: true
 categories: [Unity_TP] 
 tags: [C#, Unity, 3D Platformer Game, 3D Defense game]
 keywords: C#, Unity, 3D Platformer Game, 3D Defense game
+related_links:
+    - url: /unity_tp/FunctionalProgramming.html
+    - url: /unity_tp/FunctionalProgramming_Middle1Exam.html
 ---
 
 ## <unity_h2> 프로젝트 소개 </unity_h2>

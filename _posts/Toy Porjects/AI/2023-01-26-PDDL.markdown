@@ -7,6 +7,9 @@ toc: true
 categories: [AI]
 tags: [AI, PDDL]
 keywords: AI, PDDL
+related_links:
+    - url: /ai/AI_Practice.html
+    - url: /ai/Similar_Clusters.html
 ---
 
 ## <ai_h2> 프로젝트 소개 </ai_h2>

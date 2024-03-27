@@ -7,6 +7,9 @@ toc: true
 categories: [AI]
 tags: [AI, C++, FSM]
 keywords: AI, C++, FSM
+related_links:
+    - url: /ai/PDDL.html
+    - url: /ai/Similar_Clusters.html
 ---
 
 ## <ai_h2> 프로젝트 소개 </ai_h2>

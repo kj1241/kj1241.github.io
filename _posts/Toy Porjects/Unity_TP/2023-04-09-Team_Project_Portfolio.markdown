@@ -7,6 +7,8 @@ toc: true
 categories: [Unity_TP] 
 tags: [C#, Unity, Shader]
 keywords: C#, Unity, Shader
+related_links:
+    - url: /unity_tp/Team_Project_FinalExam.html
 ---
 
 ## <unity_h2> 프로젝트 소개 </unity_h2>

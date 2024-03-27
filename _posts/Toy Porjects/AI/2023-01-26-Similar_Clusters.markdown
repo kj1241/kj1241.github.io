@@ -9,6 +9,8 @@ tags: [AI, c#, Unity, repulsive force, similar clustering]
 keywords: AI, c#, Unity, repulsive force, similar clustering
 related_links:
     - url: /unity/Similar_Clustering_log.html
+    - url: /ai/PDDL.html
+    - url: /ai/AI_Practice.html
 ---
 
 ## <ai_h2> 프로젝트 소개 </ai_h2>
