@@ -6,8 +6,13 @@ image: https://drive.google.com/thumbnail?id=1cgQdmRjbkLnICVlV7E0FZx8Q7_icG0VC
 toc: true
 categories: [Web]
 tags: [Jkeyll, Ruby, HTML, SCSS, Java Script, Git Hub Blog ]
+keywords: Jkeyll, Ruby, HTML, SCSS, Java Script, Git Hub Blog 
 addsence: true
 excerpt: 단순히 Git Hub Blog 제작을 위해서 만들어진 테마를 Fork를 이용하여 제작하는 것이 아닌 Jekyll + Ruby + HTML + SCSS + Java Script를 사용하여 제작하는 방법을 설명하고 있습니다. 세부 설정하는 방법과 언어에 따른 블로그 용도에 대해서 고민하고 있습니다.
+related_links:
+    - url: /web/Git_Hub_Blog1.html
+    - url: /web/Git_Hub_Blog3.html
+    - url: /web/Git_Hub_Blog4.html
 ---
 
 앞서서는 기본적으로 Jekyll를 설치하고 초기 블로그 화면까지 구성하는 방법을 설명하였습니다. 셍각보다 제가 이론에 정통한 사람이 아니라서 딱히 이론적으로는 어떻게 만드는지는 도움드릴 수는 없을꺼 같습니다. 저 같은 경우에는 머리속으로 이미지를 상상하고 코딩을 작성합니다. 대신 에러나 궁금한 점이 있다면 같이 해결해 줄 수는 있습니다.  

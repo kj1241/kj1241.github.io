@@ -6,9 +6,12 @@ image: https://drive.google.com/thumbnail?id=1W4TCYw-awdDHHLA0pq45nKwH4X5Dz9Iv
 toc: true
 categories: [CppCon]
 tags: [C++, Cppcon22, Generators Coroutine , Coroutine, C++20]
+keywords: C++, Cppcon, Cppcon22, Generators Coroutine , Coroutine, C++20
 addsence: true
 excerpt: c++ 코루틴 Generators을 제작하기 전에 코루틴에 관해서 기초적인 내용을 포함하고 있습니다. 
-
+related_links:
+    - url: /cppcon/CppCon22_Generators_Coroutine2.html
+    - url: /cppcon/CppCon22_Generators_Coroutine3.html
 ---
 
 ## <cpp_h2>1. 주제: Breaking Dependencies</cpp_h2>

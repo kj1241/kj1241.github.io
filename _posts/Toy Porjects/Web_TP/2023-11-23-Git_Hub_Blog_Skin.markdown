@@ -6,6 +6,7 @@ image: https://drive.google.com/thumbnail?id=1OzqLMBVTtXSBCgmB8SjPgV9n9eaGn61Q
 toc: true
 categories: [Web_TP]
 tags: [ Git Hug Blog, JavaScript, HTML, SCSS, Jekyll, Markdown, Ruby]
+keywords: Git Hug Blog, JavaScript, HTML, SCSS, Jekyll, Markdown, Ruby
 ---
 
 ##  <web_h2> 프로젝트 소개 </web_h2>

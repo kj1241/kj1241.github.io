@@ -6,6 +6,7 @@ image: https://drive.google.com/thumbnail?id=1567fuhD-BZEBoMG4I8nL0JsnN--9t6Bs
 toc: true
 categories: [Game_Jam]
 tags: [C#, Unity, 2D Platformer Game]
+keywords: C#, Unity, 2D Platformer Game
 excerpt: 천사가 지상에 놀러 내려왔다 날개를 잃어버려 찾으로 가는 2D 플래포머 게임입니다. 맵에 존재하는 수집품과 날개를 찾기위해 역경에 도전해 보세요. 여러분의 용기 있는 도전을 기다리고 있습니다.
 ---
 

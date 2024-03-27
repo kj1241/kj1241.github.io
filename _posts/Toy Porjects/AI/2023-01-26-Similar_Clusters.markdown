@@ -5,7 +5,10 @@ date: 2023-01-26 16:30:56 +0900
 image: https://drive.google.com/thumbnail?id=1HLt16M6v9ypxd6jGv3sM4deHXQI280Y_
 toc: true
 categories: [AI]
-tags: [C#, Unity, repulsive force, similar clustering]
+tags: [AI, c#, Unity, repulsive force, similar clustering]
+keywords: AI, c#, Unity, repulsive force, similar clustering
+related_links:
+    - url: /unity/Similar_Clustering_log.html
 ---
 
 ## <ai_h2> 프로젝트 소개 </ai_h2>
@@ -70,6 +73,9 @@ tags: [C#, Unity, repulsive force, similar clustering]
 
 - <span><ai_h5>성과:</ai_h5>  2018년 1학기 게임 인공지능 기말 과제 </span>
 - <span><ai_h5>깃허브(코드):</ai_h5> [https://github.com/kj1241/Other-Etc/tree/main/AI/Clustering](https://github.com/kj1241/Other-Etc/tree/main/AI/Clustering</span>
+
+<br>
+<br>
 
 ## <ai_h2> 비고 및 여담 </ai_h2>
 

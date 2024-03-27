@@ -6,6 +6,7 @@ image: https://drive.google.com/thumbnail?id=1T4v9GImFIXMHbKGEHAMG4UheN6qnj9W0
 toc: true
 categories: [Game_Jam]
 tags: [C++, Unreal, 2D Running Game]
+keywords: C#, Unity, 2D Running Game
 excerpt: 고양이 히어로가 다양한 우주를 뛰어다니며 악당 보스를 처리하는 흥미진진한 게임입니다. 이 게임에서 플레이어는 고양이 히어로로 변신하여 우주의 다양한 행성을 탐험하고, 각 행성에서 펼쳐지는 도전적인 레벨을 클리어하며 보스를 물리치는 것이 목표입니다. 보스를 물리치어 우주의 평화를 지켜보세요!
 ---
 

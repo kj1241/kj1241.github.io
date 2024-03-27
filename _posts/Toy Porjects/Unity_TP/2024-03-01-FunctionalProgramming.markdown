@@ -5,7 +5,8 @@ date: 2024-03-01 09:00:00 +0900
 image: https://drive.google.com/thumbnail?id=1VenKqqn3F3RDKBAs1jfFZhNkHaQiUTHj
 toc: true
 categories: [Unity_TP] 
-tags: [C#, Unity, Shader]
+tags: [C#, Unity, 3D Platformer Game, 2D Running Game, 2D Puzzle Game]
+keywords: C#, Unity, 3D Platformer Game, 2D Running Game, 2D Puzzle Game
 ---
 
 ## <unity_h2> 프로젝트 소개 </unity_h2>
@@ -149,3 +150,11 @@ tags: [C#, Unity, Shader]
     1. 임의 구조를 이해하고 개발 및 디버깅을 수행하고 로직을 구현하여 게임 객체 간 상호작용을 구현하는 등의 작업을 수행했습니다.
     2. 게임 루프와 충돌 처리: 게임 루프를 반복하는 방법과 오브젝트 간의 충돌 처리에 대해 공부했습니다. 이를 통해 게임의 핵심 로직을 이해하고 구현할 수 있었습니다.
     3. 레벨 디자인: 텍스트 파일을 활용하여 레벨 디자인을 구현하는 방법을 학습했습니다. 이를 통해 다양한 레벨을 생성하고 게임의 난이도를 조절할 수 있었습니다.
+
+<br>
+
+---
+
+<br>
+
+###### <unity_h6>교제:</unity_h6> 반다이 남코 현역 디렉터가 알려주는 <유니티 게임 제작 입문>

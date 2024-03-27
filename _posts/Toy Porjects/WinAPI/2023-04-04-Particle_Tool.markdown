@@ -6,6 +6,7 @@ image: https://drive.google.com/thumbnail?id=1MhhJ_XKxtKB6dFu_GekihZ9NsH8UQAWD
 toc: true
 categories: [WinAPI]
 tags: [C++,WinAPI]
+keywords: C++, WinAPI
 ---
 
 ## <cpp_h2> 프로젝트 소개 </cpp_h2>

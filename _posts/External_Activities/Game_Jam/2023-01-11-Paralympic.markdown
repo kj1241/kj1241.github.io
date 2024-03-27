@@ -6,6 +6,7 @@ image: https://drive.google.com/thumbnail?id=1tUbWhgVKW6auwhMvHCFnmMxoFlus1x2p
 toc: true
 categories: [Game_Jam]
 tags: [C#,Unity,3D Simulation Game]
+keywords: C#, Unity, 3D Simulation Game
 excerpt: 평창 동계 패럴림픽 개최 기념, 선수들을 응원하는 취지의 마음으로 시작하였습니다. 게임 제작하다 실패해버린 희대의 망작. 그렇지만 게임 제작에 대해서 많은 것을 배웠습니다.
 ---
 

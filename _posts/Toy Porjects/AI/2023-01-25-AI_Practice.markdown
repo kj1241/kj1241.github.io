@@ -5,7 +5,8 @@ date: 2023-01-25 23:49:14 +0900
 image: https://drive.google.com/thumbnail?id=1eDnZVIPQnzZqPyPK7TcEWEHGM-JmZDM9
 toc: true
 categories: [AI]
-tags: [C++, FSM]
+tags: [AI, C++, FSM]
+keywords: AI, C++, FSM
 ---
 
 ## <ai_h2> 프로젝트 소개 </ai_h2>

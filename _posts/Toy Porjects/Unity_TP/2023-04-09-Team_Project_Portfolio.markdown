@@ -6,6 +6,7 @@ image: https://drive.google.com/thumbnail?id=16DtnUKQaymL0m38oQwHf2yjGV4f5zONB
 toc: true
 categories: [Unity_TP] 
 tags: [C#, Unity, Shader]
+keywords: C#, Unity, Shader
 ---
 
 ## <unity_h2> 프로젝트 소개 </unity_h2>

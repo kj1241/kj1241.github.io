@@ -6,6 +6,7 @@ image: https://drive.google.com/thumbnail?id=10KWTPUjOShEUyDOAsLC3MK7mgTKvnVvc
 toc: true
 categories: [CppCon]
 tags: [C++, Cppcon22, Virtual , Visit, std::variant, 다형성]
+keywords: C++, Cppcon, Cppcon22, Virtual , Visit, std::variant, 다형성
 addsence: true
 excerpt:  Enum Solution, OO Solution, 방문자 패턴, variant를 이용한 코드 작성 이렇게 4가지의 성능 비교표와 코드만 실험해서 작성하였습니다. 단순한 성능 측정을 넘어 코드의 전반적인 측면을 강조하는, 좀 더 고차원적인 주제로 위의 내용을 다뤄보고자 합니다.
 ---

@@ -6,6 +6,7 @@ image: https://drive.google.com/thumbnail?id=1Ab2WxHJ2Y7lgwkacQ8M7Pu4aJ-N0lRWM
 toc: true
 categories: [Web]
 tags: [Web Fornt, Web Developer Tools]
+keywords: Web Fornt, Web Developer Tools
 addsence: true
 excerpt: 우리가 사용하고 있는 크롬, 엣지와 같은 인터넷에는 필수적으로 개발을 위해서 개발자 도구(F12)를 제공합니다. 이 글은 개발자 도루를 사용하여 HTML + CSS를 사용한 티스토리 스킨을 제작한 경험에 대해 이야기하고 있습니다.
 ---

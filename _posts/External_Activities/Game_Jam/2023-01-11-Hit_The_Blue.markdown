@@ -6,6 +6,7 @@ image: https://drive.google.com/thumbnail?id=1NPZLVdXJobKnUvJoGN9P3_-6GO4VYNR9
 toc: true
 categories: [Game_Jam]
 tags: [C#, Unity, 3D Shooting Game]
+keywords: C#, Unity, 3D Shooting Game
 excerpt: 그해 여름, 바다에서 무슨 일이? 평화로운 바닷가에 바다 몬스터 떼 출몰! 항상 곁에 있는 귀여운 강아지를 보호하며 몬스터를 향해 쏘세요!
 ---
 

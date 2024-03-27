@@ -6,6 +6,7 @@ image: https://drive.google.com/thumbnail?id=1gryui0JdDUhYkZ_1ADllHXbXmypPypWz
 toc: true
 categories: [Unity_TP]
 tags: [C#, Unity, Shader, Bezier Curve]
+keywords: C#, Unity, Shader, Bezier Curve
 ---
 
 ## <unity_h2> 프로젝트 소개 </unity_h2>

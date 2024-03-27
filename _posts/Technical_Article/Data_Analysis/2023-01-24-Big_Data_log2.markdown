@@ -6,8 +6,13 @@ image: https://drive.google.com/thumbnail?id=1kytMvUH5-U7EQ768ePwUrEepLB0lWX7D
 toc: true
 categories: [Data_Analysis]
 tags: [R, Python, Virtual , Data Analysis, Big Data, Regression Analysis]
+keywords: R, Python, Virtual , Data Analysis, Big Data, Regression Analysis
 addsence: true
 excerpt:  R 과 Python을 이용하여 빅데이터 해커톤 프로젝트의 로그 입니다. 빅데이터 해커톤 동안의 주제를 선정한 방법과 자료수집의 경험과 과정을 공유하고 있습니다.
+related_links:
+    - url: /hackaton/Big_Data_Analysis.html
+    - url: /data_analysis/Big_Data_log1.html
+    - url: /data_analysis/Big_Data_log3.html
 ---
 
 

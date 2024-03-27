@@ -6,6 +6,7 @@ image: https://drive.google.com/thumbnail?id=18BKJlKIfPlwijT6HzZiFFMtm_Yy7NJme
 toc: true
 categories: [3Ds_Max]
 tags: [3Ds Max, Max Script]
+keywords: 3Ds_Max, MaxScript
 ---
 
 ## <art_h2>프로젝트 소개</art_h2>

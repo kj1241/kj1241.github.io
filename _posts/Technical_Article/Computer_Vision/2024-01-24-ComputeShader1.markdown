@@ -6,6 +6,7 @@ image: https://drive.google.com/uc?export=view&id=1NyOWh78_JxYBGA7qZNJ6zfsdgN92M
 toc: true
 categories: [Computer_Vision]
 tags: [Computer_Vision, Graphics, Compute Shader, 최적화, SIMD]
+keywords: Computer_Vision, Graphics, Compute Shader, 최적화, SIMD
 addsence: true
 excerpt:  
 ---

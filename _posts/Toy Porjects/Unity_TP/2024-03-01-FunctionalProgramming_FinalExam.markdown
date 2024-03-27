@@ -5,7 +5,8 @@ date: 2024-03-01 17:36:45 +0900
 image: https://drive.google.com/thumbnail?id=18Lc_zcIY3zjgbyejhMAH7RMGcXXuzdEF
 toc: true
 categories: [Unity_TP] 
-tags: [C#, Unity, Shader]
+tags: [C#, Unity, 3D Platformer Game, 3D Defense game]
+keywords: C#, Unity, 3D Platformer Game, 3D Defense game
 ---
 
 ## <unity_h2> 프로젝트 소개 </unity_h2>
@@ -21,7 +22,7 @@ Unity와 C#을 활용하여 제작된 이 게임은 PC(Windows)에서 플레이�
 - <span><unity_h5>과제:</unity_h5> 2018년 1학기 팀 기능성 프로그래밍 기말 과제</span>
 - <span><unity_h5>게임 장르:</unity_h5> 3D 플랫폼 게임 → 3D Defense Game</span>
 - <span><unity_h5>기간:</unity_h5> 제작 완료</span>
-    - ver.1: 2018.05.10~2016.05.20(제작)
+    - ver.1: 2018.05.10~2018.05.20(제작)
 - <span><unity_h5>개발인원:</unity_h5> Developer(1명)</span>
 - <span><unity_h5>플랫폼:</unity_h5> PC (Window)</span>
 
@@ -213,3 +214,4 @@ public class SmoothFollow : MonoBehaviour
     - 책에 c를 누르면 모든 몬스터가 죽도록 만들어 졌으나 패널티가 없어서 패널티를 만들어야 합니다.
     - 많은 수의 에셋과 무료모델링들을 사용 했기 때문에 에셋을 정리할 필요가 있습니다.
     - 카메라 로직을 생각해서 구현하였지만 실제로 적용해 봤을때 생각보다 딱딱한 느낌이 있어서 로직 수정이 필요합니다.
+    - 당시에는 디렉토리 위치, 클래스 네임등 완성을 위해서 주먹구구식으로 완성을 했기 때문에 좀 더 리팩토링해서 코드를 공개할 예정입니다.

@@ -6,8 +6,13 @@ image: https://drive.google.com/thumbnail?id=161gUg11aSRhUYWbw-QZtPiKdd30S9_yI
 toc: true
 categories: [Web]
 tags: [Jkeyll, Ruby, HTML, SCSS, Java Script, Git Hub Blog ]
+keywords: Jkeyll, Ruby, HTML, SCSS, Java Script, Git Hub Blog 
 addsence: true
 excerpt: 단순히 Git Hub Blog 제작을 위해서 만들어진 테마를 Fork를 이용하여 제작하는 것이 아닌 Jekyll + Ruby + HTML + SCSS + Java Script를 사용하여 제작하는 방법을 설명하고 있습니다. 해당 내용은 처음부터 Jekyll를 사용하여 기본 블로그를 만들기 위해서 필요 프로그램을 설치하는 방법에 대해서 설명하고 있습니다.
+related_links:
+    - url: /web/Git_Hub_Blog2.html
+    - url: /web/Git_Hub_Blog3.html
+    - url: /web/Git_Hub_Blog4.html
 ---
 
 깃허브 블로그를 만드는 방법과 팁에 관해서 이야기하고 있습니다. 저의 블로그는 템플릿부터 제작했기 떄문에 제 맘대로 만들었습니다. 따라서 이 글은 이론을 설명하기 보다 깃허브 블로그를 만드시는 분들에게 줄 수 있는 팁에 대해서 설명하고 있습니다. 예전에는 누구랑 논쟁하기 싫어서 그냥 모른다고 적어놨지만, 궁금하신 점이 있으면 물어보셔도 됩니다.  

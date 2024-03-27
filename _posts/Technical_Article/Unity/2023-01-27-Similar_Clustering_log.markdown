@@ -6,8 +6,11 @@ image: https://drive.google.com/thumbnail?id=1s0G2EkeJhKOyJ8Gl-tlwd20R9g-m3dhP
 toc: true
 categories: [Unity]
 tags: [C#, Unity, Similar Clustering]
+keywords: C#, Unity, Similar Clustering
 addsence: true
 excerpt: Unity 및 C#을 활용한 리듬게임 '하나비 프로젝트'의 개발 로그입니다. 용어, 구성 방식, 프로세스를 소개하며, 게임잼 동안의 경험과 과정을 공유하고 있습니다.
+related_links:
+    - url: /ai/Similar_Clusters.html
 ---
 
 ## <ai_h2>1. 주제 선택의 이유</ai_h2>

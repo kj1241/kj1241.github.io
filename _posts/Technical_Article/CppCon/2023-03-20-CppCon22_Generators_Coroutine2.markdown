@@ -6,8 +6,12 @@ image: https://drive.google.com/thumbnail?id=1HcFGcqU_Waeg9wvbldXaMpMxsMCKTNAV
 toc: true
 categories: [CppCon]
 tags: [C++, Cppcon22, Generators Coroutine , Coroutine, C++20]
+keywords: C++, Cppcon, Cppcon22, Generators Coroutine , Coroutine, C++20
 addsence: true
 excerpt: cppcon22에서 발표한 내용을 바탕으로 c++20에서 코루틴을 사용하기 전에 코루틴 Generators 코드 구현과 분석에 관해서 이야기 하고 있습니다.
+related_links:
+    - url: /cppcon/CppCon22_Generators_Coroutine1.html
+    - url: /cppcon/CppCon22_Generators_Coroutine3.html
 ---
 
 비동기 프로그래밍 방법 혹은 코루틴 개념을 알고 싶은 분들은 앞의 파트 1 내용만 보시면 됩니다. 이 파트의 내용은 정말로 코드를 작성하는 데 있어서 크게 영향을 미치는 부분이 아닙니다.  

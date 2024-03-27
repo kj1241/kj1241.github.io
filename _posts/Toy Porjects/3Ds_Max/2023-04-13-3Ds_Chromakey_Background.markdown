@@ -5,7 +5,8 @@ date: 2023-04-13 19:43:49 +0900
 image: https://drive.google.com/thumbnail?id=1qYq_JYF1Gj6RzIvyzZiM_HKf8aMqBNqC
 toc: true
 categories: [3Ds_Max]
-tags: [3Ds Max]
+tags: [3Ds_Max, background, Chromakey]
+keywords: 3Ds_Max, background, Chromakey
 ---
 
 ## <art_h2>프로젝트 소개</art_h2>

@@ -5,7 +5,8 @@ date: 2023-06-30 13:25:17 +0900
 image: https://drive.google.com/thumbnail?id=1YxlqLDBZ9zL4x-1OfFxUqXIyCUrI2v-x
 toc: true
 categories: [CppCon]
-tags: [C++, Cppcon22, Aliasing Risks]
+tags: [C++, Cppcon22, atomic smart pointer]
+keywords: C++, Cppcon, Cppcon22, atomic smart pointer
 addsence: true
 excerpt: c++20에서 사용 할수 있는 원자 스마트 포인터에 대해서 정리해 보겠습니다.
 ---

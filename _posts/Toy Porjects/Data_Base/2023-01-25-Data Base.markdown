@@ -6,6 +6,7 @@ image: https://drive.google.com/thumbnail?id=1nMCwVzyNqjVxCDaOnkmUiaczerv_3jf-
 toc: true
 categories: [Data_Base]
 tags: [My Sql, Data Base]
+keywords: My Sql, Data Base
 ---
 
 

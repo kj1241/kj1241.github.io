@@ -6,8 +6,12 @@ image: https://drive.google.com/thumbnail?id=1xpIionpIJ6XluqUGyr28HuJeKkhc-2zm
 toc: true
 categories: [CppCon]
 tags: [C++, Cppcon22, Generators Coroutine , Coroutine, C++20]
+keywords: C++, Cppcon, Cppcon22, Generators Coroutine , Coroutine, C++20
 addsence: true
 excerpt: c++20에서 코루틴 Generators 코드에서 사용할 수 있는 인터페이스를 구현하는 코드를 작성하고 있습니다.
+related_links:
+    - url: /cppcon/CppCon22_Generators_Coroutine1.html
+    - url: /cppcon/CppCon22_Generators_Coroutine2.html
 ---
 
 ## <cpp_h2>1. 주제: Courtine Generators(Part 2)</cpp_h2>

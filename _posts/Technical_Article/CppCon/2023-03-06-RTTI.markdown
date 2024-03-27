@@ -6,6 +6,7 @@ image: https://drive.google.com/thumbnail?id=1xDrHc_ERSPzKyBOKnl20YAugGzjy7sTP
 toc: true
 categories: [CppCon]
 tags: [C++, RTTI, Reverse Engineering ]
+keywords: C++, RTTI, Reverse Engineering 
 addsence: true
 excerpt: RTTI(런타임 형식 정보)는 프로그램 실행 중에 객체의 형식을 확인하는 메커니즘으로서, 객체의 형식을 동적으로 결정할 수 있도록 해주며, 컴파일러와 플랫폼에 따라 구현이 달라질 수 있습니다. 이에 대해서 조금 더 깊히 탐구하고 있습니다.
 ---

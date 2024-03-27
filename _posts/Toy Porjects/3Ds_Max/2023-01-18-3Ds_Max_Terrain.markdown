@@ -5,7 +5,8 @@ date: 2023-01-18 21:44:07 +0900
 image: https://drive.google.com/thumbnail?id=1zA3G0Ow3XG6k5lY6E5XD8beNcn7_EzPI
 toc: true
 categories: [3Ds_Max]
-tags: [3Ds Max]
+tags: [3Ds_Max, heightmap, terrain, object]
+keywords: 3Ds_Max, heightmap, terrain, object
 ---
 
 ## <art_h2>프로젝트 소개</art_h2>

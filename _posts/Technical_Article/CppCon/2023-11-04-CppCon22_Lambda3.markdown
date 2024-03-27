@@ -6,8 +6,12 @@ image: https://drive.google.com/thumbnail?id=1RHOxgMEnBNCFNuCm7RfrHzFGCnm2ygF7
 toc: true
 categories: [CppCon]
 tags: [C++, Cppcon22, lambda, C++20]
+keywords: C++, Cppcon, Cppcon22, lambda, C++20
 addsence: true
 excerpt: c++11에서 최신 c++까지 확장된 람다의 용법에 대해서 정리하겠습니다.
+related_links:
+    - url: /cppcon/CppCon22_Lambda1.html
+    - url: /cppcon/CppCon22_Lambda2.html
 ---
 
 

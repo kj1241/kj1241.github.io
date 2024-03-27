@@ -5,7 +5,8 @@ date: 2023-01-18 21:58:00 +0900
 image: https://drive.google.com/thumbnail?id=11dTOwOQaBJmV5-aG2VqQFQO7c8ekZ7Ho
 toc: true
 categories: [3Ds_Max]
-tags: [3Ds Max]
+tags: [3Ds_Max, animation, modelling, bone skeleton, key frame]
+keywords: 3Ds_Max, animation, modelling, bone skeleton, key frame
 ---
 
 ## <art_h2>프로젝트 소개</art_h2>

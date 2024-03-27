@@ -6,8 +6,12 @@ image: https://drive.google.com/thumbnail?id=1fy2gMRHWXN7qvrVQhHcOt6jGKOKX5SJu
 toc: true
 categories: [CppCon]
 tags: [C++, Cppcon22, lambda, C++20]
+keywords: C++, Cppcon, Cppcon22, lambda, C++20
 addsence: true
 excerpt: c++ 람다에 관해서 기본적으로 알아야 할 내용을 정리하고 있습니다.
+related_links:
+    - url: /cppcon/CppCon22_Lambda2.html
+    - url: /cppcon/CppCon22_Lambda3.html
 ---
  
 이번 분석 내용은 C++ 람다라는 주제로 돌아왔습니다. 개인적으로 영상 내용이 하드 해서 볼 때는 10분이면 충분했었지만, 글로 정리하려니깐 생각보다 오래 걸렸습니다. 개인적으로 영상 내용이 하드 해서 볼 때는 10분이면 충분했었지만, 글로 정리하려니깐 생각보다 오래 걸렸습니다. 영상을 보시길 추천드립니다.

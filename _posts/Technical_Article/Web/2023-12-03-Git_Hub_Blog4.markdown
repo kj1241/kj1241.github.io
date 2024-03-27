@@ -6,8 +6,13 @@ image: https://drive.google.com/thumbnail?id=1sn76DNyZFbKc99Q0v-cfWPT7Biao9Hex
 toc: true
 categories: [Web]
 tags: [Jkeyll, Ruby, HTML, SCSS, Java Script, Git Hub Blog ]
+keywords: Jkeyll, Ruby, HTML, SCSS, Java Script, Git Hub Blog 
 addsence: true
 excerpt: 단순히 Git Hub Blog 제작을 위해서 만들어진 테마를 Fork를 이용하여 제작하는 것이 아닌 Jekyll + Ruby + HTML + SCSS + Java Script를 사용하여 제작하는 방법을 설명하고 있습니다. 해당 과정은 블로그를 제작함으로 인해 발생했던 트러블 슈팅과 마크다운의 팁에 대해서 이야기하고 있습니다. 
+related_links:
+    - url: /web/Git_Hub_Blog1.html
+    - url: /web/Git_Hub_Blog2.html
+    - url: /web/Git_Hub_Blog3.html
 ---
 
 앞서서는 구글 검색엔진에서 블로그 품질을 올리기 위해서 변경하거나 필요했던 코드들을 이야기했습니다. 그럼 이제 블로그를 작성하면서 발생했던 트러블 슈팅과 마크다운 팁에 관해서 적어보겠습니다.  

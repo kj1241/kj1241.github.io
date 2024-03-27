@@ -6,6 +6,7 @@ image: https://drive.google.com/thumbnail?id=1tdtL0ira98kAtleTr07iy-NLtYEgE5Og
 toc: true
 categories: [Server_TP]
 tags: [C++, Echo Server, Echo Client, Chatting Progrm]
+keywords: C++, Echo Server, Echo Client, Chatting Progrm, server
 ---
 
 ## <server_h2>프로젝트 소개</server_h2>

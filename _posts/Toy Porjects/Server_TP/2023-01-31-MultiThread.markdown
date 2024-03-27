@@ -6,6 +6,7 @@ image: https://drive.google.com/thumbnail?id=1mmDHfeR2VsfovZXrl-Bs0gg8iwNHrb_j
 toc: true
 categories: [Server_TP]
 tags: [C++, Multi Thread]
+keywords: C++, Multi Thread, server
 ---
 
 ## <server_h2>프로젝트 소개</server_h2>

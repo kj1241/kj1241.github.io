@@ -5,7 +5,8 @@ date: 2023-01-26 01:32:05 +0900
 image: https://drive.google.com/thumbnail?id=1tGRCmhxoBYPmmuIXATg2HBhQTaBewwhm
 toc: true
 categories: [AI]
-tags: [PDDL]
+tags: [AI, PDDL]
+keywords: AI, PDDL
 ---
 
 ## <ai_h2> 프로젝트 소개 </ai_h2>

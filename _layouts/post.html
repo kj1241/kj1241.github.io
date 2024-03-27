@@ -57,14 +57,36 @@ layout: default
         <br>
     </div>
 
+    {%- if page.related_links -%}
+    <div id="title_related_links">연관 개시물:</div>
+    <div id="related_links">
+      {%- for link in page.related_links -%}
+        {%- for post in site.posts -%}
+          {%- if post.url == link.url -%}
+          <div class="related_item">
+            <a href="{{ post.url | relative_url }}">
+              <img src="{{ post.image | escape }}" alt="Example Image">
+              <div class="related_title"> {{ post.title }} </div>
+            </a>
+          </div>  
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endfor -%}
+    </div>
+    {%- endif -%}
+    
     {%- if page.tags -%}
     <div id="tag">
       <div class="tag_title"> tag:&nbsp </div>
       {%- for tag in page.tags -%}
        <div class="tag_item">{{ tag }}, </div>  
-      {% endfor %}
+      {%- endfor -%}
     </div>
-    {% endif %}
+    {%- endif -%}
+
+
+
+    
 
     {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}

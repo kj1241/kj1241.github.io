@@ -6,6 +6,7 @@ image: https://drive.google.com/thumbnail?id=10EZdRZOPRR7M0tCOfMJcTU1Ln1C8et7w
 toc: true
 categories: [Server_TP]
 tags: [C++, IOCP Server, IOCP Client, Synchronization]
+keywords: C++, IOCP Server, IOCP Client, Synchronization, server
 ---
 
 ## <server_h2>프로젝트 소개</server_h2>

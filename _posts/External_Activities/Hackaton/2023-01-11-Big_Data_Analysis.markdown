@@ -6,8 +6,12 @@ image: https://drive.google.com/thumbnail?id=1viEVlVHD6dw5qygYu3NfDCjFGwCEw99P
 toc: true
 categories: [Hackaton]
 tags: [Python, R, Big Data Analysis]
+keywords: Python, R, Big Data Analysis
 excerpt: 고령운전자 취약 지역을 예측하기 위해 빅데이터를 활용한 프로젝트를 소개합니다. 운전 데이터와 지리 정보를 통합하여 고령 운전자 사고 위험이 높은 지역을 정확히 예측하고, 안전 대책 마련에 기여합니다. 이를 통해 도로 안전성 향상 및 사고 예방에 기여하는 혁신적인 데이터 기반 솔루션입니다.
-related_documents: /data_analysis/Big_Data_log1.html
+related_links:
+    - url: /data_analysis/Big_Data_log1.html
+    - url: /data_analysis/Big_Data_log2.html
+    - url: /data_analysis/Big_Data_log3.html
 ---
 
 <!-- <h1><yellow1_h1>고령운전자 취약 지역 예측(빅데이터) </yellow1_h1></h1>

@@ -14,10 +14,8 @@
   <!--설명-->
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | escape }}">
 
-  <!--테그-->
-  {% if page.tags %}
-    <meta name="keywords" content="{{ page.tags | join: ', ' }}">
-  {% endif %}
+  <!--테그 키워드로 교체-->
+  <meta name="keywords" content="{{ page.keywords | join: ', ' }}">
 
   <!--파비콘-->
   <link rel="icon" href="{{ '/assets/img/profile_img256px.ico' | relative_url }}">

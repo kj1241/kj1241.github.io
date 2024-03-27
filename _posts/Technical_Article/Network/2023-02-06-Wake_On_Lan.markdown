@@ -5,7 +5,8 @@ date: 2023-02-06 15:45:29 +0900
 image: https://drive.google.com/thumbnail?id=1T-j0j8smk65Xicsiu-s_wQvs0GTTEy5Y
 toc: true
 categories: [Network]
-tags: [WakeOnLan,  ARP table]
+tags: [WakeOnLan, ARP table]
+keywords: WakeOnLan, ARP table
 addsence: true
 ---
 

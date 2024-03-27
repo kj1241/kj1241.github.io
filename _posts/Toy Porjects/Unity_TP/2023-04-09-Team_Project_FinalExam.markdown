@@ -5,7 +5,8 @@ date: 2023-04-09 17:36:45 +0900
 image: https://drive.google.com/thumbnail?id=1u11qy4bDtE6Weceoq52p_byLXVQ_sGAG
 toc: true
 categories: [Unity_TP] 
-tags: [C#, Unity, Shader]
+tags: [C#, Unity, Shader, 2D Platformer Game]
+keywords: C#, Unity, Shader, 2D Platformer Game
 ---
 
 ## <unity_h2> 프로젝트 소개 </unity_h2>

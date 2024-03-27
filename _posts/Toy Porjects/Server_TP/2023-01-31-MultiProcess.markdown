@@ -6,6 +6,7 @@ image: https://drive.google.com/thumbnail?id=1oFZn2Hs3d_fpAVByLg_0llVipQWIl04s
 toc: true
 categories: [Server_TP]
 tags: [C++, Multi Process Communication]
+keywords: C++, Multi Process Communication, server
 ---
 
 ## <server_h2>프로젝트 소개</server_h2>

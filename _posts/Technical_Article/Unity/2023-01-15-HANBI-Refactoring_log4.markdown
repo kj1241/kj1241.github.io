@@ -6,8 +6,14 @@ image: https://drive.google.com/thumbnail?id=18wxwskWh3qPBLEq9KZYqXFzDlb3wwJyl
 toc: true
 categories: [Unity]
 tags: [C#, Unity, Rhythm Game]
+keywords: C#, Unity, Rhythm Game, game log
 addsence: true
 excerpt: Unity 및 C#로 개발한 리듬게임 '하나비 프로젝트'의 로그입니다. 점수 판정 로직 설계와 당시 리듬게임 제작하기 위해서 고민했던 부분을 공유하고 있습니다.
+related_links:
+    - url: /game_jam/HANABI.html
+    - url: /unity/HANBI-Refactoring_log1.html
+    - url: /unity/HANBI-Refactoring_log2.html
+    - url: /unity/HANBI-Refactoring_log3.html
 ---
 
 ## <unity_h2>1. 요약 </unity_h2>

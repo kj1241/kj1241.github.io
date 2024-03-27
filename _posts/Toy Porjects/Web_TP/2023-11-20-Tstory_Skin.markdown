@@ -6,6 +6,7 @@ image: https://drive.google.com/thumbnail?id=1Zchpt1qWBzMGafRWsjdVLTy4vlbBte_2
 toc: true
 categories: [Web_TP]
 tags: [HTML, CSS, Java script, Tstory Skin]
+keywords: HTML, CSS, Java script, Tstory Skin
 ---
 
 ##  <web_h2> 프로젝트 소개 </web_h2>

@@ -6,6 +6,7 @@ image: https://drive.google.com/thumbnail?id=1cyQviGk_PGB1mVgAmi1eAs97T-iyF3cx
 toc: true
 categories: [CppCon]
 tags: [C++, Cppcon22, Aliasing Risks]
+keywords: C++, Cppcon, Cppcon22, Aliasing Risks
 addsence: true
 excerpt: 그래픽 왜곡형상의 디질털 샘플링 엘리어싱이 아닌 동일한 메모리를 참조하는 현상에 관해서 설명하고 있습니다.
 ---

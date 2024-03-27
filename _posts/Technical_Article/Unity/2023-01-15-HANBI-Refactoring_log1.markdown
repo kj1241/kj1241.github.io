@@ -6,8 +6,14 @@ image: https://drive.google.com/thumbnail?id=1GHoI82k23TliVVdvYGe_0VAXj0OvNeYn
 toc: true
 categories: [Unity]
 tags: [C#, Unity, Rhythm Game]
+keywords: C#, Unity, Rhythm Game, game log
 addsence: true
 excerpt: Unity 및 C#을 활용한 리듬게임 '하나비 프로젝트'의 개발 로그입니다. 용어, 구성 방식, 프로세스를 소개하며, 게임잼 동안의 경험과 과정을 공유하고 있습니다.
+related_links:
+    - url: /game_jam/HANABI.html
+    - url: /unity/HANBI-Refactoring_log2.html
+    - url: /unity/HANBI-Refactoring_log3.html
+    - url: /unity/HANBI-Refactoring_log4.html
 ---
 
 ## <unity_h2>1. 들어가기 전 용어 정리</unity_h2>
