@@ -7,6 +7,8 @@ toc: true
 categories: [Server_TP]
 tags: [C++, Multi Thread]
 keywords: C++, Multi Thread, server
+related_links:
+    - url: /server_tp/MultiThread.html
 ---
 
 ## <server_h2>프로젝트 소개</server_h2>

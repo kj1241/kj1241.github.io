@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "고급웹서버프로그래밍 - 중간 과제(IOCP TCP/IP 채팅 서버 ver.2)"
+title: "고급웹서버프로그래밍 - 기말 과제(IOCP TCP/IP 채팅 서버 ver.2)"
 date: 2023-02-04 16:14:05 +0900
 image: https://drive.google.com/thumbnail?id=1vAi9hX6LY-VBoD8p8S2bMKLSmtXt1i8w
 toc: true
 categories: [Server_TP]
 tags: [C++, IOCP Server, IOCP Client, Synchronization]
 keywords: C++, IOCP Server, IOCP Client, Synchronization, server
+related_links:
+    - url: /server_tp/Server_Client_IOCP_Chess.html
 ---
 
 ## <server_h2>프로젝트 소개</server_h2>

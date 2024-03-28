@@ -7,6 +7,9 @@ toc: true
 categories: [Server_TP]
 tags: [C++, Multi Process Communication]
 keywords: C++, Multi Process Communication, server
+related_links:
+    - url: /server_tp/MultiProcess.html
+
 ---
 
 ## <server_h2>프로젝트 소개</server_h2>

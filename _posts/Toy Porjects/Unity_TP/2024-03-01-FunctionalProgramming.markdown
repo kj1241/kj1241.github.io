@@ -9,6 +9,7 @@ tags: [C#, Unity, 3D Platformer Game, 2D Running Game, 2D Puzzle Game]
 keywords: C#, Unity, 3D Platformer Game, 2D Running Game, 2D Puzzle Game
 related_links:
     - url: /unity_tp/FunctionalProgramming_Middle1Exam.html
+    - url: /unity_tp/FunctionalProgramming_Middle2Exam.html
     - url: /unity_tp/FunctionalProgramming_FinalExam.html
 ---
 
@@ -137,10 +138,10 @@ related_links:
 
 <br>
 
-### <unity_h3> Plattach_levelDesign ver.1</unity_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
+### <unity_h3> PlaplaPlanet_levelDesign ver.1</unity_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
 
-![Plattach_levelDesign]({{ site.google_drive }}1VenKqqn3F3RDKBAs1jfFZhNkHaQiUTHj{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-*<unity_h6>Plattach levelDesign</unity_h6>*
+![PlaplaPlanet_levelDesign]({{ site.google_drive }}1VenKqqn3F3RDKBAs1jfFZhNkHaQiUTHj{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<unity_h6>PlaplaPlanet levelDesign</unity_h6>*
 
 3D 플랫폼 게임에서 PlasticRunner에서 레벨디자인을 위해서 텍스트파일로 만들고 활용하는 방법에 대해서 공부하였습니다. 채력과 시간을 넣어서 우주선을 전부 수리하면 끝나는 게임입니다.
 

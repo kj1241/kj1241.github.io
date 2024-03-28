@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "유니티 기능성 프로그래밍 - 기말 과제(Plattach)"
+title: "유니티 기능성 프로그래밍 - 기말 과제(PlaplaPlanet)"
 date: 2024-03-01 17:36:45 +0900
 image: https://drive.google.com/thumbnail?id=18Lc_zcIY3zjgbyejhMAH7RMGcXXuzdEF
 toc: true
@@ -10,6 +10,7 @@ keywords: C#, Unity, 3D Platformer Game, 3D Defense game
 related_links:
     - url: /unity_tp/FunctionalProgramming.html
     - url: /unity_tp/FunctionalProgramming_Middle1Exam.html
+    - url: /unity_tp/FunctionalProgramming_Middle2Exam.html
 ---
 
 ## <unity_h2> 프로젝트 소개 </unity_h2>
@@ -21,7 +22,7 @@ Unity와 C#을 활용하여 제작된 이 게임은 PC(Windows)에서 플레이�
 
 ## <unity_h2> 프로젝트 개요 </unity_h2>
 
-- <span><unity_h5>프로젝트명:</unity_h5> Plattach ver.1</span>
+- <span><unity_h5>프로젝트명:</unity_h5> PlaplaPlanet ver.1</span>
 - <span><unity_h5>과제:</unity_h5> 2018년 1학기 팀 기능성 프로그래밍 기말 과제</span>
 - <span><unity_h5>게임 장르:</unity_h5> 3D 플랫폼 게임 → 3D Defense Game</span>
 - <span><unity_h5>기간:</unity_h5> 제작 완료</span>
@@ -44,10 +45,10 @@ Unity와 C#을 활용하여 제작된 이 게임은 PC(Windows)에서 플레이�
 
 ## <unity_h2> 프로젝트 특징 및 기능 구현 </unity_h2>
 
-![Plattach_levelDesign]({{ site.google_drive }}1VenKqqn3F3RDKBAs1jfFZhNkHaQiUTHj{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-*<unity_h6>Plattach levelDesign</unity_h6>*
+![PlaplaPlanet_levelDesign]({{ site.google_drive }}1VenKqqn3F3RDKBAs1jfFZhNkHaQiUTHj{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<unity_h6>PlaplaPlanet levelDesign</unity_h6>*
 
-시험 내용: 기존의 Plattach 프로젝트에서 특징 3가지 기능을 추가하여 프로젝트를 완성해야 합니다.
+시험 내용: 기존의 PlaplaPlanet 프로젝트에서 특징 3가지 기능을 추가하여 프로젝트를 완성해야 합니다.
 기본규칙:
     - 게임의 자원 그 효과
         아이템(자원) / 캐릭터 체력 / 우주선 수리 / 움직일 때 체력의 감소
@@ -160,7 +161,7 @@ public class SmoothFollow : MonoBehaviour
 <br>
 <br>
 
-## <unity_h2> 수정된 규칙의 기획안 </unity_h2>
+## <unity_h2> 수정된 규칙의 기획안 ver.1 </unity_h2>
 
 - 오브젝트: 
     - 로켓 → 마을 중앙의 책

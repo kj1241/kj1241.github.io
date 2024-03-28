@@ -5,9 +5,11 @@ date: 2024-03-01 11:36:45 +0900
 image: https://drive.google.com/thumbnail?id=1GV6oHSbCIfWhWORAsLgvB5k2pn8esqGA
 toc: true
 categories: [Unity_TP] 
-tags: [C#, Unity, Shader]
+tags: [C#, Unity, 2D Running Game]
+keywords: C#, Unity, 2D Running Game
 related_links:
     - url: /unity_tp/FunctionalProgramming.html
+    - url: /unity_tp/FunctionalProgramming_Middle2Exam.html
     - url: /unity_tp/FunctionalProgramming_FinalExam.html
 ---
 
@@ -27,8 +29,8 @@ related_links:
 - <span><unity_h5>과제:</unity_h5> 2018년 1학기 팀 기능성 프로그래밍 중간1 과제</span>
 - <span><unity_h5>게임 장르:</unity_h5> 2D 러닝게임 </span>
 - <span><unity_h5>기간:</unity_h5> 제작 완료</span>
-    - ver.1: 2018.03.30~2018.04.10(제작)
-    - ver.2: 2018.04.10~2018.04.20(제작)
+    - ver.1: 2018.03.30~2018.04.7(제작)
+    - ver.2: 2018.04.07~2018.04.14(제작)
 - <span><unity_h5>개발인원:</unity_h5> Developer(1명)</span>
 - <span><unity_h5>플랫폼:</unity_h5> PC (Window)</span>
 
@@ -50,7 +52,7 @@ related_links:
 ![PlasticRunner_levelDesign]({{ site.google_drive }}1yknCtY6K5dxyxQEX79IO9yRm8HcyUx3o{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<unity_h6>Plastic Runner levelDesign</unity_h6>*
 
-시험 내용: 기존의 Plattach 프로젝트에서 특징 3가지 기능을 추가하여 프로젝트를 완성해야 합니다.
+시험 내용: 기존의 Plastic Runner 프로젝트에서 특징 3가지 기능을 추가하여 프로젝트를 완성해야 합니다.
 
 <br>
 
@@ -77,7 +79,7 @@ related_links:
 <br>
 <br>
 
-## <unity_h2> 수정된 규칙의 기획안 </unity_h2>
+## <unity_h2> 수정된 규칙의 기획안 ver.1 </unity_h2>
 
 - 플레이어:
     - 이중 점프 구현
