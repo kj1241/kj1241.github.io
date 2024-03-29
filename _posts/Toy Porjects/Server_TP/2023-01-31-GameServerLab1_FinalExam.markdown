@@ -7,6 +7,8 @@ toc: true
 categories: [Server_TP]
 tags: [C++, Echo Server, Echo Client, Chatting Progrm]
 keywords: C++, Echo Server, Echo Client, Chatting Progrm, server
+related_links:
+    - url: /server_tp/GameServerLab1.html
 ---
 
 ## <server_h2>프로젝트 소개</server_h2>
