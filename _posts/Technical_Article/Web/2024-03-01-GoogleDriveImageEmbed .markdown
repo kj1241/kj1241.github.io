@@ -9,6 +9,8 @@ tags: [Goole Drive, Image Hosting, embed, Git Hub Blog]
 keywords: Goole Drive, Image Hosting, embed, Git Hub Blog
 addsence: true
 excerpt: 최근에 업데이트된 구글 드라이브 이미지 호스팅 방법에 대해서 설명하고 있습니다. 이미지를 업로드하고 공유 링크를 얻어와 깃허브 블로그에 손쉽게 적용할 수 있습니다. 이는 이미지 관리를 간편하게하며 저장소 용량을 절약할 수 있습니다.
+related_links:
+    - url: /web_tp/Git_Hub_Blog_Skin.html
 ---
   
 오랜만에 블로그를 들어왔는데 이게 왠걸 ... 구글 드라이브에서 호스팅한 블로그의 이미지 및 리소스들이 전부 깨저있었습니다.

@@ -24,10 +24,10 @@ related_links:
 
 - <span><ai_h5>프로젝트명:</ai_h5>Similar_Clusters 구현</span>
 - <span><ai_h5>과제:</ai_h5> 2018년 1학기 게임인공지능 기말 과제</span>
-- <span><ai_h5> 장르:</ai_h5> Toy Project</span>
+- <span><ai_h5>장르:</ai_h5> Toy Project</span>
 - <span><ai_h5>기간:</ai_h5> 제작 완료</span>
-    - ver.1: 2018.06.09~ 2018.06.10
-    - ver.2: 2018.06.10~ 2018.06.14
+    - ver.1: 2018.06.09~2018.06.10
+    - ver.2: 2018.06.10~2018.06.14
 - <span><ai_h5>개발인원:</ai_h5> Developer(1명)</span>
 - <span><ai_h5>플랫폼:</ai_h5> PC (Window)</span>
 
@@ -74,7 +74,7 @@ related_links:
 <iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/Spt5XdKhHHE" title="유사 Clustering 군집 AI 제작" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 - <span><ai_h5>성과:</ai_h5>  2018년 1학기 게임 인공지능 기말 과제 </span>
-- <span><ai_h5>깃허브(코드):</ai_h5> [https://github.com/kj1241/Other-Etc/tree/main/AI/Clustering](https://github.com/kj1241/Other-Etc/tree/main/AI/Clustering</span>
+- <span><ai_h5>깃허브(코드):</ai_h5> [https://github.com/kj1241/Other-Etc/tree/main/AI/Clustering](https://github.com/kj1241/Other-Etc/tree/main/AI/Clustering)</span>
 
 <br>
 <br>

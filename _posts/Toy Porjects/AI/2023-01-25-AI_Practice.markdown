@@ -23,7 +23,7 @@ C++에서 구현한 FSM(유한 상태 기계) 디자인 패턴을 활용하여 N
 
 - <span><ai_h5>프로젝트명:</ai_h5> FSM 구현</span>
 - <span><ai_h5>과제:</ai_h5> 2018년 1학기 게임인공지능 중간 과제</span>
-- <span><ai_h5> 장르:</ai_h5> Toy Project</span>
+- <span><ai_h5>장르:</ai_h5> Toy Project</span>
 - <span><ai_h5>기간:</ai_h5> 제작 완료</span>
     - ver.1: 2018.04.08~2018.04.15
 - <span><ai_h5>개발인원:</ai_h5> Developer(1명)</span>

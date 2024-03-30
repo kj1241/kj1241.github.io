@@ -24,7 +24,7 @@ PDDL을 활용한 빨간 망토 동방박사의 선물 토끼와 거북이 스�
 
 - <span><ai_h5>프로젝트명:</ai_h5>PDDL 스토리텔링 구현</span>
 - <span><ai_h5>과제:</ai_h5> 2018년 1학기 게임인공지능 일반 과제</span>
-- <span><ai_h5> 장르:</ai_h5> Toy Project</span>
+- <span><ai_h5>장르:</ai_h5> Toy Project</span>
 - <span><ai_h5>기간:</ai_h5> 제작 완료</span>
     - ver.1: 2018.05.01~2018.05.14
 - <span><ai_h5>개발인원:</ai_h5> Developer(1명)</span>

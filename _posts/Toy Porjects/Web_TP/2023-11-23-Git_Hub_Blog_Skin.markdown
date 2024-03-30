@@ -12,6 +12,7 @@ related_links:
     - url: /web/Git_Hub_Blog2.html
     - url: /web/Git_Hub_Blog3.html
     - url: /web/Git_Hub_Blog4.html
+    - url: /web/GoogleDriveImageEmbed.html
 ---
 
 ##  <web_h2> 프로젝트 소개 </web_h2>
