@@ -5,8 +5,8 @@ date: 2023-04-05 11:50:19 +0900
 image: https://drive.google.com/thumbnail?id=1OLxPpY_r1T-Gkbka9_MpTRFmFArJ86i5
 toc: true
 categories: [WinAPI]
-tags: [C++,WinAPI]
-keywords: C++,WinAPI
+tags: [C++,WinAPI,line chart]
+keywords: C++,WinAPI,line chart
 related_links:
     - url: /cppcon/CppCon22_Variant.html
 ---
