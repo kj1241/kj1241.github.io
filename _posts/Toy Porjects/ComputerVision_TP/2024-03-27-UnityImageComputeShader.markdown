@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "유니티 이미지 합성(컴퓨트 쉐이더) ver.2"
-date: 2024-03-26 09:00:00 +0900
+date: 2024-03-27 09:00:00 +0900
 image: https://drive.google.com/thumbnail?id=1m_mUTuNW8zP-wdiPuxuelmzq3IJU-wQJ
 toc: true
 categories: [ComputerVision_TP] 
@@ -13,7 +13,7 @@ related_links:
 
 ## <unity_h2> 프로젝트 소개 </unity_h2>
 
-기술 면접 보기 위해서 3일동안 논문보고 공부해서 만들었던 컴퓨트 쉐이더입니다. 당시에는 단순히 이미지 합성으로만 만들었지만 좀 더 기술을 확장하여 카메라에 컴퓨트 쉐이더를 걸었습니다.  
+기술 면접 보기 위해서 3일동안 논문보고 공부해서 만들었던 컴퓨트 쉐이더입니다. 당시에는 단순히 이미지 합성으로만 만들었지만 좀 더 기술을 확장하여 카메라에 컴퓨트 쉐이더를 걸어서 툴을 구현하였습니다.
 
 
 <br>
@@ -22,7 +22,7 @@ related_links:
 ## <unity_h2> 프로젝트 개요 </unity_h2>
 
 - <span><unity_h5>프로젝트명:</unity_h5> 유니티 이미지 합성(컴퓨트 쉐이더)</span>
-- <span><unity_h5>게임 장르:</unity_h5> toy Proejct</span>
+- <span><unity_h5>게임 장르:</unity_h5> toy Proejct(tool)</span>
 - <span><unity_h5>기간:</unity_h5> 제작 완료</span>
     - ver.1: 2024.01.08~2024.01.09(합성곱 필터링) 
     - ver.2: 2024.04.02(카메라 포스트 이펙트)
@@ -143,7 +143,7 @@ related_links:
 - 여담:
     - GPU 최적화를 할 수 있을거 같은데 하려면 유니티 자체를 커스터마이징해야되서 넘어가겠습니다. (엤날 직장에서처럼 현업에서 일하면 커스텀 마이징 생각할 거 같긴합니다.)
     - 특정 회사의 면접전 과제 였는데 원래는 DirectX12로 구현 하려다가 당시에는 DirectX12 자체 포트폴리오가 비공개라 그냥 유니티를 사용해서 만들었습니다.
-
+    
 <br>
 
 ---
