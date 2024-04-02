@@ -59,12 +59,12 @@ related_links:
 
 ### <unity_h3> WaterTestEffect ver.2</unity_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
 
-#### <unity_h4> 렌더 텍스쳐로 보는 파동효과 </unity_h3>
+#### <unity_h4> 렌더 텍스쳐로 보는 파동효과 </unity_h4>
 
 ![WaterTestEffectRenader]({{ site.google_drive }}1u9VjHYLLstj1Icsjn5JztRYqZZPhEFFY{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<unity_h6> 렌더 텍스쳐로 보는 파동효과 </unity_h6>*
 
-#### <unity_h4> 실제 머터리얼 적용 </unity_h3>
+#### <unity_h4> 실제 머터리얼 적용 </unity_h4>
 
 ![WaterTestEffectreal]({{ site.google_drive }}13pk-gNvwDVF4a5dtmQdUQyfzOwh3YdEq{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<unity_h6> 실제 머터리얼 적용 </unity_h6>*
@@ -76,12 +76,12 @@ related_links:
 
 ### <unity_h3> FlowEffectTest ver.3</unity_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
 
-#### <unity_h4> 구에서 퍼지는 포인트 클라우드 애니메이션 </unity_h3>
+#### <unity_h4> 구에서 퍼지는 포인트 클라우드 애니메이션 </unity_h4>
 
 ![FlowEffectTestDiffusion]({{ site.google_drive }}1FxfJJ1qfwKIjR4EFXRXoDdZUnrcQ7n6l{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<unity_h6> 구에서 퍼지는 포인트 클라우드 애니메이션 </unity_h6>*
 
-#### <unity_h4> 차원문 효과 포인트 칼라우드 애니메이션 </unity_h3>
+#### <unity_h4> 차원문 효과 포인트 칼라우드 애니메이션 </unity_h4>
 
 ![FlowEffectTestPortal]({{ site.google_drive }}14Ch_KX-KKsYfOT_buAkKcyELiUWarl6A{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<unity_h6> 차원문 효과 포인트 칼라우드 애니메이션</unity_h6>*

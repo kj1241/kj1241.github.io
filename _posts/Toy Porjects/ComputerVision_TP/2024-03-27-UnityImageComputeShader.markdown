@@ -51,7 +51,7 @@ related_links:
 
 아래의 참조 논문을 보고 이미지 필터를 제작하였습니다. 정확하지 않을 수 있습니다.
 
-#### <unity_h4> 원본 </unity_h3>
+#### <unity_h4> 원본 </unity_h4>
 
 ![원본]({{ site.google_drive }}1NWvlpys3XJ6B-Immkrz-CeYGyXZE-Axr{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<unity_h6> 원본 </unity_h6>*
@@ -59,7 +59,7 @@ related_links:
 인터넷에서 검색한 무료이미지의 원본입니다.
 
 
-#### <unity_h4> Convolution Kernels </unity_h3>
+#### <unity_h4> Convolution Kernels </unity_h4>
 
 ![Sharpness Filter]({{ site.google_drive }}1swF18-byhR89iLkbYohYCDCpXgXLIkTS{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<unity_h6> Sharpness Filter compute shader </unity_h6>*
@@ -88,7 +88,7 @@ related_links:
 
 <br>
 
-#### <unity_h4> Separable Kernels </unity_h3>
+#### <unity_h4> Separable Kernels </unity_h4>
 
 ![Box Filter (Averaging)]({{ site.google_drive }}1EsIkin_MdJgZNZZy-960Az9_j3ZXMLuF{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<unity_h6>Box Filter (Averaging) compute shader </unity_h6>*
@@ -105,16 +105,16 @@ related_links:
 
 ### <unity_h3> 카메라 포스트 이펙트 제작 ver.1</unity_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
 
-#### <unity_h4> Camera compute shader </unity_h3>
+#### <unity_h4> Camera compute shader </unity_h4>
 
 ![Cmaera Filter]({{ site.google_drive }}1JN4bs6n7MAKwwhpyorm0I2IzxD_HtKW2{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<unity_h6>Camera compute shader</unity_h6>*
 
 - 이미지에 합성을 걸었다면 이런 이론을 확장시켜서 게임 영상이나 카메라에도 컴퓨트 쉐이더를 걸 수 있을 것입니다. 해당 영상은 유니티 카메라의 화면을 그레이스케일 필터를 거는 방법입니다.
 
-#### <unity_h4> 유니티 인스펙터를 사용해서 슬라이더 추가하기 </unity_h3>
+#### <unity_h4> 유니티 인스펙터를 사용해서 슬라이더 추가하기 </unity_h4>
 
-![Cmaera tool]({{ site.google_drive }}18iGBlaPEdwqd9cKNVv8pxtm1HELQxPfD{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+![Cmaera tool]({{ site.google_drive }}1DBLC1pd2Qdf5sbLjfD1oPvzNXyLhbp5d{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<unity_h6>Camera compute shader tool</unity_h6>*
 
 - 외곽선 검사를 위해서 컴퓨트 쉐이더로는 그레이스케일과 소벨 필터를 합성시켰습니다.
