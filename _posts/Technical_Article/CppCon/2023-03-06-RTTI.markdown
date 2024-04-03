@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "C++, RTTI에 대해서"
-date: 2023-03-06 11:11:56 +0900
+date: 2023-03-06 11:11:56 +09:00
 image: https://drive.google.com/thumbnail?id=1xDrHc_ERSPzKyBOKnl20YAugGzjy7sTP
 toc: true
 categories: [CppCon]

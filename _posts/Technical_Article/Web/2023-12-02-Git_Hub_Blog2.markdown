@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Jekyll를 이용해서 github blog 만들기 2 - 언어별 용도"
-date: 2023-12-02 17:45:04 +0900
+date: 2023-12-02 17:45:04 +09:00
 image: https://drive.google.com/thumbnail?id=1cgQdmRjbkLnICVlV7E0FZx8Q7_icG0VC
 toc: true
 categories: [Web]

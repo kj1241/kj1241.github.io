@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "개발자 도구를 이용하여 분석하기(w. 티스토리 스킨)"
-date: 2023-01-14 17:59:05 +0900
+date: 2023-01-14 17:59:05 +09:00
 image: https://drive.google.com/thumbnail?id=1Ab2WxHJ2Y7lgwkacQ8M7Pu4aJ-N0lRWM
 toc: true
 categories: [Web]

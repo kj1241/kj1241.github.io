@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "C++, 방문자 패턴 의존성 깨기"
-date: 2023-03-13 13:08:33 +0900
+date: 2023-03-13 13:08:33 +09:00
 image: https://drive.google.com/thumbnail?id=10KWTPUjOShEUyDOAsLC3MK7mgTKvnVvc
 toc: true
 categories: [CppCon]

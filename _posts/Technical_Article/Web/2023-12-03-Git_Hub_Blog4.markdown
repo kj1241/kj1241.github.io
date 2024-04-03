@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Jekyll를 이용해서 github blog 만들기 4 - 트러블 슈팅과 마크다운 팁"
-date: 2023-12-03 21:05:04 +0900
+date: 2023-12-03 21:05:04 +09:00
 image: https://drive.google.com/thumbnail?id=1sn76DNyZFbKc99Q0v-cfWPT7Biao9Hex
 toc: true
 categories: [Web]
