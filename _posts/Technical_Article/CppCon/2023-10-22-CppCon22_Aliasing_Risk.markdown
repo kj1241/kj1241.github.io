@@ -6,11 +6,11 @@ image: https://drive.google.com/thumbnail?id=1cyQviGk_PGB1mVgAmi1eAs97T-iyF3cx
 toc: true
 categories: [CppCon]
 keywords: C++, Cppcon, Cppcon22, Aliasing Risks
+addsence: true
 lastmod: 2024-04-03 21:37:00 +09:00
 sitemap:
   changefreq : daily
   priority : 1.0
-addsence: true
 excerpt: 이 글은 C++에서의 앨리어싱 문제와 그에 대한 대응 방법을 다뤘습니다. 프로그램에서 메모리 위치나 변수가 같은 메모리를 참조하는 앨리어싱 현상에 주의를 기울이며, 이를 피하기 위한 전략을 제시합니다. 앨리어싱 때문인 오류를 최소화하려는 방법과 주의 사항을 강조합니다.
 ---
 
