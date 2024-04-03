@@ -11,7 +11,7 @@ lastmod: 2024-04-03 15:53:00 +09:00
 sitemap:
   changefreq : daily
   priority : 1.0
-excerpt: 단순히 Git Hub Blog 제작을 위해서 만들어진 테마를 Fork를 이용하여 제작하는 것이 아닌 Jekyll + Ruby + HTML + SCSS + Java Script를 사용하여 제작하는 방법을 설명하고 있습니다. 해당 내용은 처음부터 Jekyll을 사용하여 기본 블로그를 만드는 데 필요 프로그램을 설치하는 방법에 대해서 설명하고 있습니다.
+excerpt: 이 글은 깃 허브 블로그를 만드는 방법과 팁에 대해 설명하고 있습니다. 깃 허브에서 새로운 레포지토리를 생성하고, Jekyll을 이용하여 로컬에서 블로그를 설정하는 방법을 안내하고 있습니다. 또한, Minima 테마를 제거하고 필요한 플러그인을 설치하는 과정도 포함되어 있습니다.
 related_links:
     - url: /web_tp/Git_Hub_Blog_Skin.html
     - url: /web/Git_Hub_Blog2.html

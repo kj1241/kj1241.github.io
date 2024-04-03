@@ -11,7 +11,7 @@ lastmod: 2024-04-03 16:24:00 +09:00
 sitemap:
   changefreq : daily
   priority : 1.0
-excerpt: 단순히 Git Hub Blog 제작을 위해서 만들어진 테마를 Fork를 이용하여 제작하는 것이 아닌 Jekyll + Ruby + HTML + SCSS + Java Script를 사용하여 제작하는 방법을 설명하고 있습니다. 세부 설정하는 방법과 언어에 따른 블로그 용도에 대해서 고민하고 있습니다.
+excerpt: 이 글은 Jekyll을 사용하여 블로그를 제작하는 과정을 경험을 바탕으로 설명합니다. Jekyll, Ruby, HTML, SCSS, JavaScript 등 다양한 기술을 활용하여 블로그를 만드는 방법을 다루며, 코드 작성하는 방법과 각 언어 및 도구의 활용법에 대한 경험을 공유합니다.
 related_links:
     - url: /web_tp/Git_Hub_Blog_Skin.html
     - url: /web/Git_Hub_Blog1.html

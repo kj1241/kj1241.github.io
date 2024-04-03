@@ -11,7 +11,7 @@ lastmod: 2024-04-03 16:48:00 +09:00
 sitemap:
   changefreq : daily
   priority : 1.0
-excerpt: 단순히 Git Hub Blog 제작을 위해서 만들어진 테마를 Fork를 이용하여 제작하는 것이 아닌 Jekyll + Ruby + HTML + SCSS + Java Script를 사용하여 제작하는 방법을 설명하고 있습니다. 해당 과정은 블로그의 품질을 올리기 위해 Page Speed Insights와 Seo-tag 최적화하는 방법에 대해 설명하고 있습니다.
+excerpt: 이 글은 성능 최적화와 SEO 태그 최적화 과정을 설명한 글입니다. PageSpeed Insights를 활용하여 성능 문제를 파악하고 수정하는 방법, 그리고 SEO 태그 최적화를 위한 작업들을 다루고 있습니다. 이를 통해 블로그의 성능을 개선하고 검색 엔진 노출을 항상시킬 수 있습니다.
 related_links:
     - url: /web_tp/Git_Hub_Blog_Skin.html
     - url: /web/Git_Hub_Blog1.html
