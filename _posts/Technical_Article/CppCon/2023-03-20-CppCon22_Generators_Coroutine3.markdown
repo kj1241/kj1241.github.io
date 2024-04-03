@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "C++) Generators 코루틴 3 - Generator 인터페이스 구현 및 성능 분석"
+title: "C++, Generators 코루틴 3 - Generator 인터페이스 구현 및 성능 분석"
 date: 2023-03-27 10:58:06 +0900
 image: https://drive.google.com/thumbnail?id=1xpIionpIJ6XluqUGyr28HuJeKkhc-2zm
 toc: true
