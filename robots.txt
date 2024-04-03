@@ -8,6 +8,6 @@ User-agent: Bingbot
 Disallow:
 
 User-agent: *
-Disallow: / 
+Disallow: /
 
 Sitemap: https://kj1241.github.io/Sitemap.xml
