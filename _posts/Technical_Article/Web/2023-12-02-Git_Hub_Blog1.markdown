@@ -39,7 +39,7 @@ related_links:
 ![레파지토리 생성]({{ site.google_drive }}1D8aol0Wml3xSNjkqvnTYXY5g3Wq_7VQO{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<web_h6>깃 허브 레포지토리 생성</web_h6>*  
   
-위의 그림처럼 이미 깃 허브가 아이디가 있으시거나, 새로 아이디를 만드신 후에 새로운 레포지토리(repository)를 생성해줍니다. 레포지토리 이름은 다르게 지으셔도 되지만, 처음부터 다르게 지으면 설정하기 힘들 수 있으니, &lt;web_h5&gt;&lt;＂깃 허브 id＂&gt;.github.io&lt;/web_h5>로 지정합니다. 규칙대로 이름을 안지어도 상관없지만, 설정이 조금 귀찮아질 수 있으므로 웬만하면 규칙대로 이름을 짓고 레파지토리를 생성해 주세요. 
+위의 그림처럼 이미 깃 허브가 아이디가 있으시거나, 새로 아이디를 만드신 후에 새로운 레포지토리(repository)를 생성해줍니다. 레포지토리 이름은 다르게 지으셔도 되지만, 처음부터 다르게 지으면 설정하기 힘들 수 있으니, <web_h5>＂깃 허브 id＂.github.io</web_h5>로 지정합니다. 규칙대로 이름을 안지어도 상관없지만, 설정이 조금 귀찮아질 수 있으므로 웬만하면 규칙대로 이름을 짓고 레파지토리를 생성해 주세요. 
   
 <br>
 <br>
@@ -292,8 +292,7 @@ https://drive.google.com/file/d/1IvM2V-6s7W7KHjsXSMQRNxvMjfdVzedE/view?usp=shari
 ![Gemfile seo-tag 추가]({{ site.google_drive }}1IvM2V-6s7W7KHjsXSMQRNxvMjfdVzedE{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<web_h6>웹 페이지 접속 결과</web_h6>*
 
-이제 깃 허브에 커밋하면 여러분만의 블로그를 제작할 수 있습니다. 저는 visual code를 사용해서 블로그를 작성하고 있습니다. 그럼 이제 블로그를 만들 준비가 끝났습니다.  
-다음 편에는 좀 더 블로그 세부적인 내용에 관해서 이야기 하겠습니다. 
+이제 깃 허브에 커밋하면 여러분만의 블로그를 제작할 수 있습니다. 저는 visual code를 사용해서 블로그를 작성하고 있습니다. 그럼 이제 블로그를 만들 준비가 끝났습니다. 다음 편에는 좀 더 블로그 세부적인 내용에 관해서 이야기 하겠습니다. 
 
 <br>
 
