@@ -78,7 +78,7 @@ layout: default
     {%- if page.tags -%}
     <div id="tag">
       <div class="tag_title"> tag:&nbsp </div>
-      {%- for tag in page.tags -%}
+      {%- for tag in page.keywords -%}
        <div class="tag_item">{{ tag }}, </div>  
       {%- endfor -%}
     </div>
