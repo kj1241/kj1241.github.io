@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "C++, 람다 관용구... 1 - 람다에 관한 이해"
-date: 2023-11-02 13:13:24 +0900
+date: 2023-11-02 13:13:24 +09:00
 image: https://drive.google.com/thumbnail?id=1fy2gMRHWXN7qvrVQhHcOt6jGKOKX5SJu
 toc: true
 categories: [CppCon]
