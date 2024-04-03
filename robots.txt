@@ -1,13 +1,34 @@
 User-agent: Googlebot
-Disallow:
-
-User-agent: Googlebot-image
-Disallow:
+Disallow: /Game_Jam/
+Disallow: /Hackaton/
+Disallow: /DirectX/
+Disallow: /WinAPI/
+Disallow: /Unity_TP/
+Disallow: /Unreal_TP/
+Disallow: /Server_TP/
+Disallow: /AI/
+Disallow: /Data_Base/
+Disallow: /3Ds_Max/
+Disallow: /Houdini/
+Disallow: /Tstory_Skin/
+Disallow: /Git_Hub_Blog/
 
 User-agent: Bingbot
-Disallow:
+Disallow: /Game_Jam/
+Disallow: /Hackaton/
+Disallow: /DirectX/
+Disallow: /WinAPI/
+Disallow: /Unity_TP/
+Disallow: /Unreal_TP/
+Disallow: /Server_TP/
+Disallow: /AI/
+Disallow: /Data_Base/
+Disallow: /3Ds_Max/
+Disallow: /Houdini/
+Disallow: /Tstory_Skin/
+Disallow: /Git_Hub_Blog/
 
 User-agent: *
-Disallow: /
+Disallow: / 
 
 Sitemap: https://kj1241.github.io/Sitemap.xml
