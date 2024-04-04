@@ -35,8 +35,6 @@ related_links:
 
 - <span><unity_h5>개발 도구:</unity_h5> Unity 2019.4.22f1 / visual stuido </span>
 - <span><unity_h5>개발 언어:</unity_h5> C# / mono </span>
-- <span><unity_h5>그래픽 디자인:</unity_h5> Adobe Photoshop </span>
-- <span><unity_h5>음향 효과:</unity_h5> Adobe Audiition </span>
 
 <br>
 <br>
@@ -141,7 +139,7 @@ related_links:
 ## <unity_h2> 비고 및 여담 </unity_h2>
 
 - 여담:
-    - GPU 최적화를 할 수 있을거 같은데 하려면 유니티 자체를 커스터마이징해야되서 넘어가겠습니다. (엤날 직장에서처럼 현업에서 일하면 커스텀 마이징 생각할 거 같긴합니다.)
+    - GPU 최적화를 진행하려면, 유니티 자체를 커스터마이징을 해야되서 넘어가겠습니다.
     - 특정 회사의 면접전 과제 였는데 원래는 DirectX12로 구현 하려다가 당시에는 DirectX12 자체 포트폴리오가 비공개라 그냥 유니티를 사용해서 만들었습니다.
     
 <br>
