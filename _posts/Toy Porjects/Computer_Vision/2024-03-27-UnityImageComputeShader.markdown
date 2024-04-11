@@ -4,11 +4,12 @@ title: "유니티 이미지 합성(컴퓨트 쉐이더) ver.2"
 date: 2024-03-27 09:00:00 +0900
 image: https://drive.google.com/thumbnail?id=1m_mUTuNW8zP-wdiPuxuelmzq3IJU-wQJ
 toc: true
-categories: [ComputerVision_TP] 
+categories: [Computer_Vision] 
 tags: [C#, Unity, ComputeShader]
 keywords: C#, Unity, ComputeShader
 related_links:
-
+    - url: /computer_vision/ImageComposition.html
+    - url: /graphics_development/ImageComposition1.html
 ---
 
 ## <unity_h2> 프로젝트 소개 </unity_h2>

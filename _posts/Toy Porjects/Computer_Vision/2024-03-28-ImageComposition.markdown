@@ -4,9 +4,11 @@ title: "이미지 합성( OpenCV & SIMD ) ver.2"
 date: 2024-03-28 09:00:00 +0900
 image: https://drive.google.com/thumbnail?id=1KWjlUo13C9geJY5EnLKU12Qru22lqBiO
 toc: true
-categories: [ComputerVision_TP] 
+categories: [Computer_Vision] 
 keywords: C++, python, SIMD, OpenCV, Image Composition, 이미지 합성
 related_links:
+    - url: /computer_vision/UnityImageComputeShader.html
+    - url: /graphics_development/ImageComposition1.html
 
 ---
 

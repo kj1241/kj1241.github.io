@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "WakeOnLan 에러 해결하기"
-date: 2023-02-06 15:45:29 +0900
+date: 2023-02-06 15:45:29 +09:00
 image: https://drive.google.com/thumbnail?id=1T-j0j8smk65Xicsiu-s_wQvs0GTTEy5Y
 toc: true
 categories: [Network]

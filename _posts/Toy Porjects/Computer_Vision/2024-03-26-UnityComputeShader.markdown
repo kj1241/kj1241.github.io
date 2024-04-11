@@ -4,7 +4,7 @@ title: "유니티 컴퓨트 쉐이더 작성하기 ver.3"
 date: 2024-03-26 09:00:00 +0900
 image: https://drive.google.com/thumbnail?id=1TzEkCfSQEXmbL_HQC3RuE7CwnkDKFcvU
 toc: true
-categories: [ComputerVision_TP] 
+categories: [Computer_Vision] 
 tags: [C#, Unity, ComputeShader]
 keywords: C#, Unity, ComputeShader
 related_links:

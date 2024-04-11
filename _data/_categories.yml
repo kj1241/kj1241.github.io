@@ -30,8 +30,10 @@ categories_list:
         url: /Houdini/
       - title: Web_TP
         url: /Web_TP/
-      - title: ComputerVision_TP
-        url: /ComputerVision_TP/
+      - title: Computer_Vision
+        url: /Computer_Vision/
+      - title: Game_Planning
+        url: /Game_Planning/
       
   - title: Technical Article & Treble Shooting
     categories_sub_list:
@@ -49,8 +51,6 @@ categories_list:
         url: /Web/
       - title: Data_Analysis
         url: /Data_Analysis/
-      - title: Computer_Vision
-        url: /Computer_Vision/
       - title: Programming_Interview
         url: /Programming_Interview/
 
