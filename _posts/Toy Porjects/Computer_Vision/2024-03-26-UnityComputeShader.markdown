@@ -81,10 +81,10 @@ related_links:
 ![FlowEffectTestDiffusion]({{ site.google_drive }}1FxfJJ1qfwKIjR4EFXRXoDdZUnrcQ7n6l{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<unity_h6> 구에서 퍼지는 포인트 클라우드 애니메이션 </unity_h6>*
 
-#### <unity_h4> 차원문 효과 포인트 칼라우드 애니메이션 </unity_h4>
+#### <unity_h4> 차원문 효과 포인트 클라우드 애니메이션 </unity_h4>
 
 ![FlowEffectTestPortal]({{ site.google_drive }}14Ch_KX-KKsYfOT_buAkKcyELiUWarl6A{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-*<unity_h6> 차원문 효과 포인트 칼라우드 애니메이션</unity_h6>*
+*<unity_h6> 차원문 효과 포인트 클라우드 애니메이션</unity_h6>*
 
 앞선 두개의 구현으로 컴퓨트 쉐이더에 익숙해저셔. 머리속에 있는 로직을 작성해봣습니다.
 

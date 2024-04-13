@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "이미지 합성곱 필터링 - 합성곱 필터링 기초"
+title: "이미지 합성곱 필터링 1 - 합성곱 필터링 기초"
 date: 2024-04-11 09:00:00 +09:00
 image: https://drive.google.com/thumbnail?id=156pV5r2Pys9r-c7mXceHP78Xr_0Aa-nw
 toc: true
@@ -15,9 +15,10 @@ excerpt:  이미지 합성 곱 필터링을 이해하고 Python 및 Open CV를 �
 related_links:
     - url: /computer_vision/ImageComposition.html
     - url: /computer_vision/UnityImageComputeShader.html
+    - url: /graphics_development/ImageComposition2.html
 ---
 
-이 아티클을 작성할 때, 왜 이렇게 작성하기 힘든지 고민을 많이 해서 작성하기까지 오랜 시간이 걸렸습니다. 그 이유는 면접에서처럼 저의 생각을 남에게 보여주기 부끄럽기 때문입니다. 토이 프로젝트의 과정은 '수식을 보고 코드를 작성 → 최적화 방안 고안 → 응용 방법 고안' 이런 과정으로 목적 없이 즐기면서 코드를 작성하였습니다. 하지만 아티클은 남에게 알려주기 위해서 목적들을 담아야 하기 때문에 많이 부끄러운 상태입니다. 이렇게 코드를 작성하는 게 이해 안될 수도 있습니다. 이 아티클은 이미지 합성곱 필터 기초와 최적화 및 응용 두가지 챕터로 구성되어 있습니다.
+이 아티클을 작성할 때, 왜 이렇게 작성하기 힘든지 고민을 많이 해서 작성하기까지 오랜 시간이 걸렸습니다. 그 이유는 면접에서처럼 저의 생각을 남에게 보여주기 부끄럽기 때문입니다. 토이 프로젝트의 과정은 '수식을 보고 코드를 작성 → 최적화 방안 고안 → 응용 방법 고안' 이런 과정으로 목적 없이 즐기면서 코드를 작성하였습니다. 하지만 아티클은 남에게 알려주기 위해서 목적들을 담아야 하기 때문에 많이 부끄러운 상태입니다. 이렇게 코드를 작성하는 게 이해 안될 수도 있습니다. 이 아티클은 이미지 합성곱 필터 기초와 CPU 최적화, GPU 최적화 및 응용 세가지 챕터로 구성되어 있습니다.
 
 <br>
 <br>
@@ -244,7 +245,7 @@ cv2.destroyAllWindows()
 ```
 
 ![Box Filter 결과물]({{ site.google_drive }}1B_ULhpaxF0tI0eKLT9iKj254nE_MrGSR{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-*<data_h6>이미지 Box Filter 적용 결과</data_h6>*
+*<com_h6>이미지 Box Filter 적용 결과</com_h6>*
 
 <br>
 
@@ -272,12 +273,12 @@ cv2.destroyAllWindows()
 ```
 
 ![Embossing Filter]({{ site.google_drive }}156pV5r2Pys9r-c7mXceHP78Xr_0Aa-nw{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-*<data_h6>이미지 Embossing Filter 적용 결과</data_h6>*
+*<com_h6>이미지 Embossing Filter 적용 결과</com_h6>*
 
 
 <br>
 
-필터 변수에 수학적으로 도출된 다양한 값을 적용하면 더 다양한 결과를 얻을 수 있습니다. 다음 기사에서는 이미지 필터링을 위한 최적화 방법에 대해 다룰 예정입니다. 읽어주셔서 감사합니다.
+필터 변수에 수학적으로 도출된 다양한 값을 적용하면 더 다양한 결과를 얻을 수 있습니다. 다음 챕터에서는 이미지 필터링을 위한 CPU 최적화 방법에 대해 다룰 예정입니다. 읽어주셔서 감사합니다.
 
 
 <br>

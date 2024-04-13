@@ -9,6 +9,7 @@ keywords: C++, python, SIMD, OpenCV, Image Composition, 이미지 합성
 related_links:
     - url: /computer_vision/UnityImageComputeShader.html
     - url: /graphics_development/ImageComposition1.html
+    - url: /graphics_development/ImageComposition2.html
 
 ---
 
@@ -74,7 +75,6 @@ related_links:
 <br>
 
 ## <unity_h2> 결과(성과) 및 데모 </unity_h2>
-
 
 - <span><unity_h5>성과:</unity_h5> 토이프로젝트 제작 </span>
 - <span><unity_h5>깃허브(코드):</unity_h5> 생각 중입니다. </span>
