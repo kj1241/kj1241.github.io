@@ -16,6 +16,7 @@ related_links:
     - url: /computer_vision/ImageComposition.html
     - url: /computer_vision/UnityImageComputeShader.html
     - url: /graphics_development/ImageComposition2.html
+    - url: /graphics_development/ImageComposition3.html
 ---
 
 이 아티클을 작성할 때, 왜 이렇게 작성하기 힘든지 고민을 많이 해서 작성하기까지 오랜 시간이 걸렸습니다. 그 이유는 면접에서처럼 저의 생각을 남에게 보여주기 부끄럽기 때문입니다. 토이 프로젝트의 과정은 '수식을 보고 코드를 작성 → 최적화 방안 고안 → 응용 방법 고안' 이런 과정으로 목적 없이 즐기면서 코드를 작성하였습니다. 하지만 아티클은 남에게 알려주기 위해서 목적들을 담아야 하기 때문에 많이 부끄러운 상태입니다. 이렇게 코드를 작성하는 게 이해 안될 수도 있습니다. 이 아티클은 이미지 합성곱 필터 기초와 CPU 최적화, GPU 최적화 및 응용 세가지 챕터로 구성되어 있습니다.
@@ -32,6 +33,8 @@ related_links:
 ### <com_h3> 1) 이미지란 </com_h3>
 
 일반적인 의미의 이미지는 시각적 정보를 포함하는 미디어의 한 형태로, 주로 시각적 감각을 통해 인식되는 정보를 담고 있습니다. 그러나 우리에게 보이는 이런 이미지는 그래픽스의 산물입니다. 0과 1로 이루어져 있는 컴퓨터에서 이미지는 헤더를 포함하고 있는 단순한 바이너리 파일 입니다. 이해가 안 되시는 분들의 위해서 다음과 같은 코드를 준비하였습니다. 주어진 코드는 BMP 파일을 읽고 저장하는 함수들로 구성된 C++ 코드입니다. 아래에 주어진 설명에는 코드의 구조와 주요 기능에 대한 간략한 설명이 포함되어 있습니다.
+
+#### **<com_h4>C++:</com_h4>**
 
 ```cpp
 
@@ -68,7 +71,9 @@ struct BMPInfoHeader {
 위의 구조체는 BMP 파일을 생성할 때 정의하는 헤더 구조입니다. 다음, <red1_error>#pragma pack(push, 1) </red1_error> 정렬을 제거함으로써 메모리의 내부 단편화를 줄이는 데 사용합니다.
 
 바이너리 파일의 헤더(Header)는 해당 파일의 구조와 내용을 설명하는 정보를 포함한 부분입니다. 헤더는 파일의 시작 부분에 있으며, 파일이 어떤 종류의 데이터를 포함하고 있는지, 그리고 파일의 다양한 속성에 대한 정보를 제공합니다. 바이너리 파일의 헤더는 해당 파일을 해석하고 올바르게 처리하는 데 필요한 정보를 포함하고 있습니다. jpg, png 등 다른 이미지 포맷도 역시 각각의 헤더가 존재하며 그 안에 필요한 정보들이 저장되어있습니다.
-    
+
+#### **<com_h4>C++:</com_h4>**
+
 ```cpp
 
 std::vector<std::vector<std::vector<unsigned char>>> readBMP(const std::string& filePath) {
@@ -221,7 +226,7 @@ $$
 
 <br>
 
-#### <com_h4> Box Filter (Averaging) </com_h4>
+#### <com_h4> python:Box Filter (Averaging) </com_h4>
 
 ```python
 
@@ -249,7 +254,7 @@ cv2.destroyAllWindows()
 
 <br>
 
-#### <com_h4> Embossing Filter </com_h4>
+#### <com_h4> python:Embossing Filter </com_h4>
 
 ```python
 

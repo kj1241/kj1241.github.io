@@ -16,6 +16,7 @@ related_links:
     - url: /computer_vision/ImageComposition.html
     - url: /computer_vision/UnityImageComputeShader.html
     - url: /graphics_development/ImageComposition1.html
+    - url: /graphics_development/ImageComposition3.html
 ---
 
 이 챕터에서는 더는 Python과 Open CV를 사용해서 이미지 합성 곱 필터링을 만들지 않을 것입니다. Python은 분명 테스트 코드 작성하기 좋은 언어임이 틀림없습니다. 하지만 Python의 라이브러리 내부를 찾아보려면 라이브러리 도큐먼트를 정독해도 안에 내용이 없을 때가 있습니다. 예전 경험에서 어떠한 이미지를 공유메모리로 올리려고 하는데, Python 라이브러리 자체에 크기 제한이 있어서 고생해본 경험이 있습니다. 따라서 언어를 다양하게 사용해서 최적화를 시도해보겠습니다.
@@ -32,6 +33,8 @@ related_links:
 ### <com_h3> 1) C++을 사용해서 이미지 변환하기  </com_h3>
 
 앞선 챕터에서 설명한 이미지의 개념을 사용해서 이미지 변환을 만들 것입니다. 
+
+#### **<com_h4>C++:</com_h4>**
 
 ```cpp
 
@@ -205,6 +208,8 @@ int main() {
 ### <com_h3> 2) SIMD를 사용하여 이미지 합성곱 필터링 병렬처리로 최적화 하기  </com_h3>
 
 위의 코드를 SIMD를 사용하여 최적화해봅시다. SIMD는 ＂Single Instruction, Multiple Data＂의 약자로, 한 번의 명령어를 통해 다수 데이터를 동시에 처리하는 컴퓨터 아키텍처를 나타냅니다. CPU 레지스터를 사용하여 병렬처리를 하기 때문에 프로그램의 실행 속도를 항상 시키는데 도움이 됩니다.
+
+#### **<com_h4>C++:</com_h4>**
 
 ```cpp
 

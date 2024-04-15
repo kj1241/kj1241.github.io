@@ -11,6 +11,7 @@ related_links:
     - url: /computer_vision/ImageComposition.html
     - url: /graphics_development/ImageComposition1.html
     - url: /graphics_development/ImageComposition2.html
+    - url: /graphics_development/ImageComposition3.html
 ---
 
 ## <unity_h2> 프로젝트 소개 </unity_h2>

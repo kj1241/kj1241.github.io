@@ -6,7 +6,7 @@ image: https://drive.google.com/thumbnail?id=1aQQOxVbmCAj0e0wJ5j6UdKijAWzBWXL6
 toc: true
 categories: [Web]
 keywords: Goole Drive, Image Hosting, embed, Git Hub Blog , 구글 드라이브 이미지 호스트, 임베드
-lastmod: 2024-04-03 11:05:00 +09:00
+lastmod: 2024-04-13 12:58:00 +09:00
 sitemap:
   changefreq : daily
   priority : 1.0
