@@ -1,11 +1,29 @@
 User-agent: Googlebot
-Disallow:
+Allow: / 
 
 User-agent: Googlebot-image
-Disallow:
+Allow: / 
+
+User-agent: AdsBot-Google
+Allow: / 
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: Googlebot-Video
+Allow: /
+
+User-agent: Feedfetcher-Google
+Allow: /
+
+User-agent: Googlebot-AdsBot
+Allow: /
 
 User-agent: Bingbot
-Disallow:
+Allow: / 
+
+User-agent: AdIdxBot
+Allow: / 
 
 User-agent: *
 Disallow: /
