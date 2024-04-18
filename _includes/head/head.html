@@ -1,21 +1,74 @@
 <head>
   <meta charset="utf-8"> <!--문자의 인코딩-->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--최신 랜더링 엔진 사용-->
-  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--모바일기기 올바른 뷰포트사용 반응형디자인 지원-->
-  
+  <!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">: 사용하지 않는 이유 마크업 언어를 사용 못함. -->
+   
   <!--브라우저 캐쉬사용-->
   <!--  <meta http-equiv="cache-control" content="public, max-age=3600">-->
 
+  {%- if page.date -%}
+    {%- assign og_type = "article" -%}
+  {%- else -%}
+    {%- assign og_type = "website" -%}
+  {%- endif -%}
+
   <!--타이틀-->
   <title>
-    {{ page.title | default: site.title | escape }}
-  </title>
+    {{ page.title | default: site.title | escape }} 
+  </title> 
 
-  <!--설명-->
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | escape }}">
-
-  <!--테그 키워드로 교체-->
+  <!--name-->
+  <meta name="title" content="{{ page.title }}">
+  <meta name="description" content="{{ page.description | default: page.excerpt | default: site.description | markdownify | strip_html |  newline_to_br | strip_newlines | replace: '<br />', ' ' | escape_once | strip |normalize_whitespace | escape }}">
+  <meta name="subject" content="게임 제작 포트폴리오">
   <meta name="keywords" content="{{ page.keywords | join: ', ' }}">
+  <meta name="author" content="{{ site.name }}">
+  <meta name="date" content="{{ page.date }}">
+  <meta name="classification" content="{{ page.categories }}">
+  <meta name="location" content='{{ site.locale | replace: "-", "_" | default: "ko_KR" }}'>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--모바일기기 올바른 뷰포트사용 반응형디자인 지원-->
+
+  <meta name="application-name" content="{{ site.title }}">
+  <meta name="apple-mobile-web-app-title" content="{{ page.title }}">
+  <meta name="apple-mobile-web-app-capable" content="yes"> <!--ios에서 웹앱으로 사용 -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> <!--웹앱 상태표시줄 투명한 검은색-->
+
+  <meta name="robots" content="index,follow">
+  <meta name="googlebot-news" content="nosnippet">
+  <meta name="googlebot-video" content="noindex">
+  <meta name="googlebot-image" content="noindex">
+  <meta name="googlebot-news" content="nosnippet">
+
+  <!--http-equiv-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--최신 랜더링 엔진 엣지 사용-->
+  <meta http-equiv="Title" content="{{ page.title }}">
+  <meta http-equiv="Author" content="{{ site.name }}">
+  <meta http-equiv="Generator" content="Visual Studio Code">
+  <meta http-equiv="Last-Modified" content="{{ page.lastmod }}"> 
+  <meta http-equiv="Build" content="{{ page.lastmod }}" />
+
+  <!--open grapic -->
+  <meta property="og:type" content="{{ og_type }}">
+  <meta property="og:locale" content='{{ site.locale | replace: "-", "_" | default: "ko_KR" }}'>
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
+  <meta property="og:url" content='{{ page.url | replace: ".html", "" | absolute_url }}'>
+  <meta property="og:description" content="{{ page.description | default: page.excerpt | default: site.description | markdownify | strip_html |  newline_to_br | strip_newlines | replace: '<br />', ' ' | escape_once | strip |normalize_whitespace | escape }}">
+  <meta property="og:image" content="{{ page.image }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  {% if og_type == "article" %}
+    <meta property="article:author" content="{{ site.name }}">
+    {% if page.date %}
+      <meta property="article:published_time" content="{{ page.date }}"/>
+    {% endif %}
+    {% if page.lastmod %}
+      <meta property="article:modified_time" content="{{ page.lastmod }}"/>
+    {% endif %}
+  {% endif %}
+
+  <!--주소-->
+  <link rel="canonical" href='{{ page.url | replace: ".html", "" }}'>
 
   <!--파비콘-->
   <link rel="icon" href="{{ '/assets/img/profile_img256px.ico' | relative_url }}">
@@ -26,12 +79,15 @@
   <!--구글 피드-->
   <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml" title="{{ site.title }} Feed">
 
+  <!--구글 서치콘솔등록-->
+  <meta name="google-site-verification" content="5LgST4VxF-eF3gBMgf1DAEfTnAT9DvQO9iUYa1hGSIw" /> 
+
   <!--google addsence-->
   <meta name="google-adsense-account" content="ca-pub-3712073515065828">
-  <meta name="google-site-verification" content="5LgST4VxF-eF3gBMgf1DAEfTnAT9DvQO9iUYa1hGSIw" /> <!--구글 서치콘솔등록-->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3712073515065828" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}"> <!--css 지원-->
+  <!--css 지원-->
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}"> 
   <link href="/assets/css/syntax.css" rel="stylesheet" />
 
   <!--katex-->

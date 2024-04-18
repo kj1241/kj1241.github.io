@@ -29,4 +29,6 @@ layout: null
 
     </url>
     {% endfor %}
+    <url>
+    </url>
 </urlset>
