@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "컴퓨터그래픽스실습(1) - 중간 과제"
-date: 2024-04-19 09:00:00 +09:00
+date: 2024-04-23 09:00:00 +09:00
 image: https://drive.google.com/thumbnail?id=1KRbxkazl0w2vUgejw0HsY_Kx1ZB9rMcz
 toc: true
 categories: [DirectX]
@@ -39,7 +39,7 @@ DX9로 제작한 간단한 퍼즐게임입니다. 마우스를 클릭하여 중�
 ## <cpp_h2> 프로젝트 특징 및 기능 구현 </cpp_h2>
 
 ![ComputerGraphicsLab1 MiddleExam]({{ site.google_drive }}1KRbxkazl0w2vUgejw0HsY_Kx1ZB9rMcz{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-*<unity_h6>ComputerGraphicsLab1 MiddleExam</unity_h6>*
+*<cpp_h6>ComputerGraphicsLab1 MiddleExam</cpp_h6>*
 
 시험 내용: DirectX를 이용해서 간단한 게임을 제작하십시오.
 

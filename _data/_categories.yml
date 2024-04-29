@@ -10,6 +10,8 @@ categories_list:
  
   - title: Toy Porjects
     categories_sub_list:
+      - title: Algorithm
+        url: /Algorithm/
       - title: DirectX
         url: /DirectX/
       - title: WinAPI
