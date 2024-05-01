@@ -23,7 +23,7 @@ Unity와 C#을 활용하여 제작된 이 게임은 PC(Windows)에서 플레이�
 ## <unity_h2> 프로젝트 개요 </unity_h2>
 
 - <span><unity_h5>프로젝트명:</unity_h5> PlaplaPlanet ver.1</span>
-- <span><unity_h5>과제:</unity_h5> 2018년 1학기 팀 기능성 프로그래밍 기말 과제</span>
+- <span><unity_h5>과제:</unity_h5> 2018년 1학기 기능성 프로그래밍 기말 과제</span>
 - <span><unity_h5>게임 장르:</unity_h5> 3D 플랫폼 게임 → 3D Defense Game</span>
 - <span><unity_h5>기간:</unity_h5> 제작 완료</span>
     - ver.1: 2018.05.10~2018.05.20(제작)
@@ -196,7 +196,7 @@ public class SmoothFollow : MonoBehaviour
 
 <iframe width="100%" style="aspect-ratio:16/9" src="https://drive.google.com/file/d/1W468hHxpJJyaHUFjYbDoafolLJGzV51r/preview" title="Plattach_FinalExam" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-- <span><unity_h5>성과:</unity_h5> 2018년 1학기 팀 기능성 프로그래밍 기말 과제 </span>
+- <span><unity_h5>성과:</unity_h5> 2018년 1학기 기능성 프로그래밍 기말 과제 </span>
 - <span><unity_h5>깃허브(코드):</unity_h5> </span>
 
 <br>

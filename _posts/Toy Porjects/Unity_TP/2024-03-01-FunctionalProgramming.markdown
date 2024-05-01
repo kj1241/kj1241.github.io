@@ -23,7 +23,7 @@ related_links:
 ## <unity_h2> 프로젝트 개요 </unity_h2>
 
 - <span><unity_h5>프로젝트명:</unity_h5> 기능성 프로그래밍 과제</span>
-- <span><unity_h5>과제:</unity_h5> 2018년 1학기 팀 기능성 프로그래밍 일반 과제</span>
+- <span><unity_h5>과제:</unity_h5> 2018년 1학기 기능성 프로그래밍 일반 과제</span>
 - <span><unity_h5>게임 장르:</unity_h5> toy Proejct</span>
 - <span><unity_h5>기간:</unity_h5> 제작 완료</span>
     - ver.1: 2018.03.15~2018.05.31(제작) 

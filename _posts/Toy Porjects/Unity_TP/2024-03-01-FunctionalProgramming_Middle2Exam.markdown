@@ -24,7 +24,7 @@ Plattach 은 2D 퍼즐 게임으로, 특정 시간마다 블록을 제거하여 
 ## <unity_h2> 프로젝트 개요 </unity_h2>
 
 - <span><unity_h5>프로젝트명:</unity_h5> Plattach ver.2</span>
-- <span><unity_h5>과제:</unity_h5> 2018년 1학기 팀 기능성 프로그래밍 중간2 과제</span>
+- <span><unity_h5>과제:</unity_h5> 2018년 1학기 기능성 프로그래밍 중간2 과제</span>
 - <span><unity_h5>게임 장르:</unity_h5> 2D 퍼즐게임 </span>
 - <span><unity_h5>기간:</unity_h5> 제작 완료</span>
     - ver.1: 2018.05.02~2018.05.09(제작)
@@ -110,7 +110,7 @@ Plattach 은 2D 퍼즐 게임으로, 특정 시간마다 블록을 제거하여 
 
 ## <unity_h2> 결과(성과) 및 데모 </unity_h2>
 
-- <span><unity_h5>성과:</unity_h5> 2018년 1학기 팀 기능성 프로그래밍 중간1 과제 </span>
+- <span><unity_h5>성과:</unity_h5> 2018년 1학기 기능성 프로그래밍 중간1 과제 </span>
 - <span><unity_h5>깃허브(코드):</unity_h5> 공개 예정</span>
 
 <br>
