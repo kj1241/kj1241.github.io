@@ -7,18 +7,19 @@ toc: true
 categories: [Unity_TP] 
 keywords: C#, Unity, BFS, 넓이 우선탐색, 레이 케스트, 픽킹 
 related_links:
+    - url: /unity_tp/MobileProgramming_FinalExam.html
 ---
 
 ## <unity_h2> 프로젝트 소개 </unity_h2>
 
-
+이 프로젝트는 모바일 증강현실 프로그래밍실습 과제로, Toy Project 형태로 제작되었습니다. 주요 기능으로는 피타고라스의 정리를 이용한 두 오브젝트 간의 거리 계산과 카메라 레이캐스트 연습이 있습니다. 이를 통해 프로그래밍과 게임 개발에 대한 이해를 높였습니다.
 
 <br>
 <br>
 
 ## <unity_h2> 프로젝트 개요 </unity_h2>
 
-- <span><unity_h5>프로젝트명:</unity_h5> PlaplaPlanet ver.1</span>
+- <span><unity_h5>프로젝트명:</unity_h5> 모바일증강현실프로그래밍실습 일반 과제</span>
 - <span><unity_h5>과제:</unity_h5> 2016년 2학기 모바일증강현실프로그래밍실습 일반 과제</span>
 - <span><unity_h5>게임 장르:</unity_h5> Toy Project</span>
 - <span><unity_h5>기간:</unity_h5> 제작 완료</span>
