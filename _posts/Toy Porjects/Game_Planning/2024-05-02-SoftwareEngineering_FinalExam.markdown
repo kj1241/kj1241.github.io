@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "소프트웨어 공학 - 기말과제(요구사항 분석서)"
-date: 2024-05-01 09:00:00 +09:00
+title: "소프트웨어 공학 - 기말 과제(요구사항 분석서)"
+date: 2024-05-02 09:00:00 +09:00
 image: https://drive.google.com/thumbnail?id=1Ll777fmquvP5hBaMTQjgmrx_g0WkUTpD
 toc: true
 categories: [Game_Planning] 
-keywords: 요구사항 분석서
+keywords: 요구사항 분석서, 화이트 박스 분석, 블랙박스 분석, 정보 모델링, 동적 모델링, 기능 모델링
 related_links:
+    - url: /game_planning/SoftwareEngineering_MiddleExam.html
 ---
 
 ## <data_h2> 프로젝트 소개 </data_h2>
@@ -21,7 +22,7 @@ related_links:
 - <span><data_h5>프로젝트명:</data_h5> 요구사항 분석서 작성</span>
 - <span><data_h5>게임 장르:</data_h5> 2016년 2학기 소프트웨어 공학 기말 과제</span>
 - <span><data_h5>기간:</data_h5> 제작 완료</span>
-    - ver.1: 2016.10.20~2016.12.05 
+    - ver.1: 2016.12.21
 - <span><data_h5>개발인원:</data_h5> Game Designer(1명)</span>
 - <span><data_h5>플랫폼:</data_h5> PC (Window)</span>
 
@@ -46,7 +47,6 @@ related_links:
 
 ![유스케이스 다이어 그램]({{ site.google_drive }}1Ll777fmquvP5hBaMTQjgmrx_g0WkUTpD{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<unity_h6> 유스케이스 다이어 그램 </unity_h6>*
-
 
 - 해당 수업 시간 옆자리 지인의 게임 구성을 듣고, 해당 내용을 클래스 설계하여 요구사항 분석서로 제출하는 과제입니다.
 - 공학 방싱을 이용하여 블랙박스 분석과 화이트 박스 분석을 사용하여 정보 모델링, 동적 모델링, 기능 모델링을 작성하였습니다.
