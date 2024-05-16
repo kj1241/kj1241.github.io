@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "졸업 과제 - 엔진 제작"
+title: "졸업 과제 - 엔진 제작(DirectX9)"
 date: 2024-05-04 09:00:00 +09:00
 image: https://drive.google.com/thumbnail?id=1Q2aD85HtGIikiI1Z70ND8UNcShE-h4NT
 toc: true
@@ -18,7 +18,7 @@ related_links:
 
 ## <cpp_h2>프로젝트 개요</cpp_h2>
 
-- <span><cpp_h5>프로젝트명:</cpp_h5> Direct X 9를 이용한 엔진 제작</span>
+- <span><cpp_h5>프로젝트명:</cpp_h5> DirectX 9를 이용한 엔진 제작</span>
 - <span><cpp_h5>과제:</cpp_h5> 졸업 과제</span>
 - <span><cpp_h5>게임 장르:</cpp_h5> 엔진 제작</span>
 - <span><cpp_h5>기간:</cpp_h5> 제작 완료</span>
@@ -53,7 +53,7 @@ related_links:
 *<cpp_h6>졸업작품 비주얼 스튜디오 화면</cpp_h6>*
 
 1. WIN API를 클래스로 구현할 때, MFC 구조처럼, win API 실제 사용 부분과 main 부분을 모듈화 하고 싶어서 프로시저에 this 포인트를 만들어 주기 위해 WInAPI 본인 포인터를 static으로 만들고 프로시저를 클리스화 처리하였습니다.
-2. 마우스와 키보드 입력을 사용하기 위해 WIN API 와 direct X9 클래스에서 동시에 접근할 수 있도록 싱글 톤 패턴으로 처리하였습니다.
+2. 마우스와 키보드 입력을 사용하기 위해 WIN API 와 DirectX 9 클래스에서 동시에 접근할 수 있도록 싱글 톤 패턴으로 처리하였습니다.
 3. 키보드는 핸들 값으로 처리하는 WINAPI를 사용하지 않고 메크로 함수를 사용하여 키다운과 키업등을 구현하여 이벤트들을 처리하였습니다.
 4. Stage를 구성하기 위해서 순수 가상함수의 추상화 Stage를 만든 후 다른 개별적인 클래스를 자식 클래스로 구현하였습니다.
 	- intro-stage-dummy stages-end 화면으로 스테이지를 구성하였습니다.
@@ -92,7 +92,7 @@ related_links:
 	- 예를 들어 걷기 애니메이션을 추가했습니다.
 2. 모델링에 skinning mesh를 제작하기 위해서 재귀함수를 사용하여, 본 스켈레톤 뼈대를 제작하였습니다.
 3. 각각의 뼈마다 특정 충돌처리를 위해서 뼈에 mesh의 최소, 최댓값을 저장하여 바운드 박스를 구현하였습니다.
-4. 3D MAX의 모델링을 Direct X 9로 사용하기 위해서 import export부분을 구현하였습니다.
+4. 3D MAX의 모델링을 DirectX 9로 사용하기 위해서 import export부분을 구현하였습니다.
 5. 애니메이션은 키프레임 애니메이션과, 본 스켈레톤을 사용하였습니다. 
 	- 용은 키 프레임을 사용하여 애니메이션을 처리하였고, 전사는 본 스켈레톤을 사용하여 구현하였습니다.
 6. 본 스켈레톤 애니메이션을 구현하기 위해서 허리의 행렬을 사용해서 추가적으로 본에 영향을 미치도록 구현하고 추가적으로 다른 애니메이션 IK(또는 각 뼈대에 미치는 영향)을 구현하기 위해서 추가적으로 행렬을 STL<vector>로 저장하였습니다.

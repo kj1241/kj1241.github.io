@@ -110,4 +110,4 @@ related_links:
 
 - 원하는 게임을 만들어보며, 즐겁게 작업할 수 있었습니다.
 - <span><unity_h5>출시하지 못한이유:</unity_h5> 당시 현업 떄문에 추가 컨텐츠 제작에 시간을 할애할 수 없었던 비운의 게임입니다.</span>
-- <span><unity_h5>저작권:<unity_h5> Only code can be used for research (No use graphic assets available)</span>
+- <span><red1_error>저작권:</red1_error> Only code can be used for research (No use graphic assets available)</span>

@@ -2,11 +2,12 @@
 layout: post
 title: "DirectX 12 - 튜토리얼 작성(수정 중)"
 date: 2024-05-08 09:00:00 +09:00
-image: https://drive.google.com/thumbnail?id=
+image: https://drive.google.com/thumbnail?id=16MiChQmiNVxW95t_ZkqYEK7lyjBTYH8g
 toc: true
 categories: [DirectX]
 keywords: C++, DirectX 12
 related_links:
+	- url: /graphics_development/DX12_TutorialNone.html
 ---
 
 ## <cpp_h2>프로젝트 소개</cpp_h2>
@@ -18,7 +19,7 @@ related_links:
 
 ## <cpp_h2>프로젝트 개요</cpp_h2>
 
-- <span><cpp_h5>프로젝트명:</cpp_h5> Direct X 12 튜토리얼 공부 및 작성</span>
+- <span><cpp_h5>프로젝트명:</cpp_h5> DirectX 12 튜토리얼 공부 및 작성</span>
 - <span><cpp_h5>과제:</cpp_h5> 토이 프로젝트</span>
 - <span><cpp_h5>게임 장르:</cpp_h5> Toy Project</span>
 - <span><cpp_h5>기간:</cpp_h5> 제작 완료</span>
@@ -45,6 +46,8 @@ related_links:
 
 ### <cpp_h3> 0) InitDirectX12 </cpp_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
 
+![졸업작품 비주얼 스튜디오 화면]({{ site.google_drive }}16MiChQmiNVxW95t_ZkqYEK7lyjBTYH8g{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<cpp_h6>졸업작품 비주얼 스튜디오 화면</cpp_h6>*
 
 
 

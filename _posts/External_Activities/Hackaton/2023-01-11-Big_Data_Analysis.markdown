@@ -30,7 +30,7 @@ related_links:
 - <span><data_h5>프로젝트명:</data_h5> 고령운전자 취약 지역 예측</span>
 - <span><data_h5>게임 장르:</data_h5> Big Data Analysis</span>
 - <span><data_h5>기간:</data_h5> 제작 완료</span>
-    - ver.1: 2021.09.08~2021.09.25(공공 빅데이터 청년 인턴쉽 해커톤
+    - ver.1: 2021.09.08~2021.09.25(공공 빅데이터 청년 인턴쉽 해커톤)
 - <span><data_h5>개발인원:</data_h5> Developer(7명)</span>
     - 역활: 프로그래머 & 데이터 분석
 - <span><data_h5>플랫폼:</data_h5> Doc (Window)</span>
@@ -59,14 +59,14 @@ related_links:
 
 <br>
 
-### <data_h3>프로그래밍을 이용한 자료수집</data_h3><red1_error> (전체 제작 기여도: 40%)</red1_error>
+### <data_h3>프로그래밍을 이용한 자료수집</data_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
 
 1. 파이썬 BeautifulSoup을 이용한 기상청 데이터등 크롤링을 하였습니다.
 2. Openl API 파이썬 코드를 이용하여 공공 데이터 포털, 서울 열린 데이터 광장등에서 데이터를 수집하였습니다.
 
 <br>
 
-### <data_h3>프로그래밍을 이용한 데이터 분석</data_h3><red1_error> (전체 제작 기여도: 40%)</red1_error>
+### <data_h3>프로그래밍을 이용한 데이터 분석</data_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
 
 1. 주제선정 후 데이터분석 방법을 설계하였습니다.
 2. 수집한 데이터를 R을 이용하여 정제하였습니다.
