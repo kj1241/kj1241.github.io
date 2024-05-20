@@ -7,7 +7,6 @@ toc: true
 categories: [DirectX]
 keywords: C++, DirectX 12
 related_links:
-	- url: /graphics_development/DX12_TutorialNone.html
 ---
 
 ## <cpp_h2>프로젝트 소개</cpp_h2>
