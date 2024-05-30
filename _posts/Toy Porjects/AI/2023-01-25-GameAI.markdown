@@ -1,0 +1,120 @@
+---
+layout: post
+title: "게임인공지능 - 일반 과제(PDDL 스토리텔링과 Pyhon 기초 연습)"
+date: 2023-01-25 01:32:05 +09:00
+image: https://drive.google.com/thumbnail?id=1tGRCmhxoBYPmmuIXATg2HBhQTaBewwhm
+toc: true
+categories: [AI]
+keywords: AI, PDDL, pyhon
+addsence: false
+lastmod: 2024-05-30 09:00:00 +09:00
+sitemap:
+  changefreq : daily
+  priority : 1.0
+excerpt: 인공지능 계획 언어인 PDDL을 이용한 스토리 텔링을 제작과 pyhon 기초 학습을 진행한 게임 인공지능 수업 과제 입니다.
+related_links:
+    - url: /ai/GameAI_MiddleExam.html
+    - url: /ai/GameAI_FinalExam.html
+---
+
+## <ai_h2> 프로젝트 소개 </ai_h2>
+
+PDDL을 활용한 빨간 망토, 동방박사의 선물, 토끼와 거북이 스토리텔링 토이 프로젝트는 인공지능 계획 언어를 사용하여 흥미로운 이야기를 표현합니다.
+이 프로젝트는 빨간 망토와 선물을 토끼와 거북이가 교환하는 상황을 모델링하고, PDDL로 상호작용 및 행동 계획을 정의하여 독특한 스토리를 만들어냅니다.
+또 다른 과제 프로젝트의 Python을 활용하여 간단한 기초 연습도 함께 수행하였습니다.
+
+<br>
+<br>
+
+## <ai_h2> 프로젝트 개요 </ai_h2>
+
+- <span><ai_h5>프로젝트명:</ai_h5> 게임인공지능 과제 </span>
+- <span><ai_h5>과제:</ai_h5> 2018년 1학기 게임인공지능 일반 과제</span>
+- <span><ai_h5>장르:</ai_h5> Toy Project</span>
+- <span><ai_h5>기간:</ai_h5> 제작 완료</span>
+    - ver.1: 2018.05.01~2018.05.14
+- <span><ai_h5>개발인원:</ai_h5> Developer(1명)</span>
+- <span><ai_h5>플랫폼:</ai_h5> PC (Window)</span>
+
+<br>
+
+### <ai_h3> 기술 스택 </ai_h3>
+
+- <span><ai_h5>개발 도구:</ai_h5> TXET(Google PDDL) / python RTF / python 3.7 </span>
+- <span><ai_h5>개발 언어:</ai_h5> PDDL </span>
+
+<br>
+<br>
+
+## <ai_h2> 프로젝트 특징 및 기능 구현 </ai_h2>
+
+1. 책의 내용을 구현하기 위해서 PDDL로 상태 및 로직 정의하였습니다.
+2. 인공지능 언어를 이용하여 스토리 텔링 제작하였습니다.
+
+<br>
+
+### <ai_h3>인공지능 언어 PDDL을 이용한 스토리텔링 설계</ai_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
+
+#### **<ai_h4> PDDL 과제1: 빨간망토:</ai_h4>**
+
+![과제1: 빨간망토]({{ site.google_drive }}1ZvBuh4B12rZNT2-a4Zy_WbSd3cEaeqlE{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<art_h6>과제1: 빨간망토</art_h6>* 
+
+
+#### **<ai_h4> PDDL 과제2: 동방박사의 선물:</ai_h4>**
+
+![과제2: 동방박사의 선물]({{ site.google_drive }}1tGRCmhxoBYPmmuIXATg2HBhQTaBewwhm{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<art_h6>과과제2: 동방박사의 선물</art_h6>* 
+
+
+#### **<ai_h4> PDDL 과제3: 토끼와 거북이:</ai_h4>**
+
+![과제3: 토끼와 거북이]({{ site.google_drive }}1FI3NOPa3NcBdzF0zqE6fBRl6x2rFV4AT{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<art_h6>과제3: 토끼와 거북이</art_h6>* 
+
+
+<br>
+
+### <ai_h3>파이썬 기초 연습</ai_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
+
+#### **<ai_h4> rtf를 이용한 파이썬 작성</ai_h4>**
+
+![Python rtf]({{ site.google_drive }}1Z-oa9kUUM32xYAtc5PWO-8MKlIQYb6Ql{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<art_h6>Python Rtf 코드</art_h6>* 
+
+1. if-else 문으로 해당 워드가 존재하는지 확인하고 출력 코드를 작성하였습니다.
+2. 딕셔너리를 사용하여 존재 여부 확인하고 출력코드를 작성하였습니다.
+
+
+#### **<ai_h4> 쥬피터 노트북을 이용한 파이썬 작성</ai_h4>**
+
+![Python 기초]({{ site.google_drive }}1g7JRTCNRi_POWEFuXdZ9tBl7MmZYV2dB{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<art_h6>Python 기초 코드</art_h6>* 
+
+1. 연산문 및 조건문 작성 공부하였습니다.
+2. 파일 읽고 쓰기 작성하였습니다.
+3. 클래스와 객체 사용하였습니다.
+4. 리스트 컴프리헨션과 제너레이터 사용하였습니다.
+5. 예외처리 연습하였습니다.
+6. 묘듈 사용하였습니다.
+
+<br>
+<br>
+
+## <ai_h2> 결과(성과) 및 데모 </ai_h2>
+
+- <span><ai_h5>성과:</ai_h5> 2018년 1학기 게임인공지능 일반 과제 </span>
+- <span><ai_h5>깃허브(코드):</ai_h5> [https://github.com/kj1241/AI_Portfolio/tree/main/GameAI](https://github.com/kj1241/AI_Portfolio/tree/main/GameAI)</span>
+
+
+## <ai_h2> 비고 및 여담 </ai_h2>
+
+- 배운 점
+    - PDDL 활용: 프로젝트를 통해 인공지능 계획 언어인 PDDL을 활용하는 방법을 배웠습니다. 이를 통해 복잡한 상호작용을 표현하고 이를 기반으로 독특한 스토리를 만들어내는 방법을 익혔습니다.
+    - Python 기초 연습: 프로젝트에서는 Python을 사용하여 기초적인 프로그래밍 스킬을 연습할 수 있었습니다. 조건문, 반복문, 예외처리 등 다양한 기능을 사용하면서 Python의 다양한 기능에 익숙해지는 계기가 되었습니다.
+
+- 수정할 점
+    - PDDL 활용 확장: 프로젝트에서는 기본적인 PDDL 활용에 그쳤습니다. 앞으로는 좀 더 복잡한 상황을 모델링하고 효율적인 계획을 세우는 데에도 PDDL을 활용해보고자 합니다.
+    - Python 심화 학습: 기초적인 Python 스킬을 연습했지만, 좀 더 심화된 주제에 대한 학습이 필요함을 느꼈습니다. 특히 객체지향 프로그래밍이나 데이터 구조와 알고리즘에 대한 학습을 더욱 깊이하고자 합니다.
+
+프로젝트를 진행하면서 Python을 통해 기초적인 프로그래밍 스킬도 향상시킬 수 있었습니다. 이를 통해 프로젝트 외적인 영역에서도 역량을 키웠다는 데에 큰 의의를 두고 있습니다.

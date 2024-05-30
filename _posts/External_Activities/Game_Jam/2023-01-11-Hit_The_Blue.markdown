@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hit The Blue - v0.3"
-date: 2023-01-11 13:00:59 +0900
+date: 2023-01-11 13:00:59 +09:00
 image: https://drive.google.com/thumbnail?id=1NPZLVdXJobKnUvJoGN9P3_-6GO4VYNR9
 toc: true
 categories: [Game_Jam]
