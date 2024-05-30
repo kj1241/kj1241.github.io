@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "게임인공지능 - 중간 과제(FSM 구현)"
-date: 2023-01-26 11:49:14 +0900
+date: 2023-01-26 11:49:14 +09:00
 image: https://drive.google.com/thumbnail?id=1eDnZVIPQnzZqPyPK7TcEWEHGM-JmZDM9
 toc: true
 categories: [AI]

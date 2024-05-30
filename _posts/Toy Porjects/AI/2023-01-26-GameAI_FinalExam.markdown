@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "게임인공지능 - 기말 과제(유사 Clustering AI 제작 ver.2)"
-date: 2023-01-26 16:30:56 +0900
+date: 2023-01-26 16:30:56 +09:00
 image: https://drive.google.com/thumbnail?id=1HLt16M6v9ypxd6jGv3sM4deHXQI280Y_
 toc: true
 categories: [AI]

@@ -53,6 +53,8 @@ categories_list:
         url: /Web/
       - title: Data_Analysis
         url: /Data_Analysis/
+      - title: Other_Articles
+        url: /Other_Articles/
       - title: Programming_Interview
         url: /Programming_Interview/
 
