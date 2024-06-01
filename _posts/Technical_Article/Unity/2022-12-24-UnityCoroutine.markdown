@@ -113,8 +113,8 @@ public class IEnumeratorExample : MonoBehaviour
 
 Unity의 라이프 사이클과 코루틴은 밀접한 관계가 있습니다. Unity는 다양한 yield return 구문을 통해 코루틴의 실행을 제어할 수 있는 API를 제공합니다.
 
-![유니티 엔진]({{ site.google_drive }}1_Fvz_63RJqRM1WskRj3pP3TmiM-Wjeu-{{ site.google_drive_end }}){:width="50%"  style="aspect-ratio:1/4.75" loading="lazy" align="left"}
-
+![유니티 엔진]({{ site.google_drive }}1_Fvz_63RJqRM1WskRj3pP3TmiM-Wjeu-{{ site.google_drive_end }}){:width="100%" height="auto"  loading="lazy" }
+*<unity_h6>유니티 엔진 구조</unity_h6>*
 
 <br>
 
@@ -127,7 +127,6 @@ Unity의 라이프 사이클과 코루틴은 밀접한 관계가 있습니다. U
 yield return new WaitForSeconds(2.0f);
 
 ```
-
 
 
 ### <unity_h3> yield return new WaitForSecondsRealtime(float time) </unity_h3>
