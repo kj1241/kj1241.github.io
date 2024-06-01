@@ -5,15 +5,16 @@ date: 2023-05-31 09:00:00 +09:00
 image: https://drive.google.com/thumbnail?id=1LJeC32Z2NK8yXfu_etJ1UPKjIAr59Bdi
 toc: true
 categories: [AI]
-keywords: AI, python, tenserflow, 린치 회귀, 데이터 전처리, 의사결정 트리
+keywords: Bazel, TensorFlow, C++ 애플리케이션 통합, 기계학습 프로그래밍, 모델 라이브러리, 파일 입출력, 메모리 관리, TensorFlow 세션 관리, 데이터 전처리, 모델 로딩, 선형 분석 예측 모델
 addsence: false
 lastmod: 2024-05-31 09:00:00 +09:00
 sitemap: 
   changefreq : daily
   priority : 1.0
 excerpt: Bazel을 활용해 TensorFlow를 C++ 애플리케이션에 통합한 기계학습 프로젝트입니다. TensorFlow의 C API를 사용하여 선형 회귀 모델을 구축하고 학습시킵니다.
-
 related_links:
+    - url: /ai/Python_Tensorflow.html
+    - url: /ai/Unity_ML_Agent.html
 ---
 
 ## <ai_h2> 프로젝트 소개 </ai_h2>

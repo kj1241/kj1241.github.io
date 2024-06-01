@@ -14,6 +14,8 @@ sitemap:
 excerpt: 게임 잼 출전을 위해 시작한 토이 프로젝트로, Unity ML-Agent를 활용하여 강화학습 AI를 개발했습니다.
 related_links:
     - url: /other_articles/ComparisonDeepLearningFramework.html
+    - url: /ai/Python_Tensorflow.html
+    - url: /ai/TensorflowToBazel.html
 ---
 
 ## <ai_h2> 프로젝트 소개 </ai_h2>

@@ -13,6 +13,8 @@ sitemap:
   priority : 1.0
 excerpt: 이 프로젝트는 강화학습을 연습하기 위해 Python과 TensorFlow를 사용하여 모델을 학습시키고 분석했습니다.
 related_links:
+    - url: /ai/Unity_ML_Agent.html
+    - url: /ai/TensorflowToBazel.html
 ---
 
 ## <ai_h2> 프로젝트 소개 </ai_h2>
