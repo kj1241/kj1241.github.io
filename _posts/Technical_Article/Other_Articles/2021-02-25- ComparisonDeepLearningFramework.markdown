@@ -80,24 +80,20 @@ PyTorch는 연구자들 사이에서 유연성과 사용 편의성으로 인기�
 TensorFlow와 PyTorch 사이에서 선택할 때 여러 요소를 고려해야 합니다
 
 1. 프로그래밍 언어와 개발자 경험:
-
-- TensorFlow: 여러 언어(C++, Java, Swift)를 지원하여 다양한 응용 프로그램에 적합합니다.
-- PyTorch: Python에 최적화되어 있어 Python 개발자에게 선호됩니다.
+  - TensorFlow: 여러 언어(C++, Java, Swift)를 지원하여 다양한 응용 프로그램에 적합합니다.
+  - PyTorch: Python에 최적화되어 있어 Python 개발자에게 선호됩니다.
 
 2. 사용 용이성과 학습 곡선:
-
-- TensorFlow: TensorFlow 2.x는 eager execution과 Keras 통합으로 사용성이 크게 개선되었습니다.
-- PyTorch: 직관적이고 Pythonic한 인터페이스로 연구자와 개발자에게 인기가 높습니다.
+  - TensorFlow: TensorFlow 2.x는 eager execution과 Keras 통합으로 사용성이 크게 개선되었습니다.
+  - PyTorch: 직관적이고 Pythonic한 인터페이스로 연구자와 개발자에게 인기가 높습니다.
 
 3. 생태계와 도구:
-
-- TensorFlow: 다양한 플랫폼(모바일, 웹 등)에 배포할 수 있는 포괄적인 생태계를 제공합니다.
-- PyTorch: TorchScript와 ONNX 같은 도구로 모델 내보내기와 배포에서 큰 진전을 이루었지만, 생태계의 폭은 TensorFlow에 미치지 못할 수 있습니다.
+  - TensorFlow: 다양한 플랫폼(모바일, 웹 등)에 배포할 수 있는 포괄적인 생태계를 제공합니다.
+  - PyTorch: TorchScript와 ONNX 같은 도구로 모델 내보내기와 배포에서 큰 진전을 이루었지만, 생태계의 폭은 TensorFlow에 미치지 못할 수 있습니다.
 
 4. 커뮤니티와 산업 채택:
-
-- TensorFlow: 산업 전반에서 널리 채택되고 있으며, 방대한 문서와 커뮤니티 지원을 제공합니다.
-- PyTorch: 학계 연구에서 강력한 존재감을 가지고 있으며, 산업에서의 채택도 증가하고 있습니다.
+  - TensorFlow: 산업 전반에서 널리 채택되고 있으며, 방대한 문서와 커뮤니티 지원을 제공합니다.
+  - PyTorch: 학계 연구에서 강력한 존재감을 가지고 있으며, 산업에서의 채택도 증가하고 있습니다.
 
 
 <br>

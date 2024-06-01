@@ -7,11 +7,11 @@ toc: true
 categories: [AI]
 keywords: AI, c#, Unity, Machine Learning Agents, python, tenserflow
 addsence: false
-lastmod: 2024-05-30 09:00:00 +09:00
+lastmod: 2024-05-31 00:01:00 +09:00
 sitemap:
   changefreq : daily
   priority : 1.0
-excerpt: 유니티 ML-Agent를 사용하여 DQN 강화학습 하는 것을 연습하고 해단 코드를 변형하여 구글 코렙을 이용하여 학습하는 방법을 작성하였습니다.
+excerpt: 게임 잼 출전을 위해 시작한 토이 프로젝트로, Unity ML-Agent를 활용하여 강화학습 AI를 개발했습니다.
 related_links:
     - url: /other_articles/ComparisonDeepLearningFramework.html
 ---
@@ -118,7 +118,7 @@ AI가 플레이어를 따라다니기 위해 유니티 ML-Agent를 사용하여 
 ## <ai_h2> 비고 및 여담 </ai_h2>
 
 - 머신러닝 학습을 시작한 이유:
-    - 게임 잼에서 새로운 도전을 위해 연습하게 되었습니다. 당시 게임 잼(페럴림픽)에서는 결과가 좋지 않았지만, 준비 과정에서 머신러닝을 학습하고 데이터셋을 준비했습니다. 이 과정은 AI 데이터셋을 준비하기 전에 머신러닝을 학습하는 단계였습니다.
+    - 게임 잼에서 새로운 도전을 위해 연습하게 되었습니다. 당시 게임 잼(패럴림픽)에서는 결과가 좋지 않았지만, 준비 과정에서 머신러닝을 학습하고 데이터셋을 준비했습니다. 이 과정은 AI 데이터셋을 준비하기 전에 머신러닝을 학습하는 단계였습니다.
 
 - 퐁 게임의 결과가 없는 이유:
     - 프로젝트를 직접 다운받아보시면 아시겠지만, AI가 너무 뛰어나서 모든 공을 막아내기 때문에 원하는 결과물이 나오지 않았습니다.
