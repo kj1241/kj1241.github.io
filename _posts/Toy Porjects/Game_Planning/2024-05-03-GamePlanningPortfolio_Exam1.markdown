@@ -5,8 +5,15 @@ date: 2024-05-03 09:00:00 +09:00
 image: https://drive.google.com/thumbnail?id=1XSmvN1RabJScYomUv7p8-tKyFOmkRIoP
 toc: true
 categories: [Game_Planning] 
-keywords: 게임 컨셉 기획
+keywords: 게임 컨셉 기획서. 게임 기획
+addsence: false
+lastmod: 2024-06-11 09:00:00 +09:00
+sitemap:
+  changefreq : daily
+  priority : 1.0
+excerpt: 게임 컨셉 기획서 작성 프로젝트는 개인이 추후 제작하고자 하는 게임을 기획하고, 시장성 조사를 통해 게임의 방향성을 파악하는 과정을 담고 있습니다.
 related_links:
+    - url: /game_planning/GamePlanningPortfolio_Exam2.html
 ---
 
 ## <data_h2> 프로젝트 소개 </data_h2>
@@ -56,7 +63,7 @@ related_links:
 
 ## <data_h2> 결과(성과) 및 데모 </data_h2>
 
-<iframe width="100%" style="aspect-ratio:16/9" src="https://drive.google.com/file/d/1Bv1wPwTBqXfHh4A7hKVluTFFuV2m_RYq/preview" title="팀 프로젝트(the_Untitled_Kingdom)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" style="aspect-ratio:16/9" src="https://drive.google.com/file/d/1Bv1wPwTBqXfHh4A7hKVluTFFuV2m_RYq/preview" title="게임 컨셉 기획서 작성" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 - <span><data_h5>성과:</data_h5> 2018년 2학기 게임 기획 포트폴리오 과제1</span>
 - <span><data_h5>구글드라이브(코드):</data_h5>  </span>
