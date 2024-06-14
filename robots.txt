@@ -8,7 +8,7 @@ Disallow: /unity_tp/
 Disallow: /unreal_tp/
 Disallow: /server_tp/
 Disallow: /ai/
-Disallow: /data_base/
+Disallow: /data/
 Disallow: /3ds_max/
 Disallow: /houdini/
 Disallow: /houdini/
@@ -25,7 +25,7 @@ Disallow: /unity_tp/
 Disallow: /unreal_tp/
 Disallow: /server_tp/
 Disallow: /ai/
-Disallow: /data_base/
+Disallow: /data/
 Disallow: /3ds_max/
 Disallow: /houdini/
 Disallow: /houdini/
@@ -42,7 +42,7 @@ Disallow: /unity_tp/
 Disallow: /unreal_tp/
 Disallow: /server_tp/
 Disallow: /ai/
-Disallow: /data_base/
+Disallow: /data/
 Disallow: /3ds_max/
 Disallow: /houdini/
 Disallow: /houdini/
@@ -59,7 +59,7 @@ Disallow: /unity_tp/
 Disallow: /unreal_tp/
 Disallow: /server_tp/
 Disallow: /ai/
-Disallow: /data_base/
+Disallow: /data/
 Disallow: /3ds_max/
 Disallow: /houdini/
 Disallow: /houdini/
@@ -76,7 +76,7 @@ Disallow: /unity_tp/
 Disallow: /unreal_tp/
 Disallow: /server_tp/
 Disallow: /ai/
-Disallow: /data_base/
+Disallow: /data/
 Disallow: /3ds_max/
 Disallow: /houdini/
 Disallow: /houdini/
@@ -93,7 +93,7 @@ Disallow: /unity_tp/
 Disallow: /unreal_tp/
 Disallow: /server_tp/
 Disallow: /ai/
-Disallow: /data_base/
+Disallow: /data/
 Disallow: /3ds_max/
 Disallow: /houdini/
 Disallow: /houdini/
@@ -110,7 +110,7 @@ Disallow: /unity_tp/
 Disallow: /unreal_tp/
 Disallow: /server_tp/
 Disallow: /ai/
-Disallow: /data_base/
+Disallow: /data/
 Disallow: /3ds_max/
 Disallow: /houdini/
 Disallow: /houdini/
@@ -127,7 +127,7 @@ Disallow: /unity_tp/
 Disallow: /unreal_tp/
 Disallow: /server_tp/
 Disallow: /ai/
-Disallow: /data_base/
+Disallow: /data/
 Disallow: /3ds_max/
 Disallow: /houdini/
 Disallow: /houdini/
@@ -144,7 +144,7 @@ Disallow: /unity_tp/
 Disallow: /unreal_tp/
 Disallow: /server_tp/
 Disallow: /ai/
-Disallow: /data_base/
+Disallow: /data/
 Disallow: /3ds_max/
 Disallow: /houdini/
 Disallow: /houdini/

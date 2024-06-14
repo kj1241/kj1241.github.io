@@ -426,7 +426,7 @@ Disallow: /Unity_TP/
 Disallow: /Unreal_TP/
 Disallow: /Server_TP/
 Disallow: /AI/
-Disallow: /Data_Base/
+Disallow: /Data/
 Disallow: /3Ds_Max/
 Disallow: /Hackaton/
 Disallow: /Houdini/
@@ -442,7 +442,7 @@ Disallow: /Unity_TP/
 Disallow: /Unreal_TP/
 Disallow: /Server_TP/
 Disallow: /AI/
-Disallow: /Data_Base/
+Disallow: /Data/
 Disallow: /3Ds_Max/
 Disallow: /Hackaton/
 Disallow: /Houdini/

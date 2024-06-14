@@ -24,8 +24,8 @@ categories_list:
         url: /Server_TP/
       - title: AI
         url: /AI/
-      - title: Data_Base
-        url: /Data_Base/
+      - title: Data
+        url: /Data/
       - title: 3Ds_Max
         url: /3Ds_Max/
       - title: Houdini
