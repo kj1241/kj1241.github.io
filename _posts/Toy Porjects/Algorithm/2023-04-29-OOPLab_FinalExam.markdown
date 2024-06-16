@@ -5,8 +5,15 @@ date: 2024-04-29 09:00:00 +09:00
 image: https://drive.google.com/thumbnail?id=1OAYgioMny8pcc5c4qS7T6bN7844IErr-
 toc: true
 categories: [Algorithm]
-keywords: C++
+keywords: C++, 슈팅게임
+addsence: false
+lastmod: 2024-06-16 09:00:00 +09:00
+sitemap:
+  changefreq : daily
+  priority : 1.0
+excerpt: 
 related_links:
+    - url: /algorithm/OOPLab.html
 ---
 
 ## <cpp_h2>프로젝트 소개</cpp_h2>
@@ -39,14 +46,14 @@ related_links:
 
 ## <cpp_h2> 프로젝트 특징 및 기능 구현 </cpp_h2>
 
-![OPPLab FinalExam]({{ site.google_drive }}1OAYgioMny8pcc5c4qS7T6bN7844IErr-{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-*<cpp_h6>객체지향프로그래밍 실습 기말</cpp_h6>*
-
 시험 내용: c++ consle을 사용하여 자유롭게 제작하시오.
 
 <br>
 
 ### <cpp_h3> 1) 게임 기능 구현</cpp_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
+
+![OPPLab FinalExam]({{ site.google_drive }}1OAYgioMny8pcc5c4qS7T6bN7844IErr-{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<cpp_h6>객체지향프로그래밍 실습 기말</cpp_h6>*
 
 1. 1p와 2p를 동시에 조종할 수 있습니다.
 2. 해당 키를 누르면 총알을 생성하고 이동하면서 적 플레이어가 맞으면 승리합니다.
@@ -58,7 +65,7 @@ related_links:
 ## <cpp_h2> 결과(성과) 및 데모 </cpp_h2>
 
 - <span><cpp_h5>성과:</cpp_h5> 2015년 1학기 객체지향프로그래밍실습 기말 과제 </span>
-- <span><cpp_h5>깃허브(코드):</cpp_h5> 공개 예정</span>
+- <span><cpp_h5>깃허브(코드):</cpp_h5> [https://github.com/kj1241/Algorithm_Portfolio/tree/main/OOPLab](https://github.com/kj1241/Algorithm_Portfolio/tree/main/OOPLab)</span>
 
 <br>
 <br>
