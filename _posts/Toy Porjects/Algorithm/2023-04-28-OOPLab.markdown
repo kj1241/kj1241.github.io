@@ -215,12 +215,11 @@ C++에 익숙해지기 위해서 연습하는 코드를 작성하였습니다. �
 
 ### <cpp_h3> 13) Inheritance</cpp_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
 
-![Inheritance]({{ site.google_drive }}1KJHlN9cmB_RxGdl9AvAvpAUexErjWUyB{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+![Inheritance]({{ site.google_drive }}15RsMsHY6a5k5lUYwgwCeAX9GvY8EKo7J{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<cpp_h6>Inheritance 코드 실행</cpp_h6>*
 
 이 코드는 두 개의 클래스 계층 구조를 정의하고, 그들의 생성자와 소멸자 동작을 관찰하며, 가상 함수의 동작을 보여주는 예제입니다. 상속 관계와 가상 클래스에서 생성자 소멸자는 어떻게 동작하는지 공부하는 코드입니다. 
 또한 PBP RPG를 만들기 위한 기초입니다. 캐릭터 상태가 어떻게 구성되야 하고 변화해야하는지 보여주는 코드입니다.
-
 
 <br>
 <br>
