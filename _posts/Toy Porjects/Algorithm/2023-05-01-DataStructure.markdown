@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "자료구조및프로그래밍실습 - 일반 과제"
-date: 2024-04-28 09:00:00 +09:00
+date: 2024-05-01 09:00:00 +09:00
 image: https://drive.google.com/thumbnail?id=15OhinU-3ksazQ6mwEas63Hw00-Cuzmp1
 toc: true
 categories: [Algorithm] 
@@ -13,7 +13,6 @@ sitemap:
   priority : 1.0
 excerpt: 이 프로젝트는 C++을 사용하여 다양한 자료구조를 구현하고, 각 자료구조의 주요 기능을 학습하고 이해하는 것을 목표로 합니다. 
 related_links:
-    - url: /algorithm/OOPLab_FinalExam.html
 ---
 
 ## <cpp_h2>프로젝트 소개</cpp_h2>
