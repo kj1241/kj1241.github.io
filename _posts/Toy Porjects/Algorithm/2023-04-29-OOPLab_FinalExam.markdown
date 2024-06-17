@@ -11,7 +11,7 @@ lastmod: 2024-06-16 09:00:00 +09:00
 sitemap:
   changefreq : daily
   priority : 1.0
-excerpt: 
+excerpt: 이 프로젝트는 객체 지향프로그래밍 실습 기말 과제로, 두 플레이어가 캐릭터를 조종하며 총알을 발사해 상대를 격파하는 2D 콘솔 게임입니다.
 related_links:
     - url: /algorithm/OOPLab.html
 ---
