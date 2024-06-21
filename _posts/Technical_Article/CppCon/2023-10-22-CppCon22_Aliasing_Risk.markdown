@@ -7,11 +7,12 @@ toc: true
 categories: [CppCon]
 keywords: C++, Cppcon, Cppcon22, Aliasing Risks
 addsence: true
-lastmod: 2024-04-03 21:37:00 +09:00
+lastmod: 2024-06-21 09:00:00 +09:00
 sitemap:
   changefreq : daily
   priority : 0.8
 excerpt: 이 글은 C++에서의 앨리어싱 문제와 그에 대한 대응 방법을 다뤘습니다. 프로그램에서 메모리 위치나 변수가 같은 메모리를 참조하는 앨리어싱 현상에 주의를 기울이며, 이를 피하기 위한 전략을 제시합니다. 앨리어싱 때문인 오류를 최소화하려는 방법과 주의 사항을 강조합니다.
+related_links:
 ---
 
 ## <cpp_h2>1. 주제 : Aliasing Risks</cpp_h2>
@@ -33,8 +34,6 @@ excerpt: 이 글은 C++에서의 앨리어싱 문제와 그에 대한 대응 방
 
 그럼 앨리어싱 문제가 뭘까요? 앨리어싱 문제를 고찰하기 전에, 프로그래머가 실수할 수 있는 케이스를 단순하게 만들어서 설명해 보겠습니다.  
 K는 단순히 a*a라는 프로그램 코드가 작성한다고 합니다.  
-
-<br>
 
 #### **<cpp_h4>cpp:</cpp_h4>**
 
@@ -96,7 +95,8 @@ cout << x << "\n";
 ![결과]({{ site.google_drive }}11z3H74JBzXNhTOY3iM81tT_uRBFZFL0N{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<cpp_h6>코드 결과</cpp_h6>*  
 
-람다를 사용하여 문자열 합성 코드를 작성하게 되면 코드만 보면 ＂hello world hello＂가 작성되어야 하지만 처음 x = x+y 가 이루어져서 hello world가 되고 x = x+x 가 되므로 ＂hello world hello world＂가 됩니다.
+람다를 사용하여 문자열 합성 코드를 작성하게 되면 코드만 보면 "hello world hello"가 작성되어야 하지만 처음 x = x+y 가 이루어져서 hello world가 되고 x = x+x 가 되므로 "hello world hello world"가 됩니다.
+
 <br>
 
 #### **<cpp_h4>cpp:</cpp_h4>**

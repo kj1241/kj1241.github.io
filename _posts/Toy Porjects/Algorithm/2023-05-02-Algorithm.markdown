@@ -13,7 +13,7 @@ sitemap:
   priority : 1.0
 excerpt: 이 프로젝트는 다양한 C++ 정렬 및 탐색 알고리즘을 구현하여 알고리즘의 원리와 성능을 학습하는 것을 목적으로 합니다.
 related_links:
-    - url: /algorithm/Algorithm_FinalExam.html
+  - url: /algorithm/Algorithm_FinalExam.html
 ---
 
 ## <cpp_h2>프로젝트 소개</cpp_h2>

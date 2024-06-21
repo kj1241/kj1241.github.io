@@ -7,14 +7,15 @@ toc: true
 categories: [CppCon]
 keywords: C++, Cppcon, Cppcon22, lambda, C++20, 람다 함수, 함수형 언어
 addsence: true
-lastmod: 2024-04-03 21:54:00 +09:00
+lastmod: 2024-06-21 09:00:00 +09:00
 sitemap:
   changefreq : daily
   priority : 1.0
 excerpt: C++ 람다에 대한 장단점, 사용 예시, 함수형 언어와의 차이, 컴파일러 처리 방식을 다루는 포스팅입니다. 람다의 간결함과 성능 최적화 장점을 강조하며, 가독성과 재사용성 측면에서의 단점도 다룹니다. 코드를 통해 람다와 전역 함수의 성능 비교와 내부 동작 원리를 살펴봅니다.
 related_links:
-    - url: /cppcon/CppCon22_Lambda2.html
-    - url: /cppcon/CppCon22_Lambda3.html
+  - url: /algorithm/CppCon22Example.html
+  - url: /cppcon/CppCon22_Lambda2.html
+  - url: /cppcon/CppCon22_Lambda3.html
 ---
  
 이번 분석 내용은 C++ 람다라는 주제로 돌아왔습니다. 개인적으로 영상 내용이 하드 해서 볼 때는 10분이면 충분했었지만, 글로 정리하려니깐 생각보다 오래 걸렸습니다. 개인적으로 영상 내용이 하드 해서 볼 때는 10분이면 충분했었지만, 글로 정리하려니깐 생각보다 오래 걸렸습니다. 영상을 보시길 추천해 드립니다.
@@ -68,8 +69,6 @@ related_links:
 
 - 백터 컨테이너의 원소 개수를 50,000개로 설정하고 안의 내용을 채워줍니다.
 - sort 함수를 이용하여, 전역함수를 사용하여 정렬한 시간과 람다를 사용하여 정렬한 시간을 측정합니다.
-
-<br>
 
 #### **<cpp_h4>cpp:</cpp_h4>**
 
@@ -242,16 +241,12 @@ int main()
 <br>
 <br>
 
-## <cpp_h2>3.  함수형 언어</cpp_h2>
+## <cpp_h2>3. 함수형 언어</cpp_h2>
 
 평소 C++ 보편적으로 쓰는 로직은 튜링 머신에서 진화한 명령어 언어입니다. 하지만 람다는 알론소 처지의 람다 계산법부터 시작은 함수형 언어라고 합니다. 이 키워드를 소개하는 이유는 람다의 논리적 구조를 살피기 전에 명령어 언어와 함수형 언어에 관해서 짚고 넘어가야 하기 때문입니다. 프로그래머마다 명령어 언어와 함수형 언어가 대척점에 있다고 생각하시는 분도 있고 아니라고 생각하시는 분들도 있기 때문입니다. (여러분이 생각하는 것이 답입니다.) 
 
-<br>
-
 ![명령어 언어와 함수형 언어]({{ site.google_drive }}1fy2gMRHWXN7qvrVQhHcOt6jGKOKX5SJu{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<cpp_h6>명령어 언어와 함수형 언어</cpp_h6>*  
-
-<br>
 
 #### **<cpp_h4>cpp:</cpp_h4>**
 
@@ -265,7 +260,7 @@ int add(int i) //구현부
 
 int main() {
     int number = 10; //입력 값
-    std:; cout << add(10) <<"\n"; //계산 -> 결과값 
+    std:: cout << add(10) <<"\n"; //계산 -> 결과값 
 }
 
 

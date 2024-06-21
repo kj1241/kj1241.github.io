@@ -7,14 +7,15 @@ toc: true
 categories: [CppCon]
 keywords: C++, Cppcon, Cppcon22, Generators Coroutine , Coroutine, C++20, Generator 클래스, stackful 코루틴, stackless 코루틴, 동적 메모리 할당,
 addsence: true
-lastmod: 2024-04-03 20:57:00 +09:00
+lastmod: 2024-06-21 09:00:00 +09:00
 sitemap:
   changefreq : daily
   priority : 1.0
 excerpt: 이 섹션은 C++의 코루틴 구현인 Generator 클래스를 분석하고, stackful과 stackless 코루틴의 차이를 설명합니다. 문제점으로는 코루틴 사용 시 동적 메모리 할당이 많아지고 객체 수명과 관련된 문제가 발생할 수 있다는 점을 언급합니다.
 related_links:
-    - url: /cppcon/CppCon22_Generators_Coroutine1.html
-    - url: /cppcon/CppCon22_Generators_Coroutine3.html
+  - url: /algorithm/CppCon22Example.html
+  - url: /cppcon/CppCon22_Generators_Coroutine1.html
+  - url: /cppcon/CppCon22_Generators_Coroutine3.html
 ---
 
 비동기 프로그래밍 방법 혹은 코루틴 개념을 알고 싶은 분들은 앞의 파트 1 내용만 보시면 됩니다. 이 파트의 내용은 정말로 코드를 작성하는 데 있어서 크게 영향을 미치는 부분이 아닙니다.  
@@ -32,7 +33,7 @@ Generator의 구현 버전은 정말 많습니다. 캐싱을 이용하여 구현
 
 <br>
 
-#### **<cpp_h4>cpp:</cpp_h4>**
+#### **<cpp_h4>Generator Coroutine cpp:</cpp_h4>**
 
 ```c++
 
@@ -436,6 +437,6 @@ int main()
 
 ## <cpp_h2>2. 문제점 </cpp_h2>
 
-코루틴을 남발할 경우 힙에 데이터를 할당하게 되므로 <cpp_h5>동적메모리 할당</cpp_h5>이 많아지게 됩니다. 럼 문제점이 무엇인가 하면 코루틴 함수의 수명주기는 객체의 수명주기와 같아집니다. 이 말은 객체 해제되지 않으면 코루틴도 해제되지 않습니다. C#에는 가비지 컬렉터가 존재해서 신경 쓸 필요가 없었지만, C++ 좀 더 생각해 봐야 하는 문제라고 생각합니다. ~~(어차피 C++23에서 std::generator 나오면 알아서 다 해결해 주겠지...)~~   
+코루틴을 남발할 경우 힙에 데이터를 할당하게 되므로 <cpp_h5>동적메모리 할당</cpp_h5>이 많아지게 됩니다. 그럼 문제점이 무엇인가 하면 코루틴 함수의 수명주기는 객체의 수명주기와 같아집니다. 이 말은 객체 해제되지 않으면 코루틴도 해제되지 않습니다. C#에는 가비지 컬렉터가 존재해서 신경 쓸 필요가 없었지만, C++ 좀 더 생각해 봐야 하는 문제라고 생각합니다. ~~(어차피 C++23에서 std::generator 나오면 알아서 다 해결해 주겠지...)~~   
   
 저는 이만 IOCP에서 코드를 사용할 수 있는지 언리얼에서 플러그인으로 만들 수 있는 확인해 보로 가겠습니다. 읽으시느라 고생 많으셨습니다. 언제나 틀린 점은 지적은 환영합니다.

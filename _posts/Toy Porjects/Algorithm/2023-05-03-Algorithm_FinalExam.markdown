@@ -13,7 +13,7 @@ sitemap:
   priority : 1.0
 excerpt: C++을 사용하여 레드-블랙 트리를 구현하고, 삽입, 삭제, 탐색 등의 트리 연산을 효율적으로 수행하는 프로젝트입니다.
 related_links:
-    - url: /algorithm/Algorithm_FinalExam.html
+  - url: /algorithm/Algorithm_FinalExam.html
 ---
 
 ## <cpp_h2>프로젝트 소개</cpp_h2>
@@ -48,7 +48,6 @@ related_links:
 해당 프로젝트는 C++을 사용하여 레드-블랙 트리를 구현하고 다양한 기능을 제공하는 것을 목표로 합니다. 레드-블랙 트리는 자가 균형 이진 탐색 트리로, 삽입, 삭제, 탐색 연산에서 효율적인 성능을 보장합니다. 다음은 프로젝트의 주요 특징과 구현된 기능입니다
 
 레드-블랙 트리는 삽입 및 삭제 연산 후에도 트리의 균형을 유지하여, 최악의 경우에도 로그 시간 복잡도를 보장합니다.
-.
 
 <br>
 

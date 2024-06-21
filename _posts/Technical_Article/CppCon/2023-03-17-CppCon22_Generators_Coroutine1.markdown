@@ -6,15 +6,16 @@ image: https://drive.google.com/thumbnail?id=1W4TCYw-awdDHHLA0pq45nKwH4X5Dz9Iv
 toc: true
 categories: [CppCon]
 keywords: C++, Cppcon, Cppcon22, Generators Coroutine , Coroutine, C++20
-lastmod: 2024-04-03 20:34:00 +09:00
+lastmod: 2024-06-21 09:00:00 +09:00
 sitemap:
   changefreq : daily
   priority : 1.0
 addsence: true
 excerpt: C++20의 코루틴에 대한 기본 개념과 예제를 다룬 글입니다. 코루틴은 동시성 프로그래밍을 위한 유용한 도구로, 가볍고 효율적인 비동기 프로그래밍을 가능케 합니다. 기본적인 코루틴 이론부터 C++에서의 구현과 활용까지 상세히 설명되어 있습니다.
 related_links:
-    - url: /cppcon/CppCon22_Generators_Coroutine2.html
-    - url: /cppcon/CppCon22_Generators_Coroutine3.html
+  - url: /algorithm/CppCon22Example.html
+  - url: /cppcon/CppCon22_Generators_Coroutine2.html
+  - url: /cppcon/CppCon22_Generators_Coroutine3.html
 ---
 
 ## <cpp_h2>1. 주제: Breaking Dependencies</cpp_h2>
@@ -36,12 +37,12 @@ C++20 코루틴을 살펴보기전에 기본적인 코루틴 이론에 관해서
 
 Coroutine 어원은 co + routine으로 co는 협동이라는 의미가 있습니다. 즉, 협동 루틴(패턴)입니다. 코루틴(coroutine)은 동시성 프로그래밍에서 사용되는 개념 중 하나로, 여러 실행 흐름을 갖는 함수입니다. 코루틴은 일반적인 함수와 다르게 실행을 일시 중지하고 재개할 수 있습니다. 이로써 여러 작업 간에 효율적으로 전환하면서 비동기적인 프로그래밍을 구현하는 데 유용합니다.
 
-
 <br>
 
 ### <cpp_h3> 2) 코루틴이 최근 주목받는 이유 </cpp_h3>
 
 이유는 간단합니다. 스레드보다 가볍기 때문입니다. 조금 TMI를 이야기하자면 스마트폰 초창기 시절 유니티로 게임을 제작할 때 스레드를 사용하지 말라는 소리를 많이 들었을 것입니다. 그 이유는 유니티는 모바일을 위주로 사용하던 엔진인데, 당시 모바일의 하드웨어의 성능이 좋지 않았기 때문입니다. 그렇기 때문에 동시성 프로그래밍하기 위해서 스레드보다 코루틴을 많이 사용하였습니다. 하지만 요즘에는 스마트 폰의 성능이 좋아져서 스레드도 돌리는 것으로 알고 있습니다.
+
 <br>
 
 ### <cpp_h3>3) 코루틴의 방식</cpp_h3>
@@ -228,10 +229,10 @@ int main()
 
 ```
 
-![코루틴 결과]({{ site.google_drive }}1UmvN-i0zggqXu75PjuqGiYFJWjcdeZma{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-*<cpp_h6>코루틴 코드 결과</cpp_h6>*  
+![Generator Coroutine]({{ site.google_drive }}1UmvN-i0zggqXu75PjuqGiYFJWjcdeZma{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<cpp_h6>Generator Coroutine 코드 결과</cpp_h6>*  
 
-위의 코드를 visual studio 2019에서 동작을 시키면, 그림과 같은 결과를 얻을 수 있습니다. (프로젝트 속성에서 C++20으로 작동시켜 주세요.) 그러면 ＂Naive＂ Generator 부분을 제외하고 위의 c#의 IEnumerator 코드처럼 실질적 동작하는 부분을 알아보도록 합시다.  
+위의 코드를 visual studio 2019에서 동작을 시키면, 그림과 같은 결과를 얻을 수 있습니다. (프로젝트 속성에서 C++20으로 작동시켜 주세요.) 그러면 "Naive" Generator 부분을 제외하고 위의 c#의 IEnumerator 코드처럼 실질적 동작하는 부분을 알아보도록 합시다.  
 
 <br>
 

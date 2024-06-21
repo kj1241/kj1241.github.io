@@ -1,155 +1,29 @@
 User-agent: Googlebot
-Disallow: /game_jam/
-Disallow: /hackaton/
-Disallow: /algorithm/
-Disallow: /directx/
-Disallow: /winapi/
-Disallow: /unity_tp/
-Disallow: /unreal_tp/
-Disallow: /server_tp/
-Disallow: /ai/
-Disallow: /data/
-Disallow: /3ds_max/
-Disallow: /houdini/
-Disallow: /houdini/
-Disallow: /web_tp/
-Disallow: /game_planning/
+Disallow:
 
 User-agent: Googlebot-image
-Disallow: /game_jam/
-Disallow: /hackaton/
-Disallow: /algorithm/
-Disallow: /directx/
-Disallow: /winapi/
-Disallow: /unity_tp/
-Disallow: /unreal_tp/
-Disallow: /server_tp/
-Disallow: /ai/
-Disallow: /data/
-Disallow: /3ds_max/
-Disallow: /houdini/
-Disallow: /houdini/
-Disallow: /web_tp/
-Disallow: /game_planning/
+Disallow:
 
 User-agent: AdsBot-Google
-Disallow: /game_jam/
-Disallow: /hackaton/
-Disallow: /algorithm/
-Disallow: /directx/
-Disallow: /winapi/
-Disallow: /unity_tp/
-Disallow: /unreal_tp/
-Disallow: /server_tp/
-Disallow: /ai/
-Disallow: /data/
-Disallow: /3ds_max/
-Disallow: /houdini/
-Disallow: /houdini/
-Disallow: /web_tp/
-Disallow: /game_planning/
+Disallow:
 
 User-agent: Googlebot-Mobile
-Disallow: /game_jam/
-Disallow: /hackaton/
-Disallow: /algorithm/
-Disallow: /directx/
-Disallow: /winapi/
-Disallow: /unity_tp/
-Disallow: /unreal_tp/
-Disallow: /server_tp/
-Disallow: /ai/
-Disallow: /data/
-Disallow: /3ds_max/
-Disallow: /houdini/
-Disallow: /houdini/
-Disallow: /web_tp/
-Disallow: /game_planning/
+Disallow: 
 
 User-agent: Googlebot-Video
-Disallow: /game_jam/
-Disallow: /hackaton/
-Disallow: /algorithm/
-Disallow: /directx/
-Disallow: /winapi/
-Disallow: /unity_tp/
-Disallow: /unreal_tp/
-Disallow: /server_tp/
-Disallow: /ai/
-Disallow: /data/
-Disallow: /3ds_max/
-Disallow: /houdini/
-Disallow: /houdini/
-Disallow: /web_tp/
-Disallow: /game_planning/
+Disallow: 
 
 User-agent: Feedfetcher-Google
-Disallow: /game_jam/
-Disallow: /hackaton/
-Disallow: /algorithm/
-Disallow: /directx/
-Disallow: /winapi/
-Disallow: /unity_tp/
-Disallow: /unreal_tp/
-Disallow: /server_tp/
-Disallow: /ai/
-Disallow: /data/
-Disallow: /3ds_max/
-Disallow: /houdini/
-Disallow: /houdini/
-Disallow: /web_tp/
-Disallow: /game_planning/
+Disallow: 
 
 User-agent: Googlebot-AdsBot
-Disallow: /game_jam/
-Disallow: /hackaton/
-Disallow: /algorithm/
-Disallow: /directx/
-Disallow: /winapi/
-Disallow: /unity_tp/
-Disallow: /unreal_tp/
-Disallow: /server_tp/
-Disallow: /ai/
-Disallow: /data/
-Disallow: /3ds_max/
-Disallow: /houdini/
-Disallow: /houdini/
-Disallow: /web_tp/
-Disallow: /game_planning/
+Disallow:
 
 User-agent: Bingbot
-Disallow: /game_jam/
-Disallow: /hackaton/
-Disallow: /algorithm/
-Disallow: /directx/
-Disallow: /winapi/
-Disallow: /unity_tp/
-Disallow: /unreal_tp/
-Disallow: /server_tp/
-Disallow: /ai/
-Disallow: /data/
-Disallow: /3ds_max/
-Disallow: /houdini/
-Disallow: /houdini/
-Disallow: /web_tp/
-Disallow: /game_planning/
+Disallow: 
 
 User-agent: AdIdxBot
-Disallow: /game_jam/
-Disallow: /hackaton/
-Disallow: /algorithm/
-Disallow: /directx/
-Disallow: /winapi/
-Disallow: /unity_tp/
-Disallow: /unreal_tp/
-Disallow: /server_tp/
-Disallow: /ai/
-Disallow: /data/
-Disallow: /3ds_max/
-Disallow: /houdini/
-Disallow: /houdini/
-Disallow: /web_tp/
-Disallow: /game_planning/
+Disallow: 
 
 User-agent: *
 Disallow: /

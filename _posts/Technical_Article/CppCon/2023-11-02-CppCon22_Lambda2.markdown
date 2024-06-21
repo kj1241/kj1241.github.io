@@ -7,14 +7,15 @@ toc: true
 categories: [CppCon]
 keywords: C++, Cppcon, Cppcon22, lambda, C++11, 즉시 호출되는 람다, 캡처, 함수 포인터
 addsence: true
-lastmod: 2024-04-03 22:34:00 +09:00
+lastmod: 2024-06-21 09:00:00 +09:00
 sitemap:
   changefreq : daily
   priority : 1.0
 excerpt: C++11에서 소개된 람다 함수는 간결한 익명 함수로, 컴파일러와 비슷한 형태로 변환해서 해석하는 것을 소개 하고 있습니다. 외부 변수 캡처, 함수 포인터 호환, 즉시 호출되는 람다(IIFE) 코드 등 다양한 기능 설명하고 있습니다.
 related_links:
-    - url: /cppcon/CppCon22_Lambda1.html
-    - url: /cppcon/CppCon22_Lambda3.html
+  - url: /algorithm/CppCon22Example.html
+  - url: /cppcon/CppCon22_Lambda1.html
+  - url: /cppcon/CppCon22_Lambda3.html
 ---
 
 ## <cpp_h2>1. C++ 11 람다</cpp_h2>
@@ -48,15 +49,13 @@ c++ 11버전에서 나온 람다 입니다.
 ![람다 리턴 타입]({{ site.google_drive }}1FOeXqLtZYDnrqKepiAwRD7oHFS15hE0s{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<cpp_h6>람다 리턴 타입</cpp_h6>*  
 
-- 또한, 흥미로운 점은 반환유형이 컴파일러에 의해서 추론됩니다. 만약 반환 유형을 명시적으로 사용하고 싶으면 ＂-&gt;＂을 사용하여 작성하면 됩니다.
+- 또한, 흥미로운 점은 반환유형이 컴파일러에 의해서 추론됩니다. 만약 반환 유형을 명시적으로 사용하고 싶으면 "-&gt;"을 사용하여 작성하면 됩니다.
 
 <br>
 
 ### <cpp_h3>2) 람다와 원시 함수 포인터</cpp_h3>
 
 람다는 객체기도 하지만 본질은 함수입니다. 따라서 C++11 이전의 만들어진 원시 객체 함수 포인터와도 호환 (레거시 콜)을 사용할 수 있습니다.    
-
-<br>
 
 #### **<cpp_h4>cpp:</cpp_h4>**
 
@@ -82,7 +81,7 @@ int main() {
 ![레거시 콜]({{ site.google_drive }}1LFKb7M_5vQOZG9aRJvvKHHFkHTo0RUBo{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<cpp_h6>레거시 콜</cpp_h6>*  
 
-람다는 객체이지만 본질은 함수＂F(x)＂라는 추상적 개념입니다. 아무것도 없어서 함수 포인터에 컴파일러가 암시적 변환으로 원시 함수 포인터를 변환해 줍니다.static_cast를 이용하여 때때로 명시적 변환이 필요할 때가 있습니다.  
+람다는 객체이지만 본질은 함수 "F(x)"라는 추상적 개념입니다. 아무것도 없어서 함수 포인터에 컴파일러가 암시적 변환으로 원시 함수 포인터를 변환해 줍니다.static_cast를 이용하여 때때로 명시적 변환이 필요할 때가 있습니다.  
 
 
 <br>
@@ -107,9 +106,9 @@ int main() {
 
 - 컴파일러 코드 내부적으로 변환에 관해 선언되어있기 때문에 static_cast를 사용하여 암시적 변환을 명시적으로 형변환 할 수 있습니다.
 
-한 가지 영상에서 나온 코드를 추가하겠습니다. 개인적으로 작성된 코드가 높은 코드 이해도를 필요로 함으로 대단했다고 생각합니다. 하지만 영상에서 경고했던 것처럼 현업에서는 사용하지 마세요.
-
 <br>
+
+한 가지 영상에서 나온 코드를 추가하겠습니다. 개인적으로 작성된 코드가 높은 코드 이해도를 필요로 함으로 대단했다고 생각합니다. 하지만 영상에서 경고했던 것처럼 현업에서는 사용하지 마세요.
 
 #### **<cpp_h4>cpp:</cpp_h4>**
 
@@ -133,8 +132,6 @@ int main() {
 ### <cpp_h3>3) 캡처</cpp_h3>
 
 캡처는 간단하게 말해서 외부함수를 람다라는 클래스 안에서 사용할 수 있도록 만들어줍니다. 이 말은 람다라는 클래스 안에서 변수 생성과 초기화 부분을 맡고 있습니다.  
-
-<br>
 
 #### **<cpp_h4>cpp:</cpp_h4>**
 
@@ -161,14 +158,14 @@ auto f =[=]() {return i == j;};
 ![캡쳐'=']({{ site.google_drive }}1wsPWIrN7Io9HunBR69-ru8ZjP3Fqg2OG{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<cpp_h6>캡쳐'='</cpp_h6>*  
 
-- ＂[ = ]＂을 사용하게 되면 부모 스택에서 사용 가능한 모든 변수를 데이터 복사의 형태인 call of value 형태로 값을 복사하여 사용할 수 있습니다.
-- ＂[ i , j ]＂ 같이 특정 변수를 데이터를 복사하여 람다 내부로 사용할 수도 있습니다.
+- "[ = ]"을 사용하게 되면 부모 스택에서 사용 가능한 모든 변수를 데이터 복사의 형태인 call of value 형태로 값을 복사하여 사용할 수 있습니다.
+- "[ i , j ]" 같이 특정 변수를 데이터를 복사하여 람다 내부로 사용할 수도 있습니다.
 
 ![캡쳐'=']({{ site.google_drive }}1bkwsDtikyY1c-oVQktssejws9dNWM92s{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<cpp_h6>캡쳐'='</cpp_h6>*  
 
-- ＂[ & ]＂을 사용하게 되면 부모 스택에서 사용 가능한 모든 변수를 데이터 참조 형태인 call of reference 형태로 주소를 공유하게 됩니다.
-- ＂[ &i , &j ]＂ 같이 특정 변수를 데이터를 참조하여 람다 내부로 사용할 수도 있습니다
+- "[ & ]"을 사용하게 되면 부모 스택에서 사용 가능한 모든 변수를 데이터 참조 형태인 call of reference 형태로 주소를 공유하게 됩니다.
+- "[ &i , &j ]" 같이 특정 변수를 데이터를 참조하여 람다 내부로 사용할 수도 있습니다
 
 다음의 코드는 변수의 주소와 캡처를 통하여 복사 혹은 참조를 거친 변수의 주소를 확인한 코드입니다.
 
@@ -270,6 +267,8 @@ int main()
 - "[this]"를 사용하게 되면 외부 클래스의 포인터를 참조하기 때문에 객체에 접근할 수 있습니다.
 - "[*this]"를 사용하면 클래스의 있는 객체를 복사하여 람다 내부에서 사용할 수 있습니다.
 
+<br>
+
 메모리의 데이터 영역의 코드와 람다함수의 관계 코드입니다.  
 
 ```cpp
@@ -289,8 +288,6 @@ auto f2 = [ ](){return a;};
 
 ![IIFE]({{ site.google_drive }}1fCT4ma3fz5Rz7PiRHKlh4W0kLNsafH80{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<cpp_h6>IIFE</cpp_h6>*  
-
-<br>
 
 #### **<cpp_h4>cpp:</cpp_h4>**
 
@@ -317,14 +314,14 @@ int value(Temp temp)
 
 
 int main() {
-	 std::vector<int> temps;
-     Temp temp;
+    std::vector<int> temps;
+    Temp temp;
     
     temps.push_back(value(temp)); // 전역변수 실행
     temps3.push_back([&temp](){
-        if (temp.isNamber == 0)
+        if (temp.isNumber == 0)
             return temp.x_value;
-        else if (temp.isNamber == 1)
+        else if (temp.isNumber == 1)
             return temp.y_value;
         else
             return temp.z_value;

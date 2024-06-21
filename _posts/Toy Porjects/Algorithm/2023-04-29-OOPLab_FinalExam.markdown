@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "객체지향프로그래밍실습 - 기말 과제"
+title: "객체지향프로그래밍실습 - 기말 과제(도스형 슈팅 게임 제작)"
 date: 2024-04-29 09:00:00 +09:00
 image: https://drive.google.com/thumbnail?id=1OAYgioMny8pcc5c4qS7T6bN7844IErr-
 toc: true

@@ -7,20 +7,21 @@ toc: true
 categories: [CppCon]
 keywords: C++, Cppcon, Cppcon22, Generators Coroutine , Coroutine, C++20, 피보나치 수열, 재귀 용법, 비동기 코루틴, Iterator
 addsence: true
-lastmod: 2024-04-03 21:11:00 +09:00
+lastmod: 2024-06-21 09:00:00 +09:00
 sitemap:
   changefreq : daily
   priority : 1.0
 excerpt: 이 글은 Generators 코드에서 사용할 수 있는 인터페이스를 구현하는 코드를 작성하고 있습니다. 또한, C++ 코루틴을 활용하여 피보나치 수열을 계산하는 세 가지 방법을 비교하고 성능을 측정하는 내용을 다룹니다.
 related_links:
-    - url: /cppcon/CppCon22_Generators_Coroutine1.html
-    - url: /cppcon/CppCon22_Generators_Coroutine2.html
+  - url: /algorithm/CppCon22Example.html
+  - url: /cppcon/CppCon22_Generators_Coroutine1.html
+  - url: /cppcon/CppCon22_Generators_Coroutine2.html
 ---
 
 ## <cpp_h2>1. 주제: Courtine Generators(Part 2)</cpp_h2>
 
 
-이번 분석 주제는, CppCon에서 발표된 [Understanding C++ Coroutines by Example: Generators(Part 2)](https://www.youtube.com/watch?v=lz3F036_OvU) 로 가져왔습니다. 해당 내용을 참조하여 분석해 보겠습니다. part1에서는 기본적 코루틴 동작을 주제로 설명하였다면, part 2에서는 generator로 사용하여 연계할 수 있는 인터페이스 코드들을 구현에 관해서 가져왔습니다. 위의 동영상에서는 Generator의 인터페이스 구현하는 방법에 관해서 공부할 수 있는 좋은 기회였습니다. 정확한 내용은 관련 영상을 보시는 것을 추천해 드립니다.  
+이번 분석 주제는, CppCon에서 발표된 [Understanding C++ Coroutines by Example: Generators(Part 2)](https://www.youtube.com/watch?v=lz3F036_OvU) 으로 가져왔습니다. 해당 내용을 참조하여 분석해 보겠습니다. part1에서는 기본적 코루틴 동작을 주제로 설명하였다면, part 2에서는 generator로 사용하여 연계할 수 있는 인터페이스 코드들을 구현에 관해서 가져왔습니다. 위의 동영상에서는 Generator의 인터페이스 구현하는 방법에 관해서 공부할 수 있는 좋은 기회였습니다. 정확한 내용은 관련 영상을 보시는 것을 추천해 드립니다.  
 
 <br>
 <br>
@@ -168,7 +169,7 @@ Iterator end() const noexcept
 
 ### <cpp_h3>6) 전체 코드 및 결과</cpp_h3>
 
-#### **<cpp_h4>cpp:</cpp_h4>**
+#### **<cpp_h4>GeneratorCoroutine2 cpp:</cpp_h4>**
 
 ```cpp
 
@@ -363,7 +364,7 @@ int main()
 
 ```
 
-![오퍼레이터 구현 코드]({{ site.google_drive }}1ykguLf4R6agMgcALmOpvIi7WlyyhPHBp{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+![Generator Coroutine2]({{ site.google_drive }}1ykguLf4R6agMgcALmOpvIi7WlyyhPHBp{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<cpp_h6>오퍼레이터 구현 결과</cpp_h6>* 
 
 <br>
@@ -372,8 +373,6 @@ int main()
 ## <cpp_h2>3.LazeIterator 게으른 초기화</cpp_h2>
 
 이번 주제 블로그를 작성하지 말까 고민했던 부분입니다. 이 부분은 동영상에서도 대략적 로직만 설명하고 넘어감으로 저의 생각과 구현이 달랐을 수도 있습니다. (이론은 머릿속으로 하는데 생각보다 다양한 경험이 부족해서 아직 부족하다는 생각이 많이 들었습니다.) Generator는 연산이 필요할 때까지 일으킬 필요가 없습니다. 그렇기 때문에 게으른 연산이 필요합니다.  
-
-<br>
 
 #### **<cpp_h4>cpp:</cpp_h4>**
 
@@ -565,9 +564,7 @@ private:
 
 피보나치 수열을 생각하면 가장 간단하게 사용할 수 있는 재귀 용법을 작성해 봅시다.  
 
-<br>
-
-#### **<cpp_h4>cpp:</cpp_h4>**
+#### **<cpp_h4>FIbo Recursion cpp:</cpp_h4>**
 
 ```cpp
 
@@ -603,7 +600,7 @@ int main()
 }
 
 ```
-![피보나치 재귀 용법]({{ site.google_drive }}1kI8GUJQ3AVV6DzzdZxkTl0vrUZLnT5TO{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+![FIbo Recursion]({{ site.google_drive }}1kI8GUJQ3AVV6DzzdZxkTl0vrUZLnT5TO{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<cpp_h6>재귀 용법으로 구현한 피보나치 수열</cpp_h6>* 
 
 <br>
@@ -612,9 +609,7 @@ int main()
 
 위의 재귀 용법은 생각하는데 용의 하지만 느립니다. 따라서 공식을 이용하여 코드를 변형해 봅시다.  
 
-<br>
-
-#### **<cpp_h4>cpp:</cpp_h4>**
+#### **<cpp_h4>Fibo Algorith mcpp:</cpp_h4>**
 
 ```cpp
 
@@ -668,14 +663,14 @@ int main()
 
 ```
 
-![로직 변경]({{ site.google_drive }}1WCUTDQn8bivej1NjMg-0pI7nGxQ4CzVT{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+![Fibo Algorithm]({{ site.google_drive }}1WCUTDQn8bivej1NjMg-0pI7nGxQ4CzVT{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<cpp_h6>알고리즘 변경한 피보나치 수열</cpp_h6>* 
 
 위의 로직을 이용해서 1~1000000까지 피보나치 수열을 출력하는 코드를 만들어 보겠습니다. 물로 배열을 이용하면 피보나치 수열의 정확한 수를 만들 수 있지만, 로직을 시간을 확인하는 용도 임으로 %를 이용하여 나머지 계산만 하겠습니다.
 
 <br>
 
-#### **<cpp_h4>cpp:</cpp_h4>**
+#### **<cpp_h4>Fibo Algorithm cpp:</cpp_h4>**
 
 ```cpp
 
@@ -730,14 +725,14 @@ int main()
 
 ```
 
-![충분한 결과값]({{ site.google_drive }}19y4ZVdyPuMjhtw63nh5wPbmER9GVxf7i{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+![Fibo Algorithm2]({{ site.google_drive }}19y4ZVdyPuMjhtw63nh5wPbmER9GVxf7i{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<cpp_h6>충분한 데이터를 얻기 위한 피보나치 수열 계산 결과</cpp_h6>* 
 
 <br>
 
 ### <cpp_h3>3) 코루틴 사용</cpp_h3>
 
-#### **<cpp_h4>cpp:</cpp_h4>**
+#### **<cpp_h4>Fibo Coroutine cpp:</cpp_h4>**
 
 ```cpp
 
@@ -797,7 +792,7 @@ int main()
 
 ```
 
-![코루틴을 사용한 피보나치 수열]({{ site.google_drive }}16RSyygqHNyJHxvoO57Ldq14aw4DWcIfq{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+![Fibo Coroutine]({{ site.google_drive }}16RSyygqHNyJHxvoO57Ldq14aw4DWcIfq{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<cpp_h6>코루틴을 사용한 피보나치 수열</cpp_h6>* 
 
 출력 시간을 포함한 0~100000의 나머지 계산 값의 시간은 코루틴을 사용하는 것이 압도적으로 좋습니다. 생각해 보면 일반적 함수는 O(N^2)의 시간 복잡도를 가지지만 코루틴은 O(N)의 시간 복잡도를 가지게 됩니다. 물론 전역 변수로 해시테이블이나 배열, 큐, 벡터 등을 사용하면 일반 함수를 이용하는 방법도 출력시간을 단축할 수 있습니다. 하지만 알고리즘 대회 로직을 보면 메모리 사용량을 많이 무시하는 경향이 있는데, 이런 해시테이블 배열 등을 사용하게 되면 공간복잡도도 같이 올라가서 퍼포먼스가 떨어질 수밖에 없습니다. (메모리는 무한하지 않습니다.) 따라서 복잡하면서 반복적이면서 복잡한 계산은 코루틴을 사용하는 것이 효율적입니다.

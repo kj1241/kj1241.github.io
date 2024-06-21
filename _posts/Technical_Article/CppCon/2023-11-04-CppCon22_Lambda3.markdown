@@ -7,14 +7,15 @@ toc: true
 categories: [CppCon]
 keywords: C++, Cppcon, Cppcon22, lambda, C++20, 람다의 이름 지정
 addsence: true
-lastmod: 2024-04-03 22:49:00 +09:00
+lastmod: 2024-06-21 09:00:00 +09:00
 sitemap:
   changefreq : daily
   priority : 1.0
 excerpt: C++의 람다 함수는 C++14부터 지원되며, C++17 및 C++20에서 확장되었습니다. 람다를 활용하면 코드를 간결하게 작성할 수 있으며, C++20에서는 람다를 멤버 변수로도 사용할 수 있습니다.  
 related_links:
-    - url: /cppcon/CppCon22_Lambda1.html
-    - url: /cppcon/CppCon22_Lambda2.html
+  - url: /algorithm/CppCon22Example.html
+  - url: /cppcon/CppCon22_Lambda1.html
+  - url: /cppcon/CppCon22_Lambda2.html
 ---
 
 
@@ -75,7 +76,7 @@ int main()
 
 ```
 
-![파라미터 팩과 람다 조합]({{ site.google_drive }}18IbnYn4-J8I4GTGwFrPpX0tqgck_8r2E-osek{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+![파라미터 팩과 람다 조합]({{ site.google_drive }}18IbnYn4-J8I4GTGwFrPpX0tqgck_8r2E{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<cpp_h6>파라미터 팩과 람다 조합</cpp_h6>* 
 
 - ... 은 팩 패턴이며 가변 개수의 인자를 나타냅니다. 또한 && r-value는 참조를 뜻합니다.
@@ -224,9 +225,6 @@ int main() {
 
 ### <cpp_h3>1) 컴파일시간에 계산하는 constexpr</cpp_h3>
 
-
-<br>
-
 #### **<cpp_h4>cpp:</cpp_h4>**
 
 ```cpp
@@ -252,8 +250,6 @@ int main() {
 ### <cpp_h3>2) 람다 오버로드</cpp_h3>
 
 일반적인 함수 오버로드를 생각해 봅시다. 정수(int)와 실수(float)들을 받아서 더하는 덧셈 프로그래밍을 만든다고 생각해 봅시다.
-
-<br>
 
 #### **<cpp_h4>cpp:</cpp_h4>**
 
@@ -503,8 +499,6 @@ int main()
 
 다시 돌아와서 C++20에서 람다를 확인해 봅시다. 람다는 매개변수 팩을 캡처 가능합니다.  
 
-<br>
-
 #### **<cpp_h4>cpp:</cpp_h4>**
 
 ```cpp
@@ -592,8 +586,6 @@ int main()
 <br>
 
 ### <cpp_h3>3) 람다의 이름 지정</cpp_h3>
-
-<br>
 
 #### **<cpp_h4>cpp:</cpp_h4>**
 
@@ -770,7 +762,7 @@ int countLeaves(const Tree& tree)
 
 ## <cpp_h2>5. 여담</cpp_h2>
 
-시간이 흐를수록 언어는 발전하고 있기 때문에 람다는 눈여겨볼 가치가 있습니다. 물론 가장 중요한 건 ＂람다가 어떻게 컴파일 내부에서 변형되는지＂가 아닐까 싶습니다. 그럼 읽어 주셔서 감사합니다.
+시간이 흐를수록 언어는 발전하고 있기 때문에 람다는 눈여겨볼 가치가 있습니다. 물론 가장 중요한 건 "람다가 어떻게 컴파일 내부에서 변형되는지"가 아닐까 싶습니다. 그럼 읽어 주셔서 감사합니다.
 
 <br>
 
