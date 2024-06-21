@@ -6,8 +6,16 @@ image: https://drive.google.com/thumbnail?id=1Qv8uEaaQQ2fC8W3Uu9d2HMOLnCT7cfGp
 toc: true
 categories: [Unity_TP] 
 keywords: C#, Unity, BFS, 넓이 우선탐색
+addsence: false
+lastmod: 2024-06-21 09:00:00 +09:00
+sitemap: 
+  changefreq : daily
+  priority : 1.0
+excerpt: 몬스터 AI와 게임 플레이를 구현한 Toy Project로, 플레이어 이동, 몬스터 추적 및 공격 및 시각 탐지 영역 시각화를 포함한 다양한 기능을 학습하고 구현했습니다.
 related_links:
-    - url: /unity_tp/MobileProgramming.html
+related_links:
+  - url: /algorithm/MobileProgramming.html
+  - url: /unity_tp/MobileProgramming.html
 ---
 
 ## <unity_h2> 프로젝트 소개 </unity_h2>
@@ -70,7 +78,7 @@ related_links:
 <iframe width="100%" style="aspect-ratio:16/9" src="https://drive.google.com/file/d/1VUN_ODBqFznrGLK9dgXmL9ehWq-aapPC/preview" title="기말과제 -모바일 증강현실 프로젝트 보고서" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 - <span><unity_h5>성과:</unity_h5> 2018년 1학기 기능성 프로그래밍 기말 과제 </span>
-- <span><unity_h5>깃허브(코드):</unity_h5> </span>
+- <span><unity_h5>깃허브(코드): </unity_h5>[https://github.com/kj1241/Unity_Portfolio/tree/main/MobileProgramming](https://github.com/kj1241/Unity_Portfolio/tree/main/MobileProgramming)</span>
 
 <br>
 <br>

@@ -6,13 +6,20 @@ image: https://drive.google.com/thumbnail?id=1jo91tPIDGQz2umSVyPjEheLdCDj4-kjo
 toc: true
 categories: [Unity_TP] 
 keywords: C#, Unity, BFS, 넓이 우선탐색, 레이 케스트, 픽킹 
+addsence: false
+lastmod: 2024-06-21 09:00:00 +09:00
+sitemap: 
+  changefreq : daily
+  priority : 1.0
+excerpt: 유니티와 친숙해지기 위해서 피타고라스 정리와 레이캐스트를 활용한 오브젝트 간 거리 계산과 충돌 탐지 연습 프로젝트입니다.
 related_links:
-    - url: /unity_tp/MobileProgramming_FinalExam.html
+  - url: /algorithm/MobileProgramming.html
+  - url: /unity_tp/MobileProgramming_FinalExam.html
 ---
 
 ## <unity_h2> 프로젝트 소개 </unity_h2>
 
-이 프로젝트는 모바일 증강현실 프로그래밍실습 과제로, Toy Project 형태로 제작되었습니다. 주요 기능으로는 피타고라스의 정리를 이용한 두 오브젝트 간의 거리 계산과 카메라 레이캐스트 연습이 있습니다. 이를 통해 프로그래밍과 게임 개발에 대한 이해를 높였습니다.
+해당 프로젝트는 모바일 증강현실 프로그래밍실습 과제로, Toy Project 형태로 제작되었습니다. 주요 기능으로는 피타고라스의 정리를 이용한 두 오브젝트 간의 거리 계산과 카메라 레이캐스트 연습이 있습니다. 이를 통해 프로그래밍과 게임 개발에 대한 이해를 높였습니다.
 
 <br>
 <br>
@@ -23,7 +30,7 @@ related_links:
 - <span><unity_h5>과제:</unity_h5> 2016년 2학기 모바일증강현실프로그래밍실습 일반 과제</span>
 - <span><unity_h5>게임 장르:</unity_h5> Toy Project</span>
 - <span><unity_h5>기간:</unity_h5> 제작 완료</span>
-    - ver.1: 2016.09.03~2016.12.10(제작)
+    - ver.1: 2016.10.11~2016.12.10(제작)
 - <span><unity_h5>개발인원:</unity_h5> Developer(1명)</span>
 - <span><unity_h5>플랫폼:</unity_h5> PC (Window)</span>
 
@@ -72,6 +79,14 @@ related_links:
 1. 마우스가 클릭한 지점을 입력받아서 뷰잉 좌표 → 월드 좌표로 변환해서 목적지 값을 산출합니다.
 2. 화면에 안보이는 10*10의 셀을 나누고 오브젝트가 있는 지점에서 부터 마우스 클릭 목적지까지 넓이 우선탐색으로 계산합니다.
 3. 계산에 도출된 셀들을 리스트에 넣고 코루틴을 이용하여 하나씩 빼주면서 이동시켜줍니다.
+
+<br>
+<br>
+
+## <cpp_h2> 결과(성과) 및 데모 </cpp_h2>
+
+- <span><cpp_h5>성과:</cpp_h5> 2016년 2학기 모바일증강현실프로그래밍실습 일반 과제 </span>
+- <span><cpp_h5>깃허브(코드): </cpp_h5>[https://github.com/kj1241/Unity_Portfolio/tree/main/MobileProgramming](https://github.com/kj1241/Unity_Portfolio/tree/main/MobileProgramming)</span>
 
 <br>
 <br>
