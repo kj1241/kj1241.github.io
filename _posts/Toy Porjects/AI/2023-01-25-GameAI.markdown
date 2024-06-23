@@ -7,14 +7,15 @@ toc: true
 categories: [AI]
 keywords: AI, PDDL, pyhon
 addsence: false
-lastmod: 2024-05-30 09:00:00 +09:00
+lastmod: 2024-06-23 09:00:00 +09:00
 sitemap:
   changefreq : daily
   priority : 1.0
 excerpt: 인공지능 계획 언어인 PDDL을 이용한 스토리 텔링을 제작과 pyhon 기초 학습을 진행한 게임 인공지능 수업 과제 입니다.
 related_links:
-    - url: /ai/GameAI_MiddleExam.html
-    - url: /ai/GameAI_FinalExam.html
+  - url: /algorithm/GameAI.html
+  - url: /ai/GameAI_MiddleExam.html
+  - url: /ai/GameAI_FinalExam.html
 ---
 
 ## <ai_h2> 프로젝트 소개 </ai_h2>

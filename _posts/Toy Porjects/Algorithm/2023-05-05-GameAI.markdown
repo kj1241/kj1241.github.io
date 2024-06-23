@@ -1,0 +1,198 @@
+---
+layout: post
+title: "게임인공지능 - 일반 과제"
+date: 2024-05-05 09:00:00 +09:00
+image: https://drive.google.com/thumbnail?id=1W2PX8SPQh-C5YjyL7sFRUGn_542YMu57
+toc: true
+categories: [Algorithm] 
+keywords: C++, 알고리즘, 최소 신장 트리, Prim, Kruskal, 다익스트라, LCS, 그리디 알고리즘, 거스름돈 계산, 백트래킹, N-Queens
+addsence: false
+lastmod: 2024-06-23 09:00:00 +09:00
+sitemap: 
+  changefreq : daily
+  priority : 1.0
+excerpt: 다양한 알고리즘을 C++로 구현하여 최소 신장 트리, 다익스트라, LCS, 그리디, 백트래킹을 경험하며 알고리즘 설계 및 최적화를 학습한 프로젝트입니다.
+related_links:
+  - url: /ai/GameAI.html
+  - url: /ai/GameAI_MiddleExam.html
+  - url: /ai/GameAI_FinalExam.html
+
+---
+
+## <cpp_h2>프로젝트 소개</cpp_h2>
+
+이번 프로젝트는 다양한 AI 알고리즘을 C++ 언어로 구현하여 이론적 배경과 실질적 구현을 연계하는 것을 목표로 하였습니다. 최소 신장 트리, 다익스트라 최단 경로, 최장 공통 부분 문자열, 그리디 알고리즘을 이용한 거스름돈 계산, N-Queens 문제 해결을 위한 백트래킹 알고리즘 등을 포함하여 다양한 알고리즘을 구현하고 테스트했습니다.
+
+<br>
+<br>
+
+## <cpp_h2>프로젝트 개요</cpp_h2>
+
+- <span><cpp_h5>프로젝트명:</cpp_h5> AI 관련 알고리즘 구현하기</span>
+- <span><cpp_h5>과제:</cpp_h5> 2018년 1학기 게임인공지능 일반 과제</span>
+- <span><cpp_h5>게임 장르:</cpp_h5> Toy Project</span>
+- <span><cpp_h5>기간:</cpp_h5> 제작 완료</span>
+   - ver.1: 2018.03.02~2018.04.25(제작)
+- <span><cpp_h5>개발인원:</cpp_h5> Developer(1명)</span>
+- <span><cpp_h5>플랫폼:</cpp_h5> PC (console)</span>
+
+<br>
+
+### <cpp_h3> 기술 스택 </cpp_h3>
+
+- <span><cpp_h5>개발 도구:</cpp_h5> viusal studio 2010 → visual studio 2019</span>
+- <span><cpp_h5>개발 언어:</cpp_h5> c++  </span>
+
+<br>
+<br>
+
+## <cpp_h2> 프로젝트 특징 및 기능 구현 </cpp_h2>
+
+이번 프로젝트는 AI에서 활용할 수 있는 다양한 알고리즘을 C++ 언어로 구현하는 것을 목표로 하였으며, 각 알고리즘의 이론적 배경을 바탕으로 실질적인 코드 구현과 테스트를 통해 그 기능을 확인했습니다.
+
+<br>
+
+### <cpp_h3> 1) MinimumSpanningTree</cpp_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
+
+![최소신장트리 코드 실행 결과]({{ site.google_drive }}19sh2yTXEJD0HoaHuNqbtwm8QELXuqg-X{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<cpp_h6>최소신장트리 코드 실행 결과</cpp_h6>*
+
+해당 코드는 전체적으로 C++의 unique_ptr을 사용하여 메모리 관리를 자동으로 처리하며, Prim과 Kruskal 알고리즘을 구현하여 주어진 그래프의 최소 신장 트리를 찾는 기능을 수행합니다.
+
+- CreateGraph: 새로운 그래프를 생성합니다.
+- DestroyGraph: 그래프의 모든 정점과 간선을 삭제합니다.
+- CreateVertex: 새로운 정점을 생성합니다.
+- AddVertex: 그래프에 정점을 추가합니다.
+- AddEdge: 정점에 간선을 추가합니다.
+- PrintGraph: 각 정점과 그 정점에 연결된 간선의 가중치를 출력합니다.
+
+- Prim
+  - Prim 알고리즘을 사용하여 최소 신장 트리를 생성합니다.
+  - 우선순위 큐를 사용하여 가장 낮은 가중치의 간선을 선택합니다.
+  - 정점의 인접 리스트를 탐색하며 최소 가중치 간선을 찾습니다.
+  - MST 그래프에 선택된 간선을 추가합니다.
+
+- Kruskal
+  - Kruskal 알고리즘을 사용하여 최소 신장 트리를 생성합니다.
+  - 간선을 가중치에 따라 오름차순으로 정렬합니다.
+  - 간선을 하나씩 선택하며 두 정점이 같은 집합에 속하지 않을 경우 MST에 추가합니다.
+  - 서로소 집합 자료 구조를 사용하여 사이클을 방지합니다.
+
+- DisjointSet: 서로소 집합 자료 구조를 나타냅니다.
+- DS_FindSet: 주어진 집합의 루트를 찾습니다.(경로 압축 기법을 사용합니다.)
+- DS_UnionSet: 두 집합을 합칩니다.
+- DS_MakeSet: 새로운 집합을 만듭니다.
+
+<br>
+
+### <cpp_h3> 2) Dijkstra</cpp_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
+
+![다익스트라 코드 실행 결과]({{ site.google_drive }}1W2PX8SPQh-C5YjyL7sFRUGn_542YMu57{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<cpp_h6>다익스트라 코드 실행 결과</cpp_h6>*
+
+해당 코드는 C++을 사용하여 다익스트라 알고리즘을 구현하고, 주어진 그래프에서 특정 정점부터 다른 모든 정점까지의 최단 경로를 찾는 기능을 수행합니다.
+
+- CreateGraph: 새로운 그래프를 생성합니다.
+- DestroyGraph: 그래프의 모든 정점과 간선을 삭제합니다.
+- CreateVertex: 새로운 정점을 생성합니다.
+- DestroyVertex: 정점과 그 정점의 모든 간선을 삭제합니다.
+- CreateEdge: 새로운 간선을 생성합니다.
+- DestroyEdge: 간선을 삭제합니다.
+- AddVertex: 그래프에 정점을 추가합니다.
+- AddEdge: 정점에 간선을 추가합니다.
+- PrintGraph: 그래프를 출력합니다.
+
+- PriorityQueue
+  - 우선순위 큐를 나타냅니다.
+  - 노드를 저장하고, 삽입과 삭제 연산을 수행합니다.
+  - 최소 힙 구조를 사용하여 우선순위가 가장 높은(가장 낮은 가중치) 노드를 관리합니다.
+
+- Dijkstra
+  - 다익스트라 알고리즘을 사용하여 최단 경로를 찾습니다.
+  - 우선순위 큐를 사용하여 가장 낮은 가중치의 경로를 선택합니다.
+  - 정점의 인접 리스트를 탐색하며 최단 경로를 갱신합니다.
+  - ShortestPath 그래프에 최단 경로를 추가합니다.
+
+<br>
+
+### <cpp_h3> 3) LCS</cpp_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
+
+![LCS 코드 실행 결과]({{ site.google_drive }}1-zuQCDToic7k7tBeIqLOzfMixySmXBda{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<cpp_h6>LCS 코드 실행 결과</cpp_h6>*
+
+해당 코드는 두 문자열 간의 최장 공통 부분 문자열(LCS: Longest Common Subsequence)을 찾는 프로그램입니다.
+
+- LCS 함수
+  - 두 문자열 X와 Y의 LCS 길이를 계산합니다.
+  - 동적 계획법 테이블 Table을 업데이트합니다.
+  - 반복문을 통해 테이블을 채워나갑니다.
+    - X[m - 1]와 Y[n - 1]이 같으면, Table.Data[m][n]을 대각선 위의 값 + 1로 설정합니다. 그렇지 않으면, 왼쪽 또는 위쪽 값 중 큰 값으로 설정합니다.
+
+- LCS_TraceBack 함수
+  - LCS 문자열을 역추적합니다.
+  - 테이블을 거꾸로 탐색하며, LCS를 재귀적으로 찾아냅니다.
+  - Table.Data[m][n] 값이 대각선 위의 값보다 크면, X[m - 1]를 LCS에 추가하고 대각선으로 이동합니다. 그렇지 않으면, 왼쪽 또는 위쪽 값 중 하나로 이동합니다.
+
+- LCS_PrintTable 함수
+  - LCS 테이블을 출력합니다.
+  - 두 문자열과 테이블을 포맷에 맞춰 출력하여, 테이블의 각 값을 확인할 수 있습니다.
+
+<br>
+
+### <cpp_h3> 4) Greed</cpp_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
+
+![MakingChange 코드 실행 결과]({{ site.google_drive }}1WyyQCQH6chp_L6K6Ko3pRrj8RfxvSJEW{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<cpp_h6>MakingChange 코드 실행 결과</cpp_h6>*
+
+해당 코드는 그리디 알고리즘을 사용하여 거스름돈을 계산하는 프로그램입니다. 주어진 금액에 대해 가능한 한 가장 큰 단위의 동전을 우선적으로 사용하여 거스름돈을 계산합니다. 
+
+- GetChange 함수
+  - 거스름돈을 계산하는 함수입니다.
+  - 매개변수로 물건 가격 Price, 손님이 지불한 금액 Pay, 동전 단위 벡터 CoinUnits, 거스름돈 벡터 Change를 받습니다.
+  - ChangeAmount는 거스름돈으로, Pay에서 Price를 뺀 값입니다.
+  - 가장 큰 단위의 동전부터 시작하여, 해당 동전으로 거슬러 줄 수 있는 개수를 Change 벡터에 저장합니다.
+  - 남은 거스름돈을 ChangeAmount에서 빼고, 다음으로 큰 단위의 동전에 대해 동일한 작업을 반복합니다.
+- PrintChange 함수
+  - 거스름돈을 출력하는 함수입니다.
+  - 각 동전 단위에 대해 몇 개의 동전을 사용했는지 출력합니다.
+
+
+<br>
+
+### <cpp_h3> 5) BackTtracking</cpp_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
+
+![BackTtracking 코드 실행 결과]({{ site.google_drive }}11EnSrARqUudODs2_KBYmSKgMP-JY4jAv{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<cpp_h6>BackTtracking 코드 실행 결과</cpp_h6>*
+
+해당 코드는 N-Queens 문제를 해결하기 위한 백트래킹 알고리즘을 구현한 것입니다. N-Queens 문제는 N x N 체스판에 N개의 퀸을 서로 공격하지 않도록 배치하는 문제입니다. 이 코드는 모든 가능한 해를 찾아 출력합니다.
+
+- PrintSolution 함수
+  - 주어진 Columns 배열을 기반으로 체스판을 출력합니다.
+  - Columns[i]는 i번째 행에 놓인 퀸의 열 위치를 나타냅니다.
+  - 체스판을 출력할 때 퀸이 있는 위치에 'Q'를, 없는 위치에 '.'를 출력합니다.
+- IsThreatened 함수
+  - 현재까지 놓인 퀸들이 서로 공격할 수 있는지 검사합니다.
+  - 두 퀸이 같은 열에 있거나, 대각선 위치에 있으면 서로 공격할 수 있으므로 true를 반환합니다. 그렇지 않으면 false를 반환합니다.
+- FindSolutionForQueen 함수
+  - 재귀적으로 각 행에 퀸을 놓는 함수를 호출합니다.
+  - 현재 행이 Row인 상태에서 다음 행에 퀸을 놓을 수 있는 모든 경우를 시도합니다.
+  - 각 행에 퀸을 놓을 때마다 IsThreatened 함수를 호출하여 유효한 위치인지 확인합니다. 마지막 행까지 유효한 위치에 퀸을 놓을 수 있으면 해를 출력합니다.
+
+<br>
+<br>
+
+## <cpp_h2> 결과(성과) 및 데모 </cpp_h2>
+
+- <span><cpp_h5>성과:</cpp_h5> 2018년 1학기 게임인공지능 일반 과제 </span>
+- <span><cpp_h5>깃허브(코드): </cpp_h5>[https://github.com/kj1241/Algorithm_Portfolio/tree/main/GameAI](https://github.com/kj1241/Algorithm_Portfolio/tree/main/GameAI)</span>
+
+<br>
+<br>
+
+## <cpp_h2> 비고 및 여담 </cpp_h2>
+
+- 배운점 
+  - 알고리즘을 직접 구현하며 이론적으로 배운 내용을 실습을 통해 깊이 있게 이해할 수 있었습니다.
+  - 코드의 효율성과 최적화를 위해 우선순위 큐, 동적 계획법, 그리디 알고리즘 등 다양한 기법을 활용하여 성능을 향상시킬 수 있었습니다.
+- 여담
+  - 프로젝트 과정에서 발생한 다양한 문제들을 해결하는 과정이 매우 흥미로웠고, 실제로 문제 해결 능력이 향상되었음을 느꼈습니다.

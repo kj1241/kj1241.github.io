@@ -7,14 +7,15 @@ toc: true
 categories: [AI]
 keywords: AI, C++, FSM
 addsence: false
-lastmod: 2024-05-30 09:00:00 +09:00
+lastmod: 2024-06-23 09:00:00 +09:00
 sitemap:
   changefreq : daily
   priority : 1.0
 excerpt: C++로 FSM 패턴을 사용해 NPC AI를 제작한 2018년 게임 인공지능 과제 프로젝트입니다.
 related_links:
-    - url: /ai/GameAI.html
-    - url: /ai/GameAI_FinalExam.html
+  - url: /algorithm/GameAI.html
+  - url: /ai/GameAI.html
+  - url: /ai/GameAI_FinalExam.html
 ---
 
 ## <ai_h2> 프로젝트 소개 </ai_h2>

@@ -7,15 +7,16 @@ toc: true
 categories: [AI]
 keywords: AI, c#, Unity, repulsive force, similar clustering
 addsence: false
-lastmod: 2024-05-30 09:00:00 +09:00
+lastmod: 2024-06-23 09:00:00 +09:00
 sitemap:
   changefreq : daily
   priority : 1.0
 excerpt: 유니티로 척력과 인력을 활용하여 유사 군집 알고리즘을 구현한 2018년 게임인공지능 프로젝트입니다.
 related_links:
-    - url: /unity/Similar_Clustering_log.html
-    - url: /ai/GameAI.html
-    - url: /ai/GameAI_MiddleExam.html
+  - url: /algorithm/GameAI.html
+  - url: /unity/Similar_Clustering_log.html
+  - url: /ai/GameAI.html
+  - url: /ai/GameAI_MiddleExam.html
 ---
 
 ## <ai_h2> 프로젝트 소개 </ai_h2>
