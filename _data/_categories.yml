@@ -36,6 +36,8 @@ categories_list:
         url: /Computer_Vision/
       - title: Game_Planning
         url: /Game_Planning/
+      - title: Other_Projects
+        url: /Other_Projects/
       
   - title: Technical Article & Treble Shooting
     categories_sub_list:
