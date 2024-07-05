@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "컴퓨터그래픽스실습(2) - 기말 과제"
+title: "컴퓨터그래픽스실습(2) - 기말 과제(프로젝트 제작)"
 date: 2024-07-04 09:00:00 +09:00
 image: https://drive.google.com/thumbnail?id=1FIPnFph8Jon6cia7BFwsXU26M8bnjirX
 toc: true
@@ -15,6 +15,7 @@ excerpt: 오거엔진을 이용하여 만든 3D 좀비 아케이드 게임 제�
 related_links:
   - url: /other_projects/ComputerGraphicsLab2.html
   - url: /other_projects/ComputerGraphicsLab2_MiddleExam.html
+  - url: /3ds_max/ComputerGraphicsLab2_FinalExam.html
 ---
 
 ## <cpp_h2> 프로젝트 소개 </cpp_h2>
@@ -48,7 +49,7 @@ related_links:
 
 ## <cpp_h2> 프로젝트 특징 및 기능 구현 </cpp_h2>
 
-좀비 아케이드 게임에 대한 기능과 구현 내용입니다.
+3D 좀비 아케이드 게임의 주요 기능과 구현 내용은 다음과 같습니다.
 
 <br>
 

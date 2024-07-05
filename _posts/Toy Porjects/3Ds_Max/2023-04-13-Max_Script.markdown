@@ -1,17 +1,23 @@
 ---
 layout: post
 title: "개인용 Max Script 제작"
-date: 2023-04-13 19:43:17 +0900
+date: 2023-04-13 19:43:17 +09:00
 image: https://drive.google.com/thumbnail?id=18BKJlKIfPlwijT6HzZiFFMtm_Yy7NJme
 toc: true
 categories: [3Ds_Max]
-tags: [3Ds Max, Max Script]
 keywords: 3Ds_Max, MaxScript
+addsence: false
+lastmod: 2024-07-05 09:00:00 +09:00
+sitemap:
+  changefreq : daily
+  priority : 1.0
+excerpt: Max Script를 사용해 3Ds Max에서 버튼과 라디오 박스로 구성된 사용자 인터페이스를 제작하여 상호작용을 간편하게 만들었습니다.
+related_links:
 ---
 
 ## <art_h2>프로젝트 소개</art_h2>
 
-Max Script를 사용하여 버튼과 라디오 박스로 구성된 GUI를 만들었습니다. 버튼은 사용자가 특정 작업을 트리거하도록 하고, 라디오 박스는 여러 옵션 중 하나를 선택할 수 있게끔 디자인되었습니다. 이를 통해 사용자는 스크립트를 통해 간편하게 상호작용할 수 있습니다. 
+Max Script를 사용하여 버튼과 라디오 박스로 구성된 사용자 인터페이스를 만들었습니다. 버튼은 특정 작업을 실행하고, 라디오 박스는 여러 옵션 중 하나를 선택할 수 있게 설계되었습니다. 이를 통해 사용자는 스크립트를 통해 쉽게 상호작용할 수 있습니다.
 
 <br>
 <br>
@@ -73,5 +79,5 @@ Max Script를 사용하여 버튼과 라디오 박스로 구성된 GUI를 만들
 ## <art_h2> 비고 및 여담 </art_h2>
 
 - 배운점 
-    - 3D Max에서 Max Scirpt이용하여 바이너리파일로 임포트하는 방법을 배웠습니다.
-    - 3D Max에서 Max Scirpt이용하여 UI 및 프로세스 공정을 단축시키는 방법을 배웠습니다.
+    - 3Ds Max에서 Max Script를 이용하여 바이너리 파일을 임포트하는 방법을 익혔습니다.
+    - Max Script를 활용해 3Ds Max의 UI와 작업 공정을 효율적으로 단축시키는 방법을 배웠습니다.

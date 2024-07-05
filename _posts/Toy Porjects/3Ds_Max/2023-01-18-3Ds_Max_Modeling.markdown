@@ -1,19 +1,24 @@
 ---
 layout: post
 title: "3D 모델링 실습 - 기말 과제(모델링 및 애니메이션 제작)"
-date: 2023-01-18 21:58:00 +0900
+date: 2023-01-18 21:58:00 +09:00
 image: https://drive.google.com/thumbnail?id=11dTOwOQaBJmV5-aG2VqQFQO7c8ekZ7Ho
 toc: true
 categories: [3Ds_Max]
-tags: [3Ds_Max, animation, modelling, bone skeleton, key frame]
-keywords: 3Ds_Max, animation, modelling, bone skeleton, key frame
+keywords: 3Ds Max, 애니메이션 리깅, 3D 모델링, UV 매핑, 디퓨즈 맵, 노멀 맵, 본 스켈레톤, 프레임 애니메이션, 컴퓨터그래픽스
+addsence: false
+lastmod: 2024-07-05 09:00:00 +09:00
+sitemap:
+  changefreq : daily
+  priority : 1.0
+excerpt: 해당 프로젝트는 3Ds Max를 활용해 친근한 감성의 용 모델링과 애니메이션을 제작하는 것을 목표로 하였습니다.
 related_links:
-    - url: /3ds_max/3Ds_Max_Terrain.html
+  - url: /3ds_max/3Ds_Max_Terrain.html
 ---
 
 ## <art_h2>프로젝트 소개</art_h2>
 
-이 프로젝트는 부족함을 인정하면서도 열정적인 노력으로 만들어진 아기자기한 용 모델링과 애니메이션을 소개합니다. 전통적인 용의 이미지를 따르지 않고, 친근하고 따뜻한 감성으로 표현된 모델은 작은 디테일들을 만들기 위해 노력했습니다. 
+이 프로젝트는 부족함을 인정하면서도 열정적인 노력으로 만들어진 아기자기한 용 모델링과 애니메이션을 소개합니다. 전통적인 용의 이미지를 따르지 않고, 친근하고 따뜻한 감성으로 표현된 모델은 작은 디테일들을 만들기 위해 노력했습니다.
 
 <br>
 <br>
@@ -102,9 +107,8 @@ related_links:
 
 - 배운점 
     - 캐릭터 모델링의 제작 프로세스를 이해하고 습득하였습니다.  
-    - 3D 모델링에 대한 깊은 이해로 다양한 오브젝트를 창조하고 수정하는 기술적 역량 획득 하였습니다.
+    - 3D 모델링에 대한 깊은 이해로 다양한 오브젝트를 창조하고 수정하는 기술적 역량을 획득하였습니다.
     - 직접 UV 매핑을 통해 디퓨즈 맵과 노멀 맵을 제작하며 텍스처 입히기에 도전할 기회 얻었습니다.
-
     - 3D 애니메이션에 관해서 이해하고 제작하는 방법에 대해 습득하였습니다.
     - 본 스켈레톤과 프레임 애니메이션 차이에 대해서 이해하고 멀티 애니메이션 만드는 방법에대해서 습득하였습니다.
 
