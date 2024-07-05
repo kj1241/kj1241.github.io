@@ -13,8 +13,9 @@ sitemap:
   priority : 1.0
 excerpt: Ogre3D를 사용해 구현한 퐁 게임 프로젝트 입니다. 3D 그래픽과 실시간 게임 로직을 적용하여 게임을 제작하였습니다.
 related_links:
+  - url: /other_projects/ComputerGraphicsLab2.html
+  - url: /other_projects/ComputerGraphicsLab2_FinalExam.html
 ---
-
 
 ## <cpp_h2> 프로젝트 소개 </cpp_h2>
 

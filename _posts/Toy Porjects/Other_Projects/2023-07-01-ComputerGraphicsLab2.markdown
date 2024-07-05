@@ -13,6 +13,8 @@ sitemap:
   priority : 1.0
 excerpt: 이 프로젝트는 오거 엔진을 활용한 컴퓨터 그래픽스 실습 결과물로, 다양한 그래픽 기능을 구현한 예제들을 포함하고 있습니다.
 related_links:
+  - url: /other_projects/ComputerGraphicsLab2_MiddleExam.html
+  - url: /other_projects/ComputerGraphicsLab2_FinalExam.html
 ---
 
 
