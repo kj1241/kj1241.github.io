@@ -1,17 +1,24 @@
 ---
 layout: post
 title: "컴퓨터그래픽스실습(1) - 중간 과제"
-date: 2024-04-23 09:00:00 +09:00
+date: 2023-04-23 09:00:00 +09:00
 image: https://drive.google.com/thumbnail?id=1KRbxkazl0w2vUgejw0HsY_Kx1ZB9rMcz
 toc: true
 categories: [DirectX]
 keywords: C++, DirectX 9
+addsence: false
+lastmod: 2024-07-07 09:00:00 +09:00
+sitemap:
+  changefreq : daily
+  priority : 1.0
+excerpt: DX9 기반의 간단한 퍼즐게임으로, 중복 블록을 클릭해 제거하는 방식입니다. 게임 로직보다 DirectX 9 활용에 중점을 두고 개발했습니다.
 related_links:
+  - url: /directx/ComputerGraphicsLab1_DX9.html
 ---
 
 ## <cpp_h2>프로젝트 소개</cpp_h2>
 
-DX9로 제작한 간단한 퍼즐게임입니다. 마우스를 클릭하여 중복되는 블록을 제거할 수 있습니다. 게임 컨텐츠 로직을 작성하는 것보다 DX9을 사용하는데 초점을 두었습니다. 
+해당 프로젝트는 2016년 1학기 컴퓨터그래픽스실습(1) 중간 과제로 진행된 DirectX 9 기반의 간단한 퍼즐게임입니다. 게임의 핵심은 중복되는 블록을 마우스 클릭으로 제거하는 것으로, 게임 로직보다 DirectX 9의 사용에 중점을 두었습니다. 개발자는 Visual Studio 2010을 사용하여 C++로 게임을 구현하였으며, 프로젝트는 Windows 플랫폼을 타겟으로 하였습니다. 
 
 <br>
 <br>

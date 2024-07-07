@@ -6,6 +6,12 @@ image: https://drive.google.com/thumbnail?id=1Q2aD85HtGIikiI1Z70ND8UNcShE-h4NT
 toc: true
 categories: [DirectX]
 keywords: C++, DirectX 9
+addsence: false
+lastmod: 2024-07-07 09:00:00 +09:00
+sitemap:
+  changefreq : daily
+  priority : 1.0
+excerpt: 이 프로젝트는 DirectX 9 기반의 게임 엔진 제작을 졸업 과제로 진행했습니다. C++와 Visual Studio 2015를 사용하여 WIN API, 지형 구성, 애니메이션, UI 등을 구현했습니다.
 related_links:
 ---
 

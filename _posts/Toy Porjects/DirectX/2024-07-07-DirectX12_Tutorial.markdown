@@ -1,12 +1,18 @@
 ---
 layout: post
 title: "DirectX 12 - 튜토리얼 작성(수정 중)"
-date: 2024-05-08 09:00:00 +09:00
+date: 2024-07-07 09:00:00 +09:00
 image: https://drive.google.com/thumbnail?id=1SJGlwRbyhcLusNKI-P94ZR019aUNQ6bp
 toc: true
 categories: [DirectX]
 keywords: C++, DirectX 12
-related_links:
+addsence: false
+lastmod: 2024-07-07 09:00:00 +09:00
+sitemap:
+  changefreq : daily
+  priority : 1.0
+excerpt: 
+related_links:related_links:
 ---
 
 ## <cpp_h2>프로젝트 소개</cpp_h2>

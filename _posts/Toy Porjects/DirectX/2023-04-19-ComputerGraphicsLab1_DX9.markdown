@@ -1,12 +1,19 @@
 ---
 layout: post
 title: "컴퓨터그래픽스실습(1) - 일반 과제1(DirectX 9 & 쉐이더)"
-date: 2024-04-19 09:00:00 +09:00
+date: 2023-04-19 09:00:00 +09:00
 image: https://drive.google.com/thumbnail?id=1NPHNbxW0DaoyFPUtvwkikDYhD3R8gSKk
 toc: true
 categories: [DirectX]
 keywords: C++, DirectX 9
+addsence: false
+lastmod: 2024-07-07 09:00:00 +09:00
+sitemap:
+  changefreq : daily
+  priority : 1.0
+excerpt: DirectX 9를 사용한 대학 시절 프로젝트로, 나비 그리기, 행성 애니메이션, 자유 구현, 바이너리 파일 오브젝트, 간단한 게임, 쉐이더 변형 등을 진행하며 많은 것을 배웠습니다.
 related_links:
+  - url: /directx/ComputerGraphicsLab1_MiddleExam.html
 ---
 
 ## <cpp_h2>프로젝트 소개</cpp_h2>

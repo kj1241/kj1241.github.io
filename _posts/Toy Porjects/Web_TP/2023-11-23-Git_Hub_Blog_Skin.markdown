@@ -175,14 +175,14 @@ related_links:
 
 ### <web_h3>연관 포스트 링크 만들기 ver.4</web_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
 
-1. 연관 포스를 명시적인 방법으로 구현하였습니다.
+1. 연관 포스트를 명시적인 방법으로 구현하였습니다.
 2. seo 검색엔진 키워드를 tag 에서 keywords로 바꿨습니다.
 
 <br>
 
-#### <web_h4>1) 백그라운드 유성 효과</web_h4>
+#### <web_h4>1) 연관 포스트 탭 구현</web_h4>
 
-![마우스를 따라 다니는 시계 효과]({{ site.google_drive }}1DvINzDPXxLFcphIJND2jXFcDaygzbEq2{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+![연관 포스트 탭 구현]({{ site.google_drive }}1DvINzDPXxLFcphIJND2jXFcDaygzbEq2{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 
 1. YAML Front Matter 사용하여 'related_links' 섹션을 추가하였습니다.
 2. jekyll를 사용하여 해당 링크를 연결하고 html과 css를 사용하여 스타일을 조정하였습니다.

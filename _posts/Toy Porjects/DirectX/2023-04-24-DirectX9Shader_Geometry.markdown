@@ -1,11 +1,17 @@
 ---
 layout: post
 title: "DirectX9 쉐이더 공부 1 - 지오메트릭스(추가 중)"
-date: 2024-04-24 09:00:00 +09:00
+date: 2023-04-24 09:00:00 +09:00
 image: https://drive.google.com/thumbnail?id=1J7Evwz8enUw6iI0IX7USUkA5cqo05qHV
 toc: true
 categories: [DirectX]
 keywords: C++, DirectX 9, shader, Geometry
+addsence: false
+lastmod: 2024-07-07 09:00:00 +09:00
+sitemap:
+  changefreq : daily
+  priority : 1.0
+excerpt: 
 related_links:
 ---
 

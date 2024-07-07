@@ -1,20 +1,20 @@
 ---
 layout: post
 title: "컴퓨터그래픽스실습(2) - 기말 과제(프로젝트 제작)"
-date: 2024-07-04 09:00:00 +09:00
+date: 2023-07-04 09:00:00 +09:00
 image: https://drive.google.com/thumbnail?id=1FIPnFph8Jon6cia7BFwsXU26M8bnjirX
 toc: true
-categories: [Other_Projects]
+categories: [DirectX]
 keywords: 컴퓨터 그래픽스, 3D 게임, Ogre3D, 오우거 엔진, c++, 좀비 게임, 아케이드 게임
 addsence: false
-lastmod: 2024-07-04 09:00:00 +09:00
+lastmod: 2024-07-07 09:00:00 +09:00
 sitemap:
   changefreq : daily
   priority : 1.0
 excerpt: 오거엔진을 이용하여 만든 3D 좀비 아케이드 게임 제작 프로젝트. 최신 Ogre 엔진으로 업데이트 하여서 개선된 기능을 추가 구현하였습니다.
 related_links:
-  - url: /other_projects/ComputerGraphicsLab2.html
-  - url: /other_projects/ComputerGraphicsLab2_MiddleExam.html
+  - url: /directx/ComputerGraphicsLab2.html
+  - url: /directx/ComputerGraphicsLab2_MiddleExam.html
   - url: /3ds_max/ComputerGraphicsLab2_FinalExam.html
 ---
 
@@ -135,7 +135,7 @@ related_links:
 
 ## <cpp_h2> 결과(성과) 및 데모 </cpp_h2>
 
-<iframe width="100%" style="aspect-ratio:16/9" src="https://drive.google.com/file/d/1xdZHN1rywkIv_rYIEAxdKdRhvwUMUx4l/preview" title="좀비 아케이드 게임" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" style="aspect-ratio:16/9" src="https://drive.google.com/file/d/1xdZHN1rywkIv_rYIEAxdKdRhvwUMUx4l/preview" title="오거엔진-좀비 아케이드 게임" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 - <span><cpp_h5>성과:</cpp_h5> 2016년 2학기 컴퓨터그래픽스실습(2) 중간 과제 </span>
 - <span><cpp_h5>깃허브(코드):</cpp_h5>[https://github.com/kj1241/Other-Etc_Portfolio/tree/main/ComputerGraphicsLab2](https://github.com/kj1241/Other-Etc_Portfolio/tree/main/ComputerGraphicsLab2)</span>

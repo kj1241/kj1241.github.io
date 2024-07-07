@@ -1,20 +1,20 @@
 ---
 layout: post
 title: "컴퓨터그래픽스실습(2) - 중간 과제"
-date: 2024-07-02 09:00:00 +09:00
+date: 2023-07-02 09:00:00 +09:00
 image: https://drive.google.com/thumbnail?id=1BdId0fHcv8Ty77kcRJojfAniWuVYpzgm
 toc: true
-categories: [Other_Projects]
+categories: [DirectX]
 keywords: 컴퓨터 그래픽스, 퐁 게임, Ogre3D, 오우거 엔진, c++
 addsence: false
-lastmod: 2024-07-02 09:00:00 +09:00
+lastmod: 2024-07-07 09:00:00 +09:00
 sitemap:
   changefreq : daily
   priority : 1.0
 excerpt: Ogre3D를 사용해 구현한 퐁 게임 프로젝트 입니다. 3D 그래픽과 실시간 게임 로직을 적용하여 게임을 제작하였습니다.
 related_links:
-  - url: /other_projects/ComputerGraphicsLab2.html
-  - url: /other_projects/ComputerGraphicsLab2_FinalExam.html
+  - url: /directx/ComputerGraphicsLab2.html
+  - url: /directx/ComputerGraphicsLab2_FinalExam.html
 ---
 
 ## <cpp_h2> 프로젝트 소개 </cpp_h2>
@@ -71,7 +71,7 @@ related_links:
 
 ## <cpp_h2> 결과(성과) 및 데모 </cpp_h2>
 
-<iframe width="100%" style="aspect-ratio:16/9" src="https://drive.google.com/file/d/1mNf_3sntb7cl7ECgySx6mkaDzxN4QLKy/preview" title="팀 프로젝트(the_Untitled_Kingdom)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" style="aspect-ratio:16/9" src="https://drive.google.com/file/d/1mNf_3sntb7cl7ECgySx6mkaDzxN4QLKy/preview" title="오거엔진-퐁 게임" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 - <span><cpp_h5>성과:</cpp_h5> 2016년 2학기 컴퓨터그래픽스실습(2) 중간 과제 </span>
 - <span><cpp_h5>깃허브(코드):</cpp_h5>[https://github.com/kj1241/Other-Etc_Portfolio/tree/main/ComputerGraphicsLab2](https://github.com/kj1241/Other-Etc_Portfolio/tree/main/ComputerGraphicsLab2)</span>

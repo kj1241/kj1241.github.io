@@ -178,13 +178,13 @@ _config.yml 파일 안에 <web_h5>변수</web_h5> = value 이런 형식으로 �
 
 ### <web_h3> 1. 이미지 공유하기 </web_h3>
 
-<img src= "{{ site.google_drive }}1HGdA19Ozl4sZZnl808V_6B6YotnE1Y8G&sz=w1000" alt="이미지"  width="800px" height="aspect-ratio:16/9">
+<img src= "{{ site.google_drive }}1HGdA19Ozl4sZZnl808V_6B6YotnE1Y8G&sz=w1000" alt="이미지"  width="100%" height="aspect-ratio:16/9">
 
 1. 이미지에 오른쪽 클릭을 눌러 공유 탭에서 공유를 들어갑니다.
 
 <p><br></p>
 
-<img src= "{{ site.google_drive }}1sHqOLws4Sro7R6HwcwrvoKaYC6RCTiHO&sz=w1000" alt="이미지"  width="800px" height="aspect-ratio:16/9">
+<img src= "{{ site.google_drive }}1sHqOLws4Sro7R6HwcwrvoKaYC6RCTiHO&sz=w1000" alt="이미지"  width="100%" height="aspect-ratio:16/9">
 
 1. 제한된 사용자에서 링크가 있는 사용자로 바꿔줍니다.
 2. 완료를 눌러주면 이제 다른 사람들도 링크가 있으면 이미지를 볼 수 있습니다.
@@ -193,13 +193,13 @@ _config.yml 파일 안에 <web_h5>변수</web_h5> = value 이런 형식으로 �
 
 ### <web_h3> 2. 이미지 고유 ID값 확인하기 </web_h3>
 
-<img src= "{{ site.google_drive }}1yJ82Bwy8emWecMfL55ytRjXJdJcEfORx&sz=w1000" alt="이미지"  width="800px" height="aspect-ratio:16/9">
+<img src= "{{ site.google_drive }}1yJ82Bwy8emWecMfL55ytRjXJdJcEfORx&sz=w1000" alt="이미지"  width="100%" height="aspect-ratio:16/9">
 
 1. 이미지 오른쪽 클릭을 눌러 공유 탭에서 링크 복사를 누릅니다.
 
 <p><br></p>
 
-<img src= "{{ site.google_drive }}1aQQOxVbmCAj0e0wJ5j6UdKijAWzBWXL6&sz=w1000" alt="이미지"  width="800px" height="aspect-ratio:16/9">
+<img src= "{{ site.google_drive }}1aQQOxVbmCAj0e0wJ5j6UdKijAWzBWXL6&sz=w1000" alt="이미지"  width="100%" height="aspect-ratio:16/9">
 
 1. 예전에는 링크 주소를 바로 확인할 수 있었지만, 최근에는 컴퓨터 클립보드로 복사되기 때문에 메모장으로 확인해 봅시다.
 2. 메모장에서 드래그로 선택한 영역이 바로 ID 값입니다.
