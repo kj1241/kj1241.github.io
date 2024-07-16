@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "사운드디자인및편집 - 일반과제(Adobe Audition)"
-date: 2024-07-5 09:00:00 +09:00
+date: 2024-07-05 09:00:00 +09:00
 image: https://drive.google.com/thumbnail?id=1vua6ESUiUY5Q51dZtGntPrre9biKvPY-
 toc: true
 categories: [Other_Projects]
