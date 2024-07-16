@@ -23,7 +23,7 @@ jobs:
     - name: Install jq
       run: sudo apt-get install -y jq
 
-   - name: Trigger IndexNow
+    - name: Trigger IndexNow
       env:
         API_KEY: ${{ secrets.INDEXNOW_API_KEY }}
       run: |
