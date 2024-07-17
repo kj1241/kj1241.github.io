@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "유니티 ML-Agent를 이용한 머신러닝 (w.구글 코렙)"
-date: 2023-03-25 09:00:00 +0900
+date: 2024-03-25 09:00:00 +0900
 image: https://drive.google.com/thumbnail?id=1wn87kMW53ktmkc0fIIHJRYT5BHJPcZau
 toc: true
 categories: [AI]

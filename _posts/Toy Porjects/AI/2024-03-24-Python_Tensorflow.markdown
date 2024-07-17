@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Python과 Tenserflow을 사용하여 강화학습 연습하기"
-date: 2023-03-24 09:00:00 +09:00
+date: 2024-03-24 09:00:00 +09:00
 image: https://drive.google.com/thumbnail?id=1VAx0DvG4wDwxEvdlMF1jBbezJGM0A6-G
 toc: true
 categories: [AI]

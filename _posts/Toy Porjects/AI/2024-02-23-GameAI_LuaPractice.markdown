@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "게임인공지능 - Lua Script 연습 코드"
-date: 2023-01-27 09:00:00 +09:00
+date: 2024-02-23 09:00:00 +09:00
 image: https://drive.google.com/thumbnail?id=16RTi9EcTjJ13J1oU0mY6HSR6lkZ3qPdg
 toc: true
 categories: [AI]
@@ -14,6 +14,8 @@ sitemap:
 excerpt: 해당 프로젝트는 C++와 Lua Script를 연동하여 다양한 기능을 구현하는 연습 코드입니다. 동적인 스크립팅 기능을 C++ 프로그램에 추가하는 방법을 학습하고, 게임 인공지능 개발에 필요한 기술을 터득하는 것을 목표로 합니다.
 related_links:
   - url: /ai/GameAI_LuaGuessTheNumbers.html
+  - url: /ai/GameAI_LuaRockScissorsPaper.html
+  - url: /ai/GameAI_LuaFinalProject.html
 ---
 
 ## <ai_h2> 프로젝트 소개 </ai_h2>

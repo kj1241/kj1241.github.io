@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "게임인공지능 - Lua Script (Guess The Numbers)"
-date: 2023-01-28 09:00:00 +09:00
+date: 2024-02-24 09:00:00 +09:00
 image: https://drive.google.com/thumbnail?id=1URfrTMRU2Rx1tgNkx4IVtiiz_sk50Zg7
 toc: true
 categories: [AI]
@@ -14,6 +14,8 @@ sitemap:
 excerpt: Lua Script와 C++를 사용하여 숫자 맞추기 게임을 제작한 프로젝트입니다. AI가 랜덤 숫자를 생성하고, 사용자가 이를 맞추는 과정을 통해 동적 스크립팅과 게임 메커니즘을 학습할 수 있습니다.
 related_links:
   - url: /ai/GameAI_LuaPractice.html
+  - url: /ai/GameAI_LuaRockScissorsPaper.html
+  - url: /ai/GameAI_LuaFinalProject.html
 ---
 
 ## <ai_h2> 프로젝트 소개 </ai_h2>
@@ -26,7 +28,7 @@ related_links:
 ## <ai_h2> 프로젝트 개요 </ai_h2>
 
 - <span><ai_h5>프로젝트명:</ai_h5>Lua Script를 사용하여 숫자 맞추기 게임 제작 </span>
-- <span><ai_h5>장르:</ai_h5> Toy Project</span>
+- <span><ai_h5>장르:</ai_h5> Toy Project(아케이드)</span>
 - <span><ai_h5>기간:</ai_h5> 제작 완료</span>
     - ver.1: 2018.06.01~2018.06.05(프로젝트 제작)
     - ver.2: 2024.07.13~2024.07.16(Lua Script 버전 업데이트)
@@ -45,7 +47,7 @@ related_links:
 
 ## <ai_h2> 프로젝트 특징 및 기능 구현 </ai_h2>
 
-
+해당 프로젝트는 lua 스크립트를 이용하여 간단한 숫자 맞추기 게임입니다. 프로젝트의 특징은 다음과 같습니다.
 
 <br>
 

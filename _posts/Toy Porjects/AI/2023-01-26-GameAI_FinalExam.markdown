@@ -17,6 +17,7 @@ related_links:
   - url: /unity/Similar_Clustering_log.html
   - url: /ai/GameAI.html
   - url: /ai/GameAI_MiddleExam.html
+  - url: /ai/GameAI_LuaFinalProject.html
 ---
 
 ## <ai_h2> 프로젝트 소개 </ai_h2>

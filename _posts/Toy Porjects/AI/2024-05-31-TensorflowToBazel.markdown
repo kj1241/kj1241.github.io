@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "TensorFlow와 C++ 통합을 위한 Bazel 기반 기계학습 프로젝트"
-date: 2023-05-31 09:00:00 +09:00
+date: 2024-05-31 09:00:00 +09:00
 image: https://drive.google.com/thumbnail?id=1LJeC32Z2NK8yXfu_etJ1UPKjIAr59Bdi
 toc: true
 categories: [AI]
