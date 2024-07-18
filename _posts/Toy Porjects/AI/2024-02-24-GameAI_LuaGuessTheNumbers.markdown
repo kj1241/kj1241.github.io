@@ -84,7 +84,7 @@ related_links:
 5. Lua 상태 닫기
   - lua_close(L) 함수를 호출하여 Lua 상태를 닫아 메모리 자원을 해제합니다.
 
-<ai_h4>script.lua</ai_h4>
+#### <ai_h4>script.lua</ai_h4>
 
 1. 난수 발생기 초기화
   - math.randomseed(os.time()) 함수를 사용하여 난수 발생기를 초기화합니다.
