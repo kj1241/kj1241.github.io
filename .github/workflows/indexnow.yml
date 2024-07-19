@@ -10,30 +10,33 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3  # 이미 최신 버전을 사용 중
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '20'  # Node.js 20을 사용
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
 
-    - name: Notify IndexNow
-      id: notify_indexnow
-      env:
-        API_KEY: ${{ secrets.INDEXNOW_KEY }}
-      run: |
-        echo "Using API Key: ${{ secrets.INDEXNOW_KEY }}"
-        response=$(curl -v -X POST "https://www.bing.com/indexnow" \
-          -H "Content-Type: application/json" \
-          -d '{
-                "host": "kj1241.github.io",
-                "key": "'${API_KEY}'",
-                "keyLocation": "https://kj1241.github.io/key.txt",
-                "urlList": ["https://kj1241.github.io"]
-              }')
-        echo "IndexNow response: $response"
-        echo "::set-output name=response::$response"
+      - name: Notify IndexNow
+        id: notify_indexnow
+        env:
+          API_KEY: ${{ secrets.INDEXNOW_KEY }}
+        run: |
+          echo "Using API Key: ${{ secrets.INDEXNOW_KEY }}"
+          response=$(curl -v -X POST "https://www.bing.com/indexnow" \
+            -H "Content-Type: application/json" \
+            -d '{
+                  "host": "kj1241.github.io",
+                  "key": "'${API_KEY}'",
+                  "keyLocation": "https://kj1241.github.io/key.txt",
+                  "urlList": ["https://kj1241.github.io"]
+                }')
+          echo "IndexNow response: $response"
+          echo "response=$response" >> $GITHUB_ENV
 
-    - name: Print IndexNow Response
-      run: echo "IndexNow API response: ${{ steps.notify_indexnow.outputs.response }}"
+      - name: Print IndexNow Response
+        run: |
+          echo "IndexNow API response: $response"
+        env:
+          response: ${{ env.response }}
