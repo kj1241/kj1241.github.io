@@ -11,22 +11,29 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
       - name: Send POST request to IndexNow API
         env:
           HOST: kj1241.github.io
           KEY: ${{ secrets.INDEXNOW_KEY }}
           KEY_LOCATION: https://kj1241.github.io/${{ secrets.INDEXNOW_KEY }}.txt
-          URL_LIST: '["https://kj1241.github.io/", "https://kj1241.github.io/sitemap.xml"]'
         run: |
+          URL_LIST=$(cat <<EOF
+          [
+            "https://kj1241.github.io/",
+            "https://kj1241.github.io/sitemap.xml"
+          ]
+          EOF
+          )
+
           RESPONSE=$(curl -s -w "\n%{http_code}" -X POST "https://api.indexnow.org/indexnow" \
           -H "Content-Type: application/json; charset=utf-8" \
           -d '{
-            "host": "${{ env.HOST }}",
-            "key": "${{ env.KEY }}",
-            "keyLocation": "${{ env.KEY_LOCATION }}",
-            "urlList": ${URL_LIST}
+            "host": "'"${HOST}"'",
+            "key": "'"${KEY}"'",
+            "keyLocation": "'"${KEY_LOCATION}"'",
+            "urlList": '"${URL_LIST}"'
           }')
 
           # Split the response and the HTTP status code
