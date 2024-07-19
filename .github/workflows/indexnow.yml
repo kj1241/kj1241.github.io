@@ -11,18 +11,20 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3  # 최신 버전으로 업데이트
+      uses: actions/checkout@v3  # 이미 최신 버전을 사용 중
 
     - name: Set up Node.js
-      uses: actions/setup-node@v3  # Node.js 버전 설정
+      uses: actions/setup-node@v3
       with:
-        node-version: '20'
+        node-version: '20'  # Node.js 20을 사용
 
     - name: Notify IndexNow
+      id: notify_indexnow
       env:
         API_KEY: ${{ secrets.INDEXNOW_KEY }}
       run: |
-        response=$(curl -X POST "https://www.bing.com/indexnow" \
+        echo "Using API Key: ${{ secrets.INDEXNOW_KEY }}"
+        response=$(curl -v -X POST "https://www.bing.com/indexnow" \
           -H "Content-Type: application/json" \
           -d '{
                 "host": "kj1241.github.io",
@@ -31,3 +33,7 @@ jobs:
                 "urlList": ["https://kj1241.github.io"]
               }')
         echo "IndexNow response: $response"
+        echo "::set-output name=response::$response"
+
+    - name: Print IndexNow Response
+      run: echo "IndexNow API response: ${{ steps.notify_indexnow.outputs.response }}"
