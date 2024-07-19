@@ -1,9 +1,9 @@
-name: IndexNow Notification
+name: IndexNow API Trigger
 
 on:
   push:
     branches:
-      - main
+      - main  # 원하는 브랜치를 지정하세요
 
 jobs:
   indexnow:
@@ -13,30 +13,25 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20'
-
-      - name: Notify IndexNow
-        id: notify_indexnow
+      - name: Send POST request to IndexNow API
         env:
-          API_KEY: ${{ secrets.INDEXNOW_KEY }}
+          HOST: kj1241.github.io
+          KEY: ${{ secrets.INDEXNOW_KEY }}
+          KEY_LOCATION: https://kj1241.github.io/${{ secrets.INDEXNOW_KEY }}.txt
+          URL_LIST: '["https://kj1241.github.io/", "https://kj1241.github.io/sitemap.xml"]'
         run: |
-          echo "Using API Key: ${{ secrets.INDEXNOW_KEY }}"
-          response=$(curl -v -X POST "https://www.bing.com/indexnow" \
-            -H "Content-Type: application/json" \
-            -d '{
-                  "host": "kj1241.github.io",
-                  "key": "'${API_KEY}'",
-                  "keyLocation": "https://kj1241.github.io/key.txt",
-                  "urlList": ["https://kj1241.github.io"]
-                }')
-          echo "IndexNow response: $response"
-          echo "response=$response" >> $GITHUB_ENV
+          RESPONSE=$(curl -s -w "\n%{http_code}" -X POST "https://api.indexnow.org/indexnow" \
+          -H "Content-Type: application/json; charset=utf-8" \
+          -d '{
+            "host": "${{ env.HOST }}",
+            "key": "${{ env.KEY }}",
+            "keyLocation": "${{ env.KEY_LOCATION }}",
+            "urlList": ${URL_LIST}
+          }')
 
-      - name: Print IndexNow Response
-        run: |
-          echo "IndexNow API response: $response"
-        env:
-          response: ${{ env.response }}
+          # Split the response and the HTTP status code
+          HTTP_BODY=$(echo "$RESPONSE" | sed '$d')
+          HTTP_STATUS=$(echo "$RESPONSE" | tail -n1)
+
+          echo "Response Body: $HTTP_BODY"
+          echo "HTTP Status: $HTTP_STATUS"
