@@ -112,6 +112,8 @@ related_links:
 
 ## <ai_h2> 결과(성과) 및 데모 </ai_h2>
 
+<iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/IpWc-ZTWbEw" title="Rock Scissors Paper Game - Lua Script and C++ AI Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 - <span><ai_h5>성과:</ai_h5> 프로젝트 완성 </span>
 - <span><ai_h5>깃허브(코드):</ai_h5> [https://github.com/kj1241/AI_Portfolio/tree/main/GameAI/Abandoned-Project/Lua_Project](https://github.com/kj1241/AI_Portfolio/tree/main/GameAI/Abandoned-Project/Lua_Project)</span>
 
