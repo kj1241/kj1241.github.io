@@ -8,7 +8,7 @@ categories: [Web]
 keywords: GitHub Actions, IndexNow, Git Hub Blog, 웹 인덱싱, 검색 엔진 최적화 (SEO), API 통신, Bing Webmaster Tools
 lastmod: 2024-07-21 09:00:00 +09:00
 sitemap: 
-  changefreq : week
+  changefreq : weekly
   priority : 0.1
 addsence: true
 excerpt: 해당 글은 GitHub Actions를 활용하여 정적 사이트에서 IndexNow를 구현하는 방법을 실험한 기록입니다. 실험 과정과 결과를 통해 GitHub 블로그에서 IndexNow를 사용하는 방안을 구체적으로 설명합니다.
