@@ -13,6 +13,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Encode tttt Secret
-        run: |
-          echo "Encoded tttt: $(echo -n '${{ secrets.tttt }}' | base64)"
+      - name: Save tttt Secret to File
+        run: echo "${{ secrets.tttt }}" > secret_value.txt
+
+      - name: Read and Print tttt Secret from File
+        run: cat secret_value.txt
