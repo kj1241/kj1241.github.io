@@ -1,0 +1,18 @@
+name: Secret Debugging Workflow
+
+on:
+  push:
+    branches:
+      - main  # 원하는 브랜치를 지정하세요
+
+jobs:
+  debug-secrets:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Debug tttt Secret
+        run: |
+          echo "TTTT: '${{ secrets.TTTT }}'"
