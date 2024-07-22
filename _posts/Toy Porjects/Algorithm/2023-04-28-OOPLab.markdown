@@ -11,7 +11,7 @@ lastmod: 2024-06-16 09:00:00 +09:00
 sitemap:
   changefreq : daily
   priority : 1.0
-excerpt: 이 프로젝트는 C++ 기초와 객체지향 프로그래밍을 학습하기 위해 다양한 알고리즘과 문제를 해결한 연습 프로젝트입니다.
+excerpt: 해당 프로젝트는 2015년 1학기 객체지향프로그래밍실습 과제로 진행된 C++ 연습 프로젝트입니다. 기초 문제와 알고리즘을 통해 C++ 문법과 객체지향 프로그래밍을 학습하고, Visual Studio 2010에서 2019로 업그레이드하며 최신 도구를 활용했습니다. 결과물은 깃허브에 공개되었습니다.
 related_links:
     - url: /algorithm/OOPLab_FinalExam.html
 ---
@@ -173,7 +173,7 @@ C++에 익숙해지기 위해서 연습하는 코드를 작성하였습니다. �
 ![InlineClass]({{ site.google_drive }}1U7VGuLjnSZYef7xnsCb6N6h_nbTs-iPm{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<cpp_h6>InlineClass 코드 실행</cpp_h6>*
 
-해단 코드는 일반 클래스와 인라인 함수에 대해서 연습하던 코드입니다.  
+해당 코드는 일반 클래스와 인라인 함수에 대해서 연습하던 코드입니다.  
 인라인 함수는 함수 호출의 오버헤드를 줄이기 위해 사용됩니다. 함수 호출을 컴파일러가 함수 본체로 대체(inline substitution)하도록 요청합니다.
 인라인 함수는 보통 다음과 같은 경우에 사용됩니다
 
@@ -187,7 +187,7 @@ C++에 익숙해지기 위해서 연습하는 코드를 작성하였습니다. �
 ![VirtualFunction]({{ site.google_drive }}1KJHlN9cmB_RxGdl9AvAvpAUexErjWUyB{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<cpp_h6>VirtualFunction 코드 실행</cpp_h6>*
 
-이 코드는 두 개의 클래스 계층 구조를 정의하고, 그들의 생성자와 소멸자 동작을 관찰하며, 가상 함수의 동작을 보여주는 예제입니다. 상속 관계와 가상 클래스에서 생성자 소멸자는 어떻게 동작하는지 공부하는 코드입니다.
+해당 코드는 두 개의 클래스 계층 구조를 정의하고, 그들의 생성자와 소멸자 동작을 관찰하며, 가상 함수의 동작을 보여주는 예제입니다. 상속 관계와 가상 클래스에서 생성자 소멸자는 어떻게 동작하는지 공부하는 코드입니다.
 
 <br>
 

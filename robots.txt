@@ -25,6 +25,9 @@ Disallow:
 User-agent: AdIdxBot
 Disallow: 
 
+User-agent: Yeti
+Disallow: 
+
 User-agent: *
 Disallow: /
 
