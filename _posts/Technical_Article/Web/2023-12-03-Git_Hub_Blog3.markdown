@@ -7,7 +7,7 @@ toc: true
 categories: [Web]
 keywords: Jkeyll, Ruby, HTML, SCSS, Java Script, Git Hub Blog, PageSpeed Insights, Seo-tag 최적화, sitemap, robots.txt, favicon 
 addsence: true
-lastmod: 2024-04-03 16:48:00 +09:00
+lastmod: 2024-07-23 16:48:00 +09:00
 sitemap:
   changefreq : daily
   priority : 1.0
@@ -378,7 +378,7 @@ layout: null
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     {% for post in site.posts %}
     <url>
-        <loc>{{ site.url | remove: '/'}}{{ post.url | remove: '.html' }}</loc>
+        <loc>{{ site.url }}{{ post.url | remove: '.html' }}</loc>
         {% if post.lastmod == null %}
         <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
         {% else %}
