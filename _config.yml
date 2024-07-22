@@ -8,7 +8,7 @@ description: >- # this means to ignore newlines until "baseurl:"
             Stay informed and inspired with our concise and informative content, exploring the latest advancements and best practices in the ever-evolving tech landscape. 
             Join us in the pursuit of knowledge and discovery!
 baseurl: "" #  /blog
-url: "https://kj1241.github.io" # http://example.com
+url: "https://kj1241.github.io/" # http://example.com
 #twitter_username: jekyllrb
 github_username:  kj1241
 img_cdn: 
