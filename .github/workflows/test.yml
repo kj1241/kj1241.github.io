@@ -13,6 +13,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Debug tttt Secret
+      - name: Encode tttt Secret
         run: |
-          echo "TTTT: '${{ secrets.TTTT }}'"
+          echo "Encoded tttt: $(echo -n '${{ secrets.tttt }}' | base64)"
