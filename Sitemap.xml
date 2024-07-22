@@ -8,7 +8,7 @@ layout: null
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     {% for post in site.posts %}
     <url>
-        <loc>{{ site.url | remove: '/'}}{{ post.url | remove: '.html' }}</loc>
+        <loc>{{ site.url }}{{ post.url | remove: '.html' }}</loc>
    
         {% if post.lastmod %}
         <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
