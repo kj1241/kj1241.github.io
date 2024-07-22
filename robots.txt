@@ -28,6 +28,7 @@ Disallow:
 User-agent: Yeti
 Disallow: 
 
-
+User-agent: *
+Disallow: /
 
 Sitemap: https://kj1241.github.io/Sitemap.xml
