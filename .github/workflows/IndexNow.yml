@@ -14,26 +14,26 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
       
-      # 2. 비밀값을 텍스트 파일로 저장
-      - name: Create secret text file
-        run: |
-          if [ ! -f "${{ secrets.INDEXNOW_KEY }}.txt" ]; then
-            echo ${{ secrets.INDEXNOW_KEY }} > ${{ secrets.INDEXNOW_KEY }}.txt
-          fi
+      # # 2. 비밀값을 텍스트 파일로 저장
+      # - name: Create secret text file
+      #   run: |
+      #     if [ ! -f "$ {{ secrets.INDEXNOW_KEY }}.txt" ]; then
+      #       echo $ {{ secrets.INDEXNOW_KEY }} > $ {{ secrets.INDEXNOW_KEY }}.txt
+      #     fi
 
-      # 3. 생성된 파일을 업로드
-      - name: Upload secret text file
-        uses: actions/upload-artifact@v2
-        with:
-          name: secret-file
-          path: "${{ secrets.INDEXNOW_KEY }}.txt"
+      # # 3. 생성된 파일을 업로드
+      # - name: Upload secret text file
+      #   uses: actions/upload-artifact@v2
+      #   with:
+      #     name: secret-file
+      #     path: "$ {{ secrets.INDEXNOW_KEY }}.txt"
       
       # 4. Bing 에게 IndexNow API 전송
       - name: Send POST request to IndexNow API
         env:
           HOST: kj1241.github.io
-          KEY: ${{ secrets.INDEXNOW_KEY }}
-          KEY_LOCATION: https://kj1241.github.io/${{ secrets.INDEXNOW_KEY }}.txt
+          KEY: be4399e1d45940f99cd62033acdfd1f4 # $ {{ secrets.INDEXNOW_KEY }}
+          KEY_LOCATION: https://kj1241.github.io/be4399e1d45940f99cd62033acdfd1f4.txt   # $ {{ secrets.INDEXNOW_KEY }}.txt
         run: |
           URL_LIST=$(cat <<EOF
           [

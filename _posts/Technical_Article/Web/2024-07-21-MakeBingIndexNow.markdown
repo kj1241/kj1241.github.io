@@ -306,6 +306,92 @@ jobs:
 ![실험3 결과]({{ site.google_drive }}1EzSYXKOTmYYCL9CBVK1dsqtN7JvYs3rb{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<web_h6>실험3 결과</web_h6>*
 
+<br>
+
+### <web_h3>실험4. TXT파일 업로드</web_h3>
+
+
+#### <web_h4>IndexNow.yml</web_h4>
+
+```r
+
+name: IndexNow API Trigger
+
+on:
+  push:
+    branches:
+      - main  # 원하는 브랜치를 지정하세요
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. 리포지토리 체크아웃
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      # 2. 비밀값을 텍스트 파일로 저장
+      - name: Create secret text file
+        run: |
+          if [ ! -f "${{ secrets.INDEXNOW_KEY }}.txt" ]; then
+            echo ${{ secrets.INDEXNOW_KEY }} > ${{ secrets.INDEXNOW_KEY }}.txt
+          fi
+
+      # 3. 생성된 파일을 업로드
+      - name: Upload secret text file
+        uses: actions/upload-artifact@v2
+        with:
+          name: secret-file
+          path: "${{ secrets.INDEXNOW_KEY }}.txt"
+      
+      # 4. Bing 에게 IndexNow API 전송
+      - name: Send POST request to IndexNow API
+        env:
+          HOST: kj1241.github.io
+          KEY: ${{ secrets.INDEXNOW_KEY }}
+          KEY_LOCATION: https://kj1241.github.io/${{ secrets.INDEXNOW_KEY }}.txt
+        run: |
+          URL_LIST=$(cat <<EOF
+          [
+            "https://kj1241.github.io/",
+            "https://kj1241.github.io/sitemap.xml"
+          ]
+          EOF
+          )
+          
+          RESPONSE=$(curl -s -D - -w "\n%{http_code}" -X POST "https://www.bing.com/indexnow" \
+          -H "Content-Type: application/json; charset=utf-8" \
+          -d '{
+            "host": "'"${HOST}"'",
+            "key": "'"${KEY}"'",
+            "keyLocation": "'"${KEY_LOCATION}"'",
+            "urlList": '"${URL_LIST}"'
+          }')
+
+          # Split the response, headers, and the HTTP status code
+          HTTP_HEADERS=$(echo "$RESPONSE" | sed -n '1,/^$/p')
+          HTTP_BODY=$(echo "$RESPONSE" | sed '1,/^$/d' | sed '$d')
+          HTTP_STATUS=$(echo "$RESPONSE" | tail -n1)
+
+          echo "Response Headers: $HTTP_HEADERS"
+          echo "Response Body: $HTTP_BODY"
+          echo "HTTP Status: $HTTP_STATUS"
+```
+
+<br>
+
+### <web_h3>실험5. 암호화 파일을 제거하고 TXT파일로 만들기</web_h3>
+
+
+
+
+
+
+
+
+
+
 해당 결과를 보시면 루트파일에 Generate API Key.txt이 만들어 진 것이 보일 것입니다.
 그리고 Bing Webmaster 팀에게 문의할 내용을 정리해 봅시다.
 1. 최근 언제 패킷을 보냈는지?
@@ -316,7 +402,4 @@ jobs:
 
 -------------- 아직 진행중입니다.------------
 
-하.......... 화가 치밀어 오른다... 내 날려버린 2일....
-코드를 쓰면서도 이상하다고 느꼈는데... Bing IndexNow 홈페이지에서 예제를 왜 본인들 페이지를 안쓰고 남의페이지를... 너무 안되서 기다리다 다른 사이트 도큐먼트 보고 알았네 .....
 
-일단 빙쪽으로는 보내놨고 혹시 모르니 네이버도 만들어서 보내봅시다.
