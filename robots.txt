@@ -19,6 +19,12 @@ Disallow:
 User-agent: Googlebot-AdsBot
 Disallow:
 
+User-agent: Mediapartners-Google
+Disallow:
+
+User-agent: Google-Display-Ads-Bot
+Disallow:
+
 User-agent: Bingbot
 Disallow: 
 

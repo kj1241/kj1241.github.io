@@ -12,7 +12,8 @@ sitemap:
   changefreq : daily
   priority : 1.0
 excerpt: 이 프로젝트에서는 Adobe Audition을 사용하여 배경 음악, 음향 효과 등 다양한 미디어에 대한 사운드 디자인 및 편집을 선보입니다.
-related_links:related_links:
+related_links:
+  - url: /unity_tp/SoundDesignAndEditing_AudioProejct.html
 ---
 
 ## <art_h2>프로젝트 소개</art_h2>

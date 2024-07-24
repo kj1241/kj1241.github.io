@@ -12,8 +12,8 @@ sitemap:
   changefreq : daily
   priority : 1.0
 excerpt: AAA 게임 개발을 위한 오디오 디자인 연습 프로젝트로 Unity를 사용하여 다양한 오디오 효과와 믹싱 기법을 적용했습니다.
-related_links:related_links:
-  - url: /other_projects/SoundDesignAndEditing
+related_links:
+    - url: /other_projects/SoundDesignAndEditing.html
 ---
 
 ## <unity_h2> 프로젝트 소개 </unity_h2>
