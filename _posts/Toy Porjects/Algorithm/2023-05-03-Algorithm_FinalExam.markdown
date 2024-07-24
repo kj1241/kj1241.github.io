@@ -2,7 +2,7 @@
 layout: post
 title: "알고리즘 - 기말 과제(레드-블랙 트리)"
 date: 2024-05-03 09:00:00 +09:00
-image: https://drive.google.com/thumbnail?id=1yt9r6cjeMMDtnz7IztU40JlBrJwINiqT
+image: https://drive.google.com/thumbnail?id=1pEWrpcFfxbnfHaTK1yD--otTJPAOtqsj
 toc: true
 categories: [Algorithm] 
 keywords: C++, 알고리즘, 레드 블랙 트리
@@ -13,7 +13,7 @@ sitemap:
   priority : 1.0
 excerpt: C++을 사용하여 레드-블랙 트리를 구현하고, 삽입, 삭제, 탐색 등의 트리 연산을 효율적으로 수행하는 프로젝트입니다.
 related_links:
-  - url: /algorithm/Algorithm_FinalExam.html
+  - url: /algorithm/Algorithm.html
 ---
 
 ## <cpp_h2>프로젝트 소개</cpp_h2>
@@ -53,8 +53,11 @@ related_links:
 
 ### <cpp_h3> 1) RedBlackTree</cpp_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
 
+![RedBlackTree 시퀀스 다이어 그램]({{ site.google_drive }}1pEWrpcFfxbnfHaTK1yD--otTJPAOtqsj{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<cpp_h6>RedBlackTree 코드 시퀀스 다이어 그램</cpp_h6>*
+
 ![RedBlackTree]({{ site.google_drive }}1yt9r6cjeMMDtnz7IztU40JlBrJwINiqT{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-*<cpp_h6>RedBlackTree 코드 실행</cpp_h6>*
+*<cpp_h6>RedBlackTree 코드 실행 결과</cpp_h6>*
 
 해당 코드의 함수들을 통해 레드-블랙 트리를 구현하고 사용할 수 있습니다. 각 함수는 트리의 특정 동작을 수행하며, 트리의 균형과 성능을 유지하는 역할을 합니다
 
@@ -72,13 +75,12 @@ related_links:
 12. RBT_RebuildAfterRemove: 제거 후 트리의 균형을 재조정합니다.
 13. RBT_PrintTree: 트리를 깊이 우선 탐색하며 출력합니다.
 
-
 <br>
 <br>
 
 ## <cpp_h2> 결과(성과) 및 데모 </cpp_h2>
 
-<iframe width="100%" style="aspect-ratio:16/9" src="https://drive.google.com/file/d/194_Ta25rZCovwTM7MJ1v-gc9YeSwL7-5/preview" title="RedBlackTree" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/z9ZPVUDPySg" title="Red Black Tree - C++ Algorithm" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 - <span><cpp_h5>성과:</cpp_h5> 2016년 1학기 알고리즘 기말 과제 </span>
 - <span><cpp_h5>깃허브(코드): </cpp_h5>[https://github.com/kj1241/Algorithm_Portfolio/tree/main/Algorithm](https://github.com/kj1241/Algorithm_Portfolio/tree/main/Algorithm)</span>
