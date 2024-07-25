@@ -1,10 +1,16 @@
 User-agent: Googlebot
 Disallow:
 
-User-agent: Googlebot-image
+User-agent: Googlebot-Image
 Disallow:
 
 User-agent: AdsBot-Google
+Disallow:
+
+User-agent: AdsBot-Google-Mobile
+Disallow:
+
+User-agent: Mediapartners-Google
 Disallow:
 
 User-agent: Googlebot-Mobile
@@ -28,13 +34,22 @@ Disallow:
 User-agent: Bingbot
 Disallow: 
 
+User-agent: MSNBot
+Disallow: 
+
 User-agent: AdIdxBot
 Disallow: 
 
 User-agent: Yeti
 Disallow: 
 
+User-agent: ChatGPT-User
+Disallow: 
+
+User-agent: Google-Safety
+Disallow:
+
 User-agent: *
 Disallow: /
 
-Sitemap: https://kj1241.github.io/Sitemap.xml
+Sitemap: https://kj1241.github.io/sitemap.xml
