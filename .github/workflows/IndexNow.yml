@@ -20,45 +20,28 @@ jobs:
         with:
           ruby-version: '3.2.2'
       
-      - name: Install Jekyll and Bundler if not present
-        run: |
-          if ! gem list -i jekyll > /dev/null; then
-            gem install jekyll
-          fi
-          if ! gem list -i bundler > /dev/null; then
-            gem install bundler
-          fi
+      - name: Install Jekyll and Bundler
+        run: gem install jekyll bundler
 
-      # 3. Dependencies 설치
-      - name: Install dependencies if not present
-        run: |
-          if ! bundle check > /dev/null 2>&1; then
-            bundle install
-          else
-            echo "Dependencies are already installed"
-          fi
+      - name: Install dependencies
+        run: bundle install
       
-      # 4. Jekyll 빌드
-      - name: Build the site if not already built
-        run: |
-          if [ ! -d "_site" ] || [ -z "$(ls -A _site)" ]; then
-            bundle exec jekyll build
-          else
-            echo "Site already built"
-          fi
-      
-      # 5. URL 목록 생성
+      # 3. Jekyll 빌드
+      - name: Build the site
+        run: bundle exec jekyll build
+
+      # 4. URL 목록 생성
       - name: Generate URL list
         run: |
-          URL_LIST=$(cat _site/url-list.html)
-          echo "Generated URL List: $URL_LIST"
-          echo "URL_LIST=$URL_LIST" >> $GITHUB_ENV
+          URL_LIST=$(cat ./_site/url-list.json | jq -r '.urlList | join(",")')
+          echo "Generated URL List: [${URL_LIST}]"
+          echo "URL_LIST=[${URL_LIST}]" >> $GITHUB_ENV
 
-      # 6. Bing 에게 IndexNow API 전송
+      # 5. Bing 에게 IndexNow API 전송
       - name: Send POST request to IndexNow API
         env:
           HOST: kj1241.github.io
-          KEY: be4399e1d45940f99cd62033acdfd1f4
+          KEY: be4399e1d45940f99cd62033acdfd1f4 
           KEY_LOCATION: https://kj1241.github.io/be4399e1d45940f99cd62033acdfd1f4.txt
           URL_LIST: ${{ env.URL_LIST }}
         run: |
@@ -69,7 +52,7 @@ jobs:
             "host": "'"${HOST}"'",
             "key": "'"${KEY}"'",
             "keyLocation": "'"${KEY_LOCATION}"'",
-            "urlList": '"${URL_LIST}"'
+            "urlList": ['"${URL_LIST}"']
           }')
 
           # Split the response, headers, and the HTTP status code
