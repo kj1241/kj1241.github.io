@@ -34,7 +34,7 @@ jobs:
       - name: Read URL list
         id: read_url_list
         run: |
-          URL_LIST=$(cat _site/url-list.html)
+          URL_LIST=$(cat _site/url-list.html | tr -d '\n')
           echo "URL_LIST=$URL_LIST" >> $GITHUB_ENV
 
       # 5. Bing에 IndexNow API 전송
