@@ -1,0 +1,7 @@
+[
+{% assign sorted_posts = site.posts | sort: 'lastmod' | reverse %}
+{% for post in sorted_posts limit:5 %}
+  "{{ site.url }}{{ post.url | remove: '.html' }}"
+  {% if forloop.last == false %},{% endif %}
+{% endfor %}
+]

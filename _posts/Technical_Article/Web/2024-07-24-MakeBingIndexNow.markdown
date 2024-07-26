@@ -118,6 +118,8 @@ CI를 하면 코드 품질 향상 효과와 통합 문제를 감소시키고, CD
 
 ## <web_h2>5. Git hub Action 사용하여 IndexNow 제작</web_h2>
 
+해당 파트는 이제 기본적으로 Git hub Action을 사용하고 IndexNow를 제작해보고 테스트해보는 코드입니다.
+
 <br>
 
 ### <web_h3>Generate API Key 텍스트 파일 생성</web_h3>
@@ -191,8 +193,8 @@ jobs:
       - name: Send POST request to IndexNow API
         env:
           HOST: kj1241.github.io
-          KEY: be4399e1d45940f99cd62033acdfd1f4 # $ {{ secrets.INDEXNOW_KEY }}
-          KEY_LOCATION: https://kj1241.github.io/be4399e1d45940f99cd62033acdfd1f4.txt   # $ {{ secrets.INDEXNOW_KEY }}.txt
+          KEY: Generate API Key # $ {{ secrets.INDEXNOW_KEY }}
+          KEY_LOCATION: https://kj1241.github.io/Generate API Key.txt   # $ {{ secrets.INDEXNOW_KEY }}.txt
         run: |
           URL_LIST=$(cat <<EOF
           [
@@ -225,223 +227,40 @@ jobs:
 ![IndexNow 전송 결과]({{ site.google_drive }}11tyUc6hHlp7jGxLOuLacCbITbzPQaun1{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<web_h6>IndexNow 전송 결과</web_h6>*
 
-<red_error>응답 코드:202</red_error>로 내용을 보내는 데는 성공했습니다. 202코드는 내용을 수신했지만 처리하는데 지연된다는 코드입니다. 그럼 몇일 동안 기다리면 됩니다. 저는 5일정도 걸린거 같습니다.
+<red_error>응답 코드:202</red_error>로 내용을 보내는 데는 성공했습니다. 202코드는 내용을 수신했지만 처리하는데 지연된다는 코드입니다. 그럼 몇일 동안 기다리면 됩니다. 저는 5일정도 걸린거 같습니다. 부족하지만 중요한 코드 부분만 설명해보겠습니다. 
+- HOST: 본인의 홈페이지나 블로그 처음 주수를 넣어야합니다.
+- KEY: Generate API Key 숫자를 넣으세요
+- KEY_LOCATION: Generate API Key가 있는 위치를 넣는 곳입니다. 보통은 root위치에 넣음으로 (홈페이지 주소 / Generate API Key.txt) 위치가 됩니다.
+- urlList: IndexNow에 전송할 url 주소를 넣으세요. 여기 예제는 실험하기 위해서 제 블로그 주소와 사이트맵을 보내봤습니다.
 
 ![BWT IndexNow Portal 변화]({{ site.google_drive }}1GvAG26BBSVpmPJssUIfiYDPPYLpU11tN{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<web_h6> Bing Webmaster Tools Portal 변화</web_h6>*
 
 만약 정상적으로 IndexNow를 수신하고 Bing에서 처리하게 되면 Bing Webmaster Tools에서 indexNow 탭은 위처럼 변하게 될 것입니다.
 
-
 > ![IndexNow 패킷 에러]({{ site.google_drive }}1YH9tLLO2bsh64P8v9zdtCTCOYiBP-g2p{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
   *<web_h6>IndexNow 패킷 에러</web_h6>*
-  일부로 잘못 보내면 위의 그림과 같이 <red_error>응답 코드:400</red_error> (주어진 요청이 null이거나 유효하지 않다고 전달받았습니다.)이 롤백받게 됩니다.
+  패킷을 일부로 잘못 보내면 위의 그림과 같이 <red_error>응답 코드:400</red_error> (주어진 요청이 null이거나 유효하지 않다고 전달받았습니다.)이 롤백받게 됩니다.
 
+<br>
+<br>
+
+## <web_h2>6. Jekyll를 이용해서 Git hub Action에서 IndexNow 보내기 </web_h2>
+
+기본적으로 보내는 코드가 성공했다면 이제는 좀 더 심화과정으로 들어가야합니다. 원할때마다 URL_LIST를 키보드로 직접 작성하여 패킷을 보내야한다고 하면 안하는 것만 못할 겁니다. 사실 귀찮기도 합니다. 신경안써도 알아서 알려주는 자동화 로직을 작성할 것입니다.
 
 <br>
 
-일단 피곤해서 여기까지만 적고 가겠습니다. 나머지는 자고 일어나서 마저 적겠습니다.
+### <web_h3>딱 한번 전체사이트 보내기</web_h3>
 
+해당 코드는 처음 연동할때, 한번 전체 사이트 보내는 방법입니다.
 
+![루비 버전 찾기]({{ site.google_drive }}1_sQRea7RCPQ9NYnSYU9Vn6iqFmvmEiBo{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<web_h6>루비 버전 찾기</web_h6>*
 
+터미널에서 ruby -v 사용하여 설치된 루비버전을 찾습니다. 저 같은 경우는 블로그 만들 당시 최신버전을 설치해서 3.2.2버전입니다.
 
-<!-- 
-
-<br>
-
-### <web_h3>실험1. IndexNow Post 할때 틀린 데이터 보내기</web_h3>
-
-그럼 이제 암호화도 했으니 Post로 패킷을 만들어서 보내보도록 합시다. 해당 실험 내용은 틀린 패킷을 보내서 어떻게 반응하는지 확인하는 실험입니다.
-
-#### <web_h4>IndexNow.yml</web_h4>
-
-```r
-
-name: IndexNow API Trigger
-
-on:
-  push:
-    branches:
-      - main  # 원하는 브랜치를 지정하세요
-
-jobs:
-  indexnow:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Send POST request to IndexNow API
-        env:
-          HOST: kj1241.github.io
-          KEY: ${{ secrets.INDEXNOW_KEY }}
-          KEY_LOCATION: https://kj1241.github.io/${{ secrets.INDEXNOW_KEY }}.txt
-          URL_LIST: '["https://kj1241.github.io/", "https://kj1241.github.io/sitemap.xml"]'
-        run: |
-          RESPONSE=$(curl -s -w "\n%{http_code}" -X POST "https://api.indexnow.org/indexnow" \
-          -H "Content-Type: application/json; charset=utf-8" \
-          -d '{
-            "host": "${{ env.HOST }}",
-            "key": "${{ env.KEY }}",
-            "keyLocation": "${{ env.KEY_LOCATION }}",
-            "urlList": ${URL_LIST}
-          }')
-          # Split the response and the HTTP status code
-          HTTP_BODY=$(echo "$RESPONSE" | sed '$d')
-          HTTP_STATUS=$(echo "$RESPONSE" | tail -n1)
-          echo "Response Body: $HTTP_BODY"
-          echo "HTTP Status: $HTTP_STATUS"
-
-
-```
-
-![실험1 결과]({{ site.google_drive }}1YH9tLLO2bsh64P8v9zdtCTCOYiBP-g2p{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-*<web_h6>실험1 결과</web_h6>*
-
-결과: <red_error>응답 코드:400</red_error> 주어진 요청이 null이거나 유효하지 않다고 전달받았습니다. 
-일부러 잘못 보냈다고 주장하고 싶지만 사실 제가 GitHub Action 쓰는데 미숙해서 틀린 데이터가 보내진 것입니다.
-Json 데이터를 처리하는 과정에서 잘못 전송된 것입니다.
-
-<br>
-
-### <web_h3>실험2. IndexNow Post 전송하기</web_h3>
-
-그러면 Json 방식의 데이터를 수정하여 다시 전송해 보겠습니다.
-
-#### <web_h4>IndexNow.yml</web_h4>
-
-```r
-
-name: IndexNow API Trigger
-
-on:
-  push:
-    branches:
-      - main  # 원하는 브랜치를 지정하세요
-
-jobs:
-  indexnow:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Send POST request to IndexNow API
-        env:
-          HOST: kj1241.github.io
-          KEY: ${{ secrets.INDEXNOW_KEY }}
-          KEY_LOCATION: https://kj1241.github.io/${{ secrets.INDEXNOW_KEY }}.txt
-        run: |
-          URL_LIST=$(cat <<EOF
-          [
-            "https://kj1241.github.io/",
-            "https://kj1241.github.io/sitemap.xml"
-          ]
-          EOF
-          )
-
-          RESPONSE=$(curl -s -D - -w "\n%{http_code}" -X POST "https://api.indexnow.org/indexnow" \
-          -H "Content-Type: application/json; charset=utf-8" \
-          -d '{
-            "host": "'"${HOST}"'",
-            "key": "'"${KEY}"'",
-            "keyLocation": "'"${KEY_LOCATION}"'",
-            "urlList": '"${URL_LIST}"'
-          }')
-          # Split the response, headers, and the HTTP status code
-          HTTP_HEADERS=$(echo "$RESPONSE" | sed -n '1,/^$/p')
-          HTTP_BODY=$(echo "$RESPONSE" | sed '1,/^$/d' | sed '$d')
-          HTTP_STATUS=$(echo "$RESPONSE" | tail -n1)
-          echo "Response Headers: $HTTP_HEADERS"
-          echo "Response Body: $HTTP_BODY"
-          echo "HTTP Status: $HTTP_STATUS"
-
-```
-
-![실험2 결과]({{ site.google_drive }}11tyUc6hHlp7jGxLOuLacCbITbzPQaun1{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-*<web_h6>실험2 결과</web_h6>*
-
-결과: <red_error>응답 코드:202</red_error>로 내용을 보내는 데는 성공했습니다.  
-하지만 해당 내용이 처리 중이니 답변이 안 오는 애매한 상태입니다. 그래도 반 정도 성공했습니다. 예전에 일할 때는 서버-클라이언트 양쪽 패킷이 송수신되는데 확인해서 이런 답답함은 없었었는데 사실 조금 답답하기도 합니다.
-
-원래 성공하면 느낌상 Bing Webmaster Tools Portal에서 IndexNow 탭이 열려야 하는데 5일 동안 기다려도 처리되지 않는 것으로 봐서 Bing Webmaster에게 문의를 넣기 전에 조금 수정하겠습니다.
-
-<br>
-
-### <web_h3>실험3. Root에 Txt파일 없으면 만들어주기</web_h3>
-
-루트 파일에 해당 Generate API Key.txt파일이 존재하지 않으면 생성하게 코드를 작성하였습니다.
-
-#### <web_h4>IndexNow.yml</web_h4>
-
-```r
-
-name: IndexNow API Trigger
-
-on:
-  push:
-    branches:
-      - main  # 원하는 브랜치를 지정하세요
-
-jobs:
-  indexnow:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: IndexNow Setup
-        run: |
-          if [ ! -f "${{ secrets.INDEXNOW_KEY }}.txt" ]; then
-            echo ${{ secrets.INDEXNOW_KEY }} > ${{ secrets.INDEXNOW_KEY }}.txt
-          fi
-
-      - name: Send POST request to IndexNow API
-        env:
-          HOST: kj1241.github.io
-          KEY: ${{ secrets.INDEXNOW_KEY }}
-          KEY_LOCATION: https://kj1241.github.io/${{ secrets.INDEXNOW_KEY }}.txt
-        run: |
-          URL_LIST=$(cat <<EOF
-          [
-            "https://kj1241.github.io/",
-            "https://kj1241.github.io/sitemap.xml"
-          ]
-          EOF
-          )
-
-          RESPONSE=$(curl -s -D - -w "\n%{http_code}" -X POST "https://api.indexnow.org/indexnow" \
-          -H "Content-Type: application/json; charset=utf-8" \
-          -d '{
-            "host": "'"${HOST}"'",
-            "key": "'"${KEY}"'",
-            "keyLocation": "'"${KEY_LOCATION}"'",
-            "urlList": '"${URL_LIST}"'
-          }')
-          # Split the response, headers, and the HTTP status code
-          HTTP_HEADERS=$(echo "$RESPONSE" | sed -n '1,/^$/p')
-          HTTP_BODY=$(echo "$RESPONSE" | sed '1,/^$/d' | sed '$d')
-          HTTP_STATUS=$(echo "$RESPONSE" | tail -n1)
-          echo "Response Headers: $HTTP_HEADERS"
-          echo "Response Body: $HTTP_BODY"
-          echo "HTTP Status: $HTTP_STATUS"
-
-```
-
-![실험3 결과]({{ site.google_drive }}1EzSYXKOTmYYCL9CBVK1dsqtN7JvYs3rb{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-*<web_h6>실험3 결과</web_h6>*
-
-<br>
-
-### <web_h3>실험4. TXT파일 업로드</web_h3>
-
-
-#### <web_h4>IndexNow.yml</web_h4>
-
-```r
+```yml
 
 name: IndexNow API Trigger
 
@@ -459,35 +278,38 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
       
-      # 2. 비밀값을 텍스트 파일로 저장
-      - name: Create secret text file
-        run: |
-          if [ ! -f "${{ secrets.INDEXNOW_KEY }}.txt" ]; then
-            echo ${{ secrets.INDEXNOW_KEY }} > ${{ secrets.INDEXNOW_KEY }}.txt
-          fi
-
-      # 3. 생성된 파일을 업로드
-      - name: Upload secret text file
-        uses: actions/upload-artifact@v2
+      # 2. Jekyll 설치
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          name: secret-file
-          path: "${{ secrets.INDEXNOW_KEY }}.txt"
+          ruby-version: '3.2.2'
       
-      # 4. Bing 에게 IndexNow API 전송
+      - name: Install Jekyll and Bundler
+        run: gem install jekyll bundler
+
+      - name: Install dependencies
+        run: bundle install
+      
+      # 3. Jekyll 빌드
+      - name: Build the site
+        run: bundle exec jekyll build
+      
+      # 4. URL 목록 생성
+      - name: Generate URL list
+        run: |
+          URL_LIST=$(find ./_site -type f -name "*.html" | sed 's/^\.\/_site//;s/\/index.html$//;s/.html$//' | awk '{ print "\"https://kj1241.github.io"$1"\"," }' | tr '\n' ' ' | sed 's/, $//')
+          echo "Generated URL List: [$URL_LIST]"
+          echo "URL_LIST=[$URL_LIST]" >> $GITHUB_ENV
+
+      # 5. Bing 에게 IndexNow API 전송
       - name: Send POST request to IndexNow API
         env:
           HOST: kj1241.github.io
-          KEY: ${{ secrets.INDEXNOW_KEY }}
-          KEY_LOCATION: https://kj1241.github.io/${{ secrets.INDEXNOW_KEY }}.txt
+          KEY: Generate API Key # 여러분의 Generate API Key을 입력하세요
+          KEY_LOCATION: https://kj1241.github.io/Generate API Key.txt # 여러분의 Generate API Key을 입력하세요
+          URL_LIST: ${{ env.URL_LIST }}
         run: |
-          URL_LIST=$(cat <<EOF
-          [
-            "https://kj1241.github.io/",
-            "https://kj1241.github.io/sitemap.xml"
-          ]
-          EOF
-          )
-          
+          echo "Using URL List: ${URL_LIST}"
           RESPONSE=$(curl -s -D - -w "\n%{http_code}" -X POST "https://www.bing.com/indexnow" \
           -H "Content-Type: application/json; charset=utf-8" \
           -d '{
@@ -505,23 +327,159 @@ jobs:
           echo "Response Headers: $HTTP_HEADERS"
           echo "Response Body: $HTTP_BODY"
           echo "HTTP Status: $HTTP_STATUS"
+
 ```
+
+![전체 사이트 보내기]({{ site.google_drive }}1o9FBFjL1tBLxzHh4R1LBxwfePnqzviIT{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<web_h6>sitemap처럼 전체 사이트 보내기</web_h6>*
+
+저희가 이용할 방법은 jekyll의 Liquid 템플릿 언어를 사용하기 위해서 jekyll를 설치할 예정입니다. 그러기 위해선 루비가 필요합니다.
+
+```bash
+{% raw %}
+{% for post in site.posts %}
+  {{ site.url  }}{{ post.url| remove: '.html' }}
+{% endfor %}
+{% endraw %}
+```
+동적 사이트 맵을 보내는 방식을 응용해서 IndexNow로 전체 사이트를 보낼겁니다.
+
+1. 루비 버전을 확인하고 jekyll를 설치
+2. jekyll를 빌드
+3. 위의 Liquid를 응용해서 전체 사이트를 탐색하고 URL_LIST로 담기
+
+![BWT에 전체 사이트 보낸 결과]({{ site.google_drive }}1ePRx0lmbtKp3bRbiInH95oanBHKD1kkb{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<web_h6>BWT에 전체 사이트 보낸 결과</web_h6>*
+
+처음 2개였던 사이트가 137개로 늘어났습니다. 이제 해당 사이트들은 bing 검색엔진이 참조하여 크롤링 할 것입니다.
 
 <br>
 
-### <web_h3>실험5. 암호화 파일을 제거하고 TXT파일로 만들기</web_h3>
+### <web_h3>최신순으로 작성된 5개 아티클 보내기</web_h3>
+
+빌드할때마다 IndexNow로 전체 사이트를 전송할 수 있지만 좋지 못한 선택입니다. 그래서 게시물을 정리해서 최근 작성한 5개의 게시물만 indexNow로 보낼려고 합니다.
+
+```bash
+{% raw %}
+[
+{% assign sorted_posts = site.posts | sort: 'lastmod' | reverse %}
+{% for post in sorted_posts limit:5 %}
+  "{{ site.url }}{{ post.url | remove: '.html' }}"
+  {% if forloop.last == false %},{% endif %}
+{% endfor %}
+]
+{% endraw %}
+```
+![url-list.html 생성]({{ site.google_drive }}1LTLZcYsQcT-CqgF5wjSk0bhoCU9pYjU4{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<web_h6>url-list.html 생성</web_h6>*
+
+_includes폴더 밑에 url-list.html 파일을 생성해주고 위와 같이 코드를 작성합니다. 그러면 최신순으로 작성된 5개의 글이 있습니다. 이때 주의할 점은 다음과 같습니다.
+
+![front matter 수정한 날짜]({{ site.google_drive }}1Q18_FaemWpA2llY76tYnQRxsH8OMUydN{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<web_h6>front matter 수정한 날짜</web_h6>*
+
+제 글은 언제든지 수정될 수 있어서 작성날짜 수정한 날짜와 다르기 때문에 front matter에 위의 그림과 같이 lastmod라는 것이 있습니다. 하지만 템플릿을 사용하시는 분들은 없을수도 있습니다. 그러면 'lastmod' 대신에 'data'를 사용해 주시면 됩니다.
+
+```yml
+
+name: IndexNow API Trigger
+
+on:
+  push:
+    branches:
+      - main  # 원하는 브랜치를 지정하세요
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. 리포지토리 체크아웃
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      # 2. Jekyll 설치
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2.2'
+      
+      - name: Install Jekyll and Bundler if not present
+        run: |
+          if ! gem list -i jekyll > /dev/null; then
+            gem install jekyll
+          fi
+          if ! gem list -i bundler > /dev/null; then
+            gem install bundler
+          fi
+
+      # 3. Dependencies 설치
+      - name: Install dependencies if not present
+        run: |
+          if ! bundle check > /dev/null 2>&1; then
+            bundle install
+          else
+            echo "Dependencies are already installed"
+          fi
+      
+      # 4. Jekyll 빌드
+      - name: Build the site if not already built
+        run: |
+          if [ ! -d "_site" ] || [ -z "$(ls -A _site)" ]; then
+            bundle exec jekyll build
+          else
+            echo "Site already built"
+          fi
+      
+      # 5. URL 목록 생성
+      - name: Generate URL list
+        run: |
+          URL_LIST=$(bundle exec jekyll build --dry-run --trace --quiet --config _config.yml,_includes/url-list.html | grep -o '\[.*\]')
+          echo "Generated URL List: $URL_LIST"
+          echo "URL_LIST=$URL_LIST" >> $GITHUB_ENV
+
+      # 6. Bing 에게 IndexNow API 전송
+      - name: Send POST request to IndexNow API
+        env:
+          HOST: kj1241.github.io
+          KEY: Generate API Key # 여러분의 Generate API Key을 입력하세요
+          KEY_LOCATION: https://kj1241.github.io/Generate API Key.txt # 여러분의 Generate API Key을 입력하세요
+          URL_LIST: ${{ env.URL_LIST }}
+        run: |
+          echo "Using URL List: ${URL_LIST}"
+          RESPONSE=$(curl -s -D - -w "\n%{http_code}" -X POST "https://www.bing.com/indexnow" \
+          -H "Content-Type: application/json; charset=utf-8" \
+          -d '{
+            "host": "'"${HOST}"'",
+            "key": "'"${KEY}"'",
+            "keyLocation": "'"${KEY_LOCATION}"'",
+            "urlList": '"${URL_LIST}"'
+          }')
+
+          # Split the response, headers, and the HTTP status code
+          HTTP_HEADERS=$(echo "$RESPONSE" | sed -n '1,/^$/p')
+          HTTP_BODY=$(echo "$RESPONSE" | sed '1,/^$/d' | sed '$d')
+          HTTP_STATUS=$(echo "$RESPONSE" | tail -n1)
+
+          echo "Response Headers: $HTTP_HEADERS"
+          echo "Response Body: $HTTP_BODY"
+          echo "HTTP Status: $HTTP_STATUS"
+
+```
+
+이를 동작시키는 방식은 다음과 같습니다.
+
+1. 루비 버전을 확인하고 jekyll를 체크하고 존재하지 않으면 설치
+2. 의존 파일 체크하고 설치 되지 않았으면 설치
+3. jekyll 빌드 체크하고 빌드되지 않으면 빌드
+4. _includes/url-list.html에 있는 사이트 주소를 URL_LIST에 담아서 json 파일 만들어 패킷 보내기
 
 
 
 
-해당 결과를 보시면 루트파일에 Generate API Key.txt이 만들어 진 것이 보일 것입니다.
-그리고 Bing Webmaster 팀에게 문의할 내용을 정리해 봅시다.
-1. 최근 언제 패킷을 보냈는지?
-2. 내 웹사이트 주소가 무엇인지?
-3. 패킷의 내용이 정확하게 받았는지?
-4. 처리되지 않은 이유는 무엇인지?
+<br>
+<br>
 
+## <web_h2>7. 끝으로 </web_h2>
 
--------------- 아직 진행중입니다.------------
- -->
-
+뭔가 더 정교하게 작성 할 수 있을 것 같은데, 제가 web master도 아니고 Gti Hub Action을 잘 아는 사람이 아니라서 부족하다고 생각합니다. 부족한 글 읽어주셔서 감사합니다.
