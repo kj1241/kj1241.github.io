@@ -50,7 +50,8 @@ jobs:
       # 5. URL 목록 생성
       - name: Generate URL list
         run: |
-          URL_LIST=$(bundle exec jekyll build --dry-run --trace --quiet --config _config.yml,_includes/url-list.html | grep -o '\[.*\]')
+          URL_LIST=$(bundle exec jekyll build --config _config.yml,_includes/url-list.html)
+          URL_LIST=$(cat _site/_includes/url-list.html | grep -o '\[.*\]')
           echo "Generated URL List: $URL_LIST"
           echo "URL_LIST=$URL_LIST" >> $GITHUB_ENV
 

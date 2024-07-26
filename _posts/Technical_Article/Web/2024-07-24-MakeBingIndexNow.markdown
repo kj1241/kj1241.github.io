@@ -434,7 +434,8 @@ jobs:
       # 5. URL 목록 생성
       - name: Generate URL list
         run: |
-          URL_LIST=$(bundle exec jekyll build --dry-run --trace --quiet --config _config.yml,_includes/url-list.html | grep -o '\[.*\]')
+          URL_LIST=$(bundle exec jekyll build --config _config.yml,_includes/url-list.html)
+          URL_LIST=$(cat _site/_includes/url-list.html | grep -o '\[.*\]')
           echo "Generated URL List: $URL_LIST"
           echo "URL_LIST=$URL_LIST" >> $GITHUB_ENV
 
@@ -472,10 +473,8 @@ jobs:
 1. 루비 버전을 확인하고 jekyll를 체크하고 존재하지 않으면 설치
 2. 의존 파일 체크하고 설치 되지 않았으면 설치
 3. jekyll 빌드 체크하고 빌드되지 않으면 빌드
-4. _includes/url-list.html에 있는 사이트 주소를 URL_LIST에 담아서 json 파일 만들어 패킷 보내기
-
-
-
+4. _includes/url-list.html를 빌드하여 생성된 _site/_includes/url-list.html에서 URL 목록을 축출하여 URL_LIST에 담습니다.
+5. 주소를 담은 패킷을 Bing으로 Post합니다.
 
 <br>
 <br>
