@@ -1,4 +1,4 @@
-# _plugins/generate__url_list.rb
+# _plugins/generate_url_list.rb
 require 'json'
 
 class IndexNowURLGenerator < Jekyll::Generator
