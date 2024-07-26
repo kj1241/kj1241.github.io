@@ -46,18 +46,29 @@ jobs:
           else
             echo "Site already built"
           fi
+
+      # 5. 빌드된 파일 목록 출력 (디버깅용)
+      - name: List build directory contents
+        run: |
+          echo "Contents of _site directory:"
+          ls -la _site
       
-      # 5. URL 목록 생성
+      # 6. URL 목록 생성
       - name: Generate URL list
         run: |
           # Ensure the site is built and the URL list page is rendered
           bundle exec jekyll build
+          # Check if the URL list file exists
+          if [ ! -f "_site/url-list.html" ]; then
+            echo "Error: _site/url-list.html not found"
+            exit 1
+          fi
           # Read the rendered URL list from the generated site
           URL_LIST=$(cat _site/url-list.html | grep -o '\[.*\]')
           echo "Generated URL List: $URL_LIST"
           echo "URL_LIST=$URL_LIST" >> $GITHUB_ENV
 
-      # 6. Bing 에게 IndexNow API 전송
+      # 7. Bing 에게 IndexNow API 전송
       - name: Send POST request to IndexNow API
         env:
           HOST: kj1241.github.io
