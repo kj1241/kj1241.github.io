@@ -3,7 +3,7 @@ name: IndexNow API Trigger
 on:
   push:
     branches:
-      - main  # 원하는 브랜치를 지정하세요
+      - main
 
 jobs:
   indexnow:
@@ -19,40 +19,30 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2.2'
-
-      # 3. jq 설치
-      - name: Install jq
-        run: sudo apt-get install -y jq
       
-      # 4. Jekyll 및 Bundler 설치
       - name: Install Jekyll and Bundler
         run: gem install jekyll bundler
 
       - name: Install dependencies
         run: bundle install
       
-      # 5. Jekyll 빌드
+      # 3. Jekyll 빌드
       - name: Build the site
         run: bundle exec jekyll build
-
-      # 6. URL 목록 생성
-      - name: Generate URL list
+      
+      # 4. URL 목록 읽기
+      - name: Read URL list
+        id: read_url_list
         run: |
-          if [ -f "./_site/url-list.json" ]; then
-            URL_LIST=$(jq -r '.urlList | join(",")' ./_site/url-list.json)
-            echo "Generated URL List: [${URL_LIST}]"
-            echo "URL_LIST=[${URL_LIST}]" >> $GITHUB_ENV
-          else
-            echo "url-list.json not found!"
-            exit 1
-          fi
+          URL_LIST=$(cat _site/url-list.html)
+          echo "URL_LIST=$URL_LIST" >> $GITHUB_ENV
 
-      # 7. Bing 에게 IndexNow API 전송
+      # 5. Bing에 IndexNow API 전송
       - name: Send POST request to IndexNow API
         env:
           HOST: kj1241.github.io
-          KEY: be4399e1d45940f99cd62033acdfd1f4 
-          KEY_LOCATION: https://kj1241.github.io/be4399e1d45940f99cd62033acdfd1f4.txt 
+          KEY: be4399e1d45940f99cd62033acdfd1f4
+          KEY_LOCATION: https://kj1241.github.io/be4399e1d45940f99cd62033acdfd1f4.txt
           URL_LIST: ${{ env.URL_LIST }}
         run: |
           echo "Using URL List: ${URL_LIST}"
@@ -62,7 +52,7 @@ jobs:
             "host": "'"${HOST}"'",
             "key": "'"${KEY}"'",
             "keyLocation": "'"${KEY_LOCATION}"'",
-            "urlList": ['"${URL_LIST}']
+            "urlList": '"${URL_LIST}"'
           }')
 
           # Split the response, headers, and the HTTP status code
