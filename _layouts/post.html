@@ -75,33 +75,6 @@ layout: default
     </div>
     {%- endif -%}
     
-    <!--gitalk-->
-    <div id="gitalk-container"></div>
-
-    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        var currentPath = window.location.pathname;
-
-        var gitalk = new Gitalk({
-          clientID: '{{ site.gitalk.clientID }}',
-          clientSecret: '{{ site.gitalk.clientSecret }}',
-          repo: '{{ site.gitalk.repo }}',
-          owner: '{{ site.gitalk.owner }}',
-          admin: '[{{ site.gitalk.owner }}]',
-          id: currentPath,
-          distractionFreeMode: false
-        });
-    
-        // if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-        //   document.getElementById('gitalk-container').innerHTML = 'Gitalk comments not available by default when the website is previewed locally.';
-        //   return;
-        // }
-        gitalk.render('gitalk-container');
-      });
-    </script>
-
-
     {%- if page.tags -%}
     <div id="tag">
       <div class="tag_title"> tag:&nbsp </div>
@@ -110,10 +83,6 @@ layout: default
       {%- endfor -%}
     </div>
     {%- endif -%}
-
-
-
-    
 
     {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
