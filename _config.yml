@@ -34,6 +34,15 @@ google_drive: https://drive.google.com/thumbnail?id=
 google_drive_end: "&sz=w1000"
 
 
+gitalk:
+  enable: true
+  clientID: Ov23li3oPkj7DBU2Ohlh
+  clientSecrent: e13665bab9a26e26f369a7a163eecd4868ad17f6
+  repo: https://github.com/kj1241/kj1241.github.io
+  owner: kj1241
+  admin: 
+    - kj1241
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

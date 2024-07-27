@@ -5,7 +5,7 @@ date: 2024-07-24 09:00:00 +09:00
 image: https://drive.google.com/thumbnail?id=1U514vC38J40UftFkXx61peJlR970hVpR
 toc: true
 categories: [Web]
-keywords: Git Hub blog, IndexNow,Git Hub Actions, jekyll, 검색 엔진, bing, naver, yep, Seznam, Yandex, 자동 인덱싱, 자동화
+keywords: GitHub blog, IndexNow, Git Hub Actions, jekyll, 검색 엔진, bing, naver, yep, Seznam, Yandex, 자동 인덱싱, 자동화
 lastmod: 2024-07-24 09:00:00 +09:00
 sitemap: 
   changefreq : weekly
@@ -118,7 +118,14 @@ CI를 하면 코드 품질 향상 효과와 통합 문제를 감소시키고, CD
 
 ## <web_h2>5. Git hub Action 사용하여 IndexNow 제작</web_h2>
 
-해당 파트는 이제 기본적으로 GitHub Action을 사용하고 IndexNow를 제작해보고 테스트해보는 코드입니다.
+해당 파트는 이제 기본적으로 GitHub Action을 사용하고 IndexNow를 제작해보고 테스트해보는 코드입니다. 들어가기 전에 가장 중요한 점은 bing, naver, yep, Seznam, Yandex등 <web_h4>IndexNow를 사용하는 어느 검색엔진한테 보내도 다른 검색엔진 사이트들도 IndowNow를 수신받을 수 있다는 점</web_h4>입니다. 전 그냥 마소 빙으로 전송했습니다.
+
+- <p><web_h5>IndexNow:</web_h5> https://api.indexnow.org/indexnow</p>
+- <p><web_h5>Microsoft Bing:</web_h5> https://www.bing.com/indexnow</p>
+- <p><web_h5>Naver:</web_h5> https://searchadvisor.naver.com/indexnow</p>
+- <p><web_h5>Seznam.cz:</web_h5> https://search.seznam.cz/indexnow</p>
+- <p><web_h5>Yandex:</web_h5> https://yandex.com/indexnow</p>
+- <p><web_h5>Yep:</web_h5> https://indexnow.yep.com/indexnow</p>
 
 <br>
 
