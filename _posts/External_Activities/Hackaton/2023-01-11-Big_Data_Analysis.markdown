@@ -79,7 +79,7 @@ related_links:
 
 ## <data_h2>결과(성과) 및 데모</data_h2>
 
-<iframe width="100%" style="aspect-ratio:16/9" src="https://drive.google.com/file/d/1WaSbyeZJ2JY7FfH4bLWFgW-zWpqRsnMA/preview" title="팀 프로젝트(the_Untitled_Kingdom)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" style="aspect-ratio:16/9" src="https://drive.google.com/file/d/1WaSbyeZJ2JY7FfH4bLWFgW-zWpqRsnMA/preview" title="고령운전자 취약 지역 예측(빅데이터)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 - <span><data_h5>성과:</data_h5> 최우수상 / 보고서 완성 </span>
 - <span><data_h5>구글드라이브(코드):</data_h5> [https://drive.google.com/drive/folders/10NZTmrZOhhXj3g6AdXtu5HHXEIXapxvg?usp=share_link](https://drive.google.com/drive/folders/10NZTmrZOhhXj3g6AdXtu5HHXEIXapxvg?usp=share_link)</span>
