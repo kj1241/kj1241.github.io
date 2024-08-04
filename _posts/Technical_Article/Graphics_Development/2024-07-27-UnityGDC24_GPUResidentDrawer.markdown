@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Unity GDC24 1 - GPU Resident Drawer ver.1"
+title: "GDC24 Unity 1 - GPU Resident Drawer ver.1"
 date: 2024-07-27 09:00:00 +09:00
 image: https://drive.google.com/thumbnail?id=1iiQM2W6mu8FIG_h4BrAlg9vVlpO9N8rU
 toc: true
@@ -60,6 +60,7 @@ related_links:
 <iframe width="100%" style="aspect-ratio:16/9" src="https://drive.google.com/file/d/1E0ycZBafpo9v0Iu0Ul6-FRbrJVE9HAgz/preview" title="GPU Resident Drawer on" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 편의성을 위해서 UI로 FPS 계산하는 공식을 작성하였습니다. 그리고 확인을 위해서 PIX를 사용하였습니다. 해당 프로젝트는 화면 녹화 때문에 영상에서는 낮게 잡히지만 실제로는 60을 방어할 수 있습니다. GPU Resident Drawer 사용하지 않은 상태와 사용한 상태를 비교해 보면 실제로 약 평균 10프레임 정도 차이나는 것을 알 수 있습니다. GPU Resident Drawer 사용하는 것이 FPS를 올리는 데 도움이 됩니다.
+
 <br>
 
 ### <unity_h3> 2) GPU Resident Drawer 사용전 생각해야되는 점  </unity_h3>
