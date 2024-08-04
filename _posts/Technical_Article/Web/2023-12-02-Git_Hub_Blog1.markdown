@@ -6,22 +6,22 @@ image: https://drive.google.com/thumbnail?id=161gUg11aSRhUYWbw-QZtPiKdd30S9_yI
 toc: true
 categories: [Web]
 keywords: Jkeyll, Ruby, HTML, SCSS, Java Script, GitHub Blog , 깃 허브 블로그 제작 시작하기
-addsence: true
 lastmod: 2024-08-03 15:53:00 +09:00
 sitemap:
   changefreq : daily
   priority : 1.0
+addsence: true
 excerpt: 이 글은 GitHub 블로그를 만드는 방법과 팁에 대해 설명합니다. GitHub에서 새로운 리포지토리를 생성하고, Jekyll을 이용하여 로컬에서 블로그를 설정하는 방법을 안내합니다. 또한, Minima 테마를 제거하고 필요한 플러그인을 설치하는 과정도 포함되어 있습니다.
 related_links:
-    - url: /web_tp/Git_Hub_Blog_Skin.html
-    - url: /web/Git_Hub_Blog2.html
-    - url: /web/Git_Hub_Blog3.html
-    - url: /web/Git_Hub_Blog4.html
+  - url: /web_tp/Git_Hub_Blog_Skin.html
+  - url: /web/Git_Hub_Blog2.html
+  - url: /web/Git_Hub_Blog3.html
+  - url: /web/Git_Hub_Blog4.html
 ---
 
 깃 허브 블로그를 만드는 방법과 팁에 관해서 이야기하고 있습니다. 저의 블로그는 서식부터 제작했기 때문에 제 맘대로 만들었습니다. 따라서 이 글은 이론을 설명하기보다 깃 허브 블로그를 만드시는 분들에게 줄 수 있는 팁에 대해서 설명하고 있습니다. 예전에는 누구랑 논쟁하기 싫어서 그냥 모른다고 적어놨지만, 궁금하신 점이 있으면 물어보셔도 됩니다.  
   
-혹시 다른 사람들이 만들어놓은 Jekyll 테마를 이용하거나, Git Hub Fork를 이용하여 30분 만에 간단하게 사이트를 만드실 분들은 다른 사이트 혹은 유튜브에 강의가 많음으로 참조하시면 됩니다.  
+혹시 다른 사람들이 만들어놓은 Jekyll 테마를 이용하거나, GitHub Fork를 이용하여 30분 만에 간단하게 사이트를 만드실 분들은 다른 사이트 혹은 유튜브에 강의가 많음으로 참조하시면 됩니다.  
 
 그럼 시작해봅시다.
 

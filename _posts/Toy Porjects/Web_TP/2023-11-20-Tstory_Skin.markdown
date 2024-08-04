@@ -5,10 +5,15 @@ date: 2023-11-20 11:30:00 +0900
 image: https://drive.google.com/thumbnail?id=1Zchpt1qWBzMGafRWsjdVLTy4vlbBte_2
 toc: true
 categories: [Web_TP]
-tags: [HTML, CSS, Java script, Tstory Skin]
 keywords: HTML, CSS, Java script, Tstory Skin
+lastmod: 2024-04-13 12:58:00 +09:00
+sitemap:
+  changefreq : daily
+  priority : 1.0
+addsence: true
+excerpt: 이 블로그 포스트는 "Tstory Skin ver.2"의 개발 과정을 다룹니다. HTML, CSS, JavaScript, jQuery를 사용하여 우주 테마의 심플한 디자인을 구현했습니다. 당시 개발 과정을 담고 있습니다.
 related_links:
-    - url: /web/Web_Developer_Tools.html
+  - url: /web/Web_Developer_Tools.html
 ---
 
 ##  <web_h2> 프로젝트 소개 </web_h2>
@@ -26,13 +31,13 @@ related_links:
     - ver.1: 2023.01.11~2023.01.13 
     - ver.2: 2023.06.23~2023.06.26
 - <span><web_h5>개발인원:</web_h5> Developer(1명)</span>
-- <span><web_h5>플랫폼:</web_h5> PC(Chorm / Microsoft Edge / Firefox / Opera)</span>
+- <span><web_h5>플랫폼:</web_h5> PC(Chrome / Microsoft Edge / Firefox / Opera)</span>
 
 <br>
 
 ### <web_h3> 기술 스택 </web_h3>
 
-- <span><web_h5>개발 도구:</web_h5> visual code / T story editor</span>
+- <span><web_h5>개발 도구:</web_h5> Visual Studio Code / Tstory editor</span>
 - <span><web_h5>개발 언어:</web_h5> HTML / CSS / JavaScript(ver.1 바닐라 / ver.2 J-Query)</span>
 - <span><web_h5>그래픽 디자인:</web_h5> Adobe Photoshop</span>
 
@@ -66,7 +71,7 @@ related_links:
 ### <web_h3>커버형 스킨 제작 ver.2</web_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
 
 1. 홈 커버에 슬라이더를 제작하였습니다.
-2. 글의 가독성이 떨어지는 구조를 수정하였습니다.
+2. 가독성이 떨어지는 글 구조를 수정하였습니다.
 3. 최대한 상속 구조로 개편하여 로직을 작성하였습니다.
 4. 티스토리 API를 연계해서 코드를 작성하였습니다.
 
@@ -78,7 +83,7 @@ related_links:
 
 - 바닐라 JavaScript를 사용하여 홈 커버 슬라이더 애니메이션을 만들었습니다.
 - 슬라이더를 만듬으로 생동감을 불어 넣었습니다.
-- T story API를 사용하여 에디터에서 편집할 수 있도록 제작하였습니다.
+- Tstory API를 사용하여 에디터에서 편집할 수 있도록 제작하였습니다.
 
 <br>
 <br>
@@ -106,11 +111,11 @@ related_links:
 ## <web_h2> 비고 및 여담 </web_h2>
 
 - <span><web_h5>당시 티스트로리를 선택한 이유:</web_h5></span>
-    - 편리함으로 노션을 사용하였지만, 웹 페이지 로딩속도가 느림으로 인하여 티스토리로 옮기게 되었습니다.
-    - 구글 블로그, 깃허브 블로그, 티스토리 블로그 중 고민하였지만, 거대한 프로젝트는 혼자서 할 수 없고 티스토리 프로그래머와 협력하여 제작한다는 느낌을 받고 싶어서 티스토리를 선택하게 되었습니다.
+    - 처음에는 편리함 때문에 노션을 사용하였지만, 웹 페이지 로딩 속도가 느려 티스토리로 옮기게 되었습니다.
+    - 구글 블로그, 깃허브 블로그, 티스토리 블로그 중 고민하였지만, 거대한 프로젝트는 혼자서 할 수 없고, 티스토리 프로그래머와 협력하여 제작하는 느낌을 받고 싶어서 티스토리를 선택하게 되었습니다.
 
 - <span><web_h5>스킨 제작하면서 재미있었던 점:</web_h5></span>
-    - 단순하게 고민 없이 단순한 UI 작업을 함으로써 오랜만에 환기하고 결과물을 도출할 수 있어서 재미있는 경험이었습니다.
+    - 단순한 UI 작업을 하며 오랜만에 환기하고 결과물을 도출할 수 있어서 재미있는 경험이었습니다.
 
 <br>
 

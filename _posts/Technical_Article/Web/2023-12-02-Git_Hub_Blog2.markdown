@@ -6,17 +6,17 @@ image: https://drive.google.com/thumbnail?id=1cgQdmRjbkLnICVlV7E0FZx8Q7_icG0VC
 toc: true
 categories: [Web]
 keywords: Jkeyll, Ruby, HTML, SCSS, Java Script, GitHub Blog, Liquid, 플러그인 제작, 목차 제작, TOC
-addsence: true
 lastmod: 2024-08-03 16:24:00 +09:00
 sitemap:
   changefreq : daily
   priority : 1.0
+addsence: true
 excerpt: 이 글은 Jekyll을 사용하여 블로그를 제작하는 과정을 경험을 바탕으로 설명합니다. Jekyll, Ruby, HTML, SCSS, JavaScript 등 다양한 기술을 활용하여 블로그를 만드는 방법을 다루며, 코드 작성 방법과 각 언어 및 도구의 활용법에 대한 경험을 공유합니다.
 related_links:
-    - url: /web_tp/Git_Hub_Blog_Skin.html
-    - url: /web/Git_Hub_Blog1.html
-    - url: /web/Git_Hub_Blog3.html
-    - url: /web/Git_Hub_Blog4.html
+  - url: /web_tp/Git_Hub_Blog_Skin.html
+  - url: /web/Git_Hub_Blog1.html
+  - url: /web/Git_Hub_Blog3.html
+  - url: /web/Git_Hub_Blog4.html
 ---
 
 앞서서는 기본적으로 Jekyll을 설치하고 초기 블로그 화면까지 구성하는 방법을 설명하였습니다. 생각보다 제가 이론에 정통한 사람이 아니라서 딱히 이론적으로는 어떻게 만드는지는 도와드릴 수는 없을 것 같습니다. 저 같은 경우에는 머릿속으로 이미지를 상상하고 코딩을 작성합니다. 대신 에러나 궁금한 점이 있다면 같이 해결해 줄 수는 있습니다.
@@ -348,13 +348,13 @@ head.html에서 가장 기본이 되는 /assets/main.css 정의되어 있음을 
 <br>
 <br>
 
-## <blue1_h2> 6. Java Script </blue1_h2>
+## <web_h2> 6. Java Script </web_h2>
 
 JavaScript는 웹 페이지를 이벤트를 동작시키는 데 사용됩니다. 이 말은 JavaScript를 사용하여 웹사이트의 동적인 요소를 구현하거나 사용자와의 상호 작용을 향상할 수 있습니다. 다양한 브라우저에 지원됨으로 범용적으로 사용할 수 있습니다.
   
 <br>
 
-### <blue1_h3> 1) 사이드 바 TOC 만들기 </blue1_h3>
+### <web_h3> 1) 사이드 바 TOC 만들기 </web_h3>
 
 이벤트를 만들어야 하므로 자바스크립트를 이용하여 목차를 제작하였습니다.
 
@@ -411,7 +411,7 @@ markdown 포스트의 h2, ## 혹은 h3, ###를 인식하면 li 리스트로 넣�
 
 <br>
 
-### <blue1_h3> 2) 홈 화면 슬라이더 애니메이션 제작 </blue1_h3>
+### <web_h3> 2) 홈 화면 슬라이더 애니메이션 제작 </web_h3>
 
 홈 화면의 슬라이더 애니메이션을 제작하여 화면이 움직일 수 있게 제작하였습니다.
 
@@ -447,5 +447,10 @@ function plusSlides(n) {
   }
 {% endraw %}
 ```
+
+<br>
+<br>
+
+## <web_h2> 7. 끝으로 </web_h2>
 
 이처럼 본인이 변경하고 싶은 영역을 생각하고 해당하는 언어를 만지면 쉽게 블로그를 개조할 수 있을 것입니다. 다음 편에는 구글 검색엔진에 올려놓기 위해 수정해야 하는 사항과 SEO 최적화로 돌아오겠습니다. 읽어주셔서 감사합니다.

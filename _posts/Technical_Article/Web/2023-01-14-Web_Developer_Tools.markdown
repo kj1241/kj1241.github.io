@@ -6,14 +6,14 @@ image: https://drive.google.com/thumbnail?id=1Ab2WxHJ2Y7lgwkacQ8M7Pu4aJ-N0lRWM
 toc: true
 categories: [Web]
 keywords: Web Fornt, Web Developer Tools, 티스토리 스킨
-addsence: true
 lastmod: 2024-04-03 19:01:00 +09:00
 sitemap:
   changefreq : daily
   priority : 1.0
+addsence: true
 excerpt: 우리가 사용하고 있는 크롬, 엣지와 같은 인터넷에는 필수적으로 개발을 위해서 개발자 도구(F12)를 제공합니다. 이 글은 개발자 도루를 사용하여 HTML + CSS를 사용한 티스토리 스킨을 제작한 경험에 관해 이야기하고 있습니다.
 related_links:
-    - url: /web_tp/Tstory_Skin.html
+  - url: /web_tp/Tstory_Skin.html
 ---
 
 제가 처음으로 쓰는 블로그에 관한 주제입니다. (사실 블로그보다는 웹 디버깅에 관한 내용입니다.) 우리가 사용하고 있는 크롬, 엣지와 같은 인터넷에는 필수적으로 개발을 위해서 개발자 도구(F12)를 제공합니다. 이 글은 개발자 도구를 사용하여 티스토리 스킨을 제작한 경험에 대해 이야기하고 있습니다.
@@ -62,16 +62,12 @@ related_links:
 따라서 티스토리 테마에 적용하기 위해서는, 티스토리가 제공하는 광고 사이드바 API를 적용하고 있는 사이트를 찾습니다.  
 그 후에는 궁금한 해당 위치를 <web_h5>마우스로 우클릭 - 검사</web_h5>를 두 번 눌러줍니다.  
 (<red1_error>반드시</red1_error> <web_h5>두 번</web_h5> 눌러주세요.)
-  
-<br>
-
+ 
 ![광고 개발자 도구 검사]({{ site.google_drive }}1D8kXCK92yelXETEdTF1ZIwp9ys6GKkHa{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
   
 웹 개발자 도구 코드가 이해가 안 가시면, 제가 깃 허브로 제공한 HTML + CSS 코드와 개발자 도구(F12)에서 변형된 코드를 비교해서 보신다면 쉽게 HTML 구조에 관해서 이해하실 수 있으실 것입니다.
   
 티스토리가 제공하는 광고 사이드바 API 구문은 다음과 같습니다.  
-
-<br>
 
 #### **<web_h4>html:</web_h4>**
 
@@ -85,8 +81,6 @@ related_links:
 ```
 
 위의 html 코드를 스킨에 작성하고, 티스토리에서 관리에 들어가서 사이드바 광고를 적용 시킬 수 있습니다.
-
-<br>
 
 ![광고 적용된 화면]({{ site.google_drive }}1Ab2WxHJ2Y7lgwkacQ8M7Pu4aJ-N0lRWM{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 
@@ -114,8 +108,6 @@ related_links:
 
 위의 그림처럼 티스토리에서 기본적으로 제공하는 구분선 검은색이기 때문에, html을 사용하여 검은색 배경과 합쳐지면 구분 선이 안 보이게 됩니다. 이것을 해결하기 위해서 자바스크립트를 이용해서 전체적인 색반전을 일으켜서 전체적인 색을 뒤집어 버릴 수도 있습니다.
 
-<br>
-
 #### **<web_h4>java:</web_h4>**
 
 ```java
@@ -126,13 +118,9 @@ a =255 - a
 
 위와 같은 원리를 사용하면 색반전을 일으킬 수 있습니다만, 위와 같은 방식은 단순히 문제를 <web_h5>회피</web_h5>하는 방법입니다. 개별적으로 세세하게 바꾸고 싶다면 개발자 도구를 이용해서 해당 속성의 아이디나 클래스를 추적하면 됩니다.  
 
-<br>
-
 ![티스토리 에디터 속성 추적]({{ site.google_drive }}18QpLElSasbj6IE7hbjkDSq6B6T_euTw9{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 
 개발자 도구를 사용해서, API를 추적하면 tt-body-page 속성 클래스를 얻으실 수 있습니다.  
-
-<br>
 
 #### **<web_h4>css:</web_h4>**
 
@@ -158,6 +146,9 @@ a =255 - a
 CSS 코드를 사용해서 변경하게 되면 다음과 같이 티스토리에서 제공하는 선에 원하는 색을 부여할 수 있습니다.
 
 <br>
+<br>
+
+## <web_h2>4. 끝으로</web_h2>
 
 개발자 도구는 여러분이 상상하는 것보다 훨씬 강력합니다. 코드확인뿐만 아니라 크롤링, 자바스크립트확인 등 다양한 분야로 사용할 수 있습니다.
 위의 예제처럼 만약 웹상에서 제공하는 API를 모르거나 궁금하실 경우, 개발자 도구를 사용하여 마음대로 ~~코드 스틸~~ <web_h5>벤치 마킹</web_h5>을 적용하시면 됩니다. 읽어주셔서 감사합니다.  

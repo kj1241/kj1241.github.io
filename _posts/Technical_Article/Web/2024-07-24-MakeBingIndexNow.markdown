@@ -1,18 +1,19 @@
 ---
 layout: post
-title: "Git Hub blog에서 IndexNow 연동하기 - Git Hub Action 사용"
+title: "GitHub blog에서 IndexNow 연동하기 - GitHub Action 사용"
 date: 2024-07-24 09:00:00 +09:00
 image: https://drive.google.com/thumbnail?id=1U514vC38J40UftFkXx61peJlR970hVpR
 toc: true
 categories: [Web]
-keywords: GitHub blog, IndexNow, Git Hub Actions, jekyll, 검색 엔진, bing, naver, yep, Seznam, Yandex, 자동 인덱싱, 자동화
-lastmod: 2024-07-24 09:00:00 +09:00
+keywords: GitHub blog, IndexNow, GitHub Actions, jekyll, 검색 엔진, bing, naver, yep, Seznam, Yandex, 자동 인덱싱, 자동화
+lastmod: 2024-08-04 20:53:00 +09:00
 sitemap: 
   changefreq : weekly
   priority : 0.1
 addsence: true
 excerpt: GitHub 블로그에서 IndexNow를 연동하기 위해 GitHub Actions를 사용하여 변경 사항을 검색 엔진에 자동으로 알리는 방법을 설명합니다. 빌드 시마다 사이트맵을 전송하여 빠른 인덱싱을 유도합니다.
 related_links:
+  - url: /web_tp/Git_Hub_Blog_Skin.html
 ---
 
 원래 GDC 분석글 하나 쓰려고 했는데 IndexNow를 만들어서 우선 먼저 쓰게 되었습니다.
@@ -67,7 +68,7 @@ IndexNow는 이런 요청들을 통신하여 해결할 수 있습니다. 그러�
 <br>
 <br>
 
-## <web_h2>3. IndexNow는 어떻게 Git Hub Blog에서 보낼수 있을까?</web_h2>
+## <web_h2>3. IndexNow는 어떻게 GitHub Blog에서 보낼수 있을까?</web_h2>
 
 그럼 이제 언제, 어떤 방법, 어떠한 방식으로 이런 요청을 보내야 하는지 고민해야 합니다. 미리 말씀드리지만, 저는 제가 고민한 방식을 보여줄 수 있지만, 이것을 범용적으로 사용할 수 있게 규격화하거나 그런 코드는 작성하지 않을 것입니다. 이는 사용자가 보내야 하는 경우가 전부 다를 수 있기 때문입니다. (나머지는 응용해서 발전시키는 것은 여러분 몫입니다.)
 
@@ -81,7 +82,7 @@ IndexNow는 이런 요청들을 통신하여 해결할 수 있습니다. 그러�
 
 1. Ruby
 2. Java Script
-3. Git Hub Action
+3. GitHub Action
 
 어떠한 방식을 사용해도 위의 문제를 해결할 수 있지만, 저는 GitHub Action을 다뤄본 적이 없기 때문에 이번 기회를 통해 알아보고자 합니다. ~~(이거 완전 러키빅키잖아!)~~ 이렇게 사용할 방식, 방법을 정했으면 이제 구체적으로 어떻게 방식으로 자동화할지를 생각해봐야 합니다. 제가 정한 답은 다음과 같습니다.
 
@@ -91,9 +92,9 @@ IndexNow는 이런 요청들을 통신하여 해결할 수 있습니다. 그러�
 <br>
 <br>
 
-## <web_h2>4. Git hub Action 정의</web_h2>
+## <web_h2>4. GitHub Action 정의</web_h2>
 
-**Git Hub Action 정의:** GitHub의 CI/CD 플랫폼으로, 리포지토리 내에서 자동화된 워크플로우를 설정할 수 있습니다.
+**GitHub Action 정의:** GitHub의 CI/CD 플랫폼으로, 리포지토리 내에서 자동화된 워크플로우를 설정할 수 있습니다.
 
 - CI: 지속적 통합
 - CD: 지속적 배포
@@ -116,7 +117,7 @@ CI를 하면 코드 품질 향상 효과와 통합 문제를 감소시키고, CD
 <br>
 <br>
 
-## <web_h2>5. Git hub Action 사용하여 IndexNow 제작</web_h2>
+## <web_h2>5. GitHub Action 사용하여 IndexNow 제작</web_h2>
 
 해당 파트는 이제 기본적으로 GitHub Action을 사용하고 IndexNow를 제작해보고 테스트해보는 코드입니다. 들어가기 전에 가장 중요한 점은 bing, naver, yep, Seznam, Yandex등 <web_h4>IndexNow를 사용하는 어느 검색엔진한테 보내도 다른 검색엔진 사이트들도 IndowNow를 수신받을 수 있다는 점</web_h4>입니다. 전 그냥 마소 빙으로 전송했습니다.
 
@@ -142,7 +143,7 @@ CI를 하면 코드 품질 향상 효과와 통합 문제를 감소시키고, CD
 그럼 이제 블로그 루트 파일에 Generate API Key.txt 파일을 만들고 안에 내용을 Generate API Key로 작성해 주세요. 그러면 해당 키를 읽으러 검색엔진 크롤러가 올 것입니다.
 
 > ![Repository secrets 실험]({{ site.google_drive }}1nmYi4P1QKScfq2pQ5y_HIAspW2mrvDJF{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-  *<web_h6>Git Hub Blog Repository secrets 실험</web_h6>*
+  *<web_h6>GitHub Blog Repository secrets 실험</web_h6>*
  처음에는 위의 방식처럼 Generate API Key를 암호화하고 사용하려고 했습니다. 암호화된 코드를 읽고 root 폴더에 txt 파일을 생성하게 만들어봤지만 결국 검색엔진이 크롤링해서 읽어야 하는데 읽지 못하는 것 같아서 기본으로 돌아가서 루트 폴더에 텍스트 파일을 작성하게 되었습니다. (사실 성격이 급해서 기다리지 못했습니다.)
 
 <br>
@@ -252,7 +253,7 @@ jobs:
 <br>
 <br>
 
-## <web_h2>6. Jekyll를 이용해서 Git hub Action에서 IndexNow 보내기 </web_h2>
+## <web_h2>6. Jekyll를 이용해서 GitHub Action에서 IndexNow 보내기 </web_h2>
 
 기본적으로 보내는 코드가 성공했다면 이제는 좀 더 심화 과정으로 들어가야 합니다. 원할 때마다 URL_LIST를 키보드로 직접 작성하여 패킷을 보내야 한다면 안 하는 것만 못할 겁니다. 사실 귀찮기도 합니다. 신경 안 써도 알아서 알려주는 자동화 로직을 작성할 것입니다.
 
