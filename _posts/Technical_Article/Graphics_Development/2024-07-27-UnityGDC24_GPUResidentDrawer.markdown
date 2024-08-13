@@ -1,19 +1,19 @@
 ---
 layout: post
-title: "GDC24 Unity 1 - GPU Resident Drawer ver.1"
+title: "GDC24 Unity 1 - GPU Resident Drawer"
 date: 2024-07-27 09:00:00 +09:00
 image: https://drive.google.com/thumbnail?id=1iiQM2W6mu8FIG_h4BrAlg9vVlpO9N8rU
 toc: true
 categories: [Graphics_Development]
 keywords: Unity, GPU Resident Drawer, 컴퓨트 셰이더, GPU 인스턴싱, 렌더링 최적화, 메모리 효율화, 실시간 렌더링
 addsence: true
-lastmod: 2024-08-04 09:00:00 +09:00
+lastmod: 2024-08-05 09:00:00 +09:00
 sitemap:
   changefreq : daily
   priority : 1.0
 excerpt:  유니티의 GPU Resident Drawer는 컴퓨트 셰이더를 활용해 다수의 동일한 오브젝트를 효율적으로 렌더링하는 기능입니다. 이 기능은 특히 복잡한 씬에서 프레임률을 향상시키고, 메모리 사용을 최적화하는 데 유용합니다. GPU 인스턴싱과 결합하면 대규모 씬에서도 성능을 크게 개선할 수 있습니다.
 related_links:
-
+  - url: /computer_vision/ImageComposition.html
 ---
 
 안녕하세요. 오랜만에 아티클 작성으로 돌아왔습니다. 원래 이 주제는 제가 Unity GDC 2024 영상이 처음 발표된 4개월 전에 작성할까 고민하던 글입니다.
