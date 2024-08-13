@@ -354,12 +354,12 @@ jobs:
 
 1. 루비 버전을 확인하고 Jekyll을 설치합니다.
 2. Jekyll을 빌드합니다.
-3. 위위의 Liquid를 활용하여 전체 사이트를 탐색하고 URL_LIST에 담습니다.
+3. 위의 Liquid를 활용하여 전체 사이트를 탐색하고 URL_LIST에 담습니다.
 
 ![BWT에 전체 사이트 보낸 결과]({{ site.google_drive }}1ePRx0lmbtKp3bRbiInH95oanBHKD1kkb{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<web_h6>BWT에 전체 사이트 보낸 결과</web_h6>*
 
-처처음 2개였던 사이트가 137개로 늘어났습니다. 이제 해당 사이트들은 Bing 검색엔진이 참조하여 크롤링할 것입니다.
+처음 2개였던 사이트가 137개로 늘어났습니다. 이제 해당 사이트들은 Bing 검색엔진이 참조하여 크롤링할 것입니다.
 
 <br>
 
