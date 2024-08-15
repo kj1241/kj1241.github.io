@@ -5,8 +5,11 @@ date: 2023-01-15 16:25:33 +0900
 image: https://drive.google.com/thumbnail?id=1Rlq8GttXP_Nc6szIUhBCASzZajd8nxfY
 toc: true
 categories: [Unity]
-tags: [C#, Unity, Rhythm Game]
 keywords: C#, Unity, Rhythm Game, game log
+lastmod: 2024-08-15 20:53:00 +09:00
+sitemap: 
+  changefreq : weekly
+  priority : 0.1
 addsence: true
 excerpt: Unity 및 C#로 개발한 리듬게임 '하나비 프로젝트'의 로그입니다. 애니메이션을 추가하기 위해서 스파인 에니메이션 API를 이용하여 2D 에니메이션을 제작한 경험을 공유하고 있습니다.
 related_links:
@@ -18,10 +21,9 @@ related_links:
 
 ## <unity_h2>1. 요약</unity_h2>
 
-게임 개발 시 캐릭터의 애니메이션을 처리하는 것은 중요한 요소 중 하나입니다. 이를 위해 Unity 엔진을 사용하여 간단한 공격 시퀀스를 구현해 보겠습니다.
+게임 개발 시 캐릭터 애니메이션 처리는 중요한 요소입니다. Unity 엔진을 사용하여 간단한 공격 시퀀스를 구현하는 방법을 살펴보겠습니다.
 
 <br>
-
 
 ![세부 단계2]({{ site.google_drive }}1Rlq8GttXP_Nc6szIUhBCASzZajd8nxfY{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<unity_h6>현재 단계</unity_h6>*
@@ -55,20 +57,19 @@ Atlas 파일은 텍스처와 해당 텍스처의 UV 맵 정보를 담고 있어,
   
 Spine 런타임을 Unity 프로젝트에 통합하는 단계는 다음과 같습니다: 
 
-1. <span><unity_h5>Spine 런타임 다운로드:</unity_h5> Esoteri Soft 또는 Spine 공식 웹사이트에서 Spine 런타임 DLL 파일을 다운로드합니다. </span>
+1. <p><unity_h5>Spine 런타임 다운로드:</unity_h5> Esoteri Soft 또는 Spine 공식 웹사이트에서 Spine 런타임 DLL 파일을 다운로드합니다.</p>
 
-2. <span><unity_h5>DLL 파일 추가:</unity_h5> Unity 프로젝트의 Assets 폴더나 Plugins 폴더 등에 다운로드 받은 Spine 런타임 DLL 파일을 추가합니다. </span> 
+2. <p><unity_h5>DLL 파일 추가:</unity_h5> Unity 프로젝트의 Assets 폴더나 Plugins 폴더 등에 Spine 런타임 DLL 파일을 추가합니다.</p> 
 
-3. <span><unity_h5>Atlas 파일 추가:</unity_h5> Spine 애니메이션에서 사용할 Atlas 파일도 Unity 프로젝트에 추가합니다. (보통 Resources 폴더나 StreamingAssets 폴더에 추가하는 것이 일반적입니다.)</span>
+3. <p><unity_h5>Atlas 파일 추가:</unity_h5> Spine 애니메이션에서 사용할 Atlas 파일도 Unity 프로젝트에 추가합니다.(보통 Resources 폴더나 StreamingAssets 폴더에 추가하는 것이 일반적입니다.)</p>
 
-4. <span><unity_h5>Spine 컴포넌트 추가:</unity_h5> Unity Scene에 Spine 애니메이션을 표시할 오브젝트를 만들고, 해당 오브젝트에 Spine 컴포넌트를 추가합니다.</span>
+4. <p><unity_h5>Spine 컴포넌트 추가:</unity_h5> Unity Scene에 Spine 애니메이션을 표시할 오브젝트를 만들고, 해당 오브젝트에 Spine 컴포넌트를 추가합니다.</p>
 
-5. <span><unity_h5>Atlas 할당:</unity_h5> Spine 컴포넌트의 Inspector에서 Atlas 파일을 할당합니다. 이를 통해 Spine 애니메이션은 정확한 텍스처와 UV 맵 정보를 참조할 수 있습니다.</span>
+5. <p><unity_h5>Atlas 할당:</unity_h5> Spine 컴포넌트의 Inspector에서 Atlas 파일을 할당합니다. 이를 통해 Spine 애니메이션은 정확한 텍스처와 UV 맵 정보를 참조할 수 있습니다.</p>
 
-6. <span><green1_h5>애니메이션 제어:</green1_h5> Spine 컴포넌트를 통해 애니메이션을 제어하고, Unity Animator 또는 코드를 통해 애니메이션을 시작하거나 조절할 수 있습니다.</span>
+6. <p><green1_h5>애니메이션 제어:</green1_h5> Spine 컴포넌트를 통해 애니메이션을 제어하고, Unity Animator 또는 코드를 통해 애니메이션을 시작하거나 조절할 수 있습니다.</p>
   
-이렇게 하면 Spine 애니메이션을 Unity 프로젝트에 성공적으로 통합할 수 있습니다.  
-주의할 점은 Spine 런타임과 Atlas 파일의 버전이 서로 호환되어야 하며, Unity 버전과도 호환되는지 확인하는 것이 중요합니다.  
+이렇게 하면 Spine 애니메이션을 Unity 프로젝트에 성공적으로 통합할 수 있습니다. 주의할 점은 Spine 런타임과 Atlas 파일의 버전이 서로 호환되어야 하며, Unity 버전과도 호환되는지 확인하는 것이 중요합니다.  
 
 <br>
 
@@ -77,7 +78,6 @@ Spine 런타임을 Unity 프로젝트에 통합하는 단계는 다음과 같습
 애니메이션 로직 설계에 관한 내용입니다.
 
 <br>
-
 
 ![세부 단계2]({{ site.google_drive }}1Hyc7R_vzdIlth3TXoAwCLeWy8TA82MSL{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<unity_h6>노드 애니메이션 로직 설계</unity_h6>*
@@ -175,6 +175,7 @@ public partial class SingletonManager : MonoBehaviour
     }
 
 ```
+
 게임에서는 아트스트와 협의된 애니메이션 동작 구성이 "idle → shot_L → idle → shot_R"의 무한 루프 방식입니다. 이러한 동작을 명확하게 표현하기 위해 Enum을 사용했습니다.  
 Enum은 각 동작을 명명하고 코드에서 가독성을 높이는데 도움을 주는데, 이러한 이유로 Enum을 도입하여 애니메이션 상태를 관리하고 있습니다. 위와 같이 로직을 처리해 주기 위해 시퀀스 그래프를 보시면 두 개의 코루틴으로 처리하도록 작성하였습니다.  
 
@@ -221,8 +222,7 @@ Enum은 각 동작을 명명하고 코드에서 가독성을 높이는데 도움
     }
 
 ```
-
-상태 머신과 코루틴과 같은 기법을 사용하여 애니메이션을 처리하고 있습니다.
+위 코드는 상태 머신과 코루틴을 사용하여 애니메이션을 처리하는 방식입니다.
 
 <br>
 
