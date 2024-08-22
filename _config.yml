@@ -4,7 +4,7 @@ sub-title: Portfolio
 name: KyeoungJu
 email: kyeoung1241@gamil.com
 description: >- # this means to ignore newlines until "baseurl:"
-            Your source for concise insights on tech trends and innovations. Explore and stay informed.
+            Get concise insights into programming technology trends and innovations.
 baseurl: "" #  /blog
 url: "https://kj1241.github.io" # http://example.com
 #twitter_username: jekyllrb

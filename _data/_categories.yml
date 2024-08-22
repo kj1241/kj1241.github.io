@@ -57,6 +57,11 @@ categories_list:
         url: /Data_Analysis/
       - title: Other_Articles
         url: /Other_Articles/
+
+  - title: Personal Feedback
+    categories_sub_list:
+      - title: Programming_Mistake
+        url: /Programming_Mistake/
       - title: Programming_Interview
         url: /Programming_Interview/
 

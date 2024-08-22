@@ -5,8 +5,8 @@ date: 2024-07-24 09:00:00 +09:00
 image: https://drive.google.com/thumbnail?id=1U514vC38J40UftFkXx61peJlR970hVpR
 toc: true
 categories: [Web]
-keywords: GitHub blog, IndexNow, GitHub Actions, jekyll, 검색 엔진, bing, naver, yep, Seznam, Yandex, 자동 인덱싱, 자동화
-lastmod: 2024-08-04 20:53:00 +09:00
+keywords: IndexNow, GitHub blog, GitHub Actions, jekyll, 검색 엔진, 자동 인덱싱, 자동화
+lastmod: 2024-08-18 20:53:00 +09:00
 sitemap: 
   changefreq : weekly
   priority : 0.1

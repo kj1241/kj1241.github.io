@@ -113,6 +113,16 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  thead {
+    background-color: #d9dcf7;
+    color:#000000;
+  }
+  tbody {
+    background-color: #fff2f2;
+    color:#000000;
+  }
+  
   
   yellow1_h1 {
     color: #f3ffb8;
@@ -305,5 +315,21 @@
   }
   com_h6{
     color: #FF85A2;
+  }
+
+  feedback_h2{
+    color: #E68D4C;
+  }
+  feedback_h3{
+    color: #E3A54B;
+  }
+  feedback_h4{
+    color: #E3B84B;
+  }
+  feedback_h5{
+    color: #E3CA4B;
+  }
+  feedback_h6{
+    color: #E3CA4B;
   }
 }

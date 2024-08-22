@@ -4,7 +4,7 @@ title: "GitHub Blog에서 Jekyll을 사용해 동적 사이트맵을 만들 때 
 date: 2024-07-23 09:00:00 +09:00
 image: https://drive.google.com/thumbnail?id=14XnGQgkgaROJf8ah95BqBEvK9r5J9tda
 toc: true
-categories: [Web]
+categories: [Programming_Mistake]
 keywords: Jekyll, GitHub 블로그, 동적 사이트맵, 사이트맵 오류
 lastmod: 2024-07-23 09:00:00 +09:00
 sitemap: 

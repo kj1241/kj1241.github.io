@@ -1,53 +1,70 @@
 User-agent: Googlebot
-Disallow:
+Disallow: /programming_interview
+Disallow: /Programming_Mistake
 
 User-agent: Googlebot-Image
-Disallow:
+Disallow: /programming_interview
+Disallow: /Programming_Mistake
 
 User-agent: AdsBot-Google
-Disallow:
+Disallow: /programming_interview
+Disallow: /Programming_Mistake
 
 User-agent: AdsBot-Google-Mobile
-Disallow:
+Disallow: /programming_interview
+Disallow: /Programming_Mistake
 
 User-agent: Mediapartners-Google
-Disallow:
+Disallow: /programming_interview
+Disallow: /Programming_Mistake
 
 User-agent: Googlebot-Mobile
-Disallow: 
+Disallow: /programming_interview
+Disallow: /Programming_Mistake
 
 User-agent: Googlebot-Video
-Disallow: 
+Disallow: /programming_interview
+Disallow: /Programming_Mistake
 
 User-agent: Feedfetcher-Google
-Disallow: 
-
-User-agent: Googlebot-AdsBot
-Disallow:
-
-User-agent: Mediapartners-Google
-Disallow:
+Disallow: /programming_interview
+Disallow: /Programming_Mistake
 
 User-agent: Google-Display-Ads-Bot
-Disallow:
+Disallow: /programming_interview
+Disallow: /Programming_Mistake
 
 User-agent: Bingbot
-Disallow: 
+Disallow: /programming_interview
+Disallow: /Programming_Mistake
 
 User-agent: MSNBot
-Disallow: 
+Disallow: /programming_interview
+Disallow: /Programming_Mistake
 
 User-agent: AdIdxBot
-Disallow: 
+Disallow: /programming_interview
+Disallow: /Programming_Mistake
 
 User-agent: Yeti
-Disallow: 
+Disallow: /programming_interview
+Disallow: /Programming_Mistake
 
 User-agent: ChatGPT-User
-Disallow: 
+Disallow: /programming_interview
+Disallow: /Programming_Mistake
 
 User-agent: Google-Safety
-Disallow:
+Disallow: /programming_interview
+Disallow: /Programming_Mistake
+
+User-agent: DuckDuckBot
+Disallow: /programming_interview
+Disallow: /Programming_Mistake
+
+User-agent: archive.org_bot
+Disallow: /programming_interview
+Disallow: /Programming_Mistake
 
 User-agent: *
 Disallow: /
