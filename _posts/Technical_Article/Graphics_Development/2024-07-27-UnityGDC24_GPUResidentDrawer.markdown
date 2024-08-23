@@ -15,6 +15,7 @@ excerpt:  유니티의 GPU Resident Drawer는 컴퓨트 셰이더를 활용해 �
 related_links:
   - url: /unity/GPU_Instancing.html
   - url: /graphics_development/UnityGDC24_GPUOcclusionCulling.html
+  - url: /graphics_development/UnityGDC24_STP.html
 ---
 
 안녕하세요. 오랜만에 아티클 작성으로 돌아왔습니다. 원래 이 주제는 제가 Unity GDC 2024 영상이 처음 발표된 4개월 전에 작성할까 고민하던 글입니다.

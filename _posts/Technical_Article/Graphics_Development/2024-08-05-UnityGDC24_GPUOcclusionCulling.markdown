@@ -14,6 +14,7 @@ sitemap:
 excerpt: Unity6에서 GPU Occlusion Culling을 적용하여 숨겨진 객체에 대해서 불필요한 드로우 콜을 방지하고 렌더링 성능을 최적화하는 기능입니다. Occlusion Culling의 다양한 종류와 사용법과 프레임 디버거와 랜더링 디버거를 사용해서 GPU Occlusion Culling을 확인합니다.
 related_links:
   - url: /graphics_development/UnityGDC24_GPUResidentDrawer.html
+  - url: /graphics_development/UnityGDC24_STP.html
 ---
 
 
