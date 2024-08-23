@@ -7,7 +7,7 @@ toc: true
 categories: [Graphics_Development]
 keywords: Spatial-Temporal Post-processing, STP, Unity6, STP 디버깅, 셰이더 분석, Temporal Anti-Aliasing, 그래픽 품질, 렌더링 최적화
 addsence: true
-lastmod: 2024-08-24 21:00:00 +09:00
+lastmod: 2024-08-23 21:00:00 +09:00
 sitemap: 
   changefreq : daily
   priority : 1.0
@@ -239,4 +239,3 @@ Spatial-Temporal Post-processing(STP)는 공간적 처리와 시간적 처리 �
 이 기술을 Unity에서 효과적으로 사용하기 위해서는 Shader Model 5.0을 지원해야 하며, Spatial-Temporal Post-processing Debugger를 활용해 STP의 작동 상태를 시각적으로 확인하고 디버깅할 수 있습니다. 디버깅은 다양한 색상 및 깊이 표현, 모션 재투영, 민감도 시각화 등 여러 항목을 통해 수행할 수 있습니다. 또한, STP 쉐이더 분석을 통해 내부적인 처리 과정을 이해하면 더욱 정교한 렌더링 최적화가 가능해집니다.
 
 STP는 고성능의 그래픽과 일관된 비주얼 품질을 유지하기 위한 중요한 도구이며, 앞으로 더 많은 게임에서 활용될 가능성이 높습니다.
-

@@ -5,8 +5,8 @@ date: 2024-07-24 09:00:00 +09:00
 image: https://drive.google.com/thumbnail?id=1U514vC38J40UftFkXx61peJlR970hVpR
 toc: true
 categories: [Web]
-keywords: IndexNow, GitHub blog, GitHub Actions, jekyll, 검색 엔진, 자동 인덱싱, 자동화
-lastmod: 2024-08-18 20:53:00 +09:00
+keywords: IndexNow, GitHub blog, Git Hub Blog, GitHub Actions, jekyll, 검색 엔진, 자동 인덱싱, 자동화
+lastmod: 2024-08-23 20:53:00 +09:00
 sitemap: 
   changefreq : weekly
   priority : 0.1
@@ -16,9 +16,7 @@ related_links:
   - url: /web_tp/Git_Hub_Blog_Skin.html
 ---
 
-원래 GDC 분석글 하나 쓰려고 했는데 IndexNow를 만들어서 우선 먼저 쓰게 되었습니다.
-이런 글은 어디에 초점을 맞춰야 할지 몰라서 일단 작성해 봅니다.
-원래는 귀찮아서 글을 지우고 싶었지만, 모르는 사람들을 위해서 작성합니다.
+원래 GDC 분석글 하나 쓰려고 했는데, 빙 웹마스터의 경고 표시가 너무 거슬려서 IndexNow를 만들어서 우선 먼저 쓰게 되었습니다. GitHub blog IndexNow에 구글링으로 찾아봤을때는 되는게 없었습니다. 그래서 개념들을 가지고 5일 정도 내내 실험해서 만들었습니다. 이런 글은 어디에 초점을 맞춰야 할지 몰라서 일단 작성해 봅니다. 실험을 통해서 해결한 글이라 부끄러워서 몇천번은 지우고 싶었지만, 그래도 찾아주시는 분들을 위해서 남겨 놓습니다. 제 생각에는 제가 작성한 웹 아티클 중에서 가장 난해하고 어려운 아티클이 될 것 같습니다.
 
 <br>
 
@@ -142,9 +140,13 @@ CI를 하면 코드 품질 향상 효과와 통합 문제를 감소시키고, CD
 
 그럼 이제 블로그 루트 파일에 Generate API Key.txt 파일을 만들고 안에 내용을 Generate API Key로 작성해 주세요. 그러면 해당 키를 읽으러 검색엔진 크롤러가 올 것입니다.
 
-> ![Repository secrets 실험]({{ site.google_drive }}1nmYi4P1QKScfq2pQ5y_HIAspW2mrvDJF{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-  *<web_h6>GitHub Blog Repository secrets 실험</web_h6>*
- 처음에는 위의 방식처럼 Generate API Key를 암호화하고 사용하려고 했습니다. 암호화된 코드를 읽고 root 폴더에 txt 파일을 생성하게 만들어봤지만 결국 검색엔진이 크롤링해서 읽어야 하는데 읽지 못하는 것 같아서 기본으로 돌아가서 루트 폴더에 텍스트 파일을 작성하게 되었습니다. (사실 성격이 급해서 기다리지 못했습니다.)
+
+#### <web_h4>GitHub Blog Repository secrets 사용하면 이점이 있을까?</web_h4>
+
+![Repository secrets 실험]({{ site.google_drive }}1nmYi4P1QKScfq2pQ5y_HIAspW2mrvDJF{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<web_h6>GitHub Blog Repository secrets 실험</web_h6>*
+
+처음에는 위의 방식처럼 Generate API Key를 암호화하고 사용하려고 했습니다. 암호화된 코드를 읽고 root 폴더에 txt 파일을 생성하게 만들어봤지만 결국 검색엔진이 크롤링해서 읽어야 하는데 읽지 못하는 것 같아서 기본으로 돌아가서 루트 폴더에 텍스트 파일을 작성하게 되었습니다. (사실 성격이 급해서 기다리지 못했습니다.)
 
 <br>
 
@@ -246,9 +248,12 @@ jobs:
 
 만약 정상적으로 IndexNow를 수신하고 Bing에서 처리하게 되면 Bing Webmaster Tools에서 IndexNow 탭은 위처럼 변하게 될 것입니다.
 
-> ![IndexNow 패킷 에러]({{ site.google_drive }}1YH9tLLO2bsh64P8v9zdtCTCOYiBP-g2p{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-  *<web_h6>IndexNow 패킷 에러</web_h6>*
-  패킷을 일부러 잘못 보내면 위의 그림과 같이 <red1_error>응답 코드: 400</red1_error> (주어진 요청이 null이거나 유효하지 않음)이 롤백됩니다.
+#### <web_h4>만약 IndexNow 패킷을 일부로 잘못 보내게 된다면</web_h4>
+
+![IndexNow 패킷 에러]({{ site.google_drive }}1YH9tLLO2bsh64P8v9zdtCTCOYiBP-g2p{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<web_h6>IndexNow 패킷 에러</web_h6>*
+
+패킷을 일부러 잘못 보내면 위의 그림과 같이 <red1_error>응답 코드: 400</red1_error> (주어진 요청이 null이거나 유효하지 않음)이 롤백됩니다.
 
 <br>
 <br>
