@@ -1,13 +1,13 @@
 --- 
 layout: post
 title: "GDC24 Unity 3 - Spatial-Temporal Post-processing"
-date: 2024-08-06 09:00:00 +09:00
+date: 2024-08-13 09:00:00 +09:00
 image: https://drive.google.com/thumbnail?id=1kv3qO7_cvVJLx7MbEjvD4OZ0XyeD-9QR
 toc: true
 categories: [Graphics_Development]
-keywords: Spatial-Temporal Post-processing, Unity6, STP 디버깅, 셰이더 분석, Temporal Anti-Aliasing, 그래픽 품질, 렌더링 최적화
+keywords: Spatial-Temporal Post-processing, STP, Unity6, STP 디버깅, 셰이더 분석, Temporal Anti-Aliasing, 그래픽 품질, 렌더링 최적화
 addsence: true
-lastmod: 2024-08-13 21:00:00 +09:00
+lastmod: 2024-08-24 21:00:00 +09:00
 sitemap: 
   changefreq : daily
   priority : 1.0
