@@ -1,6 +1,12 @@
 categories_title: Portfolio & Study
 url: /all/
 categories_list:
+
+  - title: Work
+    categories_sub_list:
+      - title: Career_Description
+        url: /Career_Description/
+
   - title: External Activities
     categories_sub_list:
       - title: Game_Jam
@@ -58,12 +64,18 @@ categories_list:
       - title: Other_Articles
         url: /Other_Articles/
 
-  - title: Personal Feedback
+  - title: Code 4 Interview
     categories_sub_list:
-      - title: Programming_Mistake
-        url: /Programming_Mistake/
-      - title: Programming_Interview
-        url: /Programming_Interview/
+      - title: Cpp
+        url: /Cpp/
+      - title: CShap
+        url: /CShap/
+      - title: Math
+        url: /Math/
+      - title: Graphics
+        url: /Graphics/
+      - title: Speech
+        url: /Speech/
 
   
 

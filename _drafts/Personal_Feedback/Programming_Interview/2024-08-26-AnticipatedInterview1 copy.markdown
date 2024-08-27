@@ -2,7 +2,7 @@
 layout: post
 title: "2024.08.26 - 인터뷰 예상 질문 연습하기1"
 date: 2024-08-21 21:00:00 +09:00
-image: https://drive.google.com/thumbnail?id=
+image: https://drive.google.com/thumbnail?id=1J_dHyNf-T4YbvqSBjrgBK7K6SWitl2ep
 toc: true
 categories: [Programming_Interview]
 keywords: 
@@ -14,6 +14,8 @@ addsence: true
 excerpt: 
 related_links:
 ---
+
+## <feedback_h2>면접때 말할 간단한 자기 소개서</feedback_h2>
 
 ## <feedback_h2>1. 기술적 문제</feedback_h2>
 
@@ -208,3 +210,75 @@ related_links:
 저는 최근 블로그를 통해 유니티의 최신 기술에 대해 연구하고 분석하는 작업을 해왔습니다. 예를 들어, 유니티의 새로운 그래픽 파이프라인이나 최적화 기법에 대해 글을 쓰며, 관련 기술을 직접 적용해보는 경험을 쌓았습니다. 이를 통해 3D 엔진의 구조와 작동 방식, 그리고 다양한 최적화 기법에 대한 이해를 높일 수 있었습니다.
 
 앞으로도 이러한 학습과 연구를 지속하며, 보다 나은 사용자 경험을 제공하기 위해 노력하겠습니다. 감사합니다.</p>
+
+
+<br>
+<br>
+
+## <feedback_h2>2. 문제 해결 및 프로젝트 관리</feedback_h2>
+
+<br>
+
+### <feedback_h3>1) 프로젝트에서 직면했던 가장 큰 문제는 무엇이었으며, 이를 어떻게 해결했는지 설명해 주세요.</feedback_h3>
+
+
+<br>
+
+### <feedback_h3>2) 동료들과의 협업에서 발생한 갈등 상황이 있었다면, 이를 어떻게 해결했는지 말씀해 주세요.</feedback_h3>
+
+
+<br>
+
+### <feedback_h3>3) 긴밀하고 원활한 커뮤니케이션을 위해 어떤 방법을 사용해 왔는지 설명해 주세요.</feedback_h3>
+
+<br>
+
+### <feedback_h3>4) 제한된 시간과 자원 내에서 고품질의 결과물을 도출하기 위해 어떤 전략을 사용했는지 말씀해 주세요.</feedback_h3>
+
+
+<br>
+<br>
+
+## <feedback_h2>3. 업무와 관련된 경험 및 성향</feedback_h2>
+
+
+<br>
+
+### <feedback_h3>1) 3D 프로젝트를 진행하면서 가장 큰 성과를 거둔 사례에 대해 설명해 주세요.</feedback_h3>
+
+<br>
+
+### <feedback_h3>2) 새로운 기술이나 도구를 배우는 데 어떤 접근 방식을 취하는지 설명해 주세요.</feedback_h3>
+
+
+<br>
+<br>
+
+## <feedback_h2>4. 우대조건 관련 질문</feedback_h2>
+
+<br>
+
+### <feedback_h3>1) 3ds Max, Maya, Blender와 같은 DCC 소프트웨어를 사용한 경험에 대해 설명해 주세요. 이러한 툴을 사용해 어떤 프로젝트를 진행했으며, 그 결과는 어땠는지 공유해 주세요. </feedback_h3>
+
+<br>
+
+### <feedback_h3>2) 언리얼 엔진을 사용한 프로젝트 경험이 있다면, 유니티와 비교하여 어떤 차이점이 있었고, 언리얼 엔진의 어떤 기능이 유용했는지 설명해 주세요. </feedback_h3>
+
+<br>
+
+### <feedback_h3>3) 3D 엔진 기술에 대한 높은 이해와 관심을 어떻게 보여줄 수 있는지 설명해 주세요. </feedback_h3>
+
+<br>
+<br>
+
+## <feedback_h2>5. 회사의 문화와 가치관에 대한 질문</feedback_h2>
+
+<br>
+
+### <feedback_h3>1) 수평적인 조직 문화에서 어떻게 동료들과 협업하며, 의견을 조율해 나가는지 설명해 주세요. </feedback_h3>
+
+
+<br>
+
+### <feedback_h3>2)  “실시간 3D 콘텐츠 제작 방법을 혁신하여 사람들의 창작 과정을 더 수월하게 만드는 것”에 대해 어떻게 공감하며, 이 미션을 달성하기 위해 어떤 기여를 할 수 있을지 설명해 주세요. </feedback_h3>
+
