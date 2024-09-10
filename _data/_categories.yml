@@ -64,18 +64,18 @@ categories_list:
       - title: Other_Articles
         url: /Other_Articles/
 
-  - title: Code 4 Interview
-    categories_sub_list:
-      - title: Cpp
-        url: /Cpp/
-      - title: CShap
-        url: /CShap/
-      - title: Math
-        url: /Math/
-      - title: Graphics
-        url: /Graphics/
-      - title: Speech
-        url: /Speech/
+  # - title: Code 4 Interview
+  #   categories_sub_list:
+  #     - title: Cpp
+  #       url: /Cpp/
+  #     - title: CShap
+  #       url: /CShap/
+  #     - title: Math
+  #       url: /Math/
+  #     - title: Graphics
+  #       url: /Graphics/
+  #     - title: Speech
+  #       url: /Speech/
 
   
 

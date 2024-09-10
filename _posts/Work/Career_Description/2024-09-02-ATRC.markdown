@@ -1,0 +1,132 @@
+---
+layout: post
+title: "경력기술서 - ATRC"
+date: 2024-09-02 09:00:00 +09:00
+image: https://drive.google.com/thumbnail?id=1hfg0V3y89AoK77LE7hrgVwmgb-bG1rdP
+toc: true
+categories: [Career_Description]
+keywords: Career_Description, ATRC, 국방 과제, 시뮬레이션, AI 학습, 자율 운행, 군집 활동, 데이터 수집, Unity, C#, C++, ROS, 네트워크, IOCP 서버, 동역학, 머신러닝
+addsence: false
+lastmod: 2024-09-02 09:00:00 +09:00
+sitemap:
+  changefreq : daily
+  priority : 1.0
+excerpt: 본 프로젝트는 국방 과제를 위한 AI 자율 운행 및 군집 활동 시뮬레이션 플랫폼을 개발하며, AI 학습용 데이터 생성, 시뮬레이션 유지보수, 네트워크 오류 수정 등을 담당했습니다.
+related_links:
+---
+
+## <work_h2>프로젝트 소개</work_h2>
+
+해당 과제는 미래 산업을 대비하는 국방과제입니다. 실제 군함의 자율 운행 및 군집 활동을 위해 AI 데이터 생성, 연구 학습을 위한 시뮬레이션 개발 및 유지보수를 전반적으로 연구하는 프로젝트입니다.
+
+<br>
+<br>
+
+## <work_h2>프로젝트 개요</work_h2>
+
+- <span><work_h5>프로젝트명:</work_h5> ATRC(국방 과제)</span>
+- <span><work_h5>장르:</work_h5> 시뮬레이션 및 AI 학습 플랫폼</span>
+- <span><work_h5>게임 장르:</work_h5> Simulation</span>
+- <span><work_h5>기간:</work_h5> 제작 완료</span>
+  - ver.1: 2021.03.01~ 2022.01.31 
+- <span><work_h5>개발인원:</work_h5> </span>
+  - 프로젝트 총 개발 인원: 알수 없음(대규모 프로젝트)
+  - 시뮬레이션 파트 개발 인원: 3명 (소속 2명, 파견 1명)
+  - 직업: 연구원 & 개발자(프로그래머)
+- <span><work_h5>플랫폼:</work_h5> PC (Window, ubuntu) </span>
+
+<br>
+
+### <work_h3> 기술 스택 </work_h3>
+
+- <span><work_h5>개발 도구:</work_h5> Unity 2020.2.0f1 / visual studio / visual stuido code / pycharm / ros  </span>
+- <span><work_h5>주 개발 언어:</work_h5> C#(유니티) /  C++(서버) </span>
+- <span><work_h5>그래픽 디자인: </work_h5> PhotoShop / 3ds Max</span>
+- <span><work_h5>서드 파티: </work_h5> tortoiseSVN </span>
+
+<br>
+<br>
+
+## <work_h2> 프로젝트 특징 및 기능 구현 </work_h2>
+
+해당 내용은 PDF 파일에 있는 내용에서 이미지를 제거한 버전입니다.
+
+### <work_h3> 1)  시뮬레이션 프로그램 제작 </work_h3><red1_error> (전체 제작 기여도: 40%)</red1_error>
+
+#### <work_h4>클라이언트 시뮬레이션 유지보수(요구사항 분석서) </work_h4><red1_error> (전체 제작 기여도: 50%)</red1_error>
+
+1. 그래픽 업데이트 및 유니티 작업
+2. 항법 상태 및 함정 상태 UI 제작 및 데이터 연동
+3. AI 학습을 방해하기 위한 효과 제작
+4. 유니티 뉴 인풋 시스템을 사용해서 키보드, 조이스틱 병행 조정 기능 구현
+5. 외주받은 3D Max 터레인을 유니티로 삽입 및 환경 설정
+
+#### <work_h4> IOCP 서버 에러 해결(C++) </work_h4><red1_error> (전체 제작 기여도: 35%)</red1_error>
+
+1. 게임 서버 동기화 로직 락스텝에서 고정 시간 버킷으로 변경
+2. 게임 서버 에러 해결 (쓰레드 풀에서 에러 발생, 할당 해제 안되는 문제)
+3. 데이터 베이스 추가 작업
+4. 더미 클라이언트 제작 후 서버 테스트
+
+#### <work_h4> 동역학 마샬링 → 제어-동역학 DLL로 포팅 후 유니티 적용</work_h4><red1_error> (전체 제작 기여도: 100%)</red1_error>
+
+1. 제어 - 동역학 프로그램 분석 및 DLL 로딩
+2. 동역학 데이터 관련 UI 제작
+3. 연구용 툴 프로그램 제작 후 배포
+
+#### <work_h4> 영상학습을 위한 AI 학습용 데이터 생성</work_h4><red1_error> (전체 제작 기여도: 100%)</red1_error>
+
+1. 이미지 실사화 학습을 위한 세그먼트 데이터 생성 및 결과 코드 시뮬레이션 적용
+2. 영상 인식 AI 학습을 위한 라벨링 데이터 생성
+3. 영상 학습을 위한 데이터 추출용 툴 프로그램 제작
+4. 이미지 영상 인식 AI를 위한 공유 메모리 작성( # - Python)
+5. 적군 AI - 시뮬레이션 통신 에러 확인 및 로그 테스트 (Python)
+
+<br>
+
+### <work_h3> 2)  AI 환경 구축 및 프로그래밍 지원 </work_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
+
+#### <work_h4> 네르프를 이용하여 데어터 전송 및 네르프 에러 해결 </work_h4><red1_error> (전체 제작 기여도: 100%)</red1_error>
+
+1. 네레프를 사용하여 ICD 실제 구현
+2. 에러를 확인하기 위해서 텍스트 출력과 인터페이스 에러 확인
+3. 시뮬레이션 결합 단계 인터페이스 테스트
+
+#### <work_h4> 2세부 자율주행 AI를 위한 데이터 전송 및 Ros 연동 </work_h4><red1_error> (전체 제작 기여도: 100%)</red1_error>
+
+1. GPS, IMU, Point Clouds, Image, Rader, Lider 함정 상태와 항법 정보 전송
+2. Ros 작업을 위한 우분투, Ros 학습
+3. ROS로 데이터를 받기 위해서 ROS Converter 수정(Native C++)
+4. 자율 운행 AI 학습을 위한 ROS bag 데이터 생성 및 제공
+
+#### <work_h4> 시스템 통제(자동 부팅) 매직 패킷  관련 에러 수정 </work_h4><red1_error> (전체 제작 기여도: 100%)</red1_error>
+
+1. 매직 패킷 설정을 위해서 ARP Table 동적에서 정적으로 검사
+2. 네트워크 망 연결 검사
+
+<br>
+
+### <work_h3> 3) 시뮬레이션 및 실제 데이터 수집, 분석, 검증 </work_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
+
+#### <work_h4> 실제 무인 수상정 데이터 수집, 분석 및 검증 </work_h4><red1_error> (전체 제작 기여도: 100%)</red1_error>
+
+1. 실제 무인 수상정 데이터 수집을 위한 출장
+2. GPS, IMU, RPM 데이터 수집 및 엑셀을 사용한 분석
+3. 적용된 시뮬레이터의 GPS, IMU, 탐지 데이터 생성 및 검증 배포
+
+<br>
+<br>
+
+## <work_h2> 결과(성과) 및 데모 </work_h2>
+
+- <span><work_h5>성과:</work_h5></span>
+  - 1차 클라이언트-서버 시뮬레이션 파트 개발 100% 달성 종료 및 연동 테스트 목표 달성 80%로 2차 분기 시험 통과 
+  - 학습 프로그램 제작 및 배포로 학부생을 고용하여 고용 증진 효과에 기여
+- <span><work_h5>PDF 파일(이미지 파일): </work_h5>인사 담당자를 제외한 다른 사람들에게는 비공개</span>
+
+<br>
+<br>
+
+## <work_h2> 비고 및 여담 </work_h2>
+
+본 프로젝트는 국방 산업의 미래를 대비한 자율 운행 및 군집 활동 시뮬레이션의 연구로, 실제 무인 수상정 데이터를 활용해 AI 학습을 진행했습니다. 시뮬레이션 프로그램 개발과 유지보수 위주의 프로그래밍을 담당했으며, 다양한 에러를 해결하고 최적화를 하였습니다.

@@ -1,70 +1,53 @@
 User-agent: Googlebot
-Disallow: /programming_interview
-Disallow: /Programming_Mistake
+Disallow: /Career_Description
 
 User-agent: Googlebot-Image
-Disallow: /programming_interview
-Disallow: /Programming_Mistake
+Disallow: /Career_Description
 
 User-agent: AdsBot-Google
-Disallow: /programming_interview
-Disallow: /Programming_Mistake
+Disallow: /Career_Description
 
 User-agent: AdsBot-Google-Mobile
-Disallow: /programming_interview
-Disallow: /Programming_Mistake
+Disallow: /Career_Description
 
 User-agent: Mediapartners-Google
-Disallow: /programming_interview
-Disallow: /Programming_Mistake
+Disallow: /Career_Description
 
 User-agent: Googlebot-Mobile
-Disallow: /programming_interview
-Disallow: /Programming_Mistake
+Disallow: /Career_Description
 
 User-agent: Googlebot-Video
-Disallow: /programming_interview
-Disallow: /Programming_Mistake
+Disallow: /Career_Description
 
 User-agent: Feedfetcher-Google
-Disallow: /programming_interview
-Disallow: /Programming_Mistake
+Disallow: /Career_Description
 
 User-agent: Google-Display-Ads-Bot
-Disallow: /programming_interview
-Disallow: /Programming_Mistake
+Disallow: /Career_Description
 
 User-agent: Bingbot
-Disallow: /programming_interview
-Disallow: /Programming_Mistake
+Disallow: /Career_Description
 
 User-agent: MSNBot
-Disallow: /programming_interview
-Disallow: /Programming_Mistake
+Disallow: /Career_Description
 
 User-agent: AdIdxBot
-Disallow: /programming_interview
-Disallow: /Programming_Mistake
+Disallow: /Career_Description
 
 User-agent: Yeti
-Disallow: /programming_interview
-Disallow: /Programming_Mistake
+Disallow: /Career_Description
 
 User-agent: ChatGPT-User
-Disallow: /programming_interview
-Disallow: /Programming_Mistake
+Disallow: /Career_Description
 
 User-agent: Google-Safety
-Disallow: /programming_interview
-Disallow: /Programming_Mistake
+Disallow: /Career_Description
 
 User-agent: DuckDuckBot
-Disallow: /programming_interview
-Disallow: /Programming_Mistake
+Disallow: /Career_Description
 
 User-agent: archive.org_bot
-Disallow: /programming_interview
-Disallow: /Programming_Mistake
+Disallow: /Career_Description
 
 User-agent: *
 Disallow: /
