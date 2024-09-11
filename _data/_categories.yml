@@ -34,8 +34,8 @@ categories_list:
         url: /Data/
       - title: 3Ds_Max
         url: /3Ds_Max/
-      - title: Houdini
-        url: /Houdini/
+      # - title: Houdini
+      #   url: /Houdini/
       - title: Web_TP
         url: /Web_TP/
       - title: Computer_Vision
@@ -53,8 +53,8 @@ categories_list:
         url: /Graphics_Development/
       - title: Unity
         url: /Unity/
-      - title: Unreal
-        url: /Unreal/
+      # - title: Unreal
+      #   url: /Unreal/
       - title: Network
         url: /Network/
       - title: Web
