@@ -65,11 +65,13 @@ related_links:
 
 #### **<cpp_h4>Main 화면 동작 다이어 그램</cpp_h4>**
 
-![화면 구성]({{ site.google_drive }}1zKEYUwqaFaXoUhlxfduV6Fda4wNwjjZD{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+![화면 구성 로직]({{ site.google_drive }}1zKEYUwqaFaXoUhlxfduV6Fda4wNwjjZD{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<cpp_h6>화면 구성 로직</cpp_h6>*
 
 #### **<cpp_h4>게임 스테이지 구성</cpp_h4>**
 
-![화면동작]({{ site.google_drive }}1LyM9BeqxNITFOcE1ZrbtedVnbDM9a84p{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+![화면 동작 로직]({{ site.google_drive }}1LyM9BeqxNITFOcE1ZrbtedVnbDM9a84p{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<cpp_h6>화면 동작 로직</cpp_h6>*
 
 1. 게임 화면을 시작- 메인 - 끝으로 구성하였습니다.
 2. 하늘에서 떨어지는 단어를 올바르게 치시면 점수를 얻는 방식으로 구성하였습니다.
@@ -82,7 +84,7 @@ related_links:
 <iframe  width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/eYwX1WuaEYE" title="산성비(WinAPI)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 - <span><cpp_h5>성과:</cpp_h5> 2015년 1학기 윈도우 프로그래밍 실습 기말 과제 </span>
-- <span><cpp_h5>깃허브(코드):</cpp_h5> [https://github.com/kj1241/WinAPI_ToyProejct/tree/main/AcidRain](https://github.com/kj1241/WinAPI_ToyProejct/tree/main/AcidRain)</span>
+- <span><cpp_h5>깃허브(코드):</cpp_h5> [https://github.com/kj1241/WinAPI_Portfolio/tree/main/WinAPI/AcidRain](https://github.com/kj1241/WinAPI_Portfolio/tree/main/WinAPI/AcidRain)</span>
 
 <br>
 <br>
