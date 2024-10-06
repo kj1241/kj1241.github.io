@@ -1,12 +1,18 @@
 ---
 layout: post
 title: "윈도우 프로그래밍 실습 - 기말 과제(모작 산성비 게임)"
-date: 2023-04-04 11:50:19 +0900
+date: 2023-04-04 11:50:19 +09:00
 image: https://drive.google.com/thumbnail?id=1LyM9BeqxNITFOcE1ZrbtedVnbDM9a84p
 toc: true
 categories: [WinAPI]
-tags: [C++,WinAPI]
-keywords: C++,WinAPI
+keywords: WinAPI, Visual Studio, C++ 게임 개발, 산성비 게임 모작, 단어 타이핑 게임, UI 구현, 문자열 입력/출력
+addsence: true
+lastmod: 2024-10-06 11:50:19 +09:00
+sitemap: 
+  changefreq : daily
+  priority : 1.0
+excerpt: Acid Rain 모작은 WinAPI를 활용해 제작된 단어 타이핑 게임입니다. 하늘에서 떨어지는 단어를 빠르게 입력해 소멸시키고, 속도와 정확성으로 최고 점수에 도전하세요.
+related_links:
 ---
 
 ## <cpp_h2> 프로젝트 소개 </cpp_h2>
@@ -31,7 +37,7 @@ keywords: C++,WinAPI
 
 ### <cpp_h3> 기술 스택 </cpp_h3>
 
-- <span><cpp_h5>개발 도구:</cpp_h5> viusal studio 2015 → 2022  </span>
+- <span><cpp_h5>개발 도구:</cpp_h5> Visual Studio 2015 → 2022  </span>
 - <span><cpp_h5>개발 언어:</cpp_h5> C++ / winAPI  </span>
 
 
@@ -87,6 +93,6 @@ keywords: C++,WinAPI
     - WinAPI를 사용하여 간단한 게임 동작 로직을 디자인 설계를 할 수 있게 되었고 툴 프로그램의 UI 코드를 작성할 수 있게되었습니다.
     - WinAPI를 사용하여 게임을 제작할 수 있게 되었습니다.
 
-- 보안해야될 사항
+- 보완해야 할 사항
     - UI를 좀 더 디자인해서 보완 할 필요성이 있습니다.
     - 아이템을 추가 및 글자를 가리거나 화면을 다시 그리는 위치를 좀 더 크게 하여 속도가 빨라 보이도록 제작 할 필요성이 있습니다.
