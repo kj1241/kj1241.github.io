@@ -34,11 +34,9 @@ related_links:
 - <span><server_h5>게임 장르:</server_h5> Toy Project</span>
 - <span><server_h5>기간:</server_h5> 제작 완료</span>
     - ver.1: 2016.09.03~2016.12.10(제작)
-- <span><server_h5>개발인원:</server_h5> Developer(1명)</span>
-- <span><server_h5>개발언어:</server_h5> C++</span>
+- <span><server_h5>개발 인원:</server_h5> Developer(1명)</span>
+- <span><server_h5>개발 언어:</server_h5> C++</span>
 - <span><server_h5>플랫폼:</server_h5> PC (Window)</span>
-
-해당 프로젝트는 개인이 100% 개발한 네트워크 소켓 프로그래밍 과제입니다. 주된 목표는 TCP/IP 기반의 서버-클라이언트 통신을 구축하는 것이며, 특히 TCP 및 UDP 프로토콜을 이용한 통신 방식과 멀티스레딩을 통해 여러 클라이언트 요청을 동시에 처리하는 방법을 학습하는 데 중점을 두었습니다. 멀티스레딩, 비동기 I/O 모델 등을 적용해 통신 성능을 최적화하는 데도 집중했습니다.
 
 <br>
 
@@ -50,8 +48,6 @@ related_links:
 - <span><server_h5>멀티스레딩:</server_h5> WaitForSingleObject와 Mutex를 사용해 스레드 동기화 처리 </span>
 - <span><server_h5>비동기 입출력:</server_h5> Overlapped I/O 모델을 사용하여 비동기 통신 구현 </span>
 - <span><server_h5>패킷 전송:</server_h5> 클라이언트와 서버 간 패킷 구조 설계 및 처리 </span>
-
-해당 프로젝트에서는 Winsock2 라이브러리를 통해 클라이언트와 서버 간의 TCP/IP 통신을 처리하며, 안정적인 데이터 송수신을 위한 다양한 프로토콜을 사용했습니다. 각 클라이언트의 요청을 처리하기 위해 멀티스레드 환경을 구축하였으며, WaitForSingleObject와 Mutex를 활용해 스레드 동기화 문제를 해결했습니다.
 
 <br>
 <br>
@@ -69,28 +65,28 @@ related_links:
 #### <server_h4> 접속한 클라이언트 IP 확인 </server_h4>
 
 ![inet_ntop]({{ site.google_drive }}1ilFLWq79V7bSQPTvUGRVxZ6XgBurloOU{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-*<unity_h6>inet ntop</unity_h6>*
+*<server_h6>inet ntop</server_h6>*
 
 기존에는 inet_ntoa()로 클라이언트 IP를 확인했으나, 더 이상 사용되지 않으므로 inet_ntop()로 대체하였습니다. 이 과정에서 발생한 문제들과 해결 방법을 설명합니다.
 
 #### <server_h4> 바이트 오더(Byte Order) 변환 </server_h4>
 
 ![ByteOrder]({{ site.google_drive }}1EEuiHTwqgb_LQ0_yGBtnRGgfvPk3TlNc{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-*<unity_h6>Byte Order</unity_h6>*
+*<server_h6>Byte Order</server_h6>*
 
 리틀 엔디안(호스트 바이트 오더)을 네트워크 전송을 위한 빅 엔디안으로 변환하는 코드를 작성했습니다. 네트워크 통신에서 중요한 이 변환 과정을 자세히 다룹니다.
 
 #### <server_h4> IP 주소 변환 </server_h4>
 
 ![IPAddr]({{ site.google_drive }}1MFK4RgAcXGbLUbJsfAe_evUFYjZrdaXp{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-*<unity_h6>IPAddr → InetPton</unity_h6>*
+*<server_h6>IPAddr → InetPton</server_h6>*
 
 이전 버전의 IPAddr() 대신, 보안상의 이유로 더 이상 사용되지 않는 함수들을 최신 함수인 InetPton()으로 대체하여, IP 주소를 네트워크 바이트 오더로 변환하는 방법을 구현했습니다.
 
 #### <server_h4> 도메인 네임 해석(Name Resolution) </server_h4>
 
 ![NameResolution]({{ site.google_drive }}1t7DwL10nXVdH8pfyMvZKkQfy2FUbQEwh{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-*<unity_h6>NameResolution</unity_h6>*
+*<server_h6>NameResolution</server_h6>*
 
 도메인 주소를 IP 주소로 변환하는 작업을 위해 gethostbyname() 대신 getaddrinfo()를 사용하였습니다. 이로써 IPv4뿐만 아니라 IPv6도 지원합니다. 또한 유니코드를 지원하기 위해 GetAddrInfoW()를 사용하여 네트워크 관련 문제들을 해결했습니다.
 
@@ -101,35 +97,35 @@ related_links:
 #### <server_h4> TCP 서버 - 클라이언트 </server_h4>
 
 ![TCP server & client]({{ site.google_drive }}1qFkMvfIu1Kdmye86FETTkExF86Pl7sjC{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-*<unity_h6>TCP server - client</unity_h6>*
+*<server_h6>TCP server - client</server_h6>*
 
 TCP 프로토콜을 활용하여 서버와 클라이언트 간의 통신을 구현하였으며, 유니코드로 데이터를 송수신할 수 있도록 작성했습니다.
 
 #### <server_h4> 고정/가변 데이터 전송(TCP Fixed/Variable) </server_h4>
 
 ![TCP_FixedVariable]({{ site.google_drive }}1Ilukv5y-QhMXsh53T-bQzh8TgD6Ui9rG{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-*<unity_h6>TCP FixedVariable</unity_h6>*
+*<server_h6>TCP FixedVariable</server_h6>*
 
 고정된 버퍼 크기로 데이터를 전송하는 방식 외에도, 가변 크기의 데이터를 전송하는 방법을 구현하여 유연한 데이터 전송을 가능하게 했습니다.
 
 #### <server_h4> UDP 서버 - 클라이언트 </server_h4>
 
 ![UDP server & client]({{ site.google_drive }}1srct8CVWhnWCBqnykrQBa9ekehXxQz6V{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-*<unity_h6>UDP server - client</unity_h6>*
+*<server_h6>UDP server - client</server_h6>*
 
 UDP 프로토콜을 통해 서버와 클라이언트 간의 통신을 구현하였습니다. TCP와 달리 비연결형 통신을 다루며, 유니코드 데이터를 전송할 수 있는 코드를 작성했습니다.
 
 #### <server_h4> 브로드캐스트(Broadcast) 통신 </server_h4>
 
 ![Broadcast Sander & Receiver]({{ site.google_drive }}1zhzGy3UjKsa16vuVRHoWR1ZfnSZtUCoc{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-*<unity_h6>Broadcast Sander - Receiver</unity_h6>*
+*<server_h6>Broadcast Sander - Receiver</server_h6>*
 
 네트워크 상의 모든 사용자에게 데이터를 전송하는 Broadcast 기능을 구현했습니다. 이를 통해 간단한 멀티캐스트 기능도 시험했습니다.
 
 #### <server_h4> 멀티캐스트(Multicast) 통신 </server_h4>
 
 ![Multicast Sander & Receiver]({{ site.google_drive }}1xyCYR6NuNhq0kiwpWOoMQqTTwbLvzdhk{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-*<unity_h6>Multicast Sander - Receiver</unity_h6>*
+*<server_h6>Multicast Sander - Receiver</server_h6>*
 
 멀티캐스트 그룹을 통해 특정 사용자들에게만 데이터를 전송하는 기능을 구현했습니다. 멀티캐스트는 특정 그룹 내에서만 데이터를 주고받는 방식으로, 보다 효율적인 네트워크 자원 사용을 가능하게 합니다. 
 
@@ -140,14 +136,14 @@ UDP 프로토콜을 통해 서버와 클라이언트 간의 통신을 구현하�
 #### <server_h4> 크리티컬 섹션(Critical Section) </server_h4>
 
 ![CriticalSection]({{ site.google_drive }}1vVaMd7RFapMsvsU6vcmZaYONHMuua_lo{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-*<unity_h6>CriticalSection</unity_h6>*
+*<server_h6>CriticalSection</server_h6>*
 
 멀티스레드 환경에서 데이터 동기화를 위해 크리티컬 섹션을 사용하였습니다. 이로써 여러 스레드가 동시에 동일한 데이터에 접근하지 못하게 하여 데이터 불일치를 방지합니다.
 
 #### <server_h4> 멀티스레딩 및 동기화 - 이벤트(Event) 동기화 </server_h4>
 
 ![Event]({{ site.google_drive }}1GSjnnfziyyDs6VLW1Y_Ad5KYY35_xXzk{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-*<unity_h6>Event</unity_h6>*
+*<server_h6>Event</server_h6>*
 
 멀티스레드에서 이벤트 기반으로 동작을 관리하기 위한 코드를 작성하였습니다. 이벤트를 통해 스레드 간의 동기화를 보다 효율적으로 처리하였습니다.
 
@@ -197,12 +193,12 @@ UDP 프로토콜을 통해 서버와 클라이언트 간의 통신을 구현하�
 
 - <span><unity_h5>성과:</unity_h5> 2016년 2학기 게임서버실습(1) 일반 과제 </span>
 - <span><unity_h5>데모:</unity_h5> TCP/UDP 통신, 멀티캐스트, 브로드캐스트 통신, 비동기 입출력 모델 등 다양한 네트워크 통신 방식을 구현하여 시연할 수 있습니다. 각 기능은 서버-클라이언트 환경에서 정상적으로 작동하며, 데모는 콘솔 환경에서 실행됩니다.</span>
-- <span><unity_h5>깃허브(코드):</unity_h5> [https://github.com/kj1241/Server_Portfolio/tree/main/Game%20Server%20Practice%20(1)](https://github.com/kj1241/Server_Portfolio/tree/main/Game%20Server%20Practice%20(1))</span>
+- <span><unity_h5>깃허브(코드):</unity_h5> [kj124-Server_Portfolio GitHub 저장소](https://github.com/kj1241/Server_Portfolio/tree/main/Game%20Server%20Practice%20(1)/GameServerPractice1%20Portfolio)</span>
 
 <br>
 <br>
 
-## <unity_h2> 비고 및 여담 </unity_h2>
+## <server_h2> 비고 및 여담 </server_h2>
 
 - 배운점
 
@@ -214,5 +210,6 @@ UDP 프로토콜을 통해 서버와 클라이언트 간의 통신을 구현하�
 
 - 여담
     - 이 프로젝트는 TCP/IP 기반의 소켓 통신을 심도 있게 다룬 과제입니다. 네트워크 프로그래밍에 입문하거나, 입출력 모델에 대해 배우고자 하는 분들께 좋은 참고 자료가 될 것입니다.
+    - 해당 프로젝트에서는 Winsock2 라이브러리를 통해 클라이언트와 서버 간의 TCP/IP 통신을 처리하며, 안정적인 데이터 송수신을 위한 다양한 프로토콜을 사용했습니다. 각 클라이언트의 요청을 처리하기 위해 멀티스레드 환경을 구축하였으며, WaitForSingleObject와 Mutex를 활용해 스레드 동기화 문제를 해결했습니다.
 
 

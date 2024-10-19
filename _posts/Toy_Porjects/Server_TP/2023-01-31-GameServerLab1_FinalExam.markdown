@@ -33,11 +33,9 @@ Winsock 라이브러리를 사용해 TCP/IP 소켓 통신을 처리했으며, �
 - <span><server_h5>기간:</server_h5> 제작 완료</span>
     - ver.1: 2016.12.05~2016.12.10
     - ver.2: 2016.12.10~2016.12.19(패킷 디자인 추가)
-- <span><server_h5>개발인원:</server_h5> Developer(1명)</span>
-- <span><server_h5>개발언어:</server_h5> C++</span>
+- <span><server_h5>개발 인원:</server_h5> Developer(1명)</span>
+- <span><server_h5>개발 언어:</server_h5> C++</span>
 - <span><server_h5>플랫폼:</server_h5> PC (Window)</span>
-
-해당 프로젝트는 100% 개인 개발로 이루어졌으며, TCP/IP 소켓 프로그래밍과 멀티스레딩, 패킷 디자인 등 중요한 네트워크 프로그래밍 개념을 실습할 수 있었습니다.
 
 <br>
 
@@ -47,8 +45,6 @@ Winsock 라이브러리를 사용해 TCP/IP 소켓 통신을 처리했으며, �
 - <span><server_h5>라이브러리:</server_h5> WinSocket2 </span>
 - <span><server_h5>멀티스레딩:</server_h5> WaitForSingleObject와 Mutex를 사용해 동기화 </span>
 
-해당 프로젝트에서는 Winsock2 라이브러리를 사용해 클라이언트와 서버 간의 TCP/IP 통신을 처리했습니다. 
-각 클라이언트가 접속할 때마다 서버는 별도의 스레드를 생성하여 각 클라이언트를 개별적으로 처리하도록 구현했습니다.
 
 <br>
 <br>
@@ -96,8 +92,8 @@ Winsock 라이브러리를 사용해 TCP/IP 소켓 통신을 처리했으며, �
 
 #### **<server_h4>패킷 디자인 추가 ver.2</server_h4>**
 
-![패킷 디자인]({{ site.google_drive }}1tdtL0ira98kAtleTr07iy-NLtYEgE5Og{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-*<server_h6>패킷 디자인</server_h6>*
+![Echo 서버 패킷 디자인]({{ site.google_drive }}1tdtL0ira98kAtleTr07iy-NLtYEgE5Og{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<server_h6>Echo 서버 패킷 디자인</server_h6>*
 
 패킷 디자인 구조도는 로그인 데이터와 메시지 데이터를 구분합니다.
 
@@ -116,12 +112,12 @@ Winsock 라이브러리를 사용해 TCP/IP 소켓 통신을 처리했으며, �
 <iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/y5QNQ_o9nDI" title="채팅 서버 제작(ver.1.2)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 - <span><server_h5>성과:</server_h5> 2016년 2학기 게임서버실습(1) 기말 과제 </span>
-- <span><server_h5>깃허브(코드):</server_h5> [https://github.com/kj1241/Server_Portfolio/tree/main/Game%20Server%20Practice%20(1)](https://github.com/kj1241/Server_Portfolio/tree/main/Game%20Server%20Practice%20(1))</span>
+- <span><server_h5>깃허브(코드):</server_h5> [kj1241-Server_Portfolio GitHub 링크](https://github.com/kj1241/Server_Portfolio/tree/main/Game%20Server%20Practice%20(1)/GameServerPractice1%20ExamFInal)</span>
 
 <br>
 <br>
 
-## <unity_h2> 비고 및 여담 </unity_h2>
+## <server_h2> 비고 및 여담 </server_h2>
 
 - 배운점:
     - 서버-클라이언트 구조에서 비동기 통신 및 멀티스레드 환경을 구축하는 방법을 학습했습니다
@@ -130,3 +126,5 @@ Winsock 라이브러리를 사용해 TCP/IP 소켓 통신을 처리했으며, �
 - 개선할 점:
     - 클라이언트와 서버 간의 오류 처리 로직을 더욱 세분화하여, 예외 발생 시 보다 안정적인 성능을 제공할 수 있도록 개선이 필요합니다.
     - 다수의 클라이언트가 동시에 접속할 때 성능 저하를 최소화할 수 있는 추가적인 최적화 기법을 적용하는 것이 필요합니다.
+- 여담:
+    - 해당 프로젝트에서는 Winsock2 라이브러리를 사용해 클라이언트와 서버 간의 TCP/IP 통신을 처리했습니다.  각 클라이언트가 접속할 때마다 서버는 별도의 스레드를 생성하여 각 클라이언트를 개별적으로 처리하도록 구현했습니다.

@@ -39,17 +39,15 @@ related_links:
 - <span><server_h5>게임 장르:</server_h5> Toy Project</span>
 - <span><server_h5>기간:</server_h5> 제작 완료</span>
     - ver.1: 2015.10.05~2015.10.15(제작)
-- <span><server_h5>개발인원:</server_h5> Developer(1명)</span>
-- <span><server_h5>개발언어:</server_h5> C++</span>
+- <span><server_h5>개발 인원:</server_h5> Developer(1명)</span>
+- <span><server_h5>개발 언어:</server_h5> C++</span>
 - <span><server_h5>플랫폼:</server_h5> PC (Window)</span>
-
-해당 프로젝트는 시스템 프로그래밍 실습의 일환으로 진행되었으며, 개인 프로젝트로 모든 과정을 혼자 진행하였습니다.
 
 <br>
 
 ### <server_h3> 기술 스택 </server_h3>
 
-- <span><server_h5>개발 도구:</server_h5> Visual Studio 2015 → 2019  </span>
+- <span><server_h5>개발 도구:</server_h5>  Visual Studio 2015 (최종 2019로 업그레이드)  </span>
 - <span><server_h5>API:</server_h5> Mailbox API (프로세스 간 통신)  </span>
 - <span><server_h5>기술:</server_h5> 병렬 처리, 멀티 프로세스 통신, 비동기 처리 </span>
 
@@ -64,7 +62,7 @@ related_links:
 
 ### <server_h3>메일박스를 이용한 멀티 프로세스 통신 ver. 1</server_h3><red1_error> (전체 제작 기여도: 100%)</red1_error>
 
-1. S입력 처리:
+1. 입력 처리:
     - System.IO에서 데이터를 입력받습니다.
     - 이 과정에서 사용자는 특정 명령어를 입력하거나 데이터를 전송할 수 있습니다.
 2. IO 프로세스와 메일박스 통신:
@@ -82,7 +80,8 @@ related_links:
 
 ## <server_h2>시퀸스 다이어그램</server_h2>
 
-![시퀸스]({{ site.google_drive }}1oFZn2Hs3d_fpAVByLg_0llVipQWIl04s{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+![멀티 프로세스 통신 시퀸스]({{ site.google_drive }}1oFZn2Hs3d_fpAVByLg_0llVipQWIl04s{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<server_h6>멀티 프로세스 통신 시퀸스</server_h6>*
 
 아래 다이어그램은 각 프로세스 간의 통신 흐름을 나타냅니다. 다이어그램을 통해 프로세스 간의 상호작용과 데이터를 주고받는 과정이 명확하게 표현되었습니다.
 
@@ -98,12 +97,12 @@ related_links:
 <iframe  width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/cOH9jgKtj8k" title="멀티 프로세스 통신(화질 개선)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 - <span><server_h5>성과:</server_h5> 2015년 2학기 시스템 프로그래밍 실습 중간 과제 </span>
-- <span><server_h5>깃허브(코드):</server_h5> [https://github.com/kj1241/Server_Assignment/tree/main/System%20Programming/MultiProcess/MultiProcess](https://github.com/kj1241/Server_Assignment/tree/main/System%20Programming/MultiProcess/MultiProcess)</span>
+- <span><server_h5>깃허브(코드):</server_h5> [kj124-Server_Portfolio GitHub 저장소](https://github.com/kj1241/Server_Portfolio/tree/main/System%20Programming/MultiProcess)</span>
 
 <br>
 <br>
 
-## <unity_h2> 비고 및 여담 </unity_h2>
+## <server_h2> 비고 및 여담 </server_h2>
 
 - 배운점:
     - MailBox API를 사용하여 멀티 프로세스 통신을 구현하는 방법을 익혔습니다.
