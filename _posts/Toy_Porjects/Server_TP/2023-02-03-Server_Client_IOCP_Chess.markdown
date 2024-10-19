@@ -64,10 +64,10 @@ related_links:
 <br>
 <br>
 
-## <server_h2>시퀸스 다이어그램</server_h2>
+## <server_h2>아키텍처 다이어그램</server_h2>
 
 ![IOCP 서버 체스 판 이동 게임 시퀸스]({{ site.google_drive }}10EZdRZOPRR7M0tCOfMJcTU1Ln1C8et7w{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-*<server_h6>IOCP 서버 체스 판 이동 게임 시퀸스</server_h6>*
+*<server_h6>IOCP 서버 체스 판 이동 게임 아키텍처 다이어그램</server_h6>*
 
 - 키보드 입력 이벤트를 클라이언트에서 서버로 전송하고, 서버는 이동 로직을 처리한 후 결과를 클라이언트에 다시 전송하여 체스판에 실시간으로 반영합니다
 
@@ -80,7 +80,7 @@ IOCP를 활용한 비동기 처리: IOCP를 이용하여 다중 클라이언트�
 
 ## <server_h2> 결과(성과) 및 데모 </server_h2>
 
-<iframe  width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/hA4AJzZA-Xk" title="IOCP 서버 제작 과제" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+<iframe  width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/hA4AJzZA-Xk" title="IOCP Chessboard Game Server - C++ Asynchronous TCP/IP Server Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
 
 - <span><server_h5>성과:</server_h5> 2015년 2학기 시스템 프로그래밍 실습 중간 과제 </span>
 - <span><server_h5>깃허브(코드):</server_h5> [kj124-Server_Portfolio GitHub 저장소](https://github.com/kj1241/Server_Portfolio/tree/main/Advanced%20Web%20Server%20Programming/IOCPServerAssignments)</span>

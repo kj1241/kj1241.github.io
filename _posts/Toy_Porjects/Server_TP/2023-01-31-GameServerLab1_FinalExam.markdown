@@ -80,8 +80,8 @@ Winsock 라이브러리를 사용해 TCP/IP 소켓 통신을 처리했으며, �
 
 #### **<server_h4>Echo 서버,클라이언트 채팅 프로그램 제작 ver.1</server_h4>**
 
-![Echo 서버,클라이언트 채팅 프로그램 시퀸스 다이어 그램]({{ site.google_drive }}1nE_cbaLZZMKboa-tYxLOm9g3emT2_BPw{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-*<server_h6>Echo 서버,클라이언트 채팅 프로그램 시퀸스 다이어 그램</server_h6>*
+![Echo 서버,클라이언트 채팅 프로그램 아키텍쳐 다이어그램]({{ site.google_drive }}1nE_cbaLZZMKboa-tYxLOm9g3emT2_BPw{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<server_h6>Echo 서버,클라이언트 채팅 프로그램 아키텍쳐 다이어 그램</server_h6>*
 
 서버는 각 클라이언트의 접속 요청을 스레드로 처리합니다.
 
@@ -106,10 +106,10 @@ Winsock 라이브러리를 사용해 TCP/IP 소켓 통신을 처리했으며, �
 ## <server_h2> 결과(성과) 및 데모 </server_h2>
 
 #### **<server_h3>Echo 서버,클라이언트 채팅 프로그램 제작 ver.1</server_h3>**
-<iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/jfzdyEIj1hU" title="채팅 서버 제작(화질 개선)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/jfzdyEIj1hU" title="Echo TCP/IP Chatting Server (Ver. 1) - C++ Game Server Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 #### **<server_h3>패킷 디자인 추가 ver.2</server_h3>**
-<iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/y5QNQ_o9nDI" title="채팅 서버 제작(ver.1.2)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/y5QNQ_o9nDI" title="Echo TCP/IP Chatting Server (Ver. 2) - C++ Game Server Project with Packet Design" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 - <span><server_h5>성과:</server_h5> 2016년 2학기 게임서버실습(1) 기말 과제 </span>
 - <span><server_h5>깃허브(코드):</server_h5> [kj1241-Server_Portfolio GitHub 링크](https://github.com/kj1241/Server_Portfolio/tree/main/Game%20Server%20Practice%20(1)/GameServerPractice1%20ExamFInal)</span>

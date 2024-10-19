@@ -71,14 +71,14 @@ C++으로 제작한 WinAPI 기반의 IOCP TCP/IP 채팅 서버 어플리케이�
 <br>
 <br>
 
-## <server_h2>시퀸스 다이어그램</server_h2>
+## <server_h2>아키텍쳐 다이어그램</server_h2>
 
 #### **<server_h3>IOCP TCP/IP 채팅 서버 제작 ver.1</server_h3>**
 
-![IOCP TCP/IP 채팅 서버 시퀸스]({{ site.google_drive }}1vAi9hX6LY-VBoD8p8S2bMKLSmtXt1i8w{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-*<server_h6>IOCP TCP/IP 채팅 서버 시퀸스</server_h6>*
-
 **IOCP(입출력 완료 포트)**를 활용한 서버-클라이언트 구조를 시각적으로 설명한 다이어그램입니다. 각 요소의 역할을 설명하면 다음과 같습니다:
+
+![IOCP TCP/IP 채팅 아키텍처 다이어그램]({{ site.google_drive }}1Bv-MMgsfZU7A2mjQuvayMt6zsxYnQeg8{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<server_h6>IOCP TCP/IP 채팅 아키텍처 다이어그램 ver.1</server_h6>*
 
 1. 클라이언트 측 (빨간색 박스)
     - Client: 각 클라이언트는 서버와 통신하기 위해 소켓을 통해 연결됩니다.
@@ -94,10 +94,10 @@ C++으로 제작한 WinAPI 기반의 IOCP TCP/IP 채팅 서버 어플리케이�
 
 해당 구조는 비동기적으로 다중 클라이언트와 통신할 수 있게 하여 성능을 높이고, 입출력 작업을 효율적으로 관리합니다.
 
-#### **<server_h4>패킷 제작 ver.1</server_h4>** 
+#### **<server_h4>패킷 제작 ver.2</server_h4>** 
 
-![IOCP TCP/IP 채팅 서버 패킷 구조]({{ site.google_drive }}1H10wVWRfnG5FMa39x1YcdFJ4eea8l0-q{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
-*<server_h6>IOCP TCP/IP 채팅 서버 패킷 구조</server_h6>*
+![IOCP TCP/IP 채팅 서버 아키텍처 다이어그램]({{ site.google_drive }}1vAi9hX6LY-VBoD8p8S2bMKLSmtXt1i8w{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
+*<server_h6>IOCP TCP/IP 채팅 서버 패킷추가 아키텍처 다이어그램 ver.2</server_h6>*
 
 패킷 구조가 "user id"와 "메시지"라는 두 개의 필드로 나누어져 있는 것을 보여주고 있습니다. 각 필드의 크기가 다음과 같습니다:
 - user id: 128비트
@@ -110,7 +110,7 @@ C++으로 제작한 WinAPI 기반의 IOCP TCP/IP 채팅 서버 어플리케이�
 
 ## <server_h2> 결과(성과) 및 데모 </server_h2>
 
-<iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/THE9nnwgT3k" title="IOCP 채팅 서버 WinAPI 어플리케이션 개발" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/THE9nnwgT3k" title="IOCP TCP/IP Chatting Server (Ver. 2) - C++ Asynchronous Server Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 - <span><server_h5>성과:</server_h5> 2018년 2학기 고급웹서버프로그래밍 기말 과제 </span>
 - <span><server_h5>깃허브(코드):</server_h5> [kj124-Server_Portfolio GitHub 저장소](https://github.com/kj1241/Server_Portfolio/tree/main/Advanced%20Web%20Server%20Programming/IOCPChattingServer)</span>

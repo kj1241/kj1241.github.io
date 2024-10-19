@@ -90,7 +90,7 @@ related_links:
 
 ## <server_h2> 결과(성과) 및 데모 </server_h2>
 
-<iframe  width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/apWhZFFAme8" title="멀티스레드 덧셈 프로그램 제작(화질 개선)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe  width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/apWhZFFAme8" title="Multi-Threaded Addition Program Using Semaphores - C++ System Programming Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 - <span><server_h5>성과:</server_h5> 2015년 2학기 시스템 프로그래밍 실습 기말 과제 </span>
 - <span><server_h5>깃허브(코드):</server_h5> [kj124-Server_Portfolio GitHub 저장소](https://github.com/kj1241/Server_Portfolio/tree/main/System%20Programming/MultiThreadedSumProgram)</span>
