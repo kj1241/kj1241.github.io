@@ -5,7 +5,7 @@ date: 2024-09-10 09:00:00 +09:00
 image: https://drive.google.com/thumbnail?id=1kooBOfs-hYzbHH9DU2FgS0ZBQ3SAaNGD
 toc: true
 categories: [Career_Description]
-keywords: Hover 프로젝트, 공기부양정 시뮬레이터, 제어 알고리즘, 동역학, WinAPI, Unity, 물리 시뮬레이션, C++, C#, P/Invoke, 마샬링, 사이드 프로젝트, 시뮬레이션 게임
+keywords: 프로젝트, 공기부양정 시뮬레이터, 제어 알고리즘, 동역학, WinAPI, Unity, 물리 시뮬레이션, C++, C#, P/Invoke, 마샬링, 사이드 프로젝트, 시뮬레이션 게임
 addsence: false
 lastmod: 2024-09-10 09:00:00 +09:00
 sitemap:
@@ -26,21 +26,21 @@ related_links:
 ## <work_h2>프로젝트 개요</work_h2>
 
 - <span><work_h5>프로젝트명:</work_h5> Hover</span>
-- <span><work_h5>장르:</work_h5> 사이드 프로젝트</span>
-- <span><work_h5>게임 장르:</work_h5> Simulation</span>
+- <span><work_h5>장르:</work_h5> Simulation </span>
+- <span><work_h5>프로젝트 유형:</work_h5> 사이드 프로젝트</span>
 - <span><work_h5>기간:</work_h5> 제작 완료</span>
   - ver.1: 2021.04.01~2021.04.05(논문 읽고 공기부양정 구현)
   - ver.2: 2021.04.15~2021.04.19(라이브러리 분리 후 유니티 구현)
-- <span><work_h5>개발인원:</work_h5> </span>
-  - 직업: 프로그래머
+- <span><work_h5>개발인원: 1명</work_h5> </span>
+  - 개발 역할: 프로그래머
 - <span><work_h5>플랫폼:</work_h5> PC (Window) </span>
 
 <br>
 
 ### <work_h3> 기술 스택 </work_h3>
 
-- <span><work_h5>개발 도구:</work_h5> Unity 2019.02.2f1 / visual studio 2019 / WinAPI  </span>
-- <span><work_h5>주 개발 언어:</work_h5> C#(유니티) /  C++(WinAPI) </span>
+- <span><work_h5>개발 도구:</work_h5> Unity 2019.02.2f1, Visual Studio 2019, WinAPI  </span>
+- <span><work_h5>주 개발 언어:</work_h5> C# (Unity), C++ (WinAPI) </span>
 
 <br>
 <br>
@@ -50,7 +50,7 @@ related_links:
 ![프로그램 구조 변경]({{ site.google_drive }}1kooBOfs-hYzbHH9DU2FgS0ZBQ3SAaNGD{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<cpp_h6>프로그램 구조 변경</cpp_h6>*
 
-프로그램 구조 변경 전 코드는 Ver.1 코드로 제어-동역학 첫 미팅전에 논문을 읽고 구현한 코드입니다. 또한 구조 변경후 코드는 Ver.2 코드로 제어-동역학 부분을 DLL로 변형시키고 시뮬레이터 이식하기 위해서 연습한 코드입니다.
+프로그램 구조 변경 전 코드는 Ver.1으로, 제어 및 동역학 이해를 위한 초기 구현물입니다. Ver.2에서는 DLL을 활용하여 코드 구조를 개선하고 Unity 환경에서 실행 가능한 시뮬레이터로 발전시켰습니다.
 
 <br>
 
@@ -59,9 +59,9 @@ related_links:
 ![WinAPI를 사용한 공기부양정 시뮬레이터]({{ site.google_drive }}1sxNldUWLxgEYo-sYyvZIrXSQ170hVGzy{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<cpp_h6>WinAPI를 사용한 공기부양정 시뮬레이터</cpp_h6>*
 
-1. WinAPI의 GUI를 사용하여 공기부양정과 UI를 구현하였습니다.
-2. 수학 라이브러리를 직접 제작하여 백터 및 백터 계산(외적, 내적), 행렬 계산, 백터 함수 구현(거리 계산, 스칼라 계산)
-3. 공기부양정 계산을 위해서 운동방정식, 즉 힘과 토크에 관해서 구현하였습니다.
+1. WinAPI를 사용하여 공기부양정과 UI를 구현하였습니다.
+2. 수학 라이브러리를 직접 제작하여 벡터 연산(내적, 외적), 행렬 연산, 거리 및 스칼라 계산 함수 구현하였습니다.
+3. 운동 방정식을 기반으로 물리적 동작을 구현하였습니다.
   - 선형운동 
     " $$ \mathbf{F} = m \mathbf{a} $$ "
   - 각 운동
@@ -78,8 +78,9 @@ related_links:
 ![Unity를 사용한 공기부양정 시뮬레이터]({{ site.google_drive }}1AMlg8tLQT-K6fOuu2NJNGTYz9K6IMjme{{ site.google_drive_end }}){:width="100%" height="auto" loading="lazy"}
 *<cpp_h6>Unity를 사용한 공기부양정 시뮬레이터</cpp_h6>*
 
-1. Unity Text Mesh Pro를 사용하여 UI를 제작하였습니다.
-2. C++로 작성된 DLL을 C#의 P/Invoke를 통해 유니티에서 호출하고, C++과 C# 간의 데이터 타입 불일치를 해결하기 위해 마샬링을 사용하여 상호 운용성을 구현했습니다.
+1. Unity Text Mesh Pro를 활용하여 UI를 제작하였습니다.
+2. C++로 작성된 DLL을 C#의 P/Invoke를 통해 Unity에서 호출하였습니다.
+3. C++와 C# 간의 데이터 불일치를 해결하기 위해 마샬링 기법을 적용하여 상호 운용성을 구현하였습니다.
 
 
 <br>
@@ -91,14 +92,14 @@ related_links:
 
 <iframe width="100%" style="aspect-ratio:16/9" src="https://drive.google.com/file/d/1xLeYcxPUKeWWnan7mNxiZUk1E3FuphDr/preview" title="Hover(WinAPI)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-- <span><work_h5>성과:</work_h5> 제어, 동역학 교수님 코드를 분석하여 성공적으로 시뮬레이터에 코드를 적용하였습니다. </span>
-- <span><work_h5>깃허브(코드): </work_h5>제가 당시 읽은 논문들하고 문서들이 많아서 코드를 공개할 수는 없을 꺼 같습니다.</span>
+- <span><work_h5>성과:</work_h5> 제어 및 동역학 알고리즘을 성공적으로 시뮬레이터에 적용하였습니다. </span>
+- <span><work_h5>깃허브(코드): </work_h5> 제가 당시 읽은 논문들하고 문서들이 많아서 코드를 공개할 수는 없을 것 같습니다.</span>
 
 <br>
 <br>
 
 ## <work_h2> 비고 및 여담 </work_h2>
 
-이 프로젝트는 제어 및 동역학 분야에서의 경험을 심화하기 위한 개인적인 학습 목적으로 진행되었습니다. 회사 업무와 무관하게 이루어진 프로젝트였으며, 특히 물리 시뮬레이션과 관련된 동역학 및 제어 알고리즘 구현에 초점을 맞췄습니다. WinAPI를 통한 공기부양정 시뮬레이터 구현과 유니티를 활용한 시스템 이식 과정을 통해 다양한 개발 환경에서의 문제 해결 능력을 키울 수 있었습니다. 
+이 프로젝트는 제어 및 동역학 분야에 대한 심도 있는 학습을 목적으로 진행된 개인적인 연구 프로젝트입니다. 회사 업무와는 무관하며, 물리 시뮬레이션과 제어 알고리즘 구현을 통한 문제 해결 능력을 개발하는 데 초점을 맞췄습니다.
 
-해당 영상에서 보이는 차이는 WinAPI와 Unity의 프레임 처리 방식 차이에서 비롯됩니다. WinAPI에서는 프레임당 시간 간격을 dt = 0.001로 고정하여 계산한 반면, Unity는 Time.deltaTime을 사용해 실제 렌더링 시간에 따라 동적으로 계산합니다. 이로 인해 시각적으로 차이가 있을 수 있으나, 두 버전 모두 동일한 물리 계산을 기반으로 작동하고 있습니다.
+WinAPI와 Unity 간의 시각적 차이는 프레임 처리 방식에서 기인합니다. WinAPI에서는 고정 시간 간격()으로 계산한 반면, Unity는 Time.deltaTime을 사용해 렌더링 시간에 따라 동적으로 계산했습니다. 두 방식 모두 동일한 물리 계산을 기반으로 작동합니다.
